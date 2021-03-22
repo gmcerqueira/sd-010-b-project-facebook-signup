@@ -22,7 +22,7 @@
 
 .facebook-login {
   display: flex;
-  flex-flow: column wrap;
+  align-items: center;
   color: white;
 }
 
@@ -40,9 +40,100 @@
   background-image: linear-gradient(white, rgb(236, 236, 236));
 }
 
-.left-container {
+.left-content {
   margin: 50px 0;
   width: 800px;
   display: flex;
   flex-wrap: wrap;
+}
+
+#facebook-slogan {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(22, 60, 136);
+  width: 70%;
+}
+
+#network {
+  width: 80%;
+}
+
+.right-content {
+  width: 300px;
+  margin: 50px 0;
+}
+
+h1 {
+  margin-bottom: 10px;
+  color: rgb(41, 41, 41);
+  font-weight: bold;
+}
+
+.quick-easy {
+  margin-bottom: 15px;
+}
+
+#name {
+  display: flex;
+  flex: column;
+}
+
+#email-password {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#label-birthdate {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.radio-btn {
+  display: inline;
+  font-size: 15px;
+  margin: 0;
+  
+}
+
+input {
+  padding: 5px;
+  margin: 4px 0;
+  width: 100%;
+  font-size: 18px;
+}
+
+input[type="radio"] {
+  margin: 10px 0;
+  width: 20px;
+}
+
+#firstname {
+  width: 50%;
+  margin-right: 2px;
+}
+
+#lastname {
+  width: 50%;
+  margin-left: 2px;
+}
+
+#password,
+#birthdate {
+  margin-bottom: 20px;
+}
+
+#label-birthdate,
+#label-gender {
+  font-size: 20px;
+}
+
+#facebook-register {
+  background-image: linear-gradient(rgb(96, 158, 96), rgb(55, 99, 55)) ;
+  color: white;
+  border-radius: 4px;
+  margin-top: 20px;
+  width: 50%;
+  padding: 6px;
+  font-size: 20px;
+  font-weight: bold;
 }
