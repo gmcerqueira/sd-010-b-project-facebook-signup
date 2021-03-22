@@ -95,7 +95,7 @@
 Source
 https://stackoverflow.com/questions/42421361/input-button-elements-not-shrinking-in-a-flex-container
 
-Code: min-width: 0; -> Serve para o input entrar nas regras de grow e shrink do flexbox.
+Code: min-width: 0 -> Serve para o input entrar nas regras de grow e shrink do flexbox.
 */
 
 .name-input input {
