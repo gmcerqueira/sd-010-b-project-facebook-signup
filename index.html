@@ -12,12 +12,16 @@
     <img src="imgs/facebook-logo.png" alt="logo-facebook">
     <form action="" class="facebook-login" method="GET">
       <div class="form-group">
-        <label for="">Email ou telefone</label> 
-        <input type="text" placeholder="Email ou telefone" id="user-name-phone">
-       
+        <label for="user-name-phone">Email ou telefone</label> 
+        <input type="text" name="email-telefone" placeholder="Email ou telefone" id="user-name-phone">
+        <label for="user-password">Senha</label>
+        <input type="text" class="form-group" placeholder="Senha" name="senha" id="user-password">
+      </div>
+      <div class="form-control">
+        <button id="button-login">Entrar</button>
       </div>
     </form>
   </header>
-
+<script src="script.js"></script>
 </body>
 </html>
