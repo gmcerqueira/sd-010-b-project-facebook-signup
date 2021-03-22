@@ -14,20 +14,14 @@
 
 .facebook-login {
   display: flex;
-  align-self: center;
+  align-self: center ;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-self: flex-end;
   color: white;
   margin: 5px;
-}
-
-.form-group label {
-  margin-bottom: 5px;
 }
 
 .form-control {
@@ -51,4 +45,8 @@
   line-height: 18px;
   text-align: center;
   padding: 2px 4px;
+}
+
+#button-login:hover {
+  background-color: opa;
 }
