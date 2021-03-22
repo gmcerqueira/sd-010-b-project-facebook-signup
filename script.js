@@ -24,31 +24,38 @@ masc.addEventListener('click', removePersonal);
 const fem = document.getElementById('fem');
 fem.addEventListener('click', removePersonal);
 
-masc.addEventListener('click', selectedGender);
-fem.addEventListener('click', selectedGender);
-personalizado.addEventListener('click', selectedGender);
-
 function selectedGender(event) {
   const selected = document.querySelector('.selected');
   event.target.classList.add('selected');
   if (selected) selected.classList.remove('selected');
 }
 
+masc.addEventListener('click', selectedGender);
+fem.addEventListener('click', selectedGender);
+personalizado.addEventListener('click', selectedGender);
+
+// Referêcia utilizada para realizar o requisito 20: https://stackoverflow.com/questions/2010892/storing-objects-in-html5-localstorage //
+
+// function printtext() {
+//   const rightContent = document.querySelector('.right-content');
+//   rightContent.innerHTML = '';
+//   const paragraph = document.createElement('p');
+//   paragraph.id = 'paragraph';
+//   rightContent.appendChild(paragraph);
+//   const recoverdInfo = JSON.parse(localStorage.formPreenchido);
+//   paragraph.innerText = ` Olá, ${recoverdInfo.firstName} ${recoverdInfo.lastName}.\n Recebemos o teu cadastro com sucesso!\n Confira os seus dados: \n\n E-mail/Telefone: ${recoverdInfo.mail} \n Data de Nascimento: ${recoverdInfo.birthDate} \n Gênero: ${recoverdInfo.gender}`;
+// }
+
 function guardaFormulario() {
-  const formPreenchido = {};
-  formPreenchido.firstName = document.querySelector('.firstname').value;
-  formPreenchido.lastName = document.querySelector('.lastname').value;
-  formPreenchido.mail = document.querySelector('.phone_email').value;
-  formPreenchido.birthDate = document.getElementById('birthdate').value;
-  formPreenchido.gender = document.querySelector('.selected').value;
+  const formPreenchido = {
+    firstName: document.querySelector('.firstname').value,
+    lastName: document.querySelector('.lastname').value,
+    mail: document.querySelector('.phone_email').value,
+    birthDate: document.getElementById('birthdate').value,
+    gender: document.querySelector('.selected').value,
+  };
   localStorage.setItem('formPreenchido', JSON.stringify(formPreenchido));
-  const rightContent = document.querySelector('.right-content');
-  rightContent.innerHTML = '';
-  const paragraph = document.createElement('p');
-  paragraph.id = 'paragraph';
-  rightContent.appendChild(paragraph);
-  const recoverdInfo = JSON.parse(localStorage.formPreenchido);
-paragraph.innerText = ` Olá, ${recoverdInfo.firstName} ${recoverdInfo.lastName}.\n Recebemos o teu cadastro com sucesso!\n Confira os seus dados: \n\n E-mail/Telefone: ${recoverdInfo.mail} \n Data de Nascimento: ${recoverdInfo.birthDate} \n Gênero: ${recoverdInfo.gender}`
+  // printtext();
 }
 
 const btnCadastro = document.querySelector('#facebook-register');
