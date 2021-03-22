@@ -48,3 +48,7 @@
 .name_lastname {
   display: flex;
 }
+
+#alert {
+  color: red;
+}
