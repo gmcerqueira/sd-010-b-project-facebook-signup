@@ -10,12 +10,6 @@
   display: flex;
   background-color: rgb(66, 103, 178);
   height: 82px;
-  justify-content: center;
-}
-
-.top-bar div {
-  display: flex;
-  width: 980px;
   justify-content: space-between;
 }
 
@@ -35,5 +29,4 @@
 .form-group {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
