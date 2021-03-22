@@ -3,4 +3,4 @@ let campEmail = document.getElementById('user-email-phone');
 
 btnEntrar.addEventListener('click', function () {
   alert(campEmail.value);
-})
+});
