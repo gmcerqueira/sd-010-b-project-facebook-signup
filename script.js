@@ -1,8 +1,8 @@
 function entrarFacebook() {
   const entrarBotao = document.getElementById('button-login');
-   entrarBotao.addEventListener('click', () => {
-      const emailCelular = document.getElementById('user-email-phone').value
-      alert(emailCelular);
+  entrarBotao.addEventListener('click', () => {
+    const emailCelular = document.getElementById('user-email-phone').value;
+    alert(emailCelular);
   });
 }
 entrarFacebook();
