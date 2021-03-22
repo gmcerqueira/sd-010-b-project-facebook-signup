@@ -8,22 +8,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello world</h1>
-    <h2>Hello world</h2>
     <header class="top-bar">
         <img class="facebook-logo" src="imgs/facebook-logo.png" alt="logo do Facebook">
         <form class="facebook-login">
-            <label class="label-login">E-mail ou Telefone</label>
-            <input type="text">
+            <div class="form-group">
+                <label id="user-email-phone-label" class="label-login">E-mail ou Telefone</label>
+                <input id="user-email-phone" type="text" placeholder="Email ou telefone">
+            </div>
+
+            <div class="form-group">
+                <label id="user-password-label" class="label-login">Senha</label>
+                <input id="user-password" type="text" placeholder="Senha">
+            </div>
         </form>
     </header>
     <script src="script.js"></script>
 </body>
 </html>
 
-<!-- 4. Crie uma classe no CSS
+<!-- 5. Adicione um subcontainer para agrupar o rótulo e campo "E-mail ou telefone" dentro do formulário criado na etapa 3
 Pontos importantes:
 
-Essa classe deve se chamar form-group
-Essa classe deve possuir a propriedade diplay: flex
-Alinhe o eixo principal dessa classe para ser o eixo vertical -->
+Este subcontainer deve ter a classe form-group
+Dentro do subcontainer form-group criado, deve haver um rótulo com o id user-email-phone-label e o texto "Email ou telefone"
+Dentro do subcontainer form-group criado, abaixo do rótulo deve haver campo de entrada de texto para receber o email ou o telefone do usuário com o id user-email-phone' -->
