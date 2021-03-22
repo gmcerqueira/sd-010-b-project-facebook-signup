@@ -66,12 +66,13 @@ cadastroBtn.addEventListener('click', (event) => {
 
   const rightContent = document.querySelector('.right-content');
   const fullName = `${inputs[0]} ${inputs[1]}`;
-  rightContent.innerHTML = `
+  const cadastro = `
     Olá, ${fullName}
     <br>${inputs[2]}
     <br>${inputs[4]}
     <br>${selecionarGender()}
   `;
+  rightContent.innerHTML = cadastro;
 });
 
 const genderPersonalizado = document.querySelector('#personalizado');
