@@ -21,7 +21,7 @@ function checaForm() {
   }
 }
 
-buttonCadastre.addEventListener('click', () => {
+buttonCadastre.addEventListener('click', (event) => {
   event.preventDefault();
   checaForm();
 });
