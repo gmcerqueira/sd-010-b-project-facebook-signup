@@ -32,13 +32,12 @@ function checaForm(event) {
       event.preventDefault();
       const aviso = document.createElement('p');
       aviso.innerText = 'Campos inválidos';
-      AbraContaForm.append(aviso);
-      break;
+      AbraContaForm.append(aviso); break;
     } else {
       contador += 1;
     }
   }
-  if(contador === 5){
+  if (contador === 5) {
     event.preventDefault();
     preencheLogin(contentRight);
   }
