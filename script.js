@@ -10,23 +10,18 @@ entrarFacebook();
 function substituiConteudo() {
   const botaoCadastro = document.getElementById('facebook-register');
   botaoCadastro.addEventListener('click', () => {
-
     const getPrimeiroNome = document.getElementById('first-name-form').value;
     const getUltimoNome = document.getElementById('last-name-form').value;
     const NomeCompleto = document.createElement('h2');
-    NomeCompleto.innerText = 'Olá, ' + getPrimeiroNome + ' ' + getUltimoNome;
-    
+    NomeCompleto.innerText = `Olá, ${getPrimeiroNome} ${getUltimoNome};`    
     const getEmailCelular = document.getElementById('phone-email-form').value;
     const emailCelular = document.createElement('p');
-    emailCelular.innerText = getEmailCelular;
-    
+    emailCelular.innerText = getEmailCelular;    
     const getDataNascimento = document.getElementById('date-birthdate-form').value;
     const dataNascimento = document.createElement('p');
-    dataNascimento.innerText = getDataNascimento;
-    
+    dataNascimento.innerText = getDataNascimento;    
     const opcaoGenero = document.createElement('p');
     opcaoGenero.innerText = document.querySelector('input[type="radio"]:checked').value;
-    
     const formDireita = document.querySelector('.right-content');
     formDireita.innerHTML = '';
     formDireita.appendChild(NomeCompleto);
@@ -53,15 +48,14 @@ registerBtn.addEventListener('click', (e) => {
   }
 });
 //  campo personalizar genero
-const otherGender = document.getElementById('other');
-const genderOther_div = document.querySelector('.gender-other');
+const genderOtherDiv = document.querySelector('.gender-other');
 const radios = document.querySelectorAll('input[type=radio]');
-radios.forEach(radio => {
+radios.forEach((radio) => {
   radio.addEventListener('click', () => {
     if (radio.id === 'other') {
-      genderOther_div.style.display = 'block';
+      genderOtherDiv.style.display = 'block';
 		} else {
-      genderOther_div.style.display = 'none';
+      genderOtherDiv.style.display = 'none';
     }
   });
 });
