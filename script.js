@@ -50,3 +50,8 @@ ipass.id = 'user-password';
 ipass.type = 'password';
 ipass.innerText = 'Senha';
 document.querySelector('fieldset').appendChild(ipass);
+
+const button = document.createElement('button');
+button.id = 'button-login';
+button.innerText = 'Entrar';
+document.querySelector('fieldset').appendChild(button);
