@@ -31,7 +31,7 @@
   <main class="main-content">
     <div class="left-content">
       <p id="facebook-slogan">
-        O Facebook ajuda você a se conectar e compartilhar com as 
+        O Facebook ajuda você a se conectar e compartilhar com as
         pessoas que fazem parte da sua vida.
       </p>
       <img src="imgs/networking.png" alt="facebook networking" id="facebook-networking">
@@ -40,7 +40,27 @@
     <div class="right-content">
       <h1>Abra uma conta</h1>
       <p class="quick-easy">É rápido e fácil.</p>
-      <form></form>
+      <form>
+        <div class="names">
+          <input type="text" name="firstname" placeholder="Nome">
+          <input type="text" name="lastname" placeholder="Sobrenome">
+        </div>
+        <div>
+          <input type="text" name="phone_email" placeholder="Celular ou email">
+          <input type="password" name="password" placeholder="Nova senha">
+        </div>
+          <label for="" id="label-birthdate">Data de nascimento</label>
+          <input type="text" name="birthdate" placeholder="dd/mm/aaaa"> 
+          <div>
+            <label for="" id="label-gender">Gênero</label>
+            <div class="genero">
+              <input type="radio" name="gender">Feminino
+              <input type="radio" name="gender">Masculino
+              <input type="radio" name="gender">Personalizado
+            </div>
+          </div>
+          <button id="facebook-register" type="submit">Cadastre-se</button>          
+      </form>
     </div>
 
   </main>

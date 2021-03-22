@@ -29,3 +29,11 @@
 .right-content {
   width: 300px;
 }
+
+.names {
+  display: flex;
+}
+
+.genero {
+  display: flex;
+}
