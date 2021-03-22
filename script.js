@@ -94,6 +94,61 @@ spanContent.className = 'quick-easy';
 spanContent.innerText = 'É rápido e fácil.';
 rightContent.appendChild(spanContent);
 
+// Criado um formulário para cadastro
+const formRegister = document.createElement('form');
+formRegister.id = 'register-form';
+formRegister.setAttribute('action', '');
+rightContent.appendChild(formRegister);
+
+// Criado os Elementos de registro
+
+  // Nome
+  const inputNome = document.createElement("input");
+  inputNome.setAttribute("type", "text");
+  inputNome.setAttribute("name", "firstname");
+  inputNome.setAttribute("placeholder", "Nome");
+  inputNome.className = "inputs";
+  formRegister.appendChild(inputNome);
+  // Sobrenome
+
+  const lastNameNome = document.createElement("input");
+  lastNameNome.setAttribute("type", "text");
+  lastNameNome.setAttribute("name", "lastname");
+  lastNameNome.setAttribute("placeholder", "Sobrenome");
+  lastNameNome.className = "inputs";
+  formRegister.appendChild(lastNameNome);
+  // Email
+
+  const phoneNome = document.createElement("input");
+  phoneNome.setAttribute("type", "text");
+  phoneNome.setAttribute("name", "phone_email");
+  phoneNome.setAttribute("placeholder", "Celular ou email");
+  phoneNome.className = "inputs";
+  formRegister.appendChild(phoneNome);
+  // Password
+
+  const passwordNome = document.createElement("input");
+  passwordNome.setAttribute("type", "password");
+  passwordNome.setAttribute("name", "password");
+  passwordNome.setAttribute("placeholder", "Nova senha");
+  passwordNome.className = "inputs";
+  formRegister.appendChild(passwordNome);
+  // Label
+
+  const labelDate = document.createElement("label");
+  labelDate.id = "label-birthdate";
+  labelDate.innerText = "Data de nascimento";
+  labelDate.setAttribute("for", "");
+  formRegister.appendChild(labelDate);
+  // Data Nascimento
+
+  const dataNascimento = document.createElement("input");
+  dataNascimento.setAttribute("type", "text");
+  dataNascimento.setAttribute("name", "birthdate");
+  dataNascimento.setAttribute("placeholder", "dd/mm/aaaa");
+  dataNascimento.className = "inputs";
+  formRegister.appendChild(dataNascimento);
+
 // criado função do alerta
 function alerta() {
   alert('Email ou telefone');
