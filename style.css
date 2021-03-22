@@ -8,11 +8,11 @@
   display: flex;
   background-color: rgb(66, 103, 178);
   justify-content: space-between;
-
 }
 
 .facebook-login {
   display: flex;
+  align-items: center;
 }
 
 .form-group {
@@ -21,6 +21,5 @@
 }
 
 .form-control {
-    align-self: flex-end;
-    
+  align-self: flex-end;
 }
