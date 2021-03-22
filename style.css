@@ -6,7 +6,7 @@
 .top-bar {
   display: flex;
   background-color: rgb(66, 103, 178);
-  /* justify-content: space-between; */
+  justify-content: space-between;
 }
 
 .facebook-login {
@@ -30,10 +30,9 @@
   font-family: inherit;
   color: #0e385f;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 900;
   line-height: 29px;
   margin-top: 40px;
-  width: 450px;
   word-spacing: -1px;
 }
 
