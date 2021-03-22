@@ -137,3 +137,17 @@
 .password-form {
   width: 100%;
 }
+
+.date-birthdate-form {
+  width: 100%;
+}
+
+.gender-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.radio-group {
+  display: flex;
+  justify-content: space-around;
+}
