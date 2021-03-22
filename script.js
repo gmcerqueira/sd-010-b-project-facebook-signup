@@ -63,8 +63,8 @@ cadastroBtn.addEventListener('click', (event) => {
   for (let i = 0; i < inputsCadastro.length; i += 1) {
     inputs.push(inputsCadastro[i].value);
   }
-
   const rightContent = document.querySelector('.right-content');
+  rightContent.innerHTML = '';
   const fullName = `${inputs[0]} ${inputs[1]}`;
   const cadastro = `
     Olá, ${fullName}
