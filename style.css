@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
@@ -314,6 +313,7 @@
   font-weight: bold;
   font-size: 20px;
   padding: 7px 25px;
+  margin-bottom: 20px;
   border-radius: 5px;
   background: linear-gradient(#67ae55, #578843);
   color: #fff;
