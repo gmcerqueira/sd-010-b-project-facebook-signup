@@ -1,16 +1,12 @@
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 .top-bar {
   background-color: rgb(66, 103, 178);
   height: 90px;
   width: 100%;
-<<<<<<< HEAD
-  
-=======
->>>>>>> 0502b79b3e5b88593c1cec571f7dd69ec5d74988
 }
 
 .facebook-logo {
@@ -30,11 +26,7 @@
   flex-direction: column;
   width: fit-content;
   float: right;
-<<<<<<< HEAD
   font-family: Georgia, Times, serif;
-=======
-  font-family: Georgia, "Times New Roman", Times, serif;
->>>>>>> 0502b79b3e5b88593c1cec571f7dd69ec5d74988
   color: aliceblue;
   margin-right: 70px;
 }
@@ -45,12 +37,11 @@
   margin-top: -21px;
   margin-left: 60%;
   display: flex;
-  
 }
 
 #button-login {
   float: right;
-  background-color:  rgb(66, 103, 178);
+  background-color: rgb(66, 103, 178);
   color: aliceblue;
 }
 
