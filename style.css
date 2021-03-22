@@ -25,6 +25,7 @@ body {
 
 .form-group {
   display: flex;
+<<<<<<< HEAD
   flex-direction: column;
   
   width: 900px;
@@ -32,4 +33,12 @@ body {
 }
 .form-control {
   align-self: flex-end;
+=======
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.facebook-login {
+  display: flex;
+>>>>>>> 37ac22b753c3a75cc8ee0294e3ddc71de127074a
 }
