@@ -22,6 +22,5 @@
 }
 
 .form-control {
-  display: flex;
-  align-items: center;
+  align-self: flex-end;
 }
