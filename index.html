@@ -43,13 +43,13 @@
         <input type="text" placeholder="Celular ou email" name="phone_email" required>
         <input type="password" placeholder="Nova senha" name="password" required>
         <label id="label-gender">Gênero</label>
+        <label id="label-birthdate">Data de nascimento</label>
+        <input type="text" name="birthdate" placeholder="dd/mm/aaaa" required>
         <div class="genderChoice">
           <input type="radio" name="gender" required>Feminino
           <input type="radio" name="gender">Masculino
-          <input type="radio" name="gender">Personalizado
+          <input id="personalizado" type="radio" name="gender">Personalizado
         </div>
-        <label id="label-birthdate">Data de nascimento</label>
-        <input type="text" name="birthdate" placeholder="dd/mm/aaaa" required>
         <button type="submit" id="facebook-register">Cadastre-se</button>
       </form>
     </div>
