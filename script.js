@@ -5,6 +5,7 @@ const inputEmail = document.querySelector('#user-email-phone');
 const loginForm = document.querySelector('.login-form');
 const inputs = loginForm.getElementsByTagName('input');
 const btnRegister = document.querySelector('#facebook-register');
+const btnPersonalizado = document.querySelector('.Personalizado')
 // const verify = document.querySelector('.verify');
 
 btnLogin.addEventListener('click', () => {
@@ -27,3 +28,17 @@ btnRegister.addEventListener('click', (e) => {
   e.preventDefault();
   console.log(validate());
 });
+
+btnPersonalizado.addEventListener('click', function () {
+  const element =  document.createElement('input');
+  element.type = 'text';
+  element.placeholder = 'Gênero (opcional)'
+  element.name = 'gender-custom'
+  element.className = 'Personalizado'
+  element.id = 'person'
+
+  loginForm.appendChild(element)
+  
+
+
+})
