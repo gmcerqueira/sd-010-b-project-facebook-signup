@@ -1,6 +1,5 @@
 * {
   margin: 0px;
-
 }
 
 .top-bar {
@@ -12,6 +11,11 @@
   height: 78px;
 }
 
+.facebook-login {
+  display: flex;
+  justify-content: flex-end;
+ 
+}
 .main-content{
   display: flex;
   flex-direction: row git;
