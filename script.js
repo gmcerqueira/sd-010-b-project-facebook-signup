@@ -99,5 +99,5 @@ rightContent.appendChild(spanContent);
 // criado função do alerta
 function alerta() {
   alert('Email ou telefone');
-}  
+}
 signin.addEventListener('click', alerta);
