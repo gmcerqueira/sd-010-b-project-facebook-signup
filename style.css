@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-header{
+header {
   background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: center;
