@@ -9,7 +9,7 @@ btnLogin.addEventListener('click', elertEmail);
 
 function switchGenderCustom(origin) {
   const element = origin.target.id;
-  if (element == 'other') {
+  if (element === 'other') {
     document.getElementById('gender-custom').style.display = 'inline';
   } else {
     document.getElementById('gender-custom').style.display = 'none';
@@ -44,3 +44,5 @@ submitBtn.addEventListener('click', () => {
 function returnFalse() {
   return false;
 }
+
+returnFalse();
