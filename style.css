@@ -35,6 +35,10 @@
   padding: 4px 6px;
 }
 
+#button-login {
+  background-color: #4267b2;
+  color: white
+}
 .main-content {
   display: flex;
   justify-content: center;
@@ -54,8 +58,4 @@
 
 #label-birthdate , #label-gender , #facebook-register {
   display: block;
-}
-
-#male , #female , #other {
-  display: inline;
 }
