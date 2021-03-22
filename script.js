@@ -38,3 +38,15 @@ iemail.id = 'user-email-phone';
 iemail.type = 'text';
 iemail.innerText = 'Email ou telefone';
 document.querySelector('fieldset').appendChild(iemail);
+
+const lpass = document.createElement('label');
+lpass.id = 'user-password-label';
+lpass.htmlFor = 'user-password';
+lpass.innerText = 'Senha';
+document.querySelector('fieldset').appendChild(lpass);
+
+const ipass = document.createElement('input');
+ipass.id = 'user-password';
+ipass.type = 'password';
+ipass.innerText = 'Senha';
+document.querySelector('fieldset').appendChild(ipass);
