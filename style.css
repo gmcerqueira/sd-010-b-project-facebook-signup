@@ -16,13 +16,7 @@
 }
 
 .facebook-logo {
- 
-  /* height: 40px; */
- 
-  /* padding-left: 30px; */
   display: flex;
- 
-  /* align-items: flex-end; */
   justify-self: left;
 }
 
@@ -57,4 +51,9 @@
 .form-control {
   align-self: flex-end;
 
+}
+
+.input-name {
+  display: flex;
+  width: 100%;
 }
