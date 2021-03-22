@@ -20,3 +20,59 @@
   display: flex;
   align-self: flex-start;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main-content{
+  display: flex;
+  flex-direction: column;
+
+}
+.left-content {
+  width: 800px;
+}
+.rigth-content{
+width: 300px;
+}
