@@ -41,7 +41,7 @@
         <div class="quick-easy">
           <p>É rápido e fácil.</p>
         </div>
-          <form method="GET">
+          <form method="GET" id="registro">
             <div id="form-nome-sobrenome">
               <input type="text" name="firstname" placeholder="Nome" id="nameLogin" required oninvalid="this.setCustomValidity('Campos Inválidos')" oninput="this.setCustomValidity('')">
               <input type="text" name="lastname" placeholder="Sobrenome" id="lastnameLogin" required required oninvalid="this.setCustomValidity('Campos Inválidos')" oninput="this.setCustomValidity('')">
@@ -67,6 +67,9 @@
                 <input type="text" id="genero-personalizado" name="gender-custom" placeholder="Gênero (opcional)">              
             <button id="facebook-register" type="submit">Cadastre-se</button>
           </form>
+          <div id="infos">
+
+          </div>
       </aside>
     </main>
     <script src="script.js"></script>
