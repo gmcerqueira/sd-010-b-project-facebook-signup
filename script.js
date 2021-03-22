@@ -23,15 +23,17 @@ inputs.appendChild(secEmailTelefone);
 
 // criado o elemento label email
 const labelEmailTelefone = document.createElement('label');
+labelEmailTelefone.setAttribute('for', 'user-email-phone');
 labelEmailTelefone.id = 'user-email-phone-label';
 labelEmailTelefone.innerText = 'Email ou telefone';
 secEmailTelefone.appendChild(labelEmailTelefone);
 
 // criado o elemento input email
 const inputEmailTelefone = document.createElement('input');
-inputEmailTelefone.setAttribute('type', 'text');
 inputEmailTelefone.id = 'user-email-phone';
-inputEmailTelefone.setAttribute('required', 'true');
+inputEmailTelefone.setAttribute('type', 'text');
+inputEmailTelefone.setAttribute('name', 'email-telefone');
+inputEmailTelefone.setAttribute('required', 'false');
 secEmailTelefone.appendChild(inputEmailTelefone);
 
 // criado o elemento que vai a senha
@@ -97,11 +99,15 @@ const h1Content = document.createElement('h1');
 h1Content.innerText = 'Abra uma conta';
 rightContent.appendChild(h1Content);
 
+// Criado o Elemento sessao quick
+const secQuickContent = document.createElement('section');
+secQuickContent.className = 'quick-easy';
+rightContent.appendChild(secQuickContent);
+
 // Criado o Elemento span que vai dentro Rigth content
-const spanContent = document.createElement('form');
-spanContent.className = 'quick-easy';
-spanContent.innerText = 'É rápido e fácil.';
-rightContent.appendChild(spanContent);
+const quickContent = document.createElement('p');
+quickContent.innerText = 'É rápido e fácil.';
+secQuickContent.appendChild(quickContent);
 
 // Criado um formulário para cadastro
 const formRegister = document.createElement('form');
@@ -118,39 +124,39 @@ inputNome.setAttribute('name', 'firstname');
 inputNome.setAttribute('placeholder', 'Nome');
 inputNome.className = 'inputs';
 formRegister.appendChild(inputNome);
-// Sobrenome
 
+// Sobrenome
 const lastNameNome = document.createElement('input');
 lastNameNome.setAttribute('type', 'text');
 lastNameNome.setAttribute('name', 'lastname');
 lastNameNome.setAttribute('placeholder', 'Sobrenome');
 lastNameNome.className = 'inputs';
 formRegister.appendChild(lastNameNome);
-// Email
 
+// Email
 const phoneNome = document.createElement('input');
 phoneNome.setAttribute('type', 'text');
 phoneNome.setAttribute('name', 'phone_email');
 phoneNome.setAttribute('placeholder', 'Celular ou email');
 phoneNome.className = 'inputs';
 formRegister.appendChild(phoneNome);
-// Password
 
+// Password
 const passwordNome = document.createElement('input');
 passwordNome.setAttribute('type', 'password');
 passwordNome.setAttribute('name', 'password');
 passwordNome.setAttribute('placeholder', 'Nova senha');
 passwordNome.className = 'inputs';
 formRegister.appendChild(passwordNome);
-// Label
 
+// Label
 const labelDate = document.createElement('label');
 labelDate.id = 'label-birthdate';
 labelDate.innerText = 'Data de nascimento';
 labelDate.setAttribute('for', '');
 formRegister.appendChild(labelDate);
-// Data Nascimento
 
+// Data Nascimento
 const dataNascimento = document.createElement('input');
 dataNascimento.setAttribute('type', 'text');
 dataNascimento.setAttribute('name', 'birthdate');
