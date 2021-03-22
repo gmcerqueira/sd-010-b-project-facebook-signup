@@ -5,7 +5,9 @@
   display: flex;
   background-color: rgb(66, 103, 178);
   height: 78px;
+  width:100%;
 }
+
 .facebook-login {
   display: flex;
   color: white;
@@ -29,7 +31,6 @@
 }
 
 .main-content{
-.main-content {
   display: flex;
   flex-direction: row git;
 }
