@@ -1,6 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .top-bar {
   display: flex;
   background-color: rgb(66, 103, 178);
+<<<<<<< HEAD
   justify-content: space-evenly;
   padding: 10px;
 }
+=======
+  padding-top: 15px;
+  justify-content: space-around;
+}
+
+
+
+
+
+
+
+
+.facebook-login {
+  display: flex;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+  margin-right: 10px;
+}
+
+label {
+  font-size: 12px;
+  font-family: inherit;
+  color: white;
+}
+>>>>>>> 6ab4fec4914958f84c750ce5785e6dd9a8d913a5
