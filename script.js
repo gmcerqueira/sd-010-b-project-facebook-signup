@@ -36,25 +36,42 @@ function adcEvntoMascFem() {
 
 adcEvntoMascFem();
 
-function mostrarInfos() {
-  const nome = document.getElementById("nameLogin").value;
-  const sobrenome = document.getElementById("lastnameLogin").value;
-  const contato = document.getElementById("phoneEmailLogin").value;
-  const nascimento = document.getElementById("nascimentoLogin").value;
-  const form = document.getElementById('registro');
-  const genero = form.elements.gender.value;
-  document.getElementsByTagName('h1')[0].innerText = `Olá ${nome} ${sobrenome}`;
-  document.getElementsByClassName('quick-easy')[0].style.display = 'none';
-  document.getElementById('registro').style.display = 'none';
-  const infos = document.getElementById('infos');
-  infos.style.display = 'flex';
-  infos.innerHTML = `<p>Contato: ${contato}</p><p>Nascimento: ${nascimento}</p><p>Gênero: ${genero}</p>`;
+// function mostrarInfos() {
+//   const nome = document.getElementById("nameLogin").value;
+//   const sobrenome = document.getElementById("lastnameLogin").value;
+//   const contato = document.getElementById("phoneEmailLogin").value;
+//   const nascimento = document.getElementById("nascimentoLogin").value;
+//   const form = document.getElementById('registro');
+//   const genero = form.elements.gender.value;
+//   document.getElementsByTagName('h1')[0].innerText = `Olá ${nome} ${sobrenome}`;
+//   document.getElementsByClassName('quick-easy')[0].style.display = 'none';
+//   document.getElementById('registro').style.display = 'none';
+//   const infos = document.getElementById('infos');
+//   infos.style.display = 'flex';
+//   infos.innerHTML = `<p>Contato: ${contato}</p><p>Nascimento: ${nascimento}</p><p>Gênero: ${genero}</p>`;
+// }
+
+function verifica() {
+  const nome = document.getElementById('nameLogin').value;
+  const sobrenome = document.getElementById('lastnameLogin').value;
+  const contato = document.getElementById('phoneEmailLogin').value;
+  const nascimento = document.getElementById('nascimentoLogin').value;
+  const senha = document.getElementById('senhaLogin').value;
+  const elementos = [nome, sobrenome, contato, nascimento, senha];
+  let saida = false;
+  for (let index = 0; index < elementos.length; index += 1) {
+    if (elementos[index] !== '') {
+      saida = true;
+    }
+  }
+  if (saida) {
+    document.getElementById('campos-invalidos').style.display = 'flex';
+  }
 }
 
-// alterar a funçãop abaixo para uma que depois das verificações de formulário preenchido e validado, rodem a função acima;
 function bttCadastro() {
   const botaoCadastro = document.getElementById('facebook-register');
-  botaoCadastro.addEventListener('click', mostrarInfos); //esse event listener não pode ser no botão de cadastro
+  botaoCadastro.addEventListener('click', verifica);
 }
 
-bttCadastro(); //essa função não pode ser no botão de cadastro
+bttCadastro();

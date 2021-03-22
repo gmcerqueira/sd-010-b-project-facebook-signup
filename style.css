@@ -65,3 +65,7 @@
 #infos {
   display: none;
 }
+
+#campos-invalidos {
+  display: none;
+}
