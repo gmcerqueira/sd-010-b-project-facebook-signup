@@ -42,19 +42,19 @@
           <p>É rápido e fácil.</p>
           <form method="GET">
             <div id="form-nome-sobrenome">
-              <input type="text" name="firstname" placeholder="Nome" id="nameLogin">
-              <input type="text" name="lastname" placeholder="Sobrenome" id="lastnameLogin">
+              <input type="text" name="firstname" placeholder="Nome" id="nameLogin" required>
+              <input type="text" name="lastname" placeholder="Sobrenome" id="lastnameLogin" required>
             </div>
             <div>
-              <input type="text" name="phone_email" placeholder="Celular ou email" id="phoneEmailLogin">
-              <input type="password" name="password" placeholder="Nova senha" id="senhaLoguin">
+              <input type="text" name="phone_email" placeholder="Celular ou email" id="phoneEmailLogin" required>
+              <input type="password" name="password" placeholder="Nova senha" id="senhaLoguin" required>
             </div>
             <label for="nascimentoLogin" id="label-birthdate">Data de nascimento</label>
-            <input type="text" name="birthdate" placeholder="dd/mm/aaaa" id="nascimentoLogin">
-            <div id="label-gender">
+            <input type="text" name="birthdate" placeholder="dd/mm/aaaa" id="nascimentoLogin" required>
+            <div id="label-gender"> 
                 <p>Gênero</p>
                 <label for="feminino">
-                <input type="radio" name="gender" id="feminino">Feminino
+                <input type="radio" name="gender" id="feminino" required>Feminino
                 </label>
                 <label for="masculino">
                 <input type="radio" name="gender" id="masculino">Masculino
