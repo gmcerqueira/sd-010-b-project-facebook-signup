@@ -15,7 +15,7 @@
       <div class="form-group">
           <label for="nome">Email ou telefone</label>
           <input type="text" id="nome" name="usuario_nome" />
-          <div></div>
+          <div class="esconder">---</div>
       </div>
       <div class="form-group">
         <label for="nome">Senha</label>
@@ -25,10 +25,10 @@
         </div>
       </div>
       <div class="form-group">
-        <button type="submit" id="button-login">Entrar</button>
+        <button type="submit"  id="button-login">Entrar</button>
+        <div class="esconder">---</div>
+      </div>
     </form>
-
-
   </header>
 
   <section class="main-content">
@@ -39,17 +39,26 @@
 
     <section class="right-content">
       <h1>Abra uma conta</h1>
+      <h3 class="quick-easy">É rápido e fácil.</h3>
+  <label for="genero">Gênero</label>
+    <input type="radio" name="feminino" id="genero"> Feminino
+    <input type="radio" name="feminino" id="genero"> Masculino
+    <input type="radio" name="feminino" id="genero"> Personalizado
+
       <h4 class="quick-easy">É rápido e fácil.</h4>
       <div class="nomeSobrenome">
-        <input type="text" name="firstname" id="idNome" placeholder="Nome">
-        <input type="text" name="lastname" id="idSobrenome" placeholder="Sobrenome">
+        <input type="text" name="firstname" id="idNome" placeholder="Nome" class="input-text">
+        <input type="text" name="lastname" id="idSobrenome" placeholder="Sobrenome" class="input-text">
       </div>
-      <input type="text" >
-      <label for="genero">Gênero</label>
-        <input type="radio" name="feminino" id=""> Feminino
-        <input type="radio" name="feminino" id=""> Masculino
-        <input type="radio" name="feminino" id=""> Personalizado
+      <input type="text" class="input-text">
+      <section>
+        <input class="input-text"type="text" name="phone_email" placeholder="Celular ou email">
+      </section>
     </section>
+
+  </section>
+
+
   
   <script src="script.js"></script>
 </body>
