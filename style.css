@@ -39,3 +39,7 @@ header {
   width: 300px;
 }
 
+.name-lastname {
+  display: flex;
+}
+
