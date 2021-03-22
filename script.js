@@ -72,7 +72,7 @@ cadastroBtn.addEventListener('click', (event) => {
     <br>${inputs[4]}
     <br>${selecionarGender()}
   `;
-  rightContent.innerHTML = cadastro;
+  rightContent.appendChild(cadastro);
 });
 
 const genderPersonalizado = document.querySelector('#personalizado');
