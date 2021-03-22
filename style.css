@@ -48,5 +48,9 @@
 
 .cadastro {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.nome-sobrenome {
+  display: flex;
 }
