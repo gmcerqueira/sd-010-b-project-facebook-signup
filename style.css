@@ -52,3 +52,7 @@
 .gender-options {
   display: flex;
 }
+
+.disable {
+  display: none;
+}
