@@ -30,7 +30,7 @@ btnRegister.addEventListener('click', (e) => {
   console.log(validate());
 });
 
-btnPersonalizado.addEventListener('click', () => {
+const generateCustom = () => {
   const element = document.createElement('input');
   element.type = 'text';
   element.placeholder = 'Gênero (opcional)';
@@ -40,4 +40,8 @@ btnPersonalizado.addEventListener('click', () => {
 
   loginForm.appendChild(element);
   loginForm.insertBefore(element, register);
-});
+
+  btnPersonalizado.removeEventListener('click', generateCustom);
+};
+
+btnPersonalizado.addEventListener('click', generateCustom);
