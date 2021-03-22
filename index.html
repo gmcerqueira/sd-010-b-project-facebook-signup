@@ -40,8 +40,8 @@
                 <h3 class="quick-easy">É rápido e fácil.</h3>
                 <form>
                     <div class="form-group-row">
-                        <input type="text" placeholder="Nome" name="firstname">
-                        <input type="text" placeholder="Sobrenome" name="lastname">
+                        <input type="text" placeholder="Nome" name="firstname" required>
+                        <input type="text" placeholder="Sobrenome" name="lastname" required>
                     </div>
                     <div class="form-group">
                         <input type="text" placeholder="Celular ou email" name="phone_email">
@@ -49,7 +49,10 @@
                     </div>
                     <div class="form-group">
                         <label for="birthdate" id="label-birthdate">Data de nascimento</label>
-                        <input type="text" placeholder="Cdd/mm/aaaa" name="birthdate">
+                        <input type="text" placeholder="dd/mm/aaaa" name="birthdate">
+                    </div>
+                    <div class="form-group">
+                        <button id="facebook-register" type="submit">Cadastre-se</button>
                     </div>
                     <div class="form-group-gender">
                         <label for="birthdate" id="label-gender">Gênero</label>
