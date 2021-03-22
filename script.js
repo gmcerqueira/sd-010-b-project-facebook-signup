@@ -6,6 +6,6 @@ function spawn(element) {
 
 const header = document.createElement('header');
 header.className = 'top-bar';
-header.style.backgroundColor = 'blue';
+header.style.backgroundColor = 'rgb(66, 103, 178)';
 header.style.display = 'flex';
 spawn(header);
