@@ -1,7 +1,7 @@
 const btnEntrar = document.getElementById('button-login');
 const campEmail = document.getElementById('user-email-phone');
 
-function entrar ()  {
+function entrar() {
   alert(campEmail.value);
 }
 
