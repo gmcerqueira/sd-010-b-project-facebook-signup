@@ -26,7 +26,8 @@
 
 .main-content {
   display: flex;
-  
+  flex-direction: row-reverse;
+  justify-content: center;
 }
 
 .right-content {
@@ -35,5 +36,6 @@
 
 .left-content {
   display: flex;
+  flex-direction: column;
   width: 800px;
 }
