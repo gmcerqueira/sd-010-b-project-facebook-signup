@@ -7,10 +7,10 @@
   background-color: rgb(66, 103, 178);
   height: 90px;
   width: 100%;
+  display: flex;
 }
 
 .facebook-logo {
-  display: flexbox;
   width: 150px;
 }
 
