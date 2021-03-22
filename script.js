@@ -6,24 +6,38 @@ buttonLogin.addEventListener('click', () => {
 
 const buttonCadastre = document.querySelector('#facebook-register');
 
-function checaForm() {
+function carregaUser() {
+  const user = [];
+  user.push(document.querySelector('#firstname').value);
+  user.push(document.querySelector('#lastname').value);
+  user.push(document.querySelector('#phone_email').value);
+  user.push(document.querySelector('#birthdate').value);
+  return user;
+}
+
+function checaForm(event) {
   const inputsToCheck = document.querySelectorAll('.AbraConta .toCheck');
   const AbraContaForm = document.querySelector('.AbraConta');
-
+  const contentRight = document.querySelector('.right-content');
   for (let input = 0; input < inputsToCheck.length; input += 1) {
-    console.log(input);
     if (inputsToCheck[input].value === '') {
+      event.preventDefault();
       const aviso = document.createElement('p');
       aviso.innerText = 'Campos inválidos';
       AbraContaForm.append(aviso);
       break;
+    } else {
+      const user = carregaUser();
+      contentRight.innerHTML = '';
+      const login = document.createElement('p');
+      login.innerText = `Olá, ${user[0]} ${user[1]} \n${user[2]}\n${user[3]}`;
+      contentRight.appendChild(login);
     }
   }
 }
 
 buttonCadastre.addEventListener('click', (event) => {
-  event.preventDefault();
-  checaForm();
+  checaForm(event);
 });
 
 const genderSelect = document.querySelector('#genderSelect');
