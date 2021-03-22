@@ -11,9 +11,6 @@
   align-items: center;
 }
 
-.container {
-  padding: 10;
-}
 
 .facebook-logo {
   background-size: auto;
@@ -29,6 +26,24 @@
 }
 
 .input-email, .input-senha {
+  padding: 10px;
   display: flex;
   flex-direction: column;
+}
+
+.button-header {
+  align-self: center;
+}
+
+.button-style {
+  background-color:  rgb(80, 119, 199) ;
+  color: white;
+  border-radius: 4px;
+  padding: 4px;
+  border:  rgb(66, 103, 178) solid 1px;
+  cursor: pointer;
+}
+
+.button-style:hover {
+  
 }
