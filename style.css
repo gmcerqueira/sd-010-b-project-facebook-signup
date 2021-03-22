@@ -17,11 +17,13 @@
 .facebook-logo {
   width: 12%;
   padding: 1%;
+  align-self: flex-start;
 }
 
 .facebook-login {
   display: flex;
   padding: 1%;
+  align-self: flex-end;
 }
 
 .form-group {
