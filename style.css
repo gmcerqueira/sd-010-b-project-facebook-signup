@@ -65,10 +65,10 @@
 .container-main .right-content {
   width: 300px;
 }
-.container-footer {
+/* .container-footer {
   display: flex;
   width: 70%;
-}
+} */
 
 
 
@@ -98,6 +98,38 @@
 
 
 /* aqui */
+.container-footer {
+  background-color: #FFFFFF;
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
 
+  align-items: center;
+}
+.container-footer div ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  list-style: none;
+  padding: 30px;
+}
+.container-footer div ul li {
+  margin-left: 20px;
+}
+hr {
+  border:  1px solid #dddfe2;
+  font-size: 1px;
+  height: 8px;
+  margin-bottom: 8px;
+  width: 90%;
+}
+.container-footer section {
+  display: flex;
+  flex-flow: row wrap;
+}
+.copy {
+  display: flex;
+  justify-content: flex-start;
+}
 
 
