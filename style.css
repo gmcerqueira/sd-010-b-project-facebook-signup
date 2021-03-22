@@ -1,5 +1,25 @@
+* {
+  margin: 0
+}
+
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: space-between;
+  height: 75px;
+  width: 100%;
+}
+
+.facebook-login {
+  display: flex;
+  align-items: center; 
+}
+
+.login {
+  margin: 2px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
 }
