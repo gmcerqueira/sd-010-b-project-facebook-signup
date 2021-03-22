@@ -10,6 +10,10 @@ header label {
   font-size: 12px;
 }
 
+form div {
+  margin-left: 5px;
+}
+
 .top-bar {
   background-color: rgb(66, 103, 178);
   width: 100%;
@@ -31,8 +35,15 @@ header label {
 
 .form-control {
   align-self: flex-end;
+  padding: 0%;
+  border: black;
+  background-color: rgb(66, 103, 178);
 }
 
 .facebook-login {
   display: flex;
+}
+
+.button-login {
+  padding: 0%;
 }

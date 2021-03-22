@@ -16,23 +16,21 @@
     <a href="#">
       <img class="facebook-logo" src="imgs/facebook-logo.png" alt="Facebook Logo">
     </a>
-    <form action="get" class="facebook-login">
-      <div class="form-row">
-        <div class="col form-group">
-          <label id="user-email-phone-label" for="user-email-phone">Email ou telefone</label>
-          <input type="text" class="form-control form-control-sm" id="user-email-phone">
-        </div>
-        <div class="col form-group">
-          <label id="user-password-label" for="email-adress">Senha</label>
-          <input type="password" class="form-control form-control-sm" id="user-password">
-        </div>
-        <div class="col form-control form-group">
-          <input type="button" value="Entrar" id="button-login">
-        </div>
+    <form action="" class="facebook-login">
+      <div class="form-group">
+        <label id="user-email-phone-label" for="user-email-phone">Email ou telefone</label>
+        <input type="text" name="emailOrPhone" id="user-email-phone">
+      </div>
+      <div class="form-group">
+        <label id="user-password-label" for="user-password">Senha</label>
+        <input type="password" name="password" id="user-password">
+      </div>
+      <div class="form-control form-group">
+        <button id="button-login" class="btn btn-primary">Entrar</button>
       </div>
     </form>
   </header>
-
+  <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
