@@ -42,35 +42,64 @@
         </p>
         <img id="facebook-networking" src="imgs/networking.png" alt="" />
       </div>
+
       <div class="right-content">
         <h1>Abra uma conta</h1>
         <span class="quick-easy">É rápido e fácil.</span>
-        <form class="form-group">
+        <form class="form-group" id="form-cadastro">
           <div class="user-name">
-            <input type="text" name="firstname" placeholder="Nome" />
-            <input type="text" name="lastname" placeholder="Sobrenome" />
+            <input
+              class="input-cadastro"
+              type="text"
+              name="firstname"
+              placeholder="Nome"
+            />
+            <input
+              class="input-cadastro"
+              type="text"
+              name="lastname"
+              placeholder="Sobrenome"
+            />
           </div>
 
           <input
             type="text"
             name="phone_email"
             placeholder="Celular ou email"
+            class="input-cadastro"
           />
 
-          <input type="password" name="password" placeholder="Nova senha" />
+          <input
+            type="password"
+            name="password"
+            placeholder="Nova senha"
+            class="input-cadastro"
+          />
 
           <label id="label-birthdate" for="birthdate">Data de nascimento</label>
-          <input type="text" name="birthdate" placeholder="dd/mm/aaaa" />
+          <input
+            type="text"
+            name="birthdate"
+            placeholder="dd/mm/aaaa"
+            class="input-cadastro"
+          />
 
           <label id="label-gender">Gênero</label>
           <div class="genders">
-            <input type="radio" name="gender" id="feminino" value="Feminino" />
+            <input
+              type="radio"
+              name="gender"
+              id="feminino"
+              value="Feminino"
+              class="input-gender"
+            />
             <label for="feminino">Feminino</label>
             <input
               type="radio"
               name="gender"
               id="masculino"
               value="Masculino"
+              class="input-gender"
             />
             <label for="masculino">Masculino</label>
             <input
@@ -78,11 +107,13 @@
               name="gender"
               id="personalizado"
               value="Personalizado"
+              class="input-gender"
             />
             <label for="personalizado">Personalizado</label>
           </div>
 
           <button id="facebook-register" type="submit">Cadastre-se</button>
+          <p id="campos-invalidos"></p>
         </form>
       </div>
     </main>
