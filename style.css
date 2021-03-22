@@ -7,6 +7,17 @@
 .top-bar {
   display: flex;
   background-color: rgb(66, 103, 178);
-  height: 200px;
+  height: 70px;
+  align-items: center;
+}
+
+.container {
+  max-width: 50%;
+  margin-left: 300px;
+}
+
+.facebook-logo {
+  align-items: flex-start;
+  transform: scale(1.05);
 }
 
