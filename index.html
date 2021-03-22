@@ -23,10 +23,29 @@
     <div class="right-content">
       <h1>Abra sua conta</h1>
       <h2 class="quick-easy">É rápido e fácil.</h2>
-      <form></form>
+      
+      <form action="" method="GET" id="formulario">
+        <div class="linhaform">
+          <input type="text" name="firstname" id="firstname" placeholder="Nome" required>
+           <input type="text" name="lastname" id="lastname" placeholder="sobrenome" required>
+        </div>
+        <div class="linhaform">
+          <input type="text" name="phone_email" id="phone_email" placeholder="Celular ou email" required>
+        </div>
+        <div class="linhaform">
+          <input type="password" name="password" id="password" placeholder="Nova senha" required>
+        </div>
+        <div class="aniversario">
+          <label for="birthdate" id="label-birthdate">Data de nascimento</label>
+         <input type="text" name="birthdate" id="birthdate" placeholder="dd/mm/aaaa" required>
+        </div>
+        <div class="genero">
+          <label for="gender" id="label-gender">Gênero</label> <br>
+          <input type="radio" name="gender" class="generos" checked><span>Feminino </span> <input type="radio" name="gender" class="generos" ><span>Masculino </span><input type="radio" name="gender"class="generos" ><span>Personalizado</span>
+        </div>
+      </div>
+      </form>
     </div>
-  
-  
   </div>
 <script type='text/javascript' src='script.js'></script>
 </body>
