@@ -63,6 +63,10 @@
 }
 
 .right-content form input{
-  width: 140px;
+  width: 129px;
   height: 20px;
+}
+
+#cell-input {
+  width: 100%;
 }
