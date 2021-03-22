@@ -10,16 +10,19 @@
 <body>
   <header class="top-bar">
     <img src="imgs/facebook-logo.png" alt="Logo do facebook">
-    
+    <tr class="facebook-login">
     <form class="facebook-login" method="post">
       <div class="form-group">
           <label for="nome">Email ou telefone</label>
           <input type="text" id="nome" name="usuario_nome" />
+          <div></div>
       </div>
       <div class="form-group">
         <label for="nome">Senha</label>
         <input type="password" id="user-password-label" name="usuario_nome" />
-        <label for="nome"><a href="">Esqueceu a conta?</a></label>
+        <div id="esqueceuSenha">
+          <label for="nome"><a href="">Esqueceu a conta?</a></label>
+        </div>
       </div>
       <div class="form-group">
         <button type="submit" id="button-login">Entrar</button>
@@ -47,13 +50,6 @@
         <input type="radio" name="feminino" id=""> Masculino
         <input type="radio" name="feminino" id=""> Personalizado
     </section>
-
-  <label for="genero">Gênero</label>
-    <input type="radio" name="feminino" id=""> Feminino
-    <input type="radio" name="feminino" id=""> Masculino
-    <input type="radio" name="feminino" id=""> Personalizado
-  </section>
-
   
   <script src="script.js"></script>
 </body>
