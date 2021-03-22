@@ -67,3 +67,11 @@ form div {
 .right-content {
   width: 300px;
 }
+
+.quick-easy {
+  font-size: 19px;
+}
+
+div .col {
+  width: 150px;
+}
