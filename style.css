@@ -16,16 +16,23 @@
   justify-content: center;
   align-content: center;
   color: white;
+  margin-left: auto;
 }
 
 .form-control {
   display: flex;
+  flex-direction: row;
   align-self: flex-end;
 }
 
 .btn-login {
   display: flex;
   align-self: flex-end;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
 }
 
 .left-content {
