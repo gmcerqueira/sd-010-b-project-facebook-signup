@@ -1,9 +1,9 @@
-function loginAlert () {
-    let emailPhone = document.getElementById('user-email-phone');
-    alert(emailPhone.value);
+function loginAlert() {
+  const emailPhone = document.getElementById('user-email-phone');
+  alert(emailPhone.value);
 }
 
-window.onload = function () {
-  let loginButton = document.getElementById('button-login');
+window.onload = () => {
+  const loginButton = document.getElementById('button-login');
   loginButton.addEventListener('click', loginAlert);
-}
+};
