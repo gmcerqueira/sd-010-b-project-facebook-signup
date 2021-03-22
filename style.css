@@ -5,13 +5,14 @@
 
 .top-bar {
   background-color: rgb(66, 103, 178);
-  height: 120px;
+  height: 90px;
   width: 100%
   
 }
 
 .facebook-logo {
   display: flexbox;
+  width: 150px;
 }
 
 .facebook-login {
@@ -28,7 +29,6 @@
   float:right;
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: aliceblue;
-<<<<<<< HEAD
   margin-right: 70px;
   
   
@@ -47,7 +47,6 @@
   float: right;
   background-color:  rgb(66, 103, 178);
   color: aliceblue;
-=======
 }
 
 .main-content {
@@ -70,5 +69,4 @@
 
 .right-content {
   width: 300px;
->>>>>>> 3a4304dfcdff156d2ab73d414b0eaf732bee9db3
 }
