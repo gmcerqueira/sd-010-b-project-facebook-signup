@@ -27,7 +27,8 @@ const removeElement = (element) => {
 const createCustomGenderInput = (event) => {
   const oldCustomInput = document.querySelector('#gender-custom-input');
   const { target } = event;
-  if (target.value === 'personalizado') {
+  if (target.value === 'Personalizado') {
+    console.log('Personalizado');
     removeElement(oldCustomInput);
     const customGenderInput = document.createElement('input');
     customGenderInput.setAttribute('type', 'text');
