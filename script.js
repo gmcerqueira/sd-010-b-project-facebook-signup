@@ -5,4 +5,5 @@ function buttonIn() {
   alert(inputEmailPhone.value);
 }
 
+
 buttonGetIn.addEventListener('click', buttonIn);
