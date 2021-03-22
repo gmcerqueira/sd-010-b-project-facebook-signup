@@ -1,7 +1,7 @@
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .facebook-logo {
@@ -15,5 +15,4 @@
 .form-group {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
 }
