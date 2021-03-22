@@ -11,16 +11,18 @@
     <header class="top-bar">
       <img class="facebook-logo" src="imgs/facebook-logo.png" alt="Logo Facebook">
 
-      <form action="">
-        <label for="">Email ou telefone
-          <input type="text">
-        </label>
-        <label for=""> Senha
-          <input type="text">
+      <form class="facebook-login" action="">
+        <section class = "form-group">
+          <label id="user-email-phone-label" for="user-email-phone">Email ou telefone</label>
+          <input type="text" id = "user-email-phone">
+        </section>
+        <section class = "form-group">
+          <label id="user-password-label"  for=""> Senha</label>
+          <input type="text" id = "user-password">
           <p>Esqueceu a conta?</p>
-        </label>
-
+        </section>
         <button type = "submit">Entrar</button>
+
     </header>
     <section class="main-content">
       <section class="left-content">
@@ -53,6 +55,9 @@
             <button type="submit"> Cadastre-se</button>
       </section>
     </section>
+
+     </header>
+      </form>
   </body>
 </html>
  <!-- teste  -->
