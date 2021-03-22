@@ -9,18 +9,9 @@
   justify-content: space-between;
 }
 
-.facebook-logo {
-
-
-}
-
 .facebook-login {
   display: flex;
   align-self: flex-end;
-}
-
-#facebook-email {
-
 }
 
 .form-group {
