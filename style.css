@@ -44,3 +44,11 @@
 .right-content {
   width: 300px;
 }
+
+.name-content {
+  display: flex;
+}
+
+#nome {
+  margin-right: 3px;
+}
