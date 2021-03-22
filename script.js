@@ -1,8 +1,8 @@
 function entrarFacebook(){
-let entrarBotao = document.getelementById(button-login);
-entrarBotao.addEventListener('click',function(event){
-    let emailCelular = document.getelementById(user-password);
+let entrarBotao = document.getelementById("button-login");
+entrarBotao.addEventListener('click',function(){
     alert("teste");
+    console.log("teste");
 })
 }
 entrarFacebook();
