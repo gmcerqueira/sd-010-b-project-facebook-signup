@@ -26,14 +26,14 @@
     </section>
     <section class="right-content">
       <h1 class="is-size-4 has-text-left">Abra uma conta</h1>
-      <h4 class="quick-easy is-size-5 has-text-left mb-5">É rápido e fácil</h4>
+      <h4 class="quick-easy is-size-5 has-text-left mb-4">É rápido e fácil</h4>
       <form action="get" class="field">
         <div class="field is-horizontal">
           <div class="field-body">
             <div class="field">
               <div class="control">
                 <input
-                  class="input is-normal"
+                  class="input"
                   type="text"
                   name="firstname"
                   placeholder="Nome"
@@ -43,7 +43,7 @@
             <div class="field">
               <div class="control">
                 <input
-                  class="input is-normal"
+                  class="input"
                   type="text"
                   name="lastname"
                   placeholder="Sobrenome"
@@ -51,6 +51,57 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="field">
+          <input
+            name="phone_email"
+            placeholder="Celular ou email"
+            class="input"
+            type="text"
+          />
+        </div>
+        <div class="field">
+          <input
+            class="input"
+            type="password"
+            name="password"
+            placeholder="Nova senha"
+          />
+        </div>
+        <div class="field mt-4">
+          <label id="label-birthdate" for="birthdate">Data de nascimento</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="dd/mm/aaaa" />
+          </div>
+        </div>
+        <div class="field">
+          <label id="label-gender" class="label">Gênero</label>
+          <div class="field">
+            <div class="control">
+              <label class="radio is-size-7">
+                <input type="radio" name="gender" />
+                Feminino
+              </label>
+              <label class="radio is-size-7">
+                <input type="radio" name="gender" />
+                Masculino
+              </label>
+              <label class="radio is-size-7">
+                <input type="radio" name="gender" />
+                Personalizado
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="control">
+          <button
+            class="button is-success"
+            id="facebook-register"
+            type="submit"
+          >
+            Cadastre-se
+          </button>
         </div>
       </form>
     </section>

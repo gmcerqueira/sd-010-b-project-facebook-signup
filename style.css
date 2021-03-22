@@ -3,8 +3,15 @@
   padding: 0;
 }
 
+header {
+  background-color: blue;
+}
+
 .main-content {
+  padding: 30px 0;
   display: flex;
+  justify-content: center;
+  background: linear-gradient(white, #d3d8e8);
 }
 
 .left-content {
