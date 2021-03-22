@@ -13,3 +13,8 @@ body {
   display: flex;
   align-items: center;
 }
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
