@@ -1,3 +1,24 @@
-body {
-  text-align: center;
+.top-bar {
+  display: flex;
+  background-color: rgb(66, 103, 178);
+}
+
+.facebook-logo {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+#email-telefone-label {
+  color: white;
+}
+
+#senha-label {
+  color: white;
+}
+
+#form-login-container {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
 }
