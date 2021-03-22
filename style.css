@@ -7,16 +7,29 @@
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
-}
-
-.facebook-logo {
-  display: flex;
-  justify-content: left;
+  justify-content: space-between;
+  padding: 10px;
 }
 
 .facebook-login {
   display: flex;
-  justify-content: right;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.form-control {
+  align-self: flex-end;
+}
+
+#button-login {
+  background-color:rgb(66, 103, 178);
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
 }
 
 .main-content {
