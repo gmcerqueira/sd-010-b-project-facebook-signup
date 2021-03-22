@@ -5,5 +5,5 @@ const buttonGetIn = document.getElementById('button-login');
 buttonGetIn.addEventListener('click', botão)
 
 function botão() {
-    alert(inputEmailPhone.value);
-})
+  alert(inputEmailPhone.value);
+}
