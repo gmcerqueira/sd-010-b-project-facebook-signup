@@ -5,7 +5,7 @@
 
 .top-bar {
   background-color: rgb(66, 103, 178);
-  height: 90px;
+  height: 80px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -13,18 +13,22 @@
 }
 
 .facebook-logo {
-  margin-left: 200px;
   height: 60px;
+}
+.twoInputs{
+    display: flex;
 }
 
 .form-group {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  margin-right: 20px;
 }
 
 .form-control {
   display: flex;
   align-self: flex-end;
+  
 }
 
 .facebook-login {
