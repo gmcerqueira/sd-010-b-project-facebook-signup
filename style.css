@@ -153,8 +153,22 @@
 
 
 .main-content {
-  display: flex;   
+  display: flex;
   justify-content: center;
+  background: linear-gradient(#fff, #d3d8e8);
+}
+
+#facebook-slogan {
+  color: #0e385f;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 30px;
+  margin-top: 40px;
+  width: 490px;
+}
+
+#facebook-networking {
+  margin-top: 30px;
 }
 
 .left-content {
@@ -201,4 +215,6 @@
   display: flex;
   justify-content: space-around;
 }
+
+
 
