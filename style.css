@@ -13,22 +13,23 @@ body {
   height: 60px;
 }
 
-.facebook-login {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .facebook-logo {
   width: 125px;
 }
 
 .form-group {
   display: flex;
+  align-content: center;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-end;
   width: 900px;
   margin: 0 auto;
+}
+
+.facebook-login {
+  display: flex;
+  align-content: center;
+  
 }
 
 .form-control {
