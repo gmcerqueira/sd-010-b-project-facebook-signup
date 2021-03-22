@@ -1,7 +1,7 @@
-let buttonLogin =document.getElementById('button-login');
+const buttonLogin = document.getElementById('button-login');
 
 function alerta() {
-  let userValue = document.getElementById('user-email-phone').value;
+  const userValue = document.getElementById('user-email-phone').value;
   alert(userValue);
 }
 
