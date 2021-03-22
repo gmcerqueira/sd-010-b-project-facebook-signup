@@ -5,7 +5,7 @@
 
 .top-bar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: rgb(66, 103, 178);
   padding-bottom: 5px;
 }
@@ -32,7 +32,6 @@
 .main-content {
   display: flex;
   justify-content: center;
-  margin-left: auto;
 }
 
 .left-content {
@@ -49,4 +48,5 @@
 
 .cadastro {
   display: flex;
+  flex-wrap: wrap;
 }
