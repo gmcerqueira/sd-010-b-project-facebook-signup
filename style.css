@@ -111,3 +111,17 @@
 .right-content {
   width: 300px;
 }
+
+.full-name {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.first-name {
+  width: 50%;
+}
+
+.last-name {
+  width: 50%;
+}
