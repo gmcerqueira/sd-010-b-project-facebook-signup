@@ -1,12 +1,11 @@
 .top-bar {
   display: flex;
   background-color: rgb(66, 103, 178);
+  justify-content: space-evenly;
 }
 
 .facebook-logo {
   display: flex;
-  align-items: flex-start;
-  flex-direction: row;
 }
 
 .facebook-login {
@@ -25,7 +24,6 @@
 #form-login-container {
   display: flex;
   align-items: center;
-  margin-left: auto;
 }
 
 .form-group {
@@ -41,8 +39,18 @@
 .main-content {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .left-content {
   width: 800px;
+}
+
+.right-content {
+  width: 300px;
+}
+
+#form-nome-sobrenome {
+  display: flex;
+  flex-direction: row;
 }
