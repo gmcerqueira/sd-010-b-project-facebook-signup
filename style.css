@@ -46,3 +46,7 @@
 #facebook-slogan {
   width: 300px;
 }
+
+.cadastro {
+  display: flex;
+}
