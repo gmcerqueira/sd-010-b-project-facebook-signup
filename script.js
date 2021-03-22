@@ -1,11 +1,11 @@
 function spawn(element) {
-    const main = document.querySelector('main');
-    main.appendChild(element);
-    return main;
+  const main = document.querySelector('main');
+  main.appendChild(element);
+  return main;
 }
 
 const header = document.createElement('header');
 header.class = 'top-bar';
-header.style.backgroundColor = "blue";
-header.style.display = "flex";
+header.style.backgroundColor = 'blue';
+header.style.display = 'flex';
 spawn(header);
