@@ -35,8 +35,6 @@
 
 .main-content {
   display: flex;
-  justify-content: center;
-  background-color: aqua;
   justify-content: space-evenly;
 }
 
