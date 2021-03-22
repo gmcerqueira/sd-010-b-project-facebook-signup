@@ -33,12 +33,21 @@ function checkInputValues() {
   return emptyInput;
 }
 
+
+// function customizeRightContent () {
+//   const rightContent = document.querySelector('.right-content');
+//   console.log(rightContent);
+// }
+
 const submitBtn = document.getElementById('facebook-register');
 submitBtn.addEventListener('click', () => {
   if (checkInputValues() > 0) {
     const alert = document.getElementById('alert');
     alert.innerText = 'Campos inválidos';
   }
+  // else {
+  //   customizeRightContent();
+  // }
 });
 
 function returnFalse() {

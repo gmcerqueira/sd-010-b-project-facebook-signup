@@ -40,6 +40,10 @@
   width: 300px;
 }
 
+#gender-custom {
+  display: none;
+}
+
 #names {
   display: flex;
   flex-direction: column;
