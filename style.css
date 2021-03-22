@@ -26,6 +26,7 @@
 }
 
 .main-content {
+  box-sizing: border-box;
   height: 500px;
   display: flex;
   justify-content: center;
@@ -37,4 +38,8 @@
 
 .right-content {
   width: 300px;
+}
+
+.right-content form {
+  display: flex;
 }
