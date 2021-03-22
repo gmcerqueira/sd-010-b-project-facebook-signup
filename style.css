@@ -4,3 +4,22 @@
   width: 100%
   
 }
+
+.facebook-logo {
+  display: flexbox;
+  margin-right: 20%
+}
+
+.facebook-login {
+  display:flexbox;
+  flex-direction: row;
+  justify-items: self-end;
+  margin-top: 6%;
+  margin-left: 4%;
+
+}
+
+.form-group {
+  display: flex;
+  flex-direction:column;
+}
