@@ -50,8 +50,7 @@ body {
   display: flex;
   height: 600px;
   justify-content: center;
-  background-image: linear-gradient(rgba(255, 255, 255, 0) 0%,
-   rgba(66, 103, 178, 0.6) 150%);
+  background-image: linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(66, 103, 178, 0.6) 150%);
 }
 
 .left-content {
@@ -80,7 +79,10 @@ input {
   width: 140px;
 }
 
-#phone_email,
+#phone_email {
+  width: 300px;
+}
+
 #password {
   width: 300px;
 }
