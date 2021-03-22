@@ -5,18 +5,18 @@
 
 .top-bar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: rgb(66, 103, 178);
 
 }
 
 .facebook-logo {
-  align-self: left;
+  align-self: center;
 }
 
 .facebook-login {
   display: flex;
-  align-self: right;
+  align-self: center;
 }
 
 .form-group {
@@ -33,7 +33,7 @@
 
 .main-content {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .left-content {
@@ -42,4 +42,8 @@
 
 .right-content {
   width: 300px;
+}
+
+.name input {
+  width: 50%;
 }

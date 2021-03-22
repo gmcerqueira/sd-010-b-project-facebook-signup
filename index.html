@@ -26,18 +26,20 @@
   </header>
   <section class="main-content">
     <div class="left-content">
-      <p id="facebook-slogan">
+      <p id="facebook-slogan"> 
         O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.
       </p>
-      <img src="imgs/networking.png" alt="">
+      <img id="facebook-networking" src="imgs/networking.png" alt="">
     </div>
     <div class="right-content">
       <h1>Abra uma conta</h1>
       <span class="quick-easy">É rápido e fácil.</span>
       <form id="register" action="">
         <div id="name-password">
-          <input type="text" name="name" placeholder="Nome" required>
-          <input type="text" name="lastname" placeholder="Sobrenome" required>
+          <div class="name">
+            <input type="text" name="firstname" placeholder="Nome" required>
+            <input type="text" name="lastname" placeholder="Sobrenome" required>
+          </div>
           <input type="text" name="phone_email" placeholder="Celular ou email" required>
           <input type="password" name="password" placeholder="Nova senha" required>
         </div>
@@ -47,12 +49,12 @@
         </div>
         <label for="">Gênero</label>
         <div id="gender">
-          <label for="female">Feminino</label>
           <input id="female" type="radio" name="gender" value="Feminino" checked>
-          <label for="male">Masculino</label>
+          <label for="female">Feminino</label>
           <input id="male" type="radio" name="gender" value="Masculino">
-          <label for="other">Personalizado</label>
+          <label for="male">Masculino</label>
           <input id="other" type="radio" name="gender" value="Personalizado">
+          <label for="other">Personalizado</label>
         </div>
         <input type="submit" id="facebook-register" value="Cadastre-se">
       </form>
