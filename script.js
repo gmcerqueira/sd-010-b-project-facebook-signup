@@ -8,27 +8,27 @@ function entrarFacebook() {
 entrarFacebook();
 
 function substituiConteudo() {
-	const botaoCadastro = document.getElementById("facebook-register");
-	botaoCadastro.addEventListener('click', () => {
+  const botaoCadastro = document.getElementById('facebook-register');
+  botaoCadastro.addEventListener('click', () => {
 
-		const getPrimeiroNome = document.getElementById("first-name-form").value;
-    const getUltimoNome = document.getElementById("last-name-form").value;
+    const getPrimeiroNome = document.getElementById('first-name-form').value;
+    const getUltimoNome = document.getElementById('last-name-form').value;
     const NomeCompleto = document.createElement('h2');
-    NomeCompleto.innerText = "Olá, " + getPrimeiroNome + " " + getUltimoNome;
-
-		const getEmailCelular = document.getElementById("phone-email-form").value;
+    NomeCompleto.innerText = 'Olá, ' + getPrimeiroNome + ' ' + getUltimoNome;
+    
+    const getEmailCelular = document.getElementById('phone-email-form').value;
     const emailCelular = document.createElement('p');
     emailCelular.innerText = getEmailCelular;
-
-		const getDataNascimento = document.getElementById("date-birthdate-form").value;
+    
+    const getDataNascimento = document.getElementById('date-birthdate-form').value;
     const dataNascimento = document.createElement('p');
     dataNascimento.innerText = getDataNascimento;
-
-		const opcaoGenero = document.createElement('p');
+    
+    const opcaoGenero = document.createElement('p');
     opcaoGenero.innerText = document.querySelector('input[type="radio"]:checked').value;
-
-		const formDireita = document.querySelector('.right-content');
-    formDireita.innerHTML = "";
+    
+    const formDireita = document.querySelector('.right-content');
+    formDireita.innerHTML = '';
     formDireita.appendChild(NomeCompleto);
     formDireita.appendChild(emailCelular);
     formDireita.appendChild(dataNascimento);
@@ -36,7 +36,6 @@ function substituiConteudo() {
   });
 }
 substituiConteudo();
-
 // Validando campos
 const inputText = document.querySelectorAll('.form input[type=text');
 const registerBtn = document.getElementById('facebook-register');
