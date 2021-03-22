@@ -2,10 +2,14 @@
   display: flex;
   background-color: rgb(66, 103, 178);
   justify-content: space-around;
+  align-items: center;
+  padding: 20px;
 }
 
 .facebook-login {
   display: flex;
+  color: white;
+  align-items: center;
 }
 
 .form-group {
@@ -20,6 +24,7 @@
 .main-content {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .left-content {
@@ -28,4 +33,58 @@
 
 .right-content {
   width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-content form {
+  display: flex;
+  flex-direction: column;
+}
+
+.new-account {
+  display: flex;
+  flex-direction: column;
+}
+
+.nome-sobrenome {
+  display: flex;
+
+}
+
+.row {
+  display: flex;
+}
+
+.right-content .new-account #facebook-register {
+  margin-top: 20px;
+  height: 38px;
+  width: 170px;
+  color: white;
+  font-size: 20px;
+  font-weight:  600;
+  border: 1px solid #006117;
+  border-radius: 3px;
+  cursor: pointer;
+  outline: none;
+  background: linear-gradient(#6fad5a, #66a150, #60974c);
+}
+.right-content .new-account #facebook-register:hover {
+  background: linear-gradient(#74b85e, #598B45);
+}
+
+.right-content .new-account input {
+  margin-top: 5px;
+  height: 38px;
+  width: 190px;
+  padding-left: 10px;
+  font-size: 18px;
+  border: 1px solid silver;
+  border-radius: 4px;
+}
+
+#email {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
