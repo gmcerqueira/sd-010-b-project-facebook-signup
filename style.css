@@ -18,3 +18,7 @@
   flex-direction: column;
   margin-right: 5px;
 }
+
+.main-content {
+  display: flex;
+}
