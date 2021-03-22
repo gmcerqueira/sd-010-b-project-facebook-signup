@@ -3,13 +3,13 @@
   padding: 0;
 }
 
-.heading {
-  justify-content: space-between;
-}
-
-.top-bar > .heading {
+.top-bar {
   display: flex;
   background-color: rgb(66, 103, 178);
+}
+
+.heading > .top-bar {
+  justify-content: space-between;
 }
 
 .facebook-logo {
