@@ -1,13 +1,15 @@
 .top-bar {
   display: flex;
   background-color: rgb(66, 103, 178);
-
+}
+.fomulario-login{
+  display: flex;
+  align-items: center;
 }
 .facebook-login{
-    display: flex;
-    margin-left: 70%;
-    float: right;
+  align-items: flex-start;
+  display: flex;
 }
 .formulario-column{
-    flex-direction: column;
+  flex-direction: column;
 }
