@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .top-bar {
   background-color: rgb(66, 103, 178);
 
@@ -7,3 +8,140 @@
   display: flex;
   align-items: flex-start;
 }
+=======
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.main-content {
+  display: flex;   
+  justify-content: center;
+}
+
+.left-content {
+  width: 800px;  
+}
+
+.right-content {
+  width: 300px;
+}
+
+.full-name {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.first-name {
+  width: 50%;
+}
+
+.last-name {
+  width: 50%;
+}
+
+.phone-email {
+  width: 100%;
+}
+>>>>>>> 41c83549568e67b2cec7ba047617e7fbc64bbe8e
