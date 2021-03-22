@@ -10,28 +10,25 @@
   display: flex;
   background-color: rgb(66, 103, 178);
   justify-content: space-around;
+  height: 80px;
 }
 
 .facebook-login {
   display: flex;
-  flex-direction: column;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
+  padding: 4px 4px 5px;
+  width: 150px;
+  height: 23px;
+  color: white;
 }
 
 .form-control {
   align-self: flex-end;
 }
-
-
-
-
-
-
-
 
 .main-content {
   display: flex;
