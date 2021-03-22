@@ -30,7 +30,6 @@ section {
   display: flex;
 }
 
-<<<<<<< HEAD
 form {
   display: flex;
   flex-direction: column;
@@ -103,7 +102,6 @@ form label {
   align-items: center;
   width: 100%;
 }
-=======
 .facebook-login {
   display: flex;
 }
@@ -112,4 +110,3 @@ form label {
   display: flex;
   flex-direction: column;
 }
->>>>>>> faae01bc65f76103c55c0f8b0c831d56a91b3fee
