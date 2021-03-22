@@ -1,14 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .top-bar {
   background-color: rgb(66, 103, 178);
   height: 90px;
   width: 100%;
   display: flex;
   justify-content: space-between;
-}
-
-* {
-  margin: 0;
-  padding: 0;
+  align-items: center;
 }
 
 .main-content {
@@ -25,4 +26,8 @@
 
 .right-content {
   width: 300px;
+}
+
+.nameFields {
+  display: flex;
 }
