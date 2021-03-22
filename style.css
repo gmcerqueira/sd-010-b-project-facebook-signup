@@ -3,54 +3,14 @@
   padding: 0;
 }
 
-
 .top-bar {
   display: flex;
   background-color: rgb(66, 103, 178);
-  justify-content: space-around;
-  align-items: center;
 }
 
-
-.facebook-logo {
-  background-size: auto;
-}
-
-.container-form {
+.left-content {
   display: flex;
-  color: white;
+  justify-self: flex-start;
 }
 
-.facebook-login {
-  display: flex;
-}
 
-.input-email , .input-senha {
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-}
-
-input {
-  margin-top: 5px;
-  border: black solid 1px;
-}
-
-.button-header {
-  align-self: center;
-}
-
-.button-style {
-  background-color: rgb(80, 119, 199);
-  color: white;
-  border-radius: 3px;
-  padding: 4px;
-  border: rgb(66, 103, 178) solid 1px;
-  cursor: pointer;
-  align-self: flex-end;
-}
-
-.button-style:hover {
-  background-color: white;
-  color: rgb(66, 103, 178);
-}
