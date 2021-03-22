@@ -36,15 +36,19 @@
       <h1>Abra uma conta</h1>
       <p class="quick-easy">É rápido e fácil.</p>
       <form action="">
-        <section>
+        <section id='name-section'>
           <input type="text" name="firstname" placeholder="Nome">
           <input type="text" name='lastname' placeholder="Sobrenome">
         </section>
-        <section>
+        <section id='email-section'>
          <input type="text" name='phone_email' placeholder="Celular ou email">
         </section>
-        <section>
+        <section id='password-section'>
           <input type="password" name="password" placeholder="Nova senha">
+        </section>
+        <section id='birthday-section'>
+          <label for="" id="label-birthdate">Data de nascimento</label>
+          <input type="text" name='birthdate' placeholder="dd/mm/aaaa">
         </section>
       </form>
     </section>
