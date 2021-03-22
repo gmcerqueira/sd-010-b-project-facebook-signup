@@ -1,4 +1,5 @@
 const button = document.getElementById('button-login');
+const textAlert = document.getElementById('user-email-phone');
 button.addEventListener('click', () => {
-  alert('Email ou telefone');
+  alert(textAlert.value);
 });
