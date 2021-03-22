@@ -32,7 +32,6 @@
 }
 
 .form-control {
-  display: flex;
   align-self: flex-end;
   padding: 4px 6px;
 }
