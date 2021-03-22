@@ -6,8 +6,7 @@ buttonLogin.addEventListener('click', () => {
 
 const buttonSalvar = document.querySelector('#facebook-register');
 
-buttonSalvar.addEventListener('click', (event) => {
-  event.preventDefault();
+buttonSalvar.addEventListener('click', () => {
   const input = document.querySelectorAll('input');
   for (let index = 2; index < (input.length - 3); index += 1) {
     if (input[index].value === '') {
@@ -16,3 +15,6 @@ buttonSalvar.addEventListener('click', (event) => {
     }
   }
 });
+
+const personalizado = document.querySelector('#facebook-register');
+
