@@ -1,5 +1,5 @@
 const btnLogin = document.getElementById('button-login');
-const txtEmailtel = document.getElementById('email-tel');
+const txtEmailtel = document.getElementById('user-email-phone');
 
 function elertEmail() {
   alert(txtEmailtel.value);
