@@ -9,13 +9,14 @@
 .top-bar {
   display: flex;
   background-color: rgb(66, 103, 178);
-  justify-content: space-around;
   align-items: center;
+  justify-content: space-between;
   height: 70px;
+  width: 100%;
 }
 
 .facebook-logo {
-  align-self: center;
+  display: flex;
 }
 
 .facebook-login {
@@ -25,12 +26,14 @@
 .form-group {
   display: flex;
   flex-direction: column;
+  justify-content:;
   width: 150px;
   padding: 3px 3px 4px;
   color: white;
 }
 
 .form-control {
+  display: flex;
   align-self: flex-end;
   padding: 4px 6px;
 }
