@@ -14,9 +14,7 @@ header {
   width: 980px;
   height: 82px;
   background-color: rgb(66, 103, 178);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: block;
 }
 
 .content-header img {
@@ -25,7 +23,6 @@ header {
 
 .facebook-login {
   display: flex;
-  align-self: center;
   float: right;
 }
 
