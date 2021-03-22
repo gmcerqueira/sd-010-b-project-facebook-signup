@@ -6,13 +6,6 @@ buttonLogin.addEventListener('click', () => {
 
 const buttonCadastre = document.querySelector('#facebook-register');
 
-function preencheLogin(contentRight) {
-  const user = carregaUser();
-  const login = document.createElement('p');
-  login.innerText = `Olá, ${user[0]} ${user[1]} \n${user[2]}\n${user[3]}`;
-  contentRight.appendChild(login);
-}
-
 function carregaUser() {
   const user = [];
   user.push(document.querySelector('#firstname').value);
@@ -22,10 +15,18 @@ function carregaUser() {
   return user;
 }
 
+function preencheLogin(contentRight) {
+  const user = carregaUser();
+  const login = document.createElement('p');
+  login.innerText = `Olá, ${user[0]} ${user[1]} \n${user[2]}\n${user[3]}`;
+  contentRight.appendChild(login);
+}
+
 function checaForm(event) {
   const inputsToCheck = document.querySelectorAll('.AbraConta .toCheck');
   const AbraContaForm = document.querySelector('.AbraConta');
   const contentRight = document.querySelector('.right-content');
+  let contador = 0;
   for (let input = 0; input < inputsToCheck.length; input += 1) {
     if (inputsToCheck[input].value === '') {
       event.preventDefault();
@@ -34,11 +35,12 @@ function checaForm(event) {
       AbraContaForm.append(aviso);
       break;
     } else {
-      event.preventDefault();
-      // contentRight.innerHTML = '';
-      preencheLogin(AbraContaForm);
-      break;
+      contador += 1;
     }
+  }
+  if(contador === 5){
+    event.preventDefault();
+    preencheLogin(contentRight);
   }
 }
 
