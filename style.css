@@ -12,11 +12,12 @@
   justify-content: space-around;
 }
 
-.facebook-logo{
+.facebook-logo {
   display: flex;
   align-self: flex-end;
   width: 200px;
 }
+
 .facebook-login {
   display: flex;
 }
