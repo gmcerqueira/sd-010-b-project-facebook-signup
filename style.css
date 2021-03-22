@@ -25,6 +25,7 @@
 .form-control {
   display: flex;
   align-self: flex-end;
+  justify-content: center;
   margin-right: 20px;
   margin-bottom: 5px;
 }
@@ -52,5 +53,9 @@
 }
 
 .nome-sobrenome {
+  display: flex;
+}
+
+#genero{
   display: flex;
 }
