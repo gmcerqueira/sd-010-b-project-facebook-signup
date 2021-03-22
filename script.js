@@ -1,5 +1,5 @@
 const btnEntrar = document.getElementById('button-login');
-const userLogin = document.getElementById('user-email-phone');
+const   userLogin = document.getElementById('user-email-phone');
 
 btnEntrar.addEventListener ('click', function () {
   alert (userLogin.value);

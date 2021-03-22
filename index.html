@@ -36,25 +36,25 @@
       <span class="quick-easy">É rápido e fácil.</span>
       <form action="">
         <div id="name-password">
-          <input type="text" name="name" placeholder="Nome">
-          <input type="text" name="lastname" placeholder="Sobrenome">
-          <input type="text" name="phone_email" placeholder="Celular ou email">
-          <input type="password" name="password" placeholder="Nova senha">
+          <input type="text" name="name" placeholder="Nome" required>
+          <input type="text" name="lastname" placeholder="Sobrenome" required>
+          <input type="text" name="phone_email" placeholder="Celular ou email" required>
+          <input type="password" name="password" placeholder="Nova senha" required>
         </div>
         <div class="birthdate">
           <label for="birthdate" id="label-birthdate">Data de nascimento</label>
-          <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
+          <input type="text" name="birthdate" placeholder="dd/mm/aaaa" required>
         </div>
         <label for="">Gênero</label>
         <div class="gender">
-          <input type="radio" name="gender" placeholder="Feminino">
-          <label for="gender">Feminino</label>
-          <input type="radio" name="gender" placeholder="Masculino">
-          <label for="gender">Masculino</label>
-          <input type="radio" name="gender" placeholder="Personalizado">
-          <label for="gender">Personalizado</label>
+          <input type="radio" name="gender1" placeholder="Feminino" checked>
+          <label for="gender1">Feminino</label>
+          <input type="radio" name="gender2" placeholder="Masculino">
+          <label for="gender2">Masculino</label>
+          <input type="radio" name="gender3" placeholder="Personalizado">
+          <label for="gender3">Personalizado</label>
         </div>
-        <input type="button" id="facebook-register" value="Cadastre-se">
+        <input type="submit" id="facebook-register" value="Cadastre-se">
       </form>
     </div>
   </section>
