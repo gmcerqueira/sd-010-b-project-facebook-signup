@@ -13,12 +13,14 @@
 
 .form-group {
   flex-direction: column;
+  flex-wrap:wrap;
   display: flex;
   justify-content: space-between;
   color: white;
 }
 
 .form-control {
+  display: flex;
   align-self: flex-end;
 }
 
