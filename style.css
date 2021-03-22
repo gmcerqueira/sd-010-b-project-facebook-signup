@@ -18,6 +18,9 @@
 .facebook-logo {
   height: 40px;
   padding-left: 30px;
+  display: flex;
+  align-items: flex-end;
+  justify-self: left;
 }
 
 .facebook-login-form-container {
@@ -27,6 +30,7 @@
 
 .facebook-login {
   display: flex;
+  justify-self: right;
 }
 
 .main-content {
