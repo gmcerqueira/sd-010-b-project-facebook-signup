@@ -17,6 +17,7 @@
 .facebook-login {
   margin-top: 6%;
   position: relative;
+  display: flex;
 }
 
 .form-group {
