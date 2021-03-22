@@ -42,4 +42,9 @@
 
 #names {
   display: flex;
+  flex-direction: column;
+}
+
+.name_lastname {
+  display: flex;
 }

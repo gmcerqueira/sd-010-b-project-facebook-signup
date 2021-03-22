@@ -13,26 +13,31 @@
         <div class="form-group">
             <label for="user-email-phone" id="user-email-phone-label">Email ou telefone</label>
             <input type="text" id="user-email-phone">
+        </div>
+        <div class="form-group">
+          <label for="user-password" id="user-password-label">Senha</label>
+          <input type="text" id="user-password">
           </div>
-          <div class="form-group">
-            <label for="user-password" id="user-password-label">Senha</label>
-            <input type="text" id="user-password">
-            <button id="button-login">Entrar</button>
+        <div class="form-control">
+          <button id="button-login">Entrar</button>
+        </div>
       </form>
   </header>
   <main class="main-content">
     <div class="left-content">
       <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
-      <img class="facebook-networking" src="imgs/networking.png" alt="Facebook Networking">
+      <img id="facebook-networking" src="imgs/networking.png" alt="Facebook Networking">
     </div>
     <div class="right-content">
       <h1>Abra uma conta</h1>
-      <p class="quick-easy">É rápido e fácil</p>
-      <form action="">
+      <p class="quick-easy">É rápido e fácil.</p>
+      <form action="" id="new-user">
         <div class="names">
-          <input type="text" name="firstname" placeholder="Nome">
-          <label for="last-name"></label>
-          <input type="text" name="lastname" placeholder="Sobrenome" id="last-name">
+          <div class="name_lastname">
+            <input type="text" name="firstname" placeholder="Nome" id="name">
+            <label for="last-name"></label>
+            <input type="text" name="lastname" placeholder="Sobrenome" id="last-name">
+          </div>
           <input type="text" name="phone_email" placeholder="Celular ou email" id="phone_email">
           <input type="password" name="password" placeholder="Nova senha" id="password">
           <label for="" id="label-birthdate">Data de nascimento</label>
