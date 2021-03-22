@@ -22,6 +22,25 @@ const removeElement = (element) => {
   }
 };
 
+//            create custom gender input or remove if needed
+
+const createCustomGenderInput = (event) => {
+  const oldCustomInput = document.querySelector('#gender-custom-input');
+  const { target } = event;
+  if (target.value === 'personalizado') {
+    removeElement(oldCustomInput);
+    const customGenderInput = document.createElement('input');
+    customGenderInput.setAttribute('type', 'text');
+    customGenderInput.setAttribute('name', 'gender-custom');
+    customGenderInput.setAttribute('placeholder', 'Gênero (opcional)');
+    customGenderInput.setAttribute('id', 'gender-custom-input');
+    customGenderInput.setAttribute('class', 'input');
+    target.parentElement.parentElement.appendChild(customGenderInput);
+  } else {
+    removeElement(oldCustomInput);
+  }
+};
+
 //                      Listeners
 
 // set sign up button listener and function
@@ -44,8 +63,18 @@ const setSignUp = () => {
   });
 };
 
+// Set Custom Gender Radio Listener
+
+const setCustomGenderRadio = () => {
+  const radioInputs = document.querySelectorAll('input[type="radio"]');
+  radioInputs.forEach((radio) => {
+    radio.addEventListener('click', (event) => createCustomGenderInput(event));
+  });
+};
+
 const loadButtons = () => {
   setSignUp();
+  setCustomGenderRadio();
 };
 
 window.onload = () => {
