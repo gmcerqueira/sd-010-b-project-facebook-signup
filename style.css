@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.facebook-logo {
+  margin-top: 10px;
+  width: 170px;
+}
+
+.top-bar {
+  display: flex;
+  background-color: rgb(66, 103, 178);
+  justify-content: space-around;
+  padding: 10px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  margin: 10px;
+}
+
+.email {
+  height: 55px;
+}
+
+.button-login {
+  margin: 10px;
+}
+
+#form-control {
+  align-self: flex-end
+}
+
+.main-content {
+  display: flex;  
+}
