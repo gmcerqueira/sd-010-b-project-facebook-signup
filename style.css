@@ -7,6 +7,9 @@
   display: flex;
 }
 
+.facebook-login {
+  display: flex;
+}
 
 
 
@@ -39,10 +42,7 @@
 
 
 
-
-
-
-
+/*ederson - ate a linha 45*/
 .main-content {
   display: flex;
   justify-content: space-evenly;
