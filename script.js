@@ -11,12 +11,6 @@ function clicaBotao() {
 
 clicaBotao();
 
-//criar o aviso
-function criaAviso(aviso) {
-  
-  
-}
-
 const botaoCadastro = document.querySelector('#facebook-register');
 
 //verifica se os campos estão preenchidos
