@@ -19,9 +19,13 @@
   justify-content: space-between;
 }
 
+.content-header img {
+  align-self: flex-start;
+}
+
 .facebook-login {
   display: flex;
-  align-self: center;
+  align-self: flex-end;
 }
 
 .form-group {
