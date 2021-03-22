@@ -11,7 +11,7 @@ topBar.appendChild(header);
 // criado o elemento que vai conter o Logo do Facebook
 const facebookLogo = document.createElement('img');
 facebookLogo.className = 'facebook-logo';
-facebookLogo.setAttribute('src', './imgs/facebook-logo.png');
+facebookLogo.setAttribute('src', 'imgs/facebook-logo.png');
 facebookLogo.setAttribute('alt', 'Logotipo');
 header.appendChild(facebookLogo);
 

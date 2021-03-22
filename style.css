@@ -30,10 +30,12 @@
 
 .top-bar .facebook-logo {
   display: flex;
+  align-items: flex-start;
 }
 
 .top-bar .facebook-login {
   display: flex;
+justify-content: flex-end;
 }
 
 .main-content {
