@@ -12,6 +12,21 @@
   align-items: center;
 }
 
+.facebook-logo {
+  margin-left: 200px;
+  height: 60px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+}
+
+.form-control {
+  display: flex;
+  align-self: flex-end;
+}
+
 .facebook-login {
   display: flex;
   align-items: center;
