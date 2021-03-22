@@ -27,4 +27,7 @@ header {
   align-self: flex-end;
 }
 
+.main-content {
+  display: flex;
+}
 
