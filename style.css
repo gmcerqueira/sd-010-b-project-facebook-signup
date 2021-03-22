@@ -1,4 +1,24 @@
+body {
+    margin: 0; /* eliminates all margin */
+}
+
 .top-bar {
     display: flex;
     background-color: rgb(66, 103, 178);
+    height: 100px;
+    justify-content: space-between;
+}
+
+.facebook-login {
+    display: flex;
+}
+
+/* .input-senha {
+    display: flex;
+    justify-content: flex-end;
+} */
+
+.form-group {
+    display: flex;
+    flex-direction: column;
 }
