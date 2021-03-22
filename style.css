@@ -11,4 +11,11 @@
   background-color: rgb(66, 103, 178);
   height: 82px;
   max-height: 82px;
+  justify-content: center;
+}
+
+.top-bar div {
+  display: flex;
+  width: 980px;
+  max-width: 980px;
 }
