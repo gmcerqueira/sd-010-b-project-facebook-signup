@@ -13,7 +13,7 @@ topBar.appendChild(facebookLogo);
 // criado o elemento que vai os inputs
 const inputs = document.createElement('form');
 inputs.className = 'facebook-login';
-inputs.setAttribute('method','GET');
+inputs.setAttribute('method', 'GET');
 topBar.appendChild(inputs);
 
 // criado o elemento que vai o email ou telefone
@@ -31,7 +31,7 @@ secEmailTelefone.appendChild(labelEmailTelefone);
 const inputEmailTelefone = document.createElement('input');
 inputEmailTelefone.setAttribute('type', 'text');
 inputEmailTelefone.id = 'user-email-phone';
-inputEmailTelefone.setAttribute('required','true');
+inputEmailTelefone.setAttribute('required', 'true');
 secEmailTelefone.appendChild(inputEmailTelefone);
 
 // criado o elemento que vai a senha
@@ -49,7 +49,7 @@ secSenha.appendChild(labelSenha);
 const inputSenha = document.createElement('input');
 inputSenha.setAttribute('type', 'password');
 inputSenha.id = 'user-password';
-inputSenha.setAttribute('required','true');
+inputSenha.setAttribute('required', 'true');
 secSenha.appendChild(inputSenha);
 
 // criado o elemento que vai o botão
