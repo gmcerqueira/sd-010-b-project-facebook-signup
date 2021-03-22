@@ -9,17 +9,24 @@
 .top-bar {
   display: flex;
   background-color: #4267b2;
-	align-items: center;
-	justify-content: space-around;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .facebook-logo {
   justify-content: flex-start;
 }
 
+.facebook-login {
+  display: flex;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+
 /* ids */
 
-#campo-email {
-
-	
-}
+#campo-email {}
