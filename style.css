@@ -23,11 +23,12 @@
 .facebook-login {
   display: flex;
   position: absolute;
-  top: 15px;
+  padding: 5px;
   right: 0;
+  flex-direction: row;
 }
 
 .form-group {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
