@@ -22,3 +22,15 @@
 .main-content {
   display: flex;
 }
+
+.left-content {
+  width: 800px;
+  font-family: inherit;
+  color: #0e385f;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 29px;
+  margin-top: 40px;
+  width: 450px;
+  word-spacing: -1px;
+}
