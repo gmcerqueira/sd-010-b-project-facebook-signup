@@ -27,3 +27,11 @@
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: aliceblue;
 }
+
+.main-content {
+  display: flex;
+}
+
+.left-content {
+  width: 800px;
+}
