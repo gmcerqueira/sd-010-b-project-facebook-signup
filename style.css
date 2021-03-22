@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main-content {
+  flex-direction: row;
+}
+
+.left-content {
+  width: 800px;
+}
