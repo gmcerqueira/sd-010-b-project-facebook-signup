@@ -69,7 +69,8 @@
   outline: none;
   background: linear-gradient(#6fad5a, #66a150, #60974c);
 }
-.right-content .new-account #facebook-register :hover {
+
+.right-content .new-account #facebook-register:hover {
   background: linear-gradient(#7ac261, #598b45);
 }
 
