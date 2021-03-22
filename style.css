@@ -36,7 +36,6 @@ form {
   border: black solid 1px;
   font-size: 18px;
   padding: 8px 10px;
-  border: 1px solid #ccd0d5;
   border-radius: 4px;
   width: 100%;
 }
@@ -47,14 +46,13 @@ form input {
 
 form label {
   color: #90949c;
-    font-size: 16px;
-    font-weight: bold;
+  font-size: 16px;
+  font-weight: 800;
 }
 
 #div-name {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  flex-flow: row nowrap;
   justify-content: space-around;
 }
 
@@ -62,11 +60,11 @@ form label {
   width: 50%;
 }
 
-#div-name #firstname {
+#firstname {
   margin-right: 8px;
 }
 
-#firstname, #lastname, #phone_email, #password {
+#firstname , #lastname , #phone_email , #password {
   font-size: 18px;
   padding: 8px 10px;
   border: 1px solid #ccd0d5;
@@ -86,7 +84,6 @@ form label {
   max-width: 50%;
 }
 
-
 #birthdate {
   width: 50%;
   font-size: 18px;
@@ -102,6 +99,7 @@ form label {
   align-items: center;
   width: 100%;
 }
+
 .facebook-login {
   display: flex;
 }
