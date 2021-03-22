@@ -72,6 +72,11 @@ const setCustomGenderRadio = () => {
   });
 };
 
+function loginAlert() {
+  const emailPhone = document.getElementById('user-email-phone');
+  alert(emailPhone.value);
+}
+
 const loadButtons = () => {
   setSignUp();
   setCustomGenderRadio();
@@ -79,4 +84,6 @@ const loadButtons = () => {
 
 window.onload = () => {
   loadButtons();
+  const loginButton = document.getElementById('button-login');
+  loginButton.addEventListener('click', loginAlert);
 };
