@@ -43,3 +43,8 @@ header {
   display: flex;
 }
 
+.birthdate-control {
+  display: flex;
+  flex-direction: column;
+}
+
