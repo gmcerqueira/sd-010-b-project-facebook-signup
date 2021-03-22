@@ -12,6 +12,7 @@ body {
   display: flex;
   background-color: rgb(66, 103, 178);
   height: 60px;
+  justify-content: center;
 }
 
 .facebook-logo {
@@ -22,9 +23,9 @@ body {
   display: flex;
   align-content: space-between;
   flex-direction: column;
-  justify-content: flex-end;
+  flex-wrap: wrap;
+  justify-content: center;
   width: 900px;
-  margin: 0 auto;
 }
 
 .facebook-login {
