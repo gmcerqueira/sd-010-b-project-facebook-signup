@@ -33,7 +33,6 @@ function checkInputValues() {
   return emptyInput;
 }
 
-
 // function customizeRightContent () {
 //   const rightContent = document.querySelector('.right-content');
 //   console.log(rightContent);
