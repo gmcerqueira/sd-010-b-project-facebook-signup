@@ -31,7 +31,6 @@
   background-color: rgb(70, 112, 196);
   padding: 3px;
 }
-<<<<<<< HEAD
 
 
 
@@ -56,14 +55,10 @@ body {
   background-image: linear-gradient(#FEFEFE , #D3D8E8)
 }
 .main-content {
-=======
-/* chegou 35 */
-.container-main {
->>>>>>> 68a8523c89f0491224f5ea5296cd204411c1ee5d
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  width: 70%;
+  justify-content: space-around;
+  width: 100%;
 }
 .container-main .left-content , .container-main .right-content {
   display: flex;
