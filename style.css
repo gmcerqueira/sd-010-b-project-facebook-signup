@@ -34,3 +34,19 @@ label {
   font-family: inherit;
   color: white;
 }
+
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  background-color: aqua;
+}
+
+.left-content {
+  width: 800px;
+}
+
+
+.right-content {
+  width: 300px;
+}
