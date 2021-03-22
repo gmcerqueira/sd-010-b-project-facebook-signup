@@ -13,18 +13,34 @@
 .container-header {
   width: 70%;
 }
-.container-main {
-  display: flex;
-  width: 70%;
 
+
+
+
+
+
+
+
+
+
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  background-image: linear-gradient(#FEFEFE , #D3D8E8);
 }
-.container-main .section-intro , .container-main .section-form {
+.container-main .left-content , .container-main .right-content {
   display: flex;
   flex-basis: 50%;
+}
+.container-main .left-content {
+  width: 800px;
+}
+.container-main .right-content {
+
 }
 .container-footer {
   display: flex;
   width: 70%;
- 
-
 }
