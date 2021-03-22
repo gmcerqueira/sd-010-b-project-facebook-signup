@@ -60,3 +60,25 @@
 .right-content {
   width: 300px;
 }
+
+.right-content form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.right-content form input {
+  width: 129px;
+  height: 20px;
+}
+
+#cell-input, #new-password, #label-birth input {
+  width: 100%;
+}
+
+#label-gender input {
+  margin: 0;
+  width: 10px;
+  height: 10px;
+  flex-wrap: nowrap;
+}

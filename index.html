@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
@@ -43,7 +43,6 @@
 
 <!-- ederson - ate a linha 45 -->
   </header>
-
   <section class="main-content">
     <div class="left-content">
       <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da
@@ -52,12 +51,27 @@
     </div>
     <div class="right-content">
       <h1>Abra uma conta</h1>
-      <h3 class="quick-easy">É rápido e fácil</h3>
+      <p class="quick-easy">É rápido e fácil</p>
       <form action="">
         <input type="text" name="firstname" placeholder="Nome">
         <input type="text" name="lastname" placeholder="Sobrenome">
         <input type="text" name="phone_email" placeholder="Celular ou email" id="cell-input">
         <input type="password" name="password" placeholder="Nova senha" id="new-password">
+        <label id="label-birth"> Data de Nascimento
+          <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
+        </label>
+        <label id="label-gender"> Gênero
+        <br>
+          <label for="male">
+          <input type="radio" id="male" name="gender" value="male">Masculino
+          </label>
+          <label for="female">
+          <input type="radio" id="female" name="gender" value="female">Feminino
+          </label>
+          <label for="other">
+          <input type="radio" id="other" name="gender" value="other">Personalizado
+          </label>
+        </label>
       </form>
     </div>
   </section>
