@@ -1,6 +1,8 @@
 const btnLogin = document.getElementById('button-login');
 const txtEmailtel = document.getElementById('user-email-phone');
 
+let selectedGender;
+
 function elertEmail() {
   alert(txtEmailtel.value);
 }
@@ -11,9 +13,16 @@ function switchGenderCustom(origin) {
   const element = origin.target.id;
   if (element === 'other') {
     document.getElementById('gender-custom').style.display = 'inline';
-  } else {
+    selectedGender = 'Personalizado';
+  } else if (element === 'female') {
     document.getElementById('gender-custom').style.display = 'none';
+    selectedGender = 'Feminino';
+  } else if (element === 'male') {
+    document.getElementById('gender-custom').style.display = 'none';
+    selectedGender = 'Masculino';
   }
+  console.log(selectedGender);
+  return selectedGender;
 }
 
 const radioBtns = document.getElementsByName('gender');
@@ -35,12 +44,16 @@ function checkInputValues() {
 
 // function customizeRightContent () {
 //   const rightContent = document.querySelector('.right-content');
-//   console.log(rightContent);
+//   rightContent.innerHTML = '';
+//   const customH3 = document.createElement('h3');
+  
+//   customH3.innerText = 'teste';
+//   rightContent.appendChild(customH3);
 // }
 
 const submitBtn = document.getElementById('facebook-register');
 submitBtn.addEventListener('click', () => {
-  if (checkInputValues() > 0) {
+  if (checkInputValues() > 2) {
     const alert = document.getElementById('alert');
     alert.innerText = 'Campos inválidos';
   }
