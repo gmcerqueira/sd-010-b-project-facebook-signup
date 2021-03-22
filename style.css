@@ -17,9 +17,18 @@
   display: flex;
 }
 
+#user-email-phone {
+  margin-right: 10px;
+}
+
+#user-password {
+  margin-right: 10px;
+}
+
 .form-group {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .form-control {
