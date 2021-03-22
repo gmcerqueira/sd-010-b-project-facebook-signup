@@ -26,7 +26,6 @@ const genderRemove = () => inputGender4.classList.add('disable');
 
 // }
 
-
 buttonLogin.addEventListener('click', getEmailValue);
 inputGender1.addEventListener('click', genderRemove);
 inputGender2.addEventListener('click', genderRemove);
