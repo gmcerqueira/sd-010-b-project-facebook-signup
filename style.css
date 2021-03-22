@@ -35,11 +35,11 @@
 }
 
 .right-content {
-  max-width: 300px;
+  width: 300px;
 }
 
 .left-content {
   display: flex;
   flex-direction: column;
-  max-width: 800px;
+  width: 800px;
 }
