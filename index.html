@@ -14,8 +14,23 @@
 <body>
   <header class="top-bar">
     <a href="#">
-      <img class="fb-logo" src="imgs/facebook-logo.png" alt="Facebook Logo">
+      <img class="facebook-logo" src="imgs/facebook-logo.png" alt="Facebook Logo">
     </a>
+    <form action="get" class="facebook-login">
+      <div class="form-row">
+        <div class="col form-group">
+          <label id="user-email-phone-label" for="user-email-phone">Email ou telefone</label>
+          <input type="text" class="form-control form-control-sm" id="user-email-phone">
+        </div>
+        <div class="col form-group">
+          <label id="user-password-label" for="email-adress">Senha</label>
+          <input type="password" class="form-control form-control-sm" id="user-password">
+        </div>
+        <div class="col form-control form-group">
+          <input type="button" value="Entrar" id="button-login">
+        </div>
+      </div>
+    </form>
   </header>
 
 </body>
