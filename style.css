@@ -12,20 +12,16 @@
   justify-content: space-around;
 }
 
-.facebook-logo {
-  display: flex;
-  align-self: flex-end;
-  width: 200px;
-}
-
 .facebook-login {
   display: flex;
+  align-self: center ;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-self: flex-end;
   color: white;
   margin: 5px;
 }
@@ -43,4 +39,16 @@
 .main-content {
   display: flex;
   flex-direction: row;
+}
+
+#button-login {
+  background-color: #4267b2;
+  border: 1px solid #29487d;
+  border-radius: 2px;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+  padding: 2px 4px;
 }
