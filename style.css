@@ -15,6 +15,7 @@
 
 .formulario-column {
   flex-direction: column;
+  text-align: right;
 }
 
 .form-group {
