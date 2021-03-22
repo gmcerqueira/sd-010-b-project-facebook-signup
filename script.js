@@ -4,8 +4,8 @@ function mostrarEmail() {
 }
 
 function bttEntrar() {
-const botaoLogin = document.getElementById('button-login');
-botaoLogin.addEventListener('click', mostrarEmail);
+  const botaoLogin = document.getElementById('button-login');
+  botaoLogin.addEventListener('click', mostrarEmail);
 }
 
 bttEntrar();
