@@ -54,13 +54,10 @@
 
 #idNome {
   width: 150px;
-  margin-right: 10px;
-  padding: 8px;
 }
 
 #idSobrenome {
   width: 150px;
-  padding: 8px;
 }
 
 h1 {
@@ -70,4 +67,8 @@ h1 {
 
 h4 {
   margin: 20px 0;
+}
+.input-text {
+  padding: 10px;
+  margin: 10px;
 }
