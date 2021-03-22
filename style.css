@@ -58,7 +58,19 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 10px
+  margin: 10px;
+}
+
+@margin screen and (max-width:){
+    .top-bar {
+        background-color: rgb(66, 103, 178);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    .facebook-login{
+        display:none;
+    }
 }
 
 
