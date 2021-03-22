@@ -18,7 +18,7 @@ function validateForm() {
   const parent = document.querySelector('.main-form');
   const inputs = document.querySelectorAll('input');
   const paragraph = createNewParagraph();
-  if (document.querySelector('.invalid')){
+  if (document.querySelector('.invalid')) {
     parent.removeChild(document.querySelector('.invalid'));
   }
   for (let index = 2; index < inputs.length; index += 1) {
@@ -26,9 +26,10 @@ function validateForm() {
       parent.appendChild(paragraph);
       return false;
     }
-    if (inputs[index].type === 'radio'){
+    if (inputs[index].type === 'radio') {
       validateRadioButtons(inputs[index].checked);
     }
+  }
 }
 
 function removeAllChildNodes(parent) {
@@ -67,7 +68,7 @@ document.querySelectorAll('input[name="gender"]').forEach((elem) => {
   });
 });
 
-//alert no botão Entrar
+// alert no botão Entrar
 
 /* let buttonEnter=getElementById('button-login');
 buttonEnter.addEventListener('click',showAlert)
