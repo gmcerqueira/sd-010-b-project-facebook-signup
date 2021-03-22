@@ -47,3 +47,17 @@
 #facebook-slogan {
   margin: 10px;
 }
+
+.right-content {
+  display: flex;
+  width: 300px;
+  border: red 1px solid;
+  justify-content: center;
+}
+
+.quick-easy {
+  display: flex;
+  margin-top: 20px;
+  position: absolute;
+}
+
