@@ -6,13 +6,13 @@
 .facebook-logo {
   margin-top: 10px;
   width: 170px;
+  align-self: flex-start;
 }
 
 .top-bar {
   display: flex;
   background-color: rgb(66, 103, 178);
   justify-content: space-around;
-
 }
 
 form {
@@ -35,8 +35,9 @@ form {
   padding: 1px;
 }
 
-#form-control {
+.form-control {
   align-self: flex-end;
+  margin-bottom: 27px;
 }
 
 .main-content {
