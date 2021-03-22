@@ -13,6 +13,7 @@ topBar.appendChild(facebookLogo);
 // criado o elemento que vai os inputs
 const inputs = document.createElement('form');
 inputs.className = 'facebook-login';
+inputs.setAttribute('method','GET');
 topBar.appendChild(inputs);
 
 // criado o elemento que vai o email ou telefone
@@ -30,6 +31,7 @@ secEmailTelefone.appendChild(labelEmailTelefone);
 const inputEmailTelefone = document.createElement('input');
 inputEmailTelefone.setAttribute('type', 'text');
 inputEmailTelefone.id = 'user-email-phone';
+inputEmailTelefone.setAttribute('required','true');
 secEmailTelefone.appendChild(inputEmailTelefone);
 
 // criado o elemento que vai a senha
@@ -47,6 +49,7 @@ secSenha.appendChild(labelSenha);
 const inputSenha = document.createElement('input');
 inputSenha.setAttribute('type', 'password');
 inputSenha.id = 'user-password';
+inputSenha.setAttribute('required','true');
 secSenha.appendChild(inputSenha);
 
 // criado o elemento que vai o botão
@@ -59,7 +62,6 @@ const buttonEntrar = document.createElement('button');
 buttonEntrar.id = 'button-login';
 buttonEntrar.innerText = 'Entrar';
 secBotao.appendChild(buttonEntrar);
-const signin = document.getElementById('button-login');
 
 // Criado o Elemento que vai conter o Main do site
 const mainSite = document.createElement('section');
@@ -155,9 +157,3 @@ dataNascimento.setAttribute('name', 'birthdate');
 dataNascimento.setAttribute('placeholder', 'dd/mm/aaaa');
 dataNascimento.className = 'inputs';
 formRegister.appendChild(dataNascimento);
-
-// criado função do alerta
-function alerta() {
-  alert('Email ou telefone');
-}
-signin.addEventListener('click', alerta);
