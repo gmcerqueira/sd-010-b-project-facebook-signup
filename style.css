@@ -15,17 +15,18 @@
 
 .content-header {
   width: 980px;
-  display: flex;
-  justify-content: space-between;
+  display: block;
+  /* justify-content: space-between; */
 }
 
 .content-header img {
-  align-self: flex-start;
+  float: left;
 }
 
 .facebook-login {
   display: flex;
   align-self: flex-end;
+  float: right;
 }
 
 .form-group {
