@@ -1,5 +1,5 @@
 * {
-  margin: 0;
+  margin: 10;
   padding: 0;
   box-sizing: border-box;
   font-size: 100%;
@@ -12,6 +12,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 13px;
 }
 .facebook-logo{
  width: 200px;
@@ -19,17 +20,18 @@
 .facebook-login{
   display: flex;
 }
-.form-group {
+.form-group{
   display: flex;
   flex-direction: column;
+  border-color: #1d2a5b;
+  margin: 0;
+  width: 142px;
+  padding-bottom: 14px;
+  border: 0px solid #ccd0d5;
 }
 .form-control{
  align-self: flex-end;
 }
-#facebook-slogan {
+#facebook-slogan{
   font-size: 20px;
-}
-.test{
-  display: flex;
-  flex-direction: column;
 }
