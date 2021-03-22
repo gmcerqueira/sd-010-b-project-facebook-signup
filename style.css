@@ -4,20 +4,8 @@
 }
 
 .top-bar {
-  display: flex;
+  width: 1366;
   background-color: rgb(66, 103, 178);
-  justify-content: center;
-}
-
-.heading {
   display: flex;
-  justify-content: space-between;
-}
-
-#logo-facebook {
-  display: flex;
-}
-
-#form-auth {
-  display: flex;
+  flex-direction: row;
 }
