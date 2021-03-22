@@ -111,10 +111,11 @@
   flex-flow: row wrap;
   justify-content: flex-start;
   list-style: none;
-  padding: 30px;
+  padding: 10px;
 }
 .container-footer div ul li {
   margin-left: 20px;
+  font-size: 12px;
 }
 hr {
   border:  1px solid #dddfe2;
@@ -126,10 +127,17 @@ hr {
 .container-footer section {
   display: flex;
   flex-flow: row wrap;
+  justify-content: flex-start;
+  padding: 10px;
+}
+.container-footer section a {
+  margin-left: 20px;
+  font-size: 12px;
 }
 .copy {
-  display: flex;
-  justify-content: flex-start;
+  color: #737373;
+  font-size: 11px;
+ 
 }
 
 
