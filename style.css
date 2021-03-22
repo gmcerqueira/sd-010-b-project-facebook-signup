@@ -3,19 +3,25 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-.top-bar {
-  width: 100%;
-  height: 82px;
+header{
   background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: center;
+}
+
+.top-bar {
+  width: 980px;
+  height: 82px;
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
 .content-header {
   width: 980px;
   display: block;
+  background-color: rgb(66, 103, 178);
 }
 
 .content-header img {
