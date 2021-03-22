@@ -3,11 +3,23 @@
   margin: 0;
 }
 
+
+/* classes */
+
 .top-bar {
   display: flex;
   background-color: #4267b2;
+	align-items: center;
+	justify-content: space-around;
 }
 
 .facebook-logo {
   justify-content: flex-start;
+}
+
+/* ids */
+
+#campo-email {
+
+	
 }
