@@ -25,3 +25,8 @@
   flex-flow: column wrap;
   color: white;
 }
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
