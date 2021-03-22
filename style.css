@@ -44,3 +44,11 @@
   display: flex;
   flex-direction: column;
 }
+
+.genderChoice {
+  display: flex;
+}
+
+.genderChoice input {
+  margin-left: 10px;
+}
