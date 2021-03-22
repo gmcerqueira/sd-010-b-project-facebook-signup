@@ -15,15 +15,22 @@
             <img src="imgs/facebook-logo.png" alt="Facebook Logo" class="facebook-logo">
         </div>
         <form class="facebook-login" action="GET">
-            <div class="input-senha">
-                <label id="label" for="">Digite sua senha
-                    <input type="text">
+            <div id="" class="form-group">
+                <label id="user-email-phone-label" for="">Email ou telefone
+                    <input placeholder="E-mail ou telefone" type="text">
                 </label>
             </div>
-            <label id="label" for="">Digite sua senha
-                <input type="text">
-            </label>
-            <!-- <button type="submit">Entrar</button> -->
+            <div class="form-group">
+                <label id="user-password-label" for="user-password">Senha
+                    <input id="user-password" type="text">
+                </label>
+                <div class="form-control">
+                    <button id="button-login" type="submit">Entrar</button>
+                </div>
+            </div>
+            <!-- <div class="form-control">
+                <button id="button-login" type="submit">Entrar</button>
+            </div> -->
         </form>
     </header>
 

@@ -13,12 +13,11 @@ body {
     display: flex;
 }
 
-/* .input-senha {
-    display: flex;
-    justify-content: flex-end;
-} */
-
 .form-group {
     display: flex;
     flex-direction: column;
+}
+
+.form-control {
+    align-self: flex-end;
 }
