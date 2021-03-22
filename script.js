@@ -5,8 +5,9 @@ btnEntrar.addEventListener('click', () => {
   alert(userLogin.value);
 });
 
-const register = document.getElementById('facebook-register');
-// const inputForms = document.
-register.addEventListener('click', (event) => {
-  event.preventDefault();
-});
+// const register = document.getElementById('facebook-register');
+// // const inputForms = document.
+// register.addEventListener('click', (event) => {
+//   event.preventDefault();
+//   // if ()
+// });
