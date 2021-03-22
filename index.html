@@ -10,7 +10,7 @@
   <header class="top-bar">
       <img class="facebook-logo" src="imgs/facebook-logo.png
       " alt="Logo Facebook">
-      <form id="fb-login" class="facebook-login" action="">
+      <form class="facebook-login" action="">
         <div class="form-group">
             <label for="" id="user-email-phone-label">Email ou telefone</label>
             <input type="text" id="email-tel">
@@ -40,7 +40,16 @@
           <input type="text" name="lastname" placeholder="Sobrenome" id="last-name">
           <input type="text" name="phone_email" placeholder="Celular ou email" id="phone_email">
           <input type="password" name="password" placeholder="Nova Senha" id="password">
-          <input type="text" id="">
+          <label for="" id="label-birthdate">Data de nascimento</label>
+          <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
+          <label for="label-gender">Gênero</label><br>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Feminino</label>
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Masculino</label>          
+          <input type="radio" id="other" name="gender" value="other">
+          <label for="other">Personalizado</label>
+          <button type="submit" id="facebook-register">Cadastre-se</button>
         </div>
       </form>
     </div>

@@ -9,6 +9,10 @@
   justify-content: space-between;
 }
 
+.facebook-logo {
+  align-items: flex-start;
+}
+
 .facebook-login {
   display: flex;
   align-self: flex-end;
@@ -34,21 +38,8 @@
 
 .right-content {
   width: 300px;
-
 }
 
 #names {
   display: flex;
-}
-
-.last-name {
-
-}
-
-.phone_email {
-
-}
-
-.password {
-
 }
