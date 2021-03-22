@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box
+  box-sizing: border-box;
 }
 
 body {
@@ -58,4 +58,25 @@ body {
 .right-content {
   width: 300px;
   justify-content: flex-end;
+}
+
+input {
+border: 1px solid black;
+}
+
+#username {
+display: flex;
+justify-content: space-between;
+}
+
+#firstname {
+  width: 140px;
+}
+
+#lastname{
+  width: 140px;
+}
+
+#phone_email, #password {
+width: 300px;
 }
