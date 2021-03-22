@@ -24,21 +24,51 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+body {
+  background-image: linear-gradient(#FEFEFE , #D3D8E8)
+}
 .main-content {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   width: 70%;
-  background-image: linear-gradient(#FEFEFE , #D3D8E8);
 }
 .container-main .left-content , .container-main .right-content {
   display: flex;
   flex-basis: 50%;
 }
 .container-main .left-content {
-  width: 800px;
+  margin-right: 15px;
+  width: 565px;
+  font-size: 12px;
+}
+#facebook-slogan {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #0e385f;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 29px;
+  margin-top: 40px;
+  width: 450px;
+  text-align: left;
+}
+#facebook-networking {
+  width: 537px;
+  height: 195px;
+  background-size: auto;
 }
 .container-main .right-content {
-
+  width: 300px;
 }
 .container-footer {
   display: flex;
