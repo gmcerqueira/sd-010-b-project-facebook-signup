@@ -13,31 +13,29 @@
 
 .facebook-login {
   display: flex;
+  align-items: center;
 }
 
-div {
+.form-group {
   display: flex;
   flex-direction: column;
   margin-bottom: 5px;
   margin-right: 10px;
 }
 
-label {
+.form-group:nth-of-type(1) {
+  align-self: flex-start;
+}
+
+.top-bar label {
   font-size: 12px;
   font-family: inherit;
   color: white;
 }
 
-
 .main-content {
   display: flex;
-<<<<<<< HEAD
-  justify-content: space-evenly;
-=======
-  flex-direction: column;
-  background-color: aqua;
   justify-content: center;
->>>>>>> 556d1ac7ca36b07a5b0220f378892772ea15d0b9
 }
 
 .left-content {
@@ -47,4 +45,29 @@ label {
 
 .right-content {
   width: 300px;
+}
+
+.nomeSobrenome {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+#idNome {
+  width: 150px;
+  margin-right: 10px;
+  padding: 8px;
+}
+
+#idSobrenome {
+  width: 150px;
+  padding: 8px;
+}
+
+h1 {
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+h4 {
+  margin: 20px 0;
 }
