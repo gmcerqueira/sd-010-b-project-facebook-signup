@@ -1,8 +1,3 @@
-function cadastrarButton() {
-  const submitButton = document.getElementById('facebook-register');
-  submitButton.addEventListener('click', validarCampos);
-}
-
 function validarCampos() {
   const validateFields = document.querySelectorAll('.input-form');
 
@@ -12,6 +7,11 @@ function validarCampos() {
       break;
     }
   }
+}
+
+function cadastrarButton() {
+  const submitButton = document.getElementById('facebook-register');
+  submitButton.addEventListener('click', validarCampos);
 }
 
 cadastrarButton();
