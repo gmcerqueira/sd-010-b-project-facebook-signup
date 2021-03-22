@@ -40,3 +40,8 @@ body {
 .main-content {
   flex-direction: column;
 }
+
+.left-container {
+  width: 800px;
+}
+
