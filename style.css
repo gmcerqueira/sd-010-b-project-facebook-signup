@@ -14,6 +14,23 @@
   width: 800px;
 }
 
+.slogan-container {
+  width: 500px;
+}
+
+#facebook-slogan {
+  color: rgba(14, 57, 93, 255);
+}
+
 .right-content {
   width: 300px;
+}
+
+#errorMessage {
+  background-color: rgba(239, 69, 104, 255);
+  color: white;
+  border-radius: 5px;
+  width: 50%;
+  text-align: center;
+  margin: 10px auto;
 }

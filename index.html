@@ -14,10 +14,12 @@
   <header>placeholder</header>
   <main class="main-content">
     <section class="left-content">
-      <p id="facebook-slogan">
-        O Facebook ajuda você a se conectar e compartilhar com as pessoas que
-        fazem parte da sua vida.
-      </p>
+      <div class="slogan-container">
+        <p id="facebook-slogan" class="is-size-4">
+          O Facebook ajuda você a se conectar e compartilhar com as pessoas que
+          fazem parte da sua vida.
+        </p>
+      </div>
       <img
         id="facebook-networking"
         src="./imgs/networking.png"
@@ -27,7 +29,7 @@
     <section class="right-content">
       <h1 class="is-size-4 has-text-left">Abra uma conta</h1>
       <h4 class="quick-easy is-size-5 has-text-left mb-4">É rápido e fácil</h4>
-      <form action="get" class="field">
+      <form action="" id="signUpForm" class="field">
         <div class="field is-horizontal">
           <div class="field-body">
             <div class="field">
@@ -71,7 +73,13 @@
         <div class="field mt-4">
           <label id="label-birthdate" for="birthdate">Data de nascimento</label>
           <div class="control">
-            <input class="input" type="text" placeholder="dd/mm/aaaa" />
+            <input
+              class="input"
+              id="birthdate"
+              name="birthdate"
+              type="text"
+              placeholder="dd/mm/aaaa"
+            />
           </div>
         </div>
         <div class="field">
@@ -79,15 +87,15 @@
           <div class="field">
             <div class="control">
               <label class="radio is-size-7">
-                <input type="radio" name="gender" />
+                <input type="radio" name="gender" value="feminino" />
                 Feminino
               </label>
               <label class="radio is-size-7">
-                <input type="radio" name="gender" />
+                <input type="radio" name="gender" value="masculino" />
                 Masculino
               </label>
               <label class="radio is-size-7">
-                <input type="radio" name="gender" />
+                <input type="radio" name="gender" value="personalizado" />
                 Personalizado
               </label>
             </div>
