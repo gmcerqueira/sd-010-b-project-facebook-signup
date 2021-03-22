@@ -42,3 +42,12 @@ img {
   align-items: center;
   align-self: flex-end;
 }
+
+.main-content {
+  display: flex;
+  border: solid 1px red;
+}
+
+.left-content {
+  width: 800px;
+}
