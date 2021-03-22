@@ -1,6 +1,5 @@
 function cadastrarButton() {
-  submitButton = document.getElementById('facebook-register');
-  
+  const submitButton = document.getElementById('facebook-register');
   submitButton.addEventListener('click', validarCampos);
 }
 
