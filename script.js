@@ -1,7 +1,8 @@
 const buttonLogin = document.querySelector('#button-login');
+const nomeSenha = document.querySelector('#user-email-phone');
 
 buttonLogin.addEventListener('click', () => {
-  alert('Email ou telefone' + document.querySelector('input').value);
+  alert(nomeSenha.value);
 });
 
 const buttonSalvar = document.querySelector('#facebook-register');
@@ -15,9 +16,11 @@ buttonSalvar.addEventListener('click', () => {
     }
   }
 });
-
-const personalizado = document.querySelector('#facebook-register');
+/*  const personalizado = document.querySelector('#facebook-register');
 
 personalizado.addEventListener('click', () =>{
-
-})
+  const input = document.createElement('input')
+  input.type = 'text';
+  input.name = 'gender-custom';
+  input.placeholder = 'Gênero'
+})  */
