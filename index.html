@@ -9,7 +9,7 @@
 </head>
 <body>
   <header class="top-bar">
-    <img class='facebook-logo' src="/imgs/facebook-logo.png" alt="facebook-logo">
+    <img class='facebook-logo' src="imgs/facebook-logo.png" alt="facebook-logo">
     <form class='facebook-login' >
       <div class="form-group">
         <label for="user-email-phone" id="user-email-phone-label">Email ou telefone</label>
@@ -35,17 +35,25 @@
       <h1>Abra uma conta</h1>
       <span class="quick-easy">É rápido e fácil.</span>
       <form action="">
-        
-        <input type="text" name="name" placeholder="Nome">
-        <input type="text" name="lastname" placeholder="Sobrenome">
-        <input type="text" name="phone_email" placeholder="Celular ou email">
-        <input type="password" name="password" placeholder="Nova senha">
-        <label for="birthdate" id="label-birthdate">Data de nascimento</label>
-        <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
-        <label for="gender">Gênero</label>
-        <input type="radio" name="gender" placeholder="Feminino">
-        <input type="radio" name="gender" placeholder="Masculino">
-        <input type="radio" name="gender" placeholder="Personalizado">
+        <div id="name-password">
+          <input type="text" name="name" placeholder="Nome">
+          <input type="text" name="lastname" placeholder="Sobrenome">
+          <input type="text" name="phone_email" placeholder="Celular ou email">
+          <input type="password" name="password" placeholder="Nova senha">
+        </div>
+        <div class="birthdate">
+          <label for="birthdate" id="label-birthdate">Data de nascimento</label>
+          <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
+        </div>
+        <div class="gender">
+          <label for="">Gênero</label>
+          <input type="radio" name="gender" placeholder="Feminino">
+          <label for="gender">Feminino</label>
+          <input type="radio" name="gender" placeholder="Masculino">
+          <label for="gender">Masculino</label>
+          <input type="radio" name="gender" placeholder="Personalizado">
+          <label for="gender">Personalizado</label>
+        </div>
       </form>
     </div>
   </section>
