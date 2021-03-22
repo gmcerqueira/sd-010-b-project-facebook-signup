@@ -9,6 +9,11 @@
   flex-direction: row;
 }
 
+.facebook-login {
+  display: flex;
+  flex-direction: row;
+}
+
 #user-email-phone-label {
   color: white;
 }
