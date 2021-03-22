@@ -52,6 +52,12 @@
 #user-email-phone-label,
 #user-password-label {
   color: white;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#user-email-phone,
+#user-password {
+  width: 150px;
 }
 
 .form-header-ajust {
@@ -61,16 +67,17 @@
   margin: 10px;
 }
 
-@margin screen and (max-width:){
-    .top-bar {
-        background-color: rgb(66, 103, 178);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-    .facebook-login{
-        display:none;
-    }
+@margin screen and (max-width:) {
+  .top-bar {
+    background-color: rgb(66, 103, 178);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .facebook-login {
+    display: none;
+  }
 }
 
 
@@ -284,13 +291,14 @@
 
 #label-birthdate {
   color: #90949c;
-  font-weight: bold;  
+  font-weight: bold;
 }
 
 .date-birthdate-form {
   width: 100%;
   margin: 5px 0;
 }
+
 .gender-form {
   margin: 5px 0 20px 0;
 
@@ -301,7 +309,7 @@
 #label-gender {
   margin-bottom: 15px;
   color: #90949c;
-  font-weight: bold;  
+  font-weight: bold;
 }
 
 .radio-group {
@@ -321,7 +329,3 @@
   outline: none;
   cursor: pointer;
 }
-
-
-
-
