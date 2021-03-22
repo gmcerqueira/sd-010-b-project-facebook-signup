@@ -36,6 +36,12 @@
 .main-content {
   display: flex;
   justify-content: center;
+  background-color: aqua;
+  justify-content: space-evenly;
+  justify-content: space-evenly;
+  flex-direction: column;
+  background-color: aqua;
+  justify-content: center;
 }
 
 .left-content {
