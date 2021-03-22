@@ -4,10 +4,9 @@
   padding: 0;
   font-size: 100%;
   box-sizing: border-box;
-  font-family: 'Ubuntu';
 }
 
 .top-bar {
-  display:flex;
+  display: flex;
   background-color: rgb(66, 103, 178);
 }
