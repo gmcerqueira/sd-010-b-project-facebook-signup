@@ -16,8 +16,7 @@ const botaoCadastro = document.querySelector('#facebook-register');
 function criaAviso() {
   const div = document.querySelector('#verifica-cadastro');
   const p = document.createElement('p');
-  const criaP = (div.appendChild(p).innerHTML = 'Campos Inválidos');
-  return criaP;
+  div.appendChild(p).innerHTML = 'Campos Inválidos';
 }
 
 function verificaCadastro() {
