@@ -38,3 +38,6 @@ body {
   float: right;
 }
 
+form {
+  display: flex;
+}
