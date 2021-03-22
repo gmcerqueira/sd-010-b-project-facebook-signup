@@ -107,3 +107,32 @@ Code: min-width: 0 -> Serve para o input entrar nas regras de grow e shrink do f
 .name-input input:last-of-type {
   margin-right: 0;
 }
+
+/* Remove a borda quando o input é focado */
+.right-content input:focus {
+  outline: none;
+}
+
+#label-birthdate , #label-gender {
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+.radio-labels {
+  display: flex;
+}
+
+.radio-input {
+  flex: 1 1 auto;
+  font-size: 14px;
+}
+
+#facebook-register {
+  width: 150px;
+  margin: 15px 0;
+  padding: 10px 0;
+  background-color: #5a9b54;
+  border: 1px solid #e2ecf8;
+  color: white;
+  font-weight: 700;
+}
