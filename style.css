@@ -67,10 +67,6 @@
   height: 20px;
 }
 
-#cell-input {
-  width: 100%;
-}
-
-#new-password {
+#cell-input, #new-password, #label-birth input{
   width: 100%;
 }
