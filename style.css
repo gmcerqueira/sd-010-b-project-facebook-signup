@@ -11,7 +11,7 @@
 }
 
 .facebook-logo {
-  justify-content: flex-start;
+  justify-content: left;
 }
 
 .facebook-login {
@@ -19,7 +19,12 @@
 }
 
 .form-group {
+	justify-content: right;
   display: flex;
   flex-direction: column;
   margin: 5px;
+}
+
+.form-control {
+	align-self: flex-end;
 }
