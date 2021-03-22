@@ -1,42 +1,42 @@
-let numberOfInvalidRadios = 0;
+// let numberOfInvalidRadios = 0;
 
-function validateRadioButtons(input) {
-  if (input === false) {
-    numberOfInvalidRadios += 1;
-  }
-}
+// function validateRadioButtons(input) {
+//   if (input === false) {
+//     numberOfInvalidRadios += 1;
+//   }
+// }
 
-function createNewParagraph() {
-  const paragraph = document.createElement('p');
-  paragraph.style.color = 'red';
-  paragraph.classList += 'invalid';
-  paragraph.innerText = 'Campos inválidos';
-  return paragraph;
-}
+// function createNewParagraph() {
+//   const paragraph = document.createElement('p');
+//   paragraph.style.color = 'red';
+//   paragraph.classList += 'invalid';
+//   paragraph.innerText = 'Campos inválidos';
+//   return paragraph;
+// }
 
-function validateForm() {
-  const parent = document.querySelector('.main-form');
-  const inputs = document.querySelectorAll('input');
-  const paragraph = createNewParagraph();
-  if (document.querySelector('.invalid')) {
-    parent.removeChild(document.querySelector('.invalid'));
-  }
-  for (let index = 2; index < inputs.length; index += 1) {
-    if (!inputs[index].value) {
-      parent.appendChild(paragraph);
-      return false;
-    }
-    if (inputs[index].type === 'radio') {
-      validateRadioButtons(inputs[index].checked);
-    }
-  }
-}
+// function validateForm() {
+//   const parent = document.querySelector('.main-form');
+//   const inputs = document.querySelectorAll('input');
+//   const paragraph = createNewParagraph();
+//   if (document.querySelector('.invalid')) {
+//     parent.removeChild(document.querySelector('.invalid'));
+//   }
+//   for (let index = 2; index < inputs.length; index += 1) {
+//     if (!inputs[index].value) {
+//       parent.appendChild(paragraph);
+//       return false;
+//     }
+//     if (inputs[index].type === 'radio') {
+//       validateRadioButtons(inputs[index].checked);
+//     }
+//   }
+// }
 
-function removeAllChildNodes(parent) {
-  while (parent.firstChild) {
-    parent.removeChild(parent.firstChild);
-  }
-}
+// function removeAllChildNodes(parent) {
+//   while (parent.firstChild) {
+//     parent.removeChild(parent.firstChild);
+//   }
+// }
 
 function createGenderInput() {
   const parent = document.getElementById('personalizedGender');
@@ -48,14 +48,14 @@ function createGenderInput() {
   parent.appendChild(input);
 }
 
-document.getElementById('facebook-register').addEventListener('click',
-  (event) => {
-    event.preventDefault();
-    validateForm();
-    if (validateForm()) {
-      removeAllChildNodes(document.querySelector('.left-content'));
-    }
-  });
+// document.getElementById('facebook-register').addEventListener('click',
+//   (event) => {
+//     event.preventDefault();
+//     validateForm();
+//     if (validateForm()) {
+//       removeAllChildNodes(document.querySelector('.left-content'));
+//     }
+//   });
 
 document.querySelectorAll('input[name="gender"]').forEach((elem) => {
   console.log(elem);
