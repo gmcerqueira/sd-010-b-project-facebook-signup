@@ -12,9 +12,9 @@
 
 .form-group {
   flex-direction: column;
-  flex-flow: wrap;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-content: center;
   color: white;
 }
 
@@ -29,7 +29,7 @@
 }
 
 .main-content {
-  background-color: linear-gradient(white, #D3D8E8);
+  background-color #D3D8E8;
 }
 
 .left-content {
