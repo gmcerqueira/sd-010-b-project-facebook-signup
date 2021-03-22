@@ -17,12 +17,10 @@ body {
   align-items: center;
 }
 
-.top-bar .logo {
+.top-bar .facebook-logo {
   margin: 0 185px;
-}
-
-.top-bar .logo img {
   width: 150px;
+
 }
 
 header .facebook-login {
