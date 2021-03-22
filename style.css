@@ -9,6 +9,7 @@
 .top-bar {
   display: flex;
   background-color: rgb(66, 103, 178);
+  justify-content: space-between;
 }
 
 .form-group {
@@ -18,5 +19,8 @@
 
 .facebook-logo {
   display: flex;
-  align-self: flex-start;
+}
+
+.facebook-login {
+  display: flex;
 }
