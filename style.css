@@ -12,8 +12,22 @@
 .form-group {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
 }
 
 .facebook-login {
   display: flex;
+  align-items: flex-end;
+}
+
+.form-control {
+  align-self: flex-end;
+}
+
+.main-content {
+  display: flex;
+}
+
+.left-content {
+  width: 800px;
 }
