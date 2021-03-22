@@ -1,41 +1,19 @@
 .top-bar {
   display: flex;
   background-color: rgb(66, 103, 178);
-<<<<<<< HEAD
 }
-=======
-}
-
 .facebook-logo {
   margin: left;
 }
-
->>>>>>> 113d072430390dceba00a21b6d95aec3f3e1963f
 .facebook-login {
   display: flex;
   margin-left: 70%;
   float: right;
 }
-<<<<<<< HEAD
 .formulario-column {
   flex-direction: column;
 }
-=======
-
-.formulario-column {
-  flex-direction: column;
-}
-
->>>>>>> 113d072430390dceba00a21b6d95aec3f3e1963f
 .form-group {
   display: flex;
   flex-direction: column;
 }
-<<<<<<< HEAD
-
-
-
-
-
-=======
->>>>>>> 113d072430390dceba00a21b6d95aec3f3e1963f
