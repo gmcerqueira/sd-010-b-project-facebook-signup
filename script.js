@@ -22,7 +22,7 @@ inputs.appendChild(secEmailTelefone);
 
 // criado o elemento label email
 const labelEmailTelefone = document.createElement('label');
-secEmailTelefone.id = 'user-email-phone-label';
+labelEmailTelefone.id = 'user-email-phone-label';
 labelEmailTelefone.innerText = 'Email ou telefone';
 secEmailTelefone.appendChild(labelEmailTelefone);
 
