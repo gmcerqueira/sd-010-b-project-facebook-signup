@@ -85,3 +85,15 @@ input {
 #password {
   width: 300px;
 }
+
+#usermale {
+  font-size: 10px;
+}
+
+#userfemale {
+  font-size: 10px;
+}
+
+#userother {
+  font-size: 10px;
+}
