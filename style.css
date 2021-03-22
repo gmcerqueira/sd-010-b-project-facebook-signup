@@ -7,8 +7,11 @@
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
-  justify-content: space-between;
   margin: 0 auto;
+}
+.top-bar img {
+  display: flex;
+  margin-right: 50px;
 }
 
 .facebook-login {
@@ -20,5 +23,6 @@
 }
 
 .form-group {
-  display: flex;
+  display: inline-block;
+  justify-content: flex-end;
 }
