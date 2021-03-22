@@ -52,6 +52,27 @@ function validaCadastro() {
   return valido;
 }
 
+function finalizaCadastro() {
+  const inputs = [];
+  for (let i = 0; i < inputsCadastro.length; i += 1) {
+    inputs.push(inputsCadastro[i].value);
+  }
+  const rightContent = document.querySelector('.right-content');
+  rightContent.innerHTML = '';
+  const fullName = document.createElement('p');
+  const emailOuTelefone = document.createElement('p');
+  const dataNascimento = document.createElement('p');
+  const gender = document.createElement('p');
+  fullName.innerHTML = `Olá, ${inputs[0]} ${inputs[1]}`;
+  emailOuTelefone.innerHTML = `Email ou telefone: ${inputs[2]}`;
+  dataNascimento.innerHTML = `Data de nascimento ${inputs[4]}`;
+  gender.innerHTML = `Gênero ${selecionarGender()}`;
+  rightContent.appendChild(fullName);
+  rightContent.appendChild(emailOuTelefone);
+  rightContent.appendChild(dataNascimento);
+  rightContent.appendChild(gender);
+}
+
 const cadastroBtn = document.querySelector('#facebook-register');
 
 cadastroBtn.addEventListener('click', (event) => {
@@ -59,20 +80,7 @@ cadastroBtn.addEventListener('click', (event) => {
 
   if (!validaCadastro()) return;
 
-  const inputs = [];
-  for (let i = 0; i < inputsCadastro.length; i += 1) {
-    inputs.push(inputsCadastro[i].value);
-  }
-  const rightContent = document.querySelector('.right-content');
-  rightContent.innerHTML = '';
-  const fullName = `${inputs[0]} ${inputs[1]}`;
-  const cadastro = `
-    Olá, ${fullName}
-    <br>${inputs[2]}
-    <br>${inputs[4]}
-    <br>${selecionarGender()}
-  `;
-  rightContent.appendChild(cadastro);
+  finalizaCadastro();
 });
 
 const genderPersonalizado = document.querySelector('#personalizado');
