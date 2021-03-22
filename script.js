@@ -3,6 +3,6 @@ const buttonGetIn = document.getElementById('button-login');
 
 function botão() {
   alert(inputEmailPhone.value);
-};
+}
 
 buttonGetIn.addEventListener('click', botão);
