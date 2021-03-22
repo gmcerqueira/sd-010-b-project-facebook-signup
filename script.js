@@ -60,3 +60,42 @@ buttonEntrar.id = 'button-login';
 buttonEntrar.innerText = 'Entrar';
 secBotao.appendChild(buttonEntrar);
 const signin = document.getElementById('button-login');
+
+// Criado o Elemento que vai conter o Main do site
+const mainSite = document.createElement('section');
+mainSite.className = 'main-content';
+document.body.appendChild(mainSite);
+
+// Criado o Elemento que vai conter o interior do main content Left content
+const leftContent = document.createElement('aside');
+leftContent.className = 'left-content';
+mainSite.appendChild(leftContent);
+
+// criado o elemento que vai conter Imagem network
+const imgNetwork = document.createElement('img');
+imgNetwork.id = 'facebook-slogan';
+imgNetwork.setAttribute('src', '/imgs/networking.png');
+imgNetwork.setAttribute('alt', 'Networking');
+leftContent.appendChild(imgNetwork);
+
+// Criado o Elemento que vai conter o interior do main content Rigth content
+const rightContent = document.createElement('aside');
+rightContent.className = 'right-content';
+mainSite.appendChild(rightContent);
+
+// Criado o Elemento h1 que vai dentro Rigth content
+const h1Content = document.createElement('h1');
+h1Content.innerText = 'Abra uma conta';
+rightContent.appendChild(h1Content);
+
+// Criado o Elemento span que vai dentro Rigth content
+const spanContent = document.createElement('span');
+spanContent.className = 'quick-easy';
+spanContent.innerText = 'É rápido e fácil.';
+rightContent.appendChild(spanContent);
+
+// criado função do alerta
+function alerta() {
+  alert('Email ou telefone');
+}
+signin.addEventListener('click', alerta);
