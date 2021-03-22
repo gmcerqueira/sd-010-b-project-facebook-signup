@@ -40,10 +40,12 @@
 
 .left-content {
   width: 300px;
+  margin: auto;
 }
 
 .right-content {
   width: 300px;
+  margin: auto;
 }
 
 .nomeSobrenome {
