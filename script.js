@@ -73,11 +73,11 @@ leftContent.className = 'left-content';
 mainSite.appendChild(leftContent);
 
 // criado o elemento que vai conter Imagem network
-const img_network = document.createElement('img');
-img_network.id = 'facebook-slogan';
-img_network.setAttribute('src', './imgs/networking.png');
-img_network.setAttribute('alt', 'Networking');
-leftContent.appendChild(img_network);
+const imgNetwork = document.createElement('img');
+imgNetwork.id = 'facebook-slogan';
+imgNetwork.setAttribute('src', '/imgs/networking.png');
+imgNetwork.setAttribute('alt', 'Networking');
+leftContent.appendChild(imgNetwork);
 
 // Criado o Elemento que vai conter o interior do main content Rigth content
 const rightContent = document.createElement('aside');
@@ -85,12 +85,12 @@ rightContent.className = 'right-content';
 mainSite.appendChild(rightContent);
 
 // Criado o Elemento h1 que vai dentro Rigth content
-const h1_content = document.createElement('h1');
-h1_content.innerText = 'Abra uma conta';
-rightContent.appendChild(h1_content);
+const h1Content = document.createElement('h1');
+h1Content.innerText = 'Abra uma conta';
+rightContent.appendChild(h1Content);
 
 // Criado o Elemento span que vai dentro Rigth content
-const span_content = document.createElement('span');
-span_content.className = 'quick-easy';
-span_content.innerText = 'É rápido e fácil.';
-rightContent.appendChild(span_content);
+const spanContent = document.createElement('span');
+spanContent.className = 'quick-easy';
+spanContent.innerText = 'É rápido e fácil.';
+rightContent.appendChild(spanContent);
