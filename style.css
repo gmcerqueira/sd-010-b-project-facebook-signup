@@ -1,3 +1,8 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 .top-bar {
   background-color: rgb(66, 103, 178);
   height: 120px;
@@ -23,6 +28,7 @@
   float:right;
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: aliceblue;
+<<<<<<< HEAD
   margin-right: 70px;
   
   
@@ -41,4 +47,28 @@
   float: right;
   background-color:  rgb(66, 103, 178);
   color: aliceblue;
+=======
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+}
+
+.left-content {
+  width: 800px;
+}
+
+#facebook-slogan {
+  width: 434px;
+}
+
+#facebook-networking {
+  width: 537px;
+  height: 195px;
+}
+
+.right-content {
+  width: 300px;
+>>>>>>> 3a4304dfcdff156d2ab73d414b0eaf732bee9db3
 }
