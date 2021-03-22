@@ -7,11 +7,6 @@
 .top-bar {
   display: flex;
   background-color: rgb(66, 103, 178);
-<<<<<<< HEAD
-  justify-content: space-evenly;
-  padding: 10px;
-}
-=======
   padding-top: 15px;
   justify-content: space-around;
 }
@@ -39,15 +34,13 @@ label {
   font-family: inherit;
   color: white;
 }
-<<<<<<< HEAD
->>>>>>> 6ab4fec4914958f84c750ce5785e6dd9a8d913a5
-=======
 
 
 .main-content {
   display: flex;
   flex-direction: column;
   background-color: aqua;
+  justify-content: center;
 }
 
 .left-content {
@@ -58,4 +51,3 @@ label {
 .right-content {
   width: 300px;
 }
->>>>>>> 974562f5e9614dadd6e124f5c3f8a8512b8f1c1c
