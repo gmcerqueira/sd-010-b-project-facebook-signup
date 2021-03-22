@@ -1,0 +1,47 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Requisito 3 */
+
+.topbar {
+  display: flex;
+  justify-content: space-around;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  display: flex;
+  align-self: flex-end;
+}
