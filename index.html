@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,58 @@
     <link rel="stylesheet" href="/style.css">
     <title>Facebook</title>
 </head>
+
 <body>
-    <h1> Pagina Facebook! </h1>
-  
-    
+
+    <header class="top-bar borda">
+        <img src="/imgs/facebook-logo.png" class="facebook-logo" alt="">
+
+        <form action="" class=" facebook-login borda">
+            <div class="borda form-group">
+                <label id="user-email-phone-label" for="user-email-phone">Email ou Telefone</label>
+                <input id="user-email-phone" type="email" name="" id="">
+            </div>
+            <div class="borda form-group">
+                <label id="user-password-label" for="user-password">Senha</label>
+                <input id="user-password" type="password" name="" id="">
+                <a href="">Esqueceu a conta? </a>
+            </div>
+
+            <div class="form-control borda">
+                <button id="button-login" type="submit" onclick="alerta()">Entrar</button>
+            </div>
+        </form>
+    </header>
+
+    <section class="main-content borda">
+        <div class="left-content borda">
+            <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da
+                sua vida.</p>
+            <img id="facebook-networking" src="/imgs/networking.png" alt="">
+        </div>
+        <div class="right-content borda">
+            <h1>Abra uma conta</h1>
+            <h3 class="quick-easy">É rápido e fácil.</h3>
+
+            <form class="borda" action="">
+                <div id="nome-completo">
+                    <input type="text" name="firstname" id="" placeholder="Nome">
+                    <input type="text" name="lastname" id="" placeholder="Sobrenome">
+                </div>
+                <input type="text" name="phone_email" id="" placeholder="Celular ou email">
+                <input type="password" name="password" id="" placeholder="Nova Senha">
+                <div id="data-nascimento">
+                    <label id="label-birthdate" for="">Data de nascimento</label>
+                    <input type="text" name="birthdate" id="" placeholder="dd/mm/aaaa">
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+
+
     <script src="/script.js"></script>
 </body>
+
 </html>
