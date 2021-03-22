@@ -41,15 +41,17 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 900px;
+  width: 800px;
+  margin: 0 auto;
   height: 200px;
-  margin: 0 auto;  
 }
 
 .left-container {
-  width: 800px;  
+  display: flex;
+  width: 800px;
 }
 
 .right-container {
-  width: 300px;  
+  display: flex;
+  align-self: flex-end;
 }
