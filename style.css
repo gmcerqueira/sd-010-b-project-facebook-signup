@@ -5,11 +5,18 @@
   font-size: 100%;
   box-sizing: border-box;
 }
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .container-header {
-
+  width: 70%;
 }
 .container-main {
   display: flex;
+  width: 70%;
+
 }
 .container-main .section-intro , .container-main .section-form {
   display: flex;
@@ -17,5 +24,7 @@
 }
 .container-footer {
   display: flex;
-  flex-basis: 50%;
+  width: 70%;
+ 
+
 }
