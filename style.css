@@ -31,12 +31,12 @@
   width: 300px;
 }
 
-.full-name {
+.user-name {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
 
-.full-name input {
+.user-name input {
   width: 40%;
 }
