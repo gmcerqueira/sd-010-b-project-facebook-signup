@@ -42,3 +42,16 @@ cadastroBtn.addEventListener('click', (event) => {
 
   formCadastro.appendChild(erro);
 });
+
+const genderPersonalizado = document.querySelector('#personalizado');
+
+genderPersonalizado.addEventListener("click", () => {
+  const novoInput = document.createElement('input');
+  novoInput.setAttribute('name', 'gender-custom')
+  novoInput.setAttribute('placeholder', 'Gênero (opcional)')
+  novoInput.className = 'input-cadastro'
+
+  const genders = document.querySelector('.genders')
+
+  genders.insertAdjacentElement('afterend', novoInput);
+})
