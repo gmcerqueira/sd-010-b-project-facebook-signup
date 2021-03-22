@@ -1,8 +1,8 @@
 const inputEmailPhone = document.getElementById('user-email-phone');
 const buttonGetIn = document.getElementById('button-login');
 
-function botão() {
+function buttonIn() {
   alert(inputEmailPhone.value);
 }
 
-buttonGetIn.addEventListener('click', botão);
+buttonGetIn.addEventListener('click', buttonIn);
