@@ -1,9 +1,10 @@
-body{
-    margin: 0;
+body {
+  margin: 0;
 }
 
-.top-bar{
-    display:flex;
-    background-color:rgb(66, 103, 178) ;
-    height: 80px; /* Não sei se vai precisar dessa altura fixa mas coloquei p a barra aparecer */   
+.top-bar {
+  display: flex;
+  background-color: rgb(66, 103, 178);
+  height: 80px;
+  /* Não sei se vai precisar dessa altura fixa mas coloquei p a barra aparecer */
 }
