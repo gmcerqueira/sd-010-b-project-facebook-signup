@@ -4,8 +4,8 @@ function login() {
   const password = document.querySelector('#user-password');
 
   getButton.addEventListener('click', () => {
-    if (emailPhone.value.length > 0 && password.value.length > 0) {
-      window.alert(`${emailPhone.value} ${password.value}`);
+    if (emailPhone.value.length > 0) {
+      window.alert(`${emailPhone.value}`);
     }
   });
 }
