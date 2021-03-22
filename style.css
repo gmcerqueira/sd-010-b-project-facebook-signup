@@ -47,6 +47,7 @@ form div {
 .main-content {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .left-content {
@@ -61,4 +62,8 @@ form div {
   margin-top: 40px;
   width: 450px;
   word-spacing: -1px;
+}
+
+.right-content {
+  width: 300px;
 }
