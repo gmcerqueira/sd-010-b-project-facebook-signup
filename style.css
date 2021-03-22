@@ -26,6 +26,11 @@ body {
   flex-direction: column;
 }
 
+.form-control {
+  display: flex;
+  align-self: flex-end;
+}
+
 /* CÓDIGO DO LP */
 .main-content {
   display: flex;
