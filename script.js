@@ -61,7 +61,7 @@ const buttonEntrar = document.createElement('button');
 buttonEntrar.id = 'button-login';
 buttonEntrar.innerText = 'Entrar';
 secBotao.appendChild(buttonEntrar);
-const signin = document.getElementById("button-login");
+const signin = document.getElementById('button-login');
 
 // Criado o Elemento que vai conter o Main do site
 const mainSite = document.createElement('section');
@@ -98,7 +98,6 @@ rightContent.appendChild(spanContent);
 
 // criado função do alerta
 function alerta() {
-  alert("Email ou telefone");
+  alert('Email ou telefone');
 }  
-
 signin.addEventListener('click', alerta);
