@@ -40,3 +40,7 @@
 .user-name input {
   width: 40%;
 }
+
+.genders {
+  display: flex;
+}
