@@ -12,6 +12,7 @@ body {
   display: flex;
   background-color: rgb(66, 103, 178);
   height: 60px;
+  justify-content: center;
 }
 
 .facebook-logo {
@@ -22,15 +23,14 @@ body {
   display: flex;
   align-content: center;
   flex-direction: column;
-  justify-content: flex-end;
+  flex-wrap: wrap;
+  justify-content: center;
   width: 900px;
-  margin: 0 auto;
 }
 
 .facebook-login {
   display: flex;
   align-content: center;
-  
 }
 
 .form-control {
@@ -39,8 +39,7 @@ body {
 
 .main-content {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
   width: 800px;
   margin: 0 auto;
   height: 200px;
