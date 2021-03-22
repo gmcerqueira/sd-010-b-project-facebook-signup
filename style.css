@@ -22,7 +22,6 @@ body {
 .form-group {
   display: flex;
   justify-content: space-between;
-  /* width: 900px; */
   margin: 0 auto;
 }
 
