@@ -44,3 +44,8 @@ body {
 #container-nome-sobrenome {
   display: flex;
 }
+
+.container-inputs-main {
+  display: flex;
+  flex-wrap: wrap;
+}
