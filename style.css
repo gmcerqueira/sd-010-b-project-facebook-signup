@@ -60,6 +60,7 @@ header {
   display: flex;
   flex-basis: 300px;
 }
+
 div.right-content {
   border: 3px solid red;
   display: flex;
@@ -67,8 +68,8 @@ div.right-content {
   flex-basis: 400px
 }
 
+/* border: 3px solid blue; */
 div.first-last {
-  /* border: 3px solid blue; */
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -77,7 +78,6 @@ div.first-last {
 div.first-last input {
   flex-basis: 200px;
 }
-
 
 input.celular-email {
   display: flex;
@@ -88,11 +88,3 @@ input.password {
   display: flex;
   width: 100%;
 }
-
-
-
-
-
-
-
-
