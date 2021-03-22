@@ -4,6 +4,7 @@
 
 .top-bar {
   display: flex;
+  justify-content: space-between;
   background-color: rgb(66, 103, 178);
 }
 
@@ -29,6 +30,7 @@ section {
   display: flex;
 }
 
+<<<<<<< HEAD
 form {
   display: flex;
   flex-direction: column;
@@ -101,3 +103,13 @@ form label {
   align-items: center;
   width: 100%;
 }
+=======
+.facebook-login {
+  display: flex;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+>>>>>>> faae01bc65f76103c55c0f8b0c831d56a91b3fee
