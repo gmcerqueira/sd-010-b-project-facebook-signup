@@ -9,8 +9,7 @@
 
 .facebook-login {
   display: flex;
-  margin-left: 70%;
-  float: right;
+  align-self: flex-end;
 }
 
 .formulario-column {
@@ -20,4 +19,8 @@
 .form-group {
   display: flex;
   flex-direction: column;
+}
+.main-content{
+  display: flex;
+  position: absolute;
 }
