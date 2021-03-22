@@ -36,13 +36,12 @@ form {
 }
 
 #form-control {
-  align-self: flex-end
+  align-self: flex-end;
 }
 
 .main-content {
-  display: flex;  
+  display: flex;
   justify-content: space-evenly;
-
 }
 
 .facebook-login label {
