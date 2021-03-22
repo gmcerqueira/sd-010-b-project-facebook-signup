@@ -15,16 +15,17 @@
 }
 
 .facebook-login {
+  align-items: center;
   display: flex;
 }
 
 .form-group {
-	justify-content: right;
+  justify-content: right;
   display: flex;
   flex-direction: column;
   margin: 5px;
 }
 
 .form-control {
-	align-self: flex-end;
+  align-self: flex-end;
 }
