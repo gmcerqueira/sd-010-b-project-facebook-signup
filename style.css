@@ -47,6 +47,5 @@ body {
 
 .container-inputs-main {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
 }
