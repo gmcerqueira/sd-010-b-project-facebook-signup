@@ -1,13 +1,11 @@
 * {
-  margin: 0px;
+  margin: 0;
 }
-
 .top-bar {
   display: flex;
   background-color: rgb(66, 103, 178);
   height: 78px;
 }
-
 .facebook-login {
   display: flex;
   color: white;
@@ -31,22 +29,28 @@
 }
 
 .main-content{
+.main-content {
   display: flex;
   flex-direction: row git;
 }
+
 .left-content {
   width: 800px;
 }
+
 .right-content {
   width: 300px;
 }
-.linhaform{
+
+.linhaform {
   display: flex;
 }
-.aniversario{
+
+.aniversario {
   display: flex;
   flex-direction: column;
 }
-.generos{
+
+.generos {
   margin-right: 10px;
 }
