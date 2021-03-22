@@ -1,6 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
+  justify-content: space-between;
 }
 
 .facebook-logo {
@@ -14,6 +21,7 @@
 .form-group {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 
@@ -43,46 +51,63 @@
 
 
 
-/*ederson - ate a linha 45*/
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /*ederson - ate a linha 45*/
 .main-content {
   display: flex;
   justify-content: space-evenly;
 }
-
+  
 .left-content {
   width: 800px;
 }
-
+  
 .right-content {
   width: 300px;
 }
-
+  
 .right-content form {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: wrap row;
 }
-
+  
 .right-content form input {
   width: 129px;
   height: 20px;
 }
-
-#cell-input, #new-password, #label-birth input {
+  
+#cell-input , #new-password , #label-birth input {
   width: 100%;
 }
-
+  
 #label-gender input {
   margin: 0;
   width: 10px;
   height: 10px;
   flex-wrap: nowrap;
-}
-
-input:valid {
-  background-color: none;
-}
-
-input.visitado:invalid {
-  background-color: red;
 }
