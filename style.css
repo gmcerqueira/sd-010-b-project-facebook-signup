@@ -3,12 +3,6 @@
   background-color: rgb(66, 103, 178);
 
 }
-<<<<<<< HEAD
-
-
-/* E agora?
-blz */
-=======
 .facebook-login{
     display: flex;
     margin-left: 70%;
@@ -17,4 +11,8 @@ blz */
 .formulario-column{
     flex-direction: column;
 }
->>>>>>> 026fa8591463a0cc5160745dafd3ec0d7766157f
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
