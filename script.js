@@ -5,7 +5,7 @@ function spawn(element) {
 }
 
 const header = document.createElement('header');
-header.class = 'top-bar';
+header.className = 'top-bar';
 header.style.backgroundColor = 'blue';
 header.style.display = 'flex';
 spawn(header);
