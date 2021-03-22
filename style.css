@@ -189,7 +189,7 @@
   width: 100%;
 }
 
-@media screen and (max-width : 480px) {
+@media screen and ( max-width: 480px ) {
 
   .top-bar {
     background-color: rgb(66, 103, 178);
