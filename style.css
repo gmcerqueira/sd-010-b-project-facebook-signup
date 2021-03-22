@@ -25,6 +25,14 @@
   margin-right: 15px;
 }
 
+#user-password-label {
+  color: white;
+}
+
+#user-email-phone-label {
+  color: white;
+}
+
 .form-group {
   display: flex;
   flex-direction: column;
