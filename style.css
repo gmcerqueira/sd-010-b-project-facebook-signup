@@ -84,7 +84,6 @@ h4 {
 
 .input-text {
   padding: 10px;
-<<<<<<< HEAD
   margin: 5px 10px 5px 0;
   border: solid 1px #bdc7d8;
   border-radius: 5px;
@@ -93,9 +92,3 @@ h4 {
 .esconder {
   opacity: 0;
 }
-=======
-  margin: 5px 10px 5px 0px;
-  border: solid 1px #bdc7d8;
-  border-radius: 5px;
-}
->>>>>>> 85df9f8e857bfbb2b110768eab80cd7af55397cc
