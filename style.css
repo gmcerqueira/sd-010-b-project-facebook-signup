@@ -11,13 +11,6 @@
   justify-content: space-around;
 }
 
-
-
-
-
-
-
-
 .facebook-login {
   display: flex;
 }
@@ -35,12 +28,10 @@ label {
   color: white;
 }
 
-
 .main-content {
   display: flex;
-  flex-direction: column;
   background-color: aqua;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .left-content {
