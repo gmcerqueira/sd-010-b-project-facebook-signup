@@ -7,7 +7,6 @@
 
 .facebook-logo {
   display: flexbox;
-  margin-right: 20%
 }
 
 .facebook-login {
@@ -15,15 +14,31 @@
   flex-direction: row;
   margin-top: 6%;
   position: relative;
-  
-
 }
 
 .form-group {
   display: flex;
   flex-direction:column;
   width: fit-content;
-  float: right;
+  float:right;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  color: aliceblue;
+  margin-right: 70px;
+  
+  
+}
+
+.form-control {
+  width: 60px;
+  float: right;
+  margin-top: -21px;
+  margin-left: 60%;
+  display: flex;
+  
+}
+
+#button-login {
+  float: right;
+  background-color:  rgb(66, 103, 178);
   color: aliceblue;
 }
