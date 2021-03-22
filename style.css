@@ -12,5 +12,8 @@
 }
 
 .facebook-logo {
+  display: flex;
   height: 60px;
 }
+
+
