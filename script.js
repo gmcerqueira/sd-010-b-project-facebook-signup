@@ -1,24 +1,43 @@
-// function createNewParagraph() {
-//   const paragraph = document.createElement('p');
-//   paragraph.style.color = 'red';
-//   paragraph.classList += 'invalid';
-//   paragraph.innerText = 'Campos inválidos';
-//   return paragraph;
-// }
+let numberOfInvalidRadios = 0;
 
-// function validateForm() {
-//   const inputs = document.querySelectorAll('input');
-//   const paragraph = createNewParagraph();
-// }
+function validateRadioButtons(input) {
+  if (input === false) {
+    numberOfInvalidRadios += 1;
+  }
+}
 
-// function removeAllChildNodes(parent) {
-//   while (parent.firstChild) {
-//     parent.removeChild(parent.firstChild);
-//   }
-// }
+function createNewParagraph() {
+  const paragraph = document.createElement('p');
+  paragraph.style.color = 'red';
+  paragraph.classList += 'invalid';
+  paragraph.innerText = 'Campos inválidos';
+  return paragraph;
+}
+
+function validateForm() {
+  const parent = document.querySelector('.main-form');
+  const inputs = document.querySelectorAll('input');
+  const paragraph = createNewParagraph();
+  if (document.querySelector('.invalid')){
+    parent.removeChild(document.querySelector('.invalid'));
+  }
+  for (let index = 2; index < inputs.length; index += 1) {
+    if (!inputs[index].value) {
+      parent.appendChild(paragraph);
+      return false;
+    }
+    if (inputs[index].type === 'radio'){
+      validateRadioButtons(inputs[index].checked);
+    }
+}
+
+function removeAllChildNodes(parent) {
+  while (parent.firstChild) {
+    parent.removeChild(parent.firstChild);
+  }
+}
 
 function createGenderInput() {
-  console.log('recebido');
   const parent = document.getElementById('personalizedGender');
   const input = document.createElement('input');
   input.id = 'genderCustomText';
@@ -31,10 +50,10 @@ function createGenderInput() {
 document.getElementById('facebook-register').addEventListener('click',
   (event) => {
     event.preventDefault();
-    // validateForm();
-    // if (validateForm()) {
-    //   removeAllChildNodes(document.querySelector('.left-content'));
-    // }
+    validateForm();
+    if (validateForm()) {
+      removeAllChildNodes(document.querySelector('.left-content'));
+    }
   });
 
 document.querySelectorAll('input[name="gender"]').forEach((elem) => {
@@ -45,5 +64,4 @@ document.querySelectorAll('input[name="gender"]').forEach((elem) => {
     if (inputValue === 'Personalizado' && !textBox) {
       createGenderInput();
     }
-  });
-});
+
