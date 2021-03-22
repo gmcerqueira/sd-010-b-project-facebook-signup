@@ -9,14 +9,17 @@
   background-color: rgb(66, 103, 178);
   height: 100px;
   width: 100%;
+  justify-content: space-around;
 }
 
 .facebook-login {
   display: flex;
+
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
-
+  justify-content: center;
+  
 }
