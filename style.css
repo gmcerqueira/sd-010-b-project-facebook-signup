@@ -31,3 +31,7 @@ header {
   display: flex;
 }
 
+.left-content {
+  width: 800px;
+}
+
