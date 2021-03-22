@@ -39,33 +39,42 @@
         <h1>Abra uma conta</h1>
         <h3 class="quick-easy">É rápido e fácil.</h3>
 
-        <form action="" method="get">
+        <form action="" method="get" id="forms">
           <div class="form-group-row">
-            <input type="text" placeholder="Nome" name="firstname" required>
-            <input type="text" placeholder="Sobrenome" name="lastname" required>
+            <input type="text" placeholder="Nome" name="firstname">
+            <input type="text" placeholder="Sobrenome" name="lastname">
           </div>
           <div class="form-group">
-            <input type="text" placeholder="Celular ou email" name="phone_email" required>
-            <input type="password" name="password" placeholder="Nova senha" required>
+            <input type="text" placeholder="Celular ou email" name="phone_email">
+            <input type="password" name="password" placeholder="Nova senha">
           </div>
           <div class="form-group">
             <label for="birthdate" id="label-birthdate">Data de nascimento</label>
-            <input type="text" placeholder="dd/mm/aaaa" name="birthdate" required>
+            <input type="text" placeholder="dd/mm/aaaa" name="birthdate">
           </div>
-          <div class="form-group-gender">
-            <label for="birthdate" id="label-gender">Gênero</label>
-            <div id="gender-options">
-              <input type="radio" name="gender" checked value='Feminino' required>Feminino
-              <input type="radio" name="gender" value='Masculino' required>Masculino
-              <input type="radio" name="gender" >Personalizado
-              <input type="text" name="gender-custom" placeholder="Gênero (opcional)" class="disable" >
+          <div class="form-group">
+            <label for="gender" id="label-gender">Gênero</label>
+            <div class="form-group-row">
+              <input type="radio" name="gender" value="Feminino" checked>Feminino
+              <input type="radio" name="gender" value="Masculino">Masculino
+              <input type="radio" name="gender" value="Personalizado">Personalizado
             </div>
+            <input class="disable" type="text" name="gender-custom" placeholder="Gênero (opcional)">
           </div>
           <div class="form-group">
             <button id="facebook-register" type="submit">Cadastre-se</button>
           </div>
+          <div id="erro-msg" class="form-group disable">
+            <p>Campos inválidos</p>
+          </div>
         </form>
       </div>
+    </div>
+    <div class="form-group">
+      <button id="facebook-register" type="submit">Cadastre-se</button>
+    </div>
+    </form>
+    </div>
     </div>
   </main>
   <script src="script.js"></script>

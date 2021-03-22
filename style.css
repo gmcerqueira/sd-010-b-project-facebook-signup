@@ -44,15 +44,6 @@
   width: 800px;
 }
 
-.form-group-gender {
-  display: flex;
-  flex-direction: column;
-}
-
-.gender-options {
-  display: flex;
-}
-
 .disable {
   display: none;
 }

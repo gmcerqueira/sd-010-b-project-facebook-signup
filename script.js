@@ -1,33 +1,41 @@
 const email = document.getElementById('user-email-phone');
 const buttonLogin = document.getElementById('button-login');
+const form = document.querySelector('#forms');
+const forms = document.querySelectorAll('#forms input');
+const error = document.querySelector('#erro-msg');
 // const rightContent = document.querySelector(
 //   'body > main > div > div.right-content',
 // );
 // const registerButton = document.getElementById('facebook-register');
 // const forms = do
 const inputGender1 = document.querySelector(
-  '#gender-options > input[type=radio]:nth-child(1)',
+  '.form-group-row > input[type=radio]:nth-child(1)',
 );
 const inputGender2 = document.querySelector(
-  '#gender-options > input[type=radio]:nth-child(2)',
+  '.form-group-row > input[type=radio]:nth-child(2)',
 );
 const inputGender3 = document.querySelector(
-  '#gender-options > input[type=radio]:nth-child(3)',
+  '.form-group-row > input[type=radio]:nth-child(3)',
 );
 const inputGender4 = document.querySelector(
-  '#gender-options > input[type=text]:nth-child(4)',
+  'body > main > div > div.right-content > form > div:nth-child(4) > input',
 );
 /* ----------------------------------------------------------------------------- */
 
 const getEmailValue = () => alert(email.value);
 const genderAdd = () => inputGender4.classList.remove('disable');
 const genderRemove = () => inputGender4.classList.add('disable');
-// const insertInput = () => {
-
-// }
+const check = (e) => {
+  [...forms].forEach((index) => {
+    if (index.value === '' && index.name !== 'gender-custom') {
+      error.classList.remove('disable');
+      e.preventDefault();
+    }
+  });
+};
 
 buttonLogin.addEventListener('click', getEmailValue);
 inputGender1.addEventListener('click', genderRemove);
 inputGender2.addEventListener('click', genderRemove);
 inputGender3.addEventListener('click', genderAdd);
-// registerButton.addEventListener('click, ')
+form.addEventListener('submit', check);
