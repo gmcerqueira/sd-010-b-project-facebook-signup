@@ -1,6 +1,8 @@
 const btnEntrar = document.getElementById('button-login');
 const campEmail = document.getElementById('user-email-phone');
 
-btnEntrar.addEventListener('click', function () {
+function entrar ()  {
   alert(campEmail.value);
-});
+}
+
+btnEntrar.addEventListener('click', entrar);
