@@ -12,18 +12,19 @@
   background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: space-around;
+
 }
 
 .facebook-logo {
   width: 12%;
   padding: 1%;
-  align-self: flex-start;
+  justify-self: left;
 }
 
 .facebook-login {
   display: flex;
   padding: 1%;
-  align-self: flex-end;
+  justify-self: right;
 }
 
 .form-group {
