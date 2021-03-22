@@ -7,4 +7,28 @@
 .top-bar {
   display: flex;
   background-color: rgb(66, 103, 178);
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container {
+  padding: 10;
+}
+
+.facebook-logo {
+  background-size: auto;
+}
+
+.container-form {
+  display: flex;
+  color: white;
+}
+
+.facebook-login {
+  display: flex;
+}
+
+.input-email, .input-senha {
+  display: flex;
+  flex-direction: column;
 }
