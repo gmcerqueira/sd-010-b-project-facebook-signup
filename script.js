@@ -74,7 +74,7 @@ mainSite.appendChild(leftContent);
 // criado o elemento que vai conter Imagem network
 const paragrafo = document.createElement('p');
 paragrafo.id = 'facebook-slogan';
-const st1 = 'O Facebook ajuda você a se conectar e compartilhar';
+const st1 = 'O Facebook ajuda você a se conectar e compartilhar ';
 paragrafo.innerText = `${st1}com as pessoas que fazem parte da sua vida.`;
 leftContent.appendChild(paragrafo);
 
