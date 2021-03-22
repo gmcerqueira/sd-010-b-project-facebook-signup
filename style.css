@@ -3,12 +3,8 @@
   padding: 0;
 }
 
-h1 {
-  
-}
-
 .top-bar {
   display: flex;
   justify-content: space-between;
-  background-color: rgb(66, 103, 178)
+  background-color: rgb(66, 103, 178);
 }
