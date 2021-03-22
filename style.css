@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: white;
 }
 
 body {
@@ -12,4 +13,11 @@ body {
   display: flex;
   height: 98px;
   background-color: rgb(66, 103, 178);
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+}
+
+.facebook-login {
+  display: flex;
 }
