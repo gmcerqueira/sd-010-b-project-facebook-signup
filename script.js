@@ -6,6 +6,13 @@ buttonLogin.addEventListener('click', () => {
 
 const buttonCadastre = document.querySelector('#facebook-register');
 
+function preencheLogin(contentRight) {
+  const user = carregaUser();
+  const login = document.createElement('p');
+  login.innerText = `Olá, ${user[0]} ${user[1]} \n${user[2]}\n${user[3]}`;
+  contentRight.appendChild(login);
+}
+
 function carregaUser() {
   const user = [];
   user.push(document.querySelector('#firstname').value);
@@ -27,11 +34,10 @@ function checaForm(event) {
       AbraContaForm.append(aviso);
       break;
     } else {
-      const user = carregaUser();
-      contentRight.innerHTML = '';
-      const login = document.createElement('p');
-      login.innerText = `Olá, ${user[0]} ${user[1]} \n${user[2]}\n${user[3]}`;
-      contentRight.appendChild(login);
+      event.preventDefault();
+      // contentRight.innerHTML = '';
+      preencheLogin(AbraContaForm);
+      break;
     }
   }
 }
