@@ -80,152 +80,17 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .main-content {
   display: flex;
   justify-content: center;
-  background: linear-gradient(#fff, #d3d8e8);
+  background: linear-gradient(white, #d3d8e8);
   padding-bottom: 30px;
 }
 
 #facebook-slogan {
   color: #0e385f;
   font-size: 25px;
-  font-weight: bold;
+  font-weight: 600;
   line-height: 30px;
   margin-top: 40px;
   width: 490px;
@@ -256,8 +121,8 @@
   margin-bottom: 20px;
 }
 
-.right-content input[type='text'],
-.right-content input[type='password'] {
+.right-content input[ type='text'],
+.right-content input[ type='password'] {
   padding: 8px 10px;
   font-size: 16px;
   border: 1px solid #bdc7d8;
@@ -291,7 +156,7 @@
 
 #label-birthdate {
   color: #90949c;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .date-birthdate-form {
@@ -300,7 +165,7 @@
 }
 
 .gender-form {
-  margin: 5px 0 20px 0;
+  margin: 5px 0 20px;
   display: flex;
   flex-direction: column;
 }
@@ -308,7 +173,7 @@
 #label-gender {
   margin-bottom: 15px;
   color: #90949c;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .radio-group {
@@ -318,20 +183,20 @@
 }
 
 #facebook-register {
-  font-family: 'Freight Sans Bold', Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 600;
   font-size: 20px;
   padding: 7px 25px;
   margin-bottom: 20px;
   border-radius: 5px;
   background: linear-gradient(#67ae55, #578843);
-  color: #fff;
+  color: white;
   border: 1px solid #426b29;
   outline: none;
   cursor: pointer;
 }
 
-<<<<<<< HEAD=======.gender-other {
+.gender-other {
   display: none;
 }
 
@@ -339,17 +204,16 @@
   width: 100%;
 }
 
-@margin screen and (max-width:) {
+@media screen and (max-width: 480px) {
   .top-bar {
     background-color: rgb(66, 103, 178);
     display: flex;
     justify-content: center;
     align-items: center;
+
   }
 
   .facebook-login {
     display: none;
   }
 }
-
->>>>>>>75549c6c3fc53d6578f985e475f18bac9090ccf2

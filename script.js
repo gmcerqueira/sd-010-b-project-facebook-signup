@@ -41,57 +41,6 @@ function substituiConteudo() {
 
 substituiConteudo();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Validando campos
 const inputText = document.querySelectorAll('.form input[type=text');
 const registerBtn = document.getElementById('facebook-register');
