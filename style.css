@@ -1,0 +1,9 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.top-bar {
+	display: flex;
+	background-color: #4267b2;
+}
