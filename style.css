@@ -5,10 +5,8 @@
 
 .facebook-logo {
   display: flex;
-  align-content: flex-start;
 }
 
-
-
-
-
+.main-content {
+  display: flex;
+}
