@@ -11,9 +11,8 @@ function bttEntrar() {
 bttEntrar();
 
 function mostrarElemento() {
-  const personalizado = document.getElementById('personalizado');
-  personalizado.styles.display = 'block';
-  
+  const personalizado = document.getElementById('genero-personalizado');
+  personalizado.style.display = 'flex';
 }
 
 function adcEvntoGenPers() {
@@ -22,3 +21,17 @@ function adcEvntoGenPers() {
 }
 
 adcEvntoGenPers();
+
+function esconderElemento() {
+  const personalizado = document.getElementById('genero-personalizado');
+  personalizado.style.display = 'none';
+}
+
+function adcEvntoMascFem() {
+  const masculino = document.getElementById('masculino');
+  masculino.addEventListener('click', esconderElemento);
+  const feminino = document.getElementById('feminino');
+  feminino.addEventListener('click', esconderElemento);
+}
+
+adcEvntoMascFem();
