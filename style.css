@@ -80,5 +80,27 @@ body {
 
 .main-content {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+}
+
+.left-content {
+  width: 800px;
+  margin-left: 10%;
+}
+
+.left-content p {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0e385f;
+  margin: 40px 0 0;
+  line-height: 30px;
+  width: 450px;
+}
+
+.left-content img {
+  margin-top: 10px;
+}
+
+.right-content {
+  width: 300px;
 }
