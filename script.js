@@ -1,7 +1,7 @@
 const buttonLogin = document.querySelector('#button-login');
 
 buttonLogin.addEventListener('click', () => {
-  alert('Email ou telefone');
+  alert('Email ou telefone' + document.querySelector('input').value);
 });
 
 const buttonSalvar = document.querySelector('#facebook-register');
@@ -18,3 +18,6 @@ buttonSalvar.addEventListener('click', () => {
 
 const personalizado = document.querySelector('#facebook-register');
 
+personalizado.addEventListener('click', () =>{
+
+})
