@@ -55,5 +55,6 @@
 
 .input-name {
   display: flex;
-  flex-wrap: ;
+  flex-wrap: nowrap;
+  width: 100%;
 }
