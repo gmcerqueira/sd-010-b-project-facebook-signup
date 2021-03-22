@@ -15,7 +15,6 @@
   display: flex;
   align-items: center;
   width: 180px;
-
 }
 
 .facebook-login {
@@ -66,6 +65,7 @@
   margin: 10px;
 }
 
+
 @margin screen and (max-width:) {
   .top-bar {
     background-color: rgb(66, 103, 178);
@@ -78,6 +78,7 @@
     display: none;
   }
 }
+
 
 
 
@@ -300,7 +301,6 @@
 
 .gender-form {
   margin: 5px 0 20px 0;
-
   display: flex;
   flex-direction: column;
 }
@@ -314,6 +314,7 @@
 .radio-group {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 10px;
 }
 
 #facebook-register {
@@ -329,3 +330,26 @@
   outline: none;
   cursor: pointer;
 }
+
+<<<<<<< HEAD=======.gender-other {
+  display: none;
+}
+
+#other-input {
+  width: 100%;
+}
+
+@margin screen and (max-width:) {
+  .top-bar {
+    background-color: rgb(66, 103, 178);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .facebook-login {
+    display: none;
+  }
+}
+
+>>>>>>>75549c6c3fc53d6578f985e475f18bac9090ccf2

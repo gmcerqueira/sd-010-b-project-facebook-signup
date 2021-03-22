@@ -111,10 +111,18 @@ registerBtn.addEventListener('click', (e) => {
         }
     }
 })
+//campo personalizar genero
 
+const otherGender = document.getElementById('other');
+const genderOther_div = document.querySelector('.gender-other');
+const radios = document.querySelectorAll('input[type=radio]')
 
-
-
-
-
-
+radios.forEach(radio => {
+    radio.addEventListener('click', () => {
+        if (radio.id === 'other') {
+            genderOther_div.style.display = 'block';
+        } else {
+            genderOther_div.style.display = 'none';
+        }
+    })
+})
