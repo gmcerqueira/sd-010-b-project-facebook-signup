@@ -19,3 +19,17 @@
   height: 60px;
   background-position: 0 -245px;
 }
+
+.facebook-login {
+    display: flex;
+    position: absolute;
+    top: 15px;
+    right: 0;
+    
+}
+form-group {
+    display: flex;
+    position: absolute;
+    top: 15px;
+    right: 0;
+}
