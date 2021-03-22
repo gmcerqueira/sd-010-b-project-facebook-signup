@@ -12,6 +12,11 @@
   justify-content: space-around;
 }
 
+.facebook-logo{
+  display: flex;
+  align-self: flex-end;
+  width: 200px;
+}
 .facebook-login {
   display: flex;
 }
@@ -31,5 +36,5 @@
 .form-control {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-self: flex-end;
 }
