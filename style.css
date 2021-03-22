@@ -1,22 +1,21 @@
 * {
-    margin: 0px;
-    box-sizing: border-box;
-  }
-  
-  .top-bar {
-      display: flex;
-    border-bottom: 1px solid #133783;
-    padding: 20px;
-    background-color: rgb(66, 103, 178);
-  }
-  
-  .top-bar-container {
-    justify-content: flex-start;
-  }
-  
-  .facebook-logo {
-      width: 200px;
-      height: 60px;
-      background-position: 0 -245px;
-  }
-  
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.top-bar {
+  display: flex;
+  border-bottom: 1px solid #133783;
+  padding: 20px;
+  background-color: rgb(66, 103, 178);
+}
+
+.top-bar-container {
+  justify-content: flex-start;
+}
+
+.facebook-logo {
+  width: 200px;
+  height: 60px;
+  background-position: 0 -245px;
+}
