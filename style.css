@@ -4,8 +4,11 @@
 }
 
 .top-bar {
-  width: 1366;
   background-color: rgb(66, 103, 178);
+}
+
+.heading {
+  padding: 0 100px;
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
 }
