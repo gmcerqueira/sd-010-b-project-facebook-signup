@@ -11,15 +11,19 @@
 }
 
 .facebook-login {
-  display:flexbox;
+  display:inline-flex;
   flex-direction: row;
-  justify-items: self-end;
   margin-top: 6%;
-  margin-left: 4%;
+  position: relative;
+  
 
 }
 
 .form-group {
   display: flex;
   flex-direction:column;
+  width: fit-content;
+  float: right;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: aliceblue;
 }

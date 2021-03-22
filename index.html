@@ -8,17 +8,26 @@
   <body>
     <div class="top-bar">
       <img class="facebook-logo" src="imgs/facebook-logo.png" alt="">
-      <input class="facebook-login" type="text">
-      <input class="facebook-login" type="text">
+      <div class="form-group">
+        <fieldset>
+          <div class="form-group">
+            <label for="name">Senha: </label>
+            <input type="text" name="name" id="user-email-phone-label" maxlength="40" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">E-mail ou telefone: </label>
+            <input class="email-input" type="email" name="email" id="email" maxlength="50" required>
+          </div>
+        </fieldset>
+      </div>
+      
     </div>
-<<<<<<< HEAD
-=======
 
     <main class="main-content">
 
     </main>
 
->>>>>>> 02c9bb53eb54710a8f6d9373b6983573a56a28bf
     <script src="script.js"></script>
   </body>
 </html>
