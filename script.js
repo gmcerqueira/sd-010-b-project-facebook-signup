@@ -13,7 +13,6 @@ clicaBotao();
 
 const botaoCadastro = document.querySelector('#facebook-register');
 
-//verifica se os campos estão preenchidos
 function verificaCadastro() {
   const div = document.querySelector('#verifica-cadastro');
   const p = document.createElement('p');
@@ -23,14 +22,19 @@ function verificaCadastro() {
   const campoSenha = document.querySelector('#senha').value;
   const campoDataNasc = document.querySelector('#birth-date').value;
 
-  if (campoNome || campoSobrenome || campoEmailPhone || campoSenha || campoDataNasc === null) {
+  if (
+    campoNome ||
+    campoSobrenome ||
+    campoEmailPhone ||
+    campoSenha ||
+    campoDataNasc === null
+  ) {
     div.appendChild(p).innerHTML = 'Campos Inválidos';
   }
 }
 
-//clique do botão
 function clicaCadastro() {
-  botaoCadastro.addEventListener('click', verificaCadastro)
+  botaoCadastro.addEventListener('click', verificaCadastro);
 }
 
 clicaCadastro();
