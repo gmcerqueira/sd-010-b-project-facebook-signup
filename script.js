@@ -6,5 +6,3 @@ function msgAlert() {
 
 const btn = document.querySelector('#button-login');
 btn.addEventListener('click', msgAlert);
-
-
