@@ -16,7 +16,7 @@ inputs.className = 'facebook-login';
 topBar.appendChild(inputs);
 
 // criado o elemento que vai o email ou telefone
-const secEmailTelefone = document.createElement('section');
+const secEmailTelefone = document.createElement('div');
 secEmailTelefone.className = 'form-group';
 inputs.appendChild(secEmailTelefone);
 
@@ -24,17 +24,16 @@ inputs.appendChild(secEmailTelefone);
 const labelEmailTelefone = document.createElement('label');
 secEmailTelefone.id = 'user-email-phone-label';
 labelEmailTelefone.innerText = 'Email ou telefone';
-labelEmailTelefone.setAttribute('for', 'user-email-phone');
 secEmailTelefone.appendChild(labelEmailTelefone);
 
 // criado o elemento input email
 const inputEmailTelefone = document.createElement('input');
-inputEmailTelefone.id = 'user-email-phone';
 inputEmailTelefone.setAttribute('type', 'text');
+inputEmailTelefone.id = 'user-email-phone';
 secEmailTelefone.appendChild(inputEmailTelefone);
 
 // criado o elemento que vai a senha
-const secSenha = document.createElement('section');
+const secSenha = document.createElement('div');
 secSenha.className = 'form-group';
 inputs.appendChild(secSenha);
 
@@ -42,13 +41,12 @@ inputs.appendChild(secSenha);
 const labelSenha = document.createElement('label');
 labelSenha.id = 'user-password-label';
 labelSenha.innerText = 'Senha';
-labelSenha.setAttribute('for', 'user-password');
 secSenha.appendChild(labelSenha);
 
 // criado o elemento input email
 const inputSenha = document.createElement('input');
-inputSenha.id = 'user-password';
 inputSenha.setAttribute('type', 'password');
+inputSenha.id = 'user-password';
 secSenha.appendChild(inputSenha);
 
 // criado o elemento que vai o botão
