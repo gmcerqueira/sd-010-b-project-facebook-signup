@@ -48,3 +48,8 @@ header {
   flex-direction: column;
 }
 
+.container-gender {
+  display: flex;
+  flex-direction: column;
+}
+
