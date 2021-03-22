@@ -26,7 +26,33 @@
     </form>
   </header>
   <main class="main-content">
-    
+    <div class="left-content">
+      <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+      <img src="imgs/networking.png" id="facebook-networking" alt="">
+    </div>
+    <div class="right-content">
+      <h1>Abra uma conta</h1>
+      <p class="quick-easy">É rápido e fácil.</p>
+      <form action="" method="get" class="AbraConta">
+        <div id="firstLastName">
+          <input type="text" name="firstname" placeholder="Nome">
+          <input type="text" name="lastname" placeholder="Sobrenome">
+        </div>
+        <input type="text" name="phone_email" placeholder="Celular ou email">
+        <input type="password" name="password" placeholder="Nova senha">
+        <label for="" id="label-birthdate">Data de nascimento</label>
+        <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
+        <label for="" id="label-gender">Gênero</label>
+        <div id="genderSelect">
+          <label for="femi">Feminino</label>
+          <input type="radio" name="gender" id="femi">
+          <label for="masc">Masculino</label>
+          <input type="radio" name="gender" id="masc">
+          <label for="pers">Personalizado</label>
+          <input type="radio" name="gender" id="pers">
+        </div>
+      </form>
+    </div>
   </main>
   <script src="script.js"></script>
 </body>

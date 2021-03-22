@@ -41,8 +41,34 @@ form {
 
 .main-content {
   display: flex;  
+  justify-content: space-evenly;
+
 }
 
-label {
+.facebook-login label {
   color: white;
+}
+
+.left-content {
+  width: 800px;
+  border: solid black 1px;
+}
+
+.right-content {
+  width: 300px;
+  border: solid black 1px;
+}
+
+.AbraConta {
+  display: flex;
+  flex-direction: column;
+}
+
+#firstLastName {
+  display: flex;
+  justify-content: space-around;
+}
+
+#firstLastName input {
+  width: 40%;
 }
