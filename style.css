@@ -11,6 +11,10 @@
   display: flex;
 }
 
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
 
 
 
@@ -38,18 +42,7 @@
 
 
 
-
-
-
-
-<<<<<<< HEAD
 /*ederson - ate a linha 45*/
-=======
-
-
-
-
->>>>>>> 207243086e5deab2ceeebb842c32e9d5710e125c
 .main-content {
   display: flex;
   justify-content: space-evenly;
@@ -58,10 +51,7 @@
 .left-content {
   width: 800px;
 }
-<<<<<<< HEAD
-=======
 
 .right-content {
   width: 300px;
 }
->>>>>>> 207243086e5deab2ceeebb842c32e9d5710e125c
