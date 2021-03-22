@@ -6,7 +6,7 @@
 .top-bar {
   background-color: rgb(66, 103, 178);
   height: 90px;
-  width: 100%
+  width: 100%;
   
 }
 
@@ -16,7 +16,7 @@
 }
 
 .facebook-login {
-  display:inline-flex;
+  display: inline-flex;
   flex-direction: row;
   margin-top: 6%;
   position: relative;
@@ -24,10 +24,10 @@
 
 .form-group {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   width: fit-content;
-  float:right;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  float: right;
+  font-family: Georgia, Times, serif;
   color: aliceblue;
   margin-right: 70px;
   
