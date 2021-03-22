@@ -7,11 +7,12 @@
   display: flex;
   background-color: #4267b2;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+	width: 100%;
 }
 
 .facebook-logo {
-  justify-content: left;
+  align-items: center;
 }
 
 .facebook-login {
@@ -20,7 +21,7 @@
 }
 
 .form-group {
-  justify-content: right;
+  align-content: center;
   display: flex;
   flex-direction: column;
   margin: 5px;
@@ -28,4 +29,13 @@
 
 .form-control {
   align-self: flex-end;
+}
+
+.main-content {
+	display: flex;
+	flex-direction: row;
+}
+
+.left-content {
+	width: 800px;
 }
