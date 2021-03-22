@@ -1,12 +1,12 @@
 * {
-  font-family: 'Helvitica', 'Lucida Sans', Arial, sans-serif;
+  font-family: Helvetica, 'Lucida Sans', Arial, sans-serif;
   margin: 0;
   padding: 0;
 
   /* box-sizing: border-box; */
 }
 
-#facebook-slogan{
+#facebook-slogan {
   font-size: 1.25em;
   font-weight: 800;
   line-height: 29px;
@@ -33,7 +33,7 @@ height: 61px; */
 
 .facebook-login {
   display: flex;
-  color: #fff;
+  color: white;
   font-size: small;
 }
 
@@ -56,7 +56,7 @@ height: 61px; */
 .form-group a {
   margin: 2px 8px;
   text-decoration: none;
-  color: #fff;
+  color: white;
   opacity: 0.7;
 }
 
@@ -65,22 +65,21 @@ height: 61px; */
 }
 
 .btn-enter:hover {
-  background-color:#02448a;
+  background-color: #02448a;
   border: 1px solid #045cbb;
-  color:#fff;
+  color: white;
   cursor: pointer;
 }
 
 .btn-enter {
-  color:#fff;
-  background-color:#007bff7c;
-  padding:3px 5px;
+  color: white;
+  background-color: #007bff7c;
+  padding: 3px 5px;
   margin-bottom: 27px;
   margin-left: 8px;
   font-size: small;
   font-weight: bold;
   border: 1px solid #045cbb;
-
 }
 
 .main-content {
@@ -153,17 +152,17 @@ height: 61px; */
   width: 90%;
 }
 
-.inputPhoneEmail #phone_email{
+.inputPhoneEmail #phone_email {
   width: 90%;
 }
 
-.inputNewPwd #pwd{
-  width: 90%; 
+.inputNewPwd #pwd {
+  width: 90%;
 }
 
 .inputBirthdate #inputDate {
-  width: 90%; 
-} 
+  width: 90%;
+}
 
 .inputBirthdate {
   display: flex;
@@ -174,19 +173,19 @@ height: 61px; */
 }
 
 .inputBirthdate label {
-  margin: 10px 8px 0px 8px;
+  margin: 10px 8px 0;
 }
 
 .inputGender #label-gender {
   display: flex;
   flex-flow: column nowrap;
-  margin: 10px 8px 8px 8px;
+  margin: 10px 8px 8px;
   color: rgb(133, 137, 145);
   font-weight: bold;
   font-size: 1.08em;
 }
 
-.genders label{
+.genders label {
   font-size: 1.04em;
   color: rgb(27, 30, 36);
 }
@@ -210,7 +209,7 @@ height: 61px; */
   color: rgb(97, 97, 213);
 }
 
-.btnSumit  {
+.btnSumit {
   display: flex;
   justify-content: flex-start;
 }
@@ -222,7 +221,7 @@ height: 61px; */
   color: white;
   cursor: pointer;
   font-size: 19px;
-  font-weight: 600; 
+  font-weight: 600;
   height: 40px;
   margin-top: 1em;
   text-shadow: 0.7px 0.7px black;
@@ -234,7 +233,7 @@ height: 61px; */
   border: 1px solid #2b7d07;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and ( max-width: 375px ) {
   header img {
     display: none;
   }
@@ -245,7 +244,7 @@ height: 61px; */
 
   .top-bar {
     height: 44px;
-    background: url(imgs/facebook-logo-mobile.png)no-repeat center;
+    background: url(imgs/facebook-logo-mobile.png) no-repeat center;
     background-color: rgb(59, 89, 152);
     /* border: 1px solid orange; */
   }
@@ -256,7 +255,7 @@ height: 61px; */
   }
 
   .visible {
-    visibility:visible;
+    visibility: visible;
     position: absolute;
     left: 0;
     top: 50px;
@@ -266,7 +265,7 @@ height: 61px; */
     width: 100%;
   }
 
-  /*.visible input {
+  /* .visible input {
   border: 1px solid rgb(191, 200, 215);
   border-radius: 5px;
   font-size: 18px;
