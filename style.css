@@ -85,10 +85,6 @@ header .facebook-login {
   margin-bottom: 19px;
 }
 
-.form-control button:hover {
-  background-color: #3b5a98;
-}
-
 .form-control button {
   background-color: #4267b2;
   font-size: 12px;
@@ -97,4 +93,8 @@ header .facebook-login {
   color: white;
   font-weight: 600;
   padding: 5px 6px;
+}
+
+.form-control button:hover {
+  background-color: #3b5a98;
 }
