@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
@@ -115,11 +122,45 @@
 
 
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .main-content {
@@ -135,20 +176,41 @@
   width: 300px;
 }
 
-.full-name {
+.full-name-form {
   width: 100%;
   display: flex;
   justify-content: space-around;
 }
 
-.first-name {
+.first-name-form {
   width: 50%;
 }
 
-.last-name {
+.last-name-form {
   width: 50%;
 }
 
-.phone-email {
+.phone-email-form {
   width: 100%;
 }
+
+
+.password-form {
+  width: 100%;
+}
+
+.date-birthdate-form {
+  width: 100%;
+}
+
+<<<<<<< HEAD=======.gender-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.radio-group {
+  display: flex;
+  justify-content: space-around;
+}
+
+>>>>>>>20bcd27568a01395228b2309bcb40eca346eec04
