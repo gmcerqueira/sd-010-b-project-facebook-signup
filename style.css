@@ -15,8 +15,6 @@
 }
 
 .facebook-login {
-  display: inline-flex;
-  flex-direction: row;
   margin-top: 6%;
   position: relative;
 }
