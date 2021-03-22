@@ -37,14 +37,19 @@ function selecionarGender() {
 }
 
 function validaCadastro() {
+  let valido = true;
   const erro = document.querySelector('#campos-invalidos');
   erro.innerHTML = '';
 
   const formCadastro = document.querySelector('#form-cadastro');
 
-  if (!validateGender() || validaInputs()) erro.innerHTML = 'Campos inválidos';
+  if (!validateGender() || validaInputs()) {
+    erro.innerHTML = 'Campos inválidos';
+    valido = false;
+  }
 
   formCadastro.appendChild(erro);
+  return valido;
 }
 
 const cadastroBtn = document.querySelector('#facebook-register');
@@ -52,7 +57,7 @@ const cadastroBtn = document.querySelector('#facebook-register');
 cadastroBtn.addEventListener('click', (event) => {
   event.preventDefault();
 
-  validaCadastro();
+  if (!validaCadastro()) return;
 
   const inputs = [];
   for (let i = 0; i < inputsCadastro.length; i += 1) {
