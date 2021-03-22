@@ -8,7 +8,7 @@
   background-color: #4267b2;
   align-items: center;
   justify-content: space-between;
-	width: 100%;
+  width: 100%;
 }
 
 .facebook-logo {
@@ -32,10 +32,10 @@
 }
 
 .main-content {
-	display: flex;
-	flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .left-content {
-	width: 800px;
+  width: 800px;
 }
