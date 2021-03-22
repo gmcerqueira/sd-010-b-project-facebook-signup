@@ -13,15 +13,24 @@
       <div id="logo-container">
       <img src="imgs/facebook-logo.png" alt="logoFacebook" class="facebook-logo">
       </div>
-      <div class="form-group" id="form-login-container">
-        <form action="GET" class="facebook-login">
-          <label for="user-email-phone" id="user-email-phone-label">Email ou telefone"</label>
-          <input id="user-email-phone" type="text">
-          <label for="senha" id="senha-label">Senha</label>
-          <input id="senha" type="password">
-
+      <div id="form-login-container">
+        <form method="GET" class="facebook-login">
+          <div class="form-group">
+            <label for="user-email-phone" id="user-email-phone-label">Email ou telefone</label>
+            <input id="user-email-phone" type="text" name="email-telefone" required>
+        </div>
+        <div class="form-group"> 
+            <label for="user-password" id="user-password-label">Senha</label>
+            <input id="user-password" type="password" name="password">
+        </div>
+        <div class="form-control">
+            <label for="button-login">
+            <button id="button-login">Entrar</button>
+            </label>
+        </div>
         </form>
       </div>
     </header>
+    <script src="script.js"></script>
 </body>
 </html>
