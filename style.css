@@ -40,6 +40,16 @@
   width: 300px;
 }
 
+.name {
+  max-width: 140px;
+}
+
+.phone-mail {
+  width: 290px;
+}
+
 .right-content form {
   display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
