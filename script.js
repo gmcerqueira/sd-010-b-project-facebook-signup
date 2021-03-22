@@ -3,11 +3,9 @@ function login() {
   const emailPhone = document.querySelector('#user-email-phone');
   const password = document.querySelector('#user-password');
 
-  getButton.addEventListener('click', function () {
+  getButton.addEventListener('click', () => {
     if (emailPhone.value.length > 0 && password.value.length > 0) {
-      window.alert(
-        `Email ou Telefone: ${emailPhone.value} Senha: ${password.value}`
-      );
+      window.alert(`${emailPhone.value} ${password.value}`);
     }
   });
 }
