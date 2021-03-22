@@ -20,7 +20,19 @@
   max-width: 980px;
 }
 
-.top-bar div a {
+.top-bar div div {
   display: flex;
-  justify-content: left;
+}
+
+.facebook-logo {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.facebook-login {
+  display: flex;
+  flex-flow: row;
+  align-self: center;
+  justify-content: flex-end;
+  color: white;
 }
