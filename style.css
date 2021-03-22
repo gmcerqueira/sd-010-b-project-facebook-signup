@@ -15,25 +15,22 @@
   justify-content: center;
 }
 
-.top-bar {
+.form-group {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  background-color: rgb(66, 103, 178);
+  flex-direction: column;
 }
 
-.top-bar .header {
+.top-bar {
+  background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: space-between;
-  width: 80%;
 }
 
-.top-bar .facebook-logo {
-  display: flex;
-  align-items: flex-start;
+.facebook-logo {
+  align-self: flex-start;
 }
 
-.top-bar .facebook-login {
+.facebook-login {
   display: flex;
 }
 

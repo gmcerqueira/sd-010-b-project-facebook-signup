@@ -3,22 +3,17 @@ const topBar = document.createElement('header');
 topBar.className = 'top-bar';
 document.body.appendChild(topBar);
 
-// criado o elemento que vai conter os elementos do Topo
-const header = document.createElement('section');
-header.className = 'header';
-topBar.appendChild(header);
-
 // criado o elemento que vai conter o Logo do Facebook
 const facebookLogo = document.createElement('img');
 facebookLogo.className = 'facebook-logo';
 facebookLogo.setAttribute('src', 'imgs/facebook-logo.png');
 facebookLogo.setAttribute('alt', 'Logotipo');
-header.appendChild(facebookLogo);
+topBar.appendChild(facebookLogo);
 
 // criado o elemento que vai os inputs
 const inputs = document.createElement('form');
 inputs.className = 'facebook-login';
-header.appendChild(inputs);
+topBar.appendChild(inputs);
 
 // criado o elemento que vai o email ou telefone
 const secEmailTelefone = document.createElement('section');
