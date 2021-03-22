@@ -1,6 +1,6 @@
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -22,7 +22,6 @@
 .facebook-login {
   display: flex;
   padding: 1%;
-
 }
 
 .form-group {
@@ -37,7 +36,7 @@
 
 .main-content {
   display: flex;
-  justify-content: flex-start
+  justify-content: flex-start;
 }
 
 .left-content {
@@ -47,8 +46,6 @@
 .right-content {
   flex-basis: 300px;
 }
-
-.quick-easy {}
 
 #nome-completo {
   display: flex;
