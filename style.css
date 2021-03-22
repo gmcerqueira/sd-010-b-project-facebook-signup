@@ -35,6 +35,6 @@
 }
 
 .left-content {
-  /* display: flex; */
+  display: flex;
   width: 800px;
 }
