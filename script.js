@@ -21,20 +21,11 @@ function criaAviso() {
 }
 
 function verificaCadastro() {
-  const campoNome = document.querySelector('#nome').value;
-  const campoSobrenome = document.querySelector('#sobrenome').value;
-  const campoEmailPhone = document.querySelector('#email-phone').value;
-  const campoSenha = document.querySelector('#senha').value;
-  const campoDataNasc = document.querySelector('#birth-date').value;
-
-  if (
-    campoNome
-    || campoSobrenome
-    || campoEmailPhone
-    || campoSenha
-    || campoDataNasc === null
-  ) {
-    criaAviso();
+  const cadastro = document.querySelectorAll('.cadastro');
+  for (let index = 0; index < cadastro.length; index += 1) {
+    if (cadastro[index].value === '') {
+      criaAviso();
+    }
   }
 }
 
