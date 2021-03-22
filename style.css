@@ -6,11 +6,17 @@
 .top-bar {
   justify-content: space-between;
   align-items: center;
-  height: 30px;
+  height: 50px;
   display: flex;
   background-color: rgb(66, 103, 178);
 }
 
 .facebook-login {
+  font-size: 15px;
   display: flex;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
 }
