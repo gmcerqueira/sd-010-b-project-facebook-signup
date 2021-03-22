@@ -8,14 +8,20 @@
   background-color: rgb(66, 103, 178);
   display: flex;
   margin: 0 auto;
+  justify-content: space-between;
 }
-.top-bar img {
+
+img {
   display: flex;
   margin-right: 50px;
 }
 
 .facebook-login {
   color: white;
+  display: flex;
+  height: 20px;
+  margin-right: 20px;
+  justify-content: center;
 }
 
 .facebook-logo {
@@ -23,6 +29,18 @@
 }
 
 .form-group {
-  display: inline-block;
-  justify-content: flex-end;
+  display: flex;
+  margin-right: 5px;
+  flex-direction: column;
+}
+
+.form-group p {
+  font-size: small;
+}
+
+.form-control {
+  align-items: center;
+  /* margin-top: 18px;
+  margin-right: 5px; */
+  /* flex-direction: column; */
 }
