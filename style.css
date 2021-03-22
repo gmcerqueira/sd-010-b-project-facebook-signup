@@ -76,10 +76,10 @@
   border: 1px solid #90949c;
   padding: 10px;
 }
-.container-footer {
+/* .container-footer {
   display: flex;
   width: 70%;
-}
+} */
 
 
 
@@ -109,6 +109,46 @@
 
 
 /* aqui */
+.container-footer {
+  background-color: #FFFFFF;
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
 
+  align-items: center;
+}
+.container-footer div ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  list-style: none;
+  padding: 10px;
+}
+.container-footer div ul li {
+  margin-left: 20px;
+  font-size: 12px;
+}
+hr {
+  border:  1px solid #dddfe2;
+  font-size: 1px;
+  height: 8px;
+  margin-bottom: 8px;
+  width: 90%;
+}
+.container-footer section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  padding: 10px;
+}
+.container-footer section a {
+  margin-left: 20px;
+  font-size: 12px;
+}
+.copy {
+  color: #737373;
+  font-size: 11px;
+ 
+}
 
 
