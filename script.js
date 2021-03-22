@@ -30,10 +30,9 @@ function checkInputValues() {
   return emptyInput;
 }
 
-
 function createAlert() {
   const form = document.getElementById('new-user');
-  let alert = document.createElement('p');
+  const alert = document.createElement('p');
   alert.innerText = 'Campos inválidos';
   form.appendChild(alert);
 }
