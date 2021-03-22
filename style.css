@@ -6,12 +6,17 @@
 body {
   background-color: rgba(145, 184, 218, 0.945);
 }
+
 .top-bar {
   display: flex;  
   background-color: rgb(66, 103, 178);
   height: 60px;
   justify-content: space-between;
   align-items: center;  
+}
+
+.div-group img {
+  width: 125px;
 }
 
 .div-group {
