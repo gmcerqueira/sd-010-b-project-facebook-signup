@@ -1,6 +1,7 @@
 * {
   margin: 0px;
 }
+
 .top-bar {
   display: flex;
   background-color: rgb(66, 103, 178);
@@ -9,23 +10,29 @@
   width: 100%;
   height: 78px;
 }
+
 .main-content {
   display: flex;
   flex-direction: row git;
 }
+
 .left-content {
   width: 800px;
 }
+
 .right-content {
   width: 300px;
 }
-.linhaform{
+
+.linhaform {
   display: flex;
 }
-.aniversario{
+
+.aniversario {
   display: flex;
   flex-direction: column;
 }
-.generos{
+
+.generos {
   margin-right: 10px;
 }
