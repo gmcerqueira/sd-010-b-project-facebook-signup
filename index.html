@@ -9,24 +9,25 @@
 </head>
 <body>
   <header class="top-bar">
-    <div class="div-group">
-      <img src="imgs/facebook-logo.png" alt="">  
-      <form action="" class="facebook-login">
+    <div class="form-group">
+      <img src="imgs/facebook-logo.png" alt="">
+      <form action="" class="facebook-login">        
         <label for="user-email-phone-label">Email ou telefone
-        <input type="text" id="user-email-phone-label" name="">
+          <input type="text" id="user-email-phone-label" name="" required maxlength="40">
         </label>
         <label for="user-password-label">Senha
-        <input type="text" name="" id="user-password-label">
-        </label>
+          <input type="password" name="" id="user-password-label" required maxlength="16">
+        </label>      
         <div class="form-control">
-          <button id="button-login">
+          <button type="submit" id="button-login">
             Entrar
           </button>
         </div>
       </form>
     </div>
-  </header>
-  teste
+  </header>teste
+
+  <script src="script.js"></script>
 </body>
 </html>
 
