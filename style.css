@@ -47,3 +47,17 @@ header {
   justify-content: center;
   text-align: justify;
 }
+
+.left-content {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 800px;
+}
+
+.right-content {
+  display: flex;
+  flex-basis: 300px;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
