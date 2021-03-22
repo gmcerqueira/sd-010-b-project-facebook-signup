@@ -72,9 +72,15 @@ leftContent.className = 'left-content';
 mainSite.appendChild(leftContent);
 
 // criado o elemento que vai conter Imagem network
+const paragrafo = document.createElement('p');
+paragrafo.id = 'facebook-slogan';
+paragrafo.innerText = 'O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.';
+leftContent.appendChild(imgNetwork);
+
+// criado o elemento que vai conter Imagem network
 const imgNetwork = document.createElement('img');
 imgNetwork.id = 'facebook-slogan';
-imgNetwork.setAttribute('src', '/imgs/networking.png');
+imgNetwork.setAttribute('src', 'imgs/networking.png');
 imgNetwork.setAttribute('alt', 'Networking');
 leftContent.appendChild(imgNetwork);
 
