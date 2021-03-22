@@ -58,7 +58,6 @@ function createGenderInput() {
 //   });
 
 document.querySelectorAll('input[name="gender"]').forEach((elem) => {
-  console.log(elem);
   elem.addEventListener('change', (event) => {
     const inputValue = event.target.value;
     const textBox = document.getElementById('genderCustomText');
