@@ -13,23 +13,29 @@
   justify-content: space-between;
   align-items: center;
 }
-.facebook-logo{
- width: 200px;
+
+.facebook-logo {
+  width: 200px;
 }
-.facebook-login{
+
+.facebook-login {
   display: flex;
 }
+
 .form-group {
   display: flex;
   flex-direction: column;
 }
-.form-control{
- align-self: flex-end;
+
+.form-control {
+  align-self: flex-end;
 }
+
 #facebook-slogan {
   font-size: 20px;
 }
-.test{
+
+.test {
   display: flex;
   flex-direction: column;
 }
