@@ -1,3 +1,3 @@
 const bot = document.getElementById('button-login');
 
-bot.addEventListener('click', () => alert('Email ou telefone'));
+bot.addEventListener('click', () => window.alert('Email ou telefone'));
