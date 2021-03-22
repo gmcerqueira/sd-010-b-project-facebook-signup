@@ -11,10 +11,10 @@
   display: flex;
 }
 
-
-
-
-
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
 
 
 
@@ -62,11 +62,18 @@
   flex-wrap: wrap;
 }
 
-.right-content form input{
+.right-content form input {
   width: 129px;
   height: 20px;
 }
 
-#cell-input, #new-password, #label-birth input{
+#cell-input, #new-password, #label-birth input {
   width: 100%;
+}
+
+#label-gender input {
+  margin: 0;
+  width: 10px;
+  height: 10px;
+  flex-wrap: nowrap;
 }
