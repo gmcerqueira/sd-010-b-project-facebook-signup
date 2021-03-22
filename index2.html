@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="bootstrap-4.6.0/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imgs/icon-title-dim.png">
+    <title>Facebook - entre ou cadastre-se</title>
+</head>
+<body>
+    <main> 
+        <header class="top-bar" > <!-- REQUISITO 1 -->
+            <img class="facebook-logo" src="imgs/facebook-logo.png" alt="logo facebook"> <!-- REQUISITO 2 -->
+            <form method="GET" class="facebook-login" > <!-- REQUISITO 3 -->
+                <div class="form-group"> <!-- REQUISITO 4 --> <!-- REQUISITO 5 -->
+                    <label for="user-email-phone" id="user-email-phone-label">Email ou telefone</label>
+                    <input type="email" id="user-email-phone" name="user-email-phone" required>
+                </div>
+                <div class="form-group" > <!-- REQUISITO 6 -->
+                    <label for="user-password" id="user-password-label">Senha</label>
+                    <input type="password" id="user-password" name="user-password" required>
+                    <a href="">Esqueceu a conta?</a>
+                </div>
+                <div  class="form-control"> <!-- REQUISITO 7 -->
+                    <button id="button-login" class="btn-enter" >Entrar</button>
+                </div>
+            </form>
+        </header>
+        <section class="main-content" > <!-- REQUISITO 8 -->
+            <aside class="left-content"> <!-- REQUISITO 9 -->
+                <p id="facebook-slogan" class="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+                <img id ="facebook-networking" src="imgs/networking.png" alt="facebook networking" width="530px">
+            </aside>
+             <aside class="right-content"> <!-- REQUISITO 10 -->
+                  <h1>Abra uma conta</h1>
+                  <p class="quick-easy">É rápido e fácil.</p>
+                  <form method="GET" class="formData" > <!-- INÍCIO FORMULÁRIO -->
+                        <div class="inputName"> <!-- REQUISITO 11 / 12 -->
+                            <input type="text" name="firstname" id="firstname" class="required" placeholder="Nome">
+                            <input type="text" name="lastname" id="lastname" class="required" placeholder="Sobrenome">    
+                        </div>
+                        <div class="visible" >
+                            <div class="inputPhoneEmail"> <!-- REQUISITO 13 -->
+                                <input type="text" id="phone_email" name="phone_email" class="required" placeholder="Celular ou E-mail">   
+                            </div>
+                            <div class="inputNewPwd"> <!-- REQUISITO 14 -->
+                                <input id="pwd" type="password" name="password" class="required" placeholder="Nova senha">   
+                            </div>
+                        </div>
+                        <div class="inputBirthdate"> <!-- REQUISITO 15 -->
+                            <label id="label-birthdate" for="inputDate">Data de nascimento</label>
+                            <input id="inputDate" type="text" name="birthdate" class="required" placeholder="dd/mm/aaaa">   
+                        </div>
+                        <div class="inputGender"> <!-- REQUISITO 16 -->
+                            <label id="label-gender" for="genderInput">Gênero</label>
+                            <div class="genders" >
+                                <label for="genderF"><input id="genderF" type="radio" name="gender" class="required" value="Feminino" >Feminino</label>
+                                <label for="genderM"><input id="genderM" type="radio" name="gender" class="required" value="Masculino" >Masculino</label>
+                                <label for="genderP"><input id="genderP" type="radio" name="gender" class="required" value="Personalizado" >Personalizado</label>
+                            </div>
+                        </div>
+                            <div class="userTerms" >
+                                <p>Ao clicar em Cadastre-se, você concorda com nossos <span>Termos, Política de Dados e Política de Cookies.</span> 
+                                    Você pode receber notificações por SMS e pode cancelar isso quando quiser.</p>
+                            </div>
+                            <div class="inputGenderP" ></div> <!-- REQUISITO 19 -->
+                            <div class="btnSumit" > <!-- REQUISITO 17 -->
+                                <button type="submit" id="facebook-register">Cadastre-se</button>
+                            </div>
+                            <div > <!-- REQUISITO 18 -->
+                                <p id="msgInvalid"></p>
+                            </div>
+                    
+                  </form> <!-- FIM FORMULÁRIO -->  
+            </aside>
+        </section>
+        
+    </main>
+
+    <script src="script.js" ></script>
+</body>
+</html>
