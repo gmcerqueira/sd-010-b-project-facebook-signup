@@ -7,17 +7,17 @@ function elertEmail() {
 
 btnLogin.addEventListener('click', elertEmail);
 
-let radioBtns = document.getElementsByName('gender');
+// const radioBtns = document.getElementsByName('gender');
 
-for (let index = 0; index < radioBtns.length; index += 1) {
-    radioBtns[index].addEventListener('change', function () {
-        if (index == 2 && radioBtns[index].checked) {
-            document.getElementById('gender-custom').style.display = 'inline-block';
-        } else {
-            document.getElementById('gender-custom').style.display = 'none';
-        }
-    })
-}
+// for (let index = 0; index < radioBtns.length; index += 1) {
+//     radioBtns[index].addEventListener('change', function () {
+//         if (index == 2 && radioBtns[index].checked) {
+//             document.getElementById('gender-custom').style.display = 'inline-block';
+//         } else {
+//             document.getElementById('gender-custom').style.display = 'none';
+//         }
+//     })
+// }
 
 function checkInputValues() {
   const inputs = document.getElementsByTagName('input');
