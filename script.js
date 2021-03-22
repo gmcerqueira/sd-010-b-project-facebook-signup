@@ -8,7 +8,7 @@ const header = document.createElement('header');
 header.className = 'top-bar';
 header.style.backgroundColor = 'rgb(66, 103, 178)';
 header.style.display = 'flex';
-header.style.justifyContent = 'space-evenly';
+header.style.justifyContent = 'space-between';
 spawn(header);
 
 const img = document.createElement('img');
