@@ -1,3 +1,7 @@
+* {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
 .top-bar {
   display: flex;
   background-color: rgb(66, 103, 178);
@@ -6,7 +10,11 @@
 .main-content {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+section {
+  border: solid black 1px;
 }
 
 .left-content {
@@ -19,4 +27,77 @@
 
 .facebook-logo {
   display: flex;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  border: black solid 1px;
+  font-size: 18px;
+  padding: 8px 10px;
+  border: 1px solid #ccd0d5;
+  border-radius: 4px;
+  width: 100%;
+}
+
+form input {
+  margin: 8px 0;
+}
+
+form label {
+  color: #90949c;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#div-name {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+#div-name input {
+  width: 50%;
+}
+
+#div-name #firstname {
+  margin-right: 8px;
+}
+
+#firstname, #lastname, #phone_email, #password {
+  font-size: 18px;
+  padding: 8px 10px;
+  border: 1px solid #ccd0d5;
+  border-radius: 4px;
+}
+
+#facebook-register {
+  background: linear-gradient(#67ae55, #578843);
+  background-color: #69a74e;
+  box-shadow: inset 0 1px 1px #a4e388;
+  border-color: #3b6e22 #3b6e22 #2c5115;
+  border-radius: 4px;
+  font-size: 19px;
+  padding: 4px 16px;
+  color: white;
+  font-weight: 600;
+  max-width: 50%;
+}
+
+
+#birthdate {
+  width: 50%;
+  font-size: 18px;
+  padding: 8px 10px;
+  border: 1px solid #ccd0d5;
+  border-radius: 4px;
+}
+
+#div-gender {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
