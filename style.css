@@ -77,3 +77,8 @@ body {
 .form-control button:hover {
   background-color: #3b5a98;
 }
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+}
