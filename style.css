@@ -11,18 +11,16 @@
   display: flex;
   min-height: 82px;
   border-bottom: 1px solid #133783;
+  justify-content: space-between;
 }
 
 .facebook-logo {
-  display: flex;
+  width: 200px;
   margin-top: 17px;
-  height: 75px;
-  justify-content: left;
 }
 
 .facebook-login {
   display: flex;
-  justify-content: right;
 }
 
 .form-group {
