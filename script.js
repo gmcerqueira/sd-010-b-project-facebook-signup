@@ -33,3 +33,19 @@ function clicaCadastro() {
 }
 
 clicaCadastro();
+
+function genero() {
+  const divGenero = document.querySelector('#genderPersonalizado');
+  const inputGender = document.createElement('input');
+  const input = divGenero.appendChild(inputGender);
+  input.name = 'gender-custom';
+  input.placeholder = 'Gênero (opcional)';
+}
+
+const personalizado = document.querySelector('#personalizado');
+
+function clicaPersonalizado() {
+  personalizado.addEventListener('click', genero);
+}
+
+clicaPersonalizado();
