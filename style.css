@@ -2,13 +2,8 @@
   display: flex;
   background-color: rgb(66, 103, 178);
 }
-.fomulario-login{
+.facebook-login {
   display: flex;
-  align-items: flex-start;
-}
-/* E agora?
-blz */
-.facebook-login{
-  align-items: flex-start;
-  display: flex;
+  align-items: center;
+  
 }

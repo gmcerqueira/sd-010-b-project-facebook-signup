@@ -1,1 +1,1 @@
-// consegui, criei esse script
+zssc
