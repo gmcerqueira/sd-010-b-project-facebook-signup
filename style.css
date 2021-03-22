@@ -50,7 +50,7 @@
 #user-email-phone-label,
 #user-password-label {
   color: white;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: Times, serif;
 }
 
 #user-email-phone,
@@ -64,21 +64,6 @@
   align-items: flex-start;
   margin: 10px;
 }
-
-
-@margin screen and (max-width:) {
-  .top-bar {
-    background-color: rgb(66, 103, 178);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .facebook-login {
-    display: none;
-  }
-}
-
 
 .main-content {
   display: flex;
