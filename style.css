@@ -3,6 +3,11 @@
   display: flex;
 }
 
-.facebook-login{
+.facebook-login {
   display: flex;
+}
+
+.form-group {
+  display: flex;
+  flex-flow: column;
 }
