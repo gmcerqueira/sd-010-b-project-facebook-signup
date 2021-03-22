@@ -5,20 +5,24 @@
 
 .top-bar {
   display: flex;
-  flex: 1;
-  background-color: rgb(66, 103, 178);
   justify-content: space-around;
+  background-color: rgb(66, 103, 178);
+
+}
+.facebook-logo {
+  align-self: left;
 }
 
 .facebook-login {
   display: flex;
-  align-self: center;
-
+  align-self: right;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
+  align-content: center;
+  justify-content: center;
 }
 
 .form-control {
