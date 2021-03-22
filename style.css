@@ -4,12 +4,11 @@
 }
 .fomulario-login{
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
+/* E agora?
+blz */
 .facebook-login{
   align-items: flex-start;
   display: flex;
-}
-.formulario-column{
-  flex-direction: column;
 }
