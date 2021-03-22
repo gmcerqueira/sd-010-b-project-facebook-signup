@@ -38,9 +38,18 @@ body {
 }
 
 .main-content {
+  display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  width: 900px;
+  height: 200px;
+  margin: 0 auto;  
 }
 
 .left-container {
-  width: 800px;
+  width: 800px;  
+}
+
+.right-container {
+  width: 300px;  
 }
