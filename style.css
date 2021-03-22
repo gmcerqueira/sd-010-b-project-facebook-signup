@@ -10,7 +10,8 @@
 .form-group {
   flex-direction: column;
   display: flex;
-}
+ 
+ }
 
 .form-control {
   align-self: flex-end;
