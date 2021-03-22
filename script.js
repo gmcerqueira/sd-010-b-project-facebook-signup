@@ -62,6 +62,11 @@ buttonEntrar.id = 'button-login';
 buttonEntrar.innerText = 'Entrar';
 secBotao.appendChild(buttonEntrar);
 
+//Criando o evendo de clique
+buttonEntrar.addEventListener('click', function () {
+  alert('Email ou telefone');
+});
+
 // Criado o Elemento que vai conter o Main do site
 const mainSite = document.createElement('section');
 mainSite.className = 'main-content';
