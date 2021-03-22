@@ -12,7 +12,7 @@
 
 .form-group {
   flex-direction: column;
-  flex-wrap:wrap;
+  flex-flow: wrap;
   display: flex;
   justify-content: space-between;
   color: white;
@@ -26,6 +26,10 @@
 .btn-login {
   display: flex;
   align-self: flex-end;
+}
+
+.main-content {
+  background-color: linear-gradient(white, #D3D8E8);
 }
 
 .left-content {
