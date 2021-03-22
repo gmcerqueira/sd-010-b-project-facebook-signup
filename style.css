@@ -73,3 +73,7 @@
   width: 300px;
   justify-content: right;
 }
+
+.nome {
+  display: flex;
+}
