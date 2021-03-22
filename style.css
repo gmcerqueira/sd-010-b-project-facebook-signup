@@ -8,11 +8,11 @@ body {
 }
 
 .top-bar {
-  display: flex;  
+  display: flex;
   background-color: rgb(66, 103, 178);
   height: 60px;
   justify-content: space-between;
-  align-items: center;  
+  align-items: center;
 }
 
 .div-group img {
