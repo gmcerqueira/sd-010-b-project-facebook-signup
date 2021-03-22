@@ -6,16 +6,16 @@ const buttonLogin = document.getElementById('button-login');
 // const registerButton = document.getElementById('facebook-register');
 // const forms = do
 const inputGender1 = document.querySelector(
-  '#gender-options > input[type=radio]:nth-child(1)',
+  '.form-group-row > input[type=radio]:nth-child(1)',
 );
 const inputGender2 = document.querySelector(
-  '#gender-options > input[type=radio]:nth-child(2)',
+  '.form-group-row > input[type=radio]:nth-child(2)',
 );
 const inputGender3 = document.querySelector(
-  '#gender-options > input[type=radio]:nth-child(3)',
+  '.form-group-row > input[type=radio]:nth-child(3)',
 );
 const inputGender4 = document.querySelector(
-  '#gender-options > input[type=text]:nth-child(4)',
+  'body > main > div > div.right-content > form > div:nth-child(4) > input',
 );
 /* ----------------------------------------------------------------------------- */
 
@@ -25,6 +25,7 @@ const genderRemove = () => inputGender4.classList.add('disable');
 // const insertInput = () => {
 
 // }
+
 
 buttonLogin.addEventListener('click', getEmailValue);
 inputGender1.addEventListener('click', genderRemove);
