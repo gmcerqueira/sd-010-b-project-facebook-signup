@@ -55,3 +55,14 @@
 .right-content {
   width: 300px;
 }
+
+.right-content form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.right-content form input{
+  width: 140px;
+  height: 20px;
+}
