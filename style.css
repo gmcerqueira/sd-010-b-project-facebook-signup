@@ -19,3 +19,9 @@
   height: 75px;
   justify-content: left;
 }
+
+.facebook-login {
+  display: flex;
+  margin-top: 17px;
+  justify-content: right;
+}
