@@ -47,13 +47,13 @@
   align-items: flex-end;
 }
 
-#user-email-phone-label,
+#user-email-phone-label , 
 #user-password-label {
   color: white;
   font-family: Times, serif;
 }
 
-#user-email-phone,
+#user-email-phone , 
 #user-password {
   width: 150px;
 }
@@ -106,8 +106,8 @@
   margin-bottom: 20px;
 }
 
-.right-content input[ type='text'],
-.right-content input[ type='password'] {
+.right-content input[ type = 'text' ] , 
+.right-content input[ type = 'password'] {
   padding: 8px 10px;
   font-size: 16px;
   border: 1px solid #bdc7d8;
@@ -189,7 +189,8 @@
   width: 100%;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width : 480px) {
+
   .top-bar {
     background-color: rgb(66, 103, 178);
     display: flex;
