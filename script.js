@@ -4,10 +4,13 @@ button.addEventListener('click', () => {
   alert(textAlert.value);
 });
 
-const opcaoPersonalizada = document.getElementById('personalizado');
+const opcaoPersonalizada = document.querySelector('#personalizado');
+const escolhaGenero = document.querySelector('.genderChoice');
 opcaoPersonalizada.addEventListener('click', () => {
-  const input = document.createElement('input');
-  input.type = 'text';
-  input.name = 'gender-custom';
-  input.placeholder = 'Gênero (opcional)';
+  const inputP = document.createElement('input');
+  inputP.type = 'text';
+  inputP.name = 'gender-custom';
+  inputP.placeholder = 'Gênero (opcional)';
+  inputP.classList.add('opcaoPersonalizada');
+  escolhaGenero.appendChild(inputP);
 });

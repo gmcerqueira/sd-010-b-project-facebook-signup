@@ -47,6 +47,7 @@
 
 .genderChoice {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .genderChoice input {
