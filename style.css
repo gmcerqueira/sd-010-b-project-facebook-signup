@@ -25,6 +25,11 @@
   justify-content: right;
 }
 
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
 .main-content {
   display: flex;
   border: blueviolet 2px dashed;
