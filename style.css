@@ -1,6 +1,4 @@
 .top-bar {
   background-color: rgb(66, 103, 178);
-  padding-top: 13px;
-  margin: auto;
-  height: 82px;
+  display: flex;
 }
