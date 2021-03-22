@@ -7,7 +7,10 @@
   background-color: rgb(66, 103, 178);
   height: 90px;
   width: 100%;
+<<<<<<< HEAD
   
+=======
+>>>>>>> 0502b79b3e5b88593c1cec571f7dd69ec5d74988
 }
 
 .facebook-logo {
@@ -27,11 +30,13 @@
   flex-direction: column;
   width: fit-content;
   float: right;
+<<<<<<< HEAD
   font-family: Georgia, Times, serif;
+=======
+  font-family: Georgia, "Times New Roman", Times, serif;
+>>>>>>> 0502b79b3e5b88593c1cec571f7dd69ec5d74988
   color: aliceblue;
   margin-right: 70px;
-  
-  
 }
 
 .form-control {
