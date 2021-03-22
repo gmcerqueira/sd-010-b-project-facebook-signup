@@ -24,11 +24,17 @@
   display: flex;
   align-items: center;
   color: white;
+  width: 350px;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
+}
+
+#email , #senha {
+  margin: 2px;
+  width: 150px;
 }
 
 .main-content {
@@ -54,7 +60,7 @@
   width: 70%;
 }
 
-#network {
+#facebook-networking {
   width: 80%;
 }
 
