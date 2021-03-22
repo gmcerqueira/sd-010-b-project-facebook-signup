@@ -84,7 +84,7 @@ leftContent.appendChild(paragrafo);
 
 // criado o elemento que vai conter Imagem network
 const imgNetwork = document.createElement('img');
-imgNetwork.id = 'facebook-slogan';
+imgNetwork.id = 'facebook-networking';
 imgNetwork.setAttribute('src', 'imgs/networking.png');
 imgNetwork.setAttribute('alt', 'Networking');
 leftContent.appendChild(imgNetwork);
@@ -113,7 +113,7 @@ secQuickContent.appendChild(quickContent);
 const formRegister = document.createElement('form');
 formRegister.id = 'register-form';
 formRegister.setAttribute('action', '');
-rightContent.appendChild(formRegister);
+secQuickContent.appendChild(formRegister);
 
 // Criado os Elementos de registro
 
