@@ -7,15 +7,32 @@
 }
 
 .top-bar {
-  width: 100%;
   display: flex;
   background-color: rgb(66, 103, 178);
   justify-content: space-around;
+  align-items: center;
+  height: 70px;
+}
+
+.facebook-logo {
+  align-self: center;
 }
 
 .facebook-login {
   display: flex;
+}
+
+.form-group {
+  display: flex;
   flex-direction: column;
+  width: 150px;
+  padding: 3px 3px 4px;
+  color: white;
+}
+
+.form-control {
+  align-self: flex-end;
+  padding: 4px 6px;
 }
 
 .main-content {
