@@ -2,23 +2,23 @@
   display: flex;
   background-color: rgb(66, 103, 178);
   height: 80px;
-  }
-  
-  .facebook-logo {
+}
+
+.facebook-logo {
   justify-content: flex-start;
-  }
-  
-  .facebook-login {
+}
+
+.facebook-login {
   align-content: flex-end;
   display: flex;
   justify-content: flex-end;
-  }
-  
-  .form-group {
+}
+
+.form-group {
   flex-direction: column;
   display: flex;
-  }
-  
-  .form-control {
+}
+
+.form-control {
   align-self: flex-end;
-  }  
+}  
