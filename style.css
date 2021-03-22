@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
 
 body {
@@ -19,5 +18,23 @@ body {
 }
 
 .facebook-login {
+  display: flex;
+}
+
+/* CÓDIGO DO LP */
+.main-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  width: 300px;
+}
+
+.signUp {
   display: flex;
 }
