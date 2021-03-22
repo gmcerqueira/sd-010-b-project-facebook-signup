@@ -31,3 +31,37 @@
   cursor: pointer;
   font-weight: 700;
 }
+
+.main-content {
+  display: flex;
+  justify-content: center;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.left-content p {
+  color: #0e385f;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 29px;
+}
+
+.right-content {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-content h1 {
+  font-size: 36px;
+}
+
+.right-content p {
+  font-size: 19px;
+}
+
+.right-content h1 , .right-content p {
+  margin-bottom: 5px;
+}
