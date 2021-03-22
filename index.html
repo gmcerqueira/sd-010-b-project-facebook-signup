@@ -37,38 +37,22 @@
   <h1>Abra uma conta</h1>
   <h2 class="quick-easy">É rápido e fácil.</h2>
   <form action="" method="post">
-    <label for="username">Nome:
-      <input type="text" placeholder="Digite o seu nome..." name="username" id="username" required>
-    </label><br>
-    <label for="usermale">Gênero:
-      <input type="radio" name="usersex" id="usermale" checked>Masculino
-    </label>
-    <label for="userfemale">
-      <input type="radio" name="usersex" id="userfemale">Feminino
-    </label>
-    <label for="userother">
-      <input type="radio" name="usersex" id="userother">Outro
-    </label><br>
-    <label for="useradress">Endereço:
-      <input type="text" placeholder="Digite o seu Endereço..." name="useradress" id="useradress" required>
-    </label>
-    <label for="userhomenumber">Nº:
-      <input type="number" name="userhomenumber" id="userhomenumber" required>
-    </label>
-    <label for="usercomplement">Complemento:
-      <input type="text" name="usercomplement" id="userhomenumber">
-    </label><br>
-    <label for="usercity">Cidade:
-      <input type="text" placeholder="Cidade" name="usercity" id="usercity" required>
-    </label><br>
-    <label for="userphone">Telefone:
-      <input type="tel" placeholder="(__) _____-____" name="userphone" id="userphone" required>
-    </label><br>
-    <label for="userstate">Estado:
-      <select name="userstate" id="userstate" required>
-        <option value=""></option>
-      </select>
-    </label><br>
+      <input type="text" placeholder="Nome" name="firstname" id="firstname">
+      <input type="text" placeholder="Sobrenome" name="lastname" id="lastname"><br>
+      <input type="text"  placeholder="Celular ou email" name="phone_email" id="phone_email">
+    <br>
+    <input type="text" value="password" placeholder="Nova senha" name="password"  id="password"><br>
+    <label for="" id="label-birthdate">Data de nascimento</label><br>
+    <input type="text" name="birthdate" placeholder="dd/mm/aaaa" id="brithdate"><br>
+    <label for="" id="label-gender">Gênero: <br>
+      <input type="radio" name="gender" id="usermale" checked>
+      <label for="usermale">Masculino</label>
+      <input type="radio" name="gender" id="userfemale">
+      <label for="userfemale">Feminino</label>
+      <input type="radio" name="gender" id="userother">
+      <label for="userother">Personalizado</label>
+  </label><br>
+    <button type="submit" id="facebook-register">Cadastre-se</button>
   </form>
 </div>
 </main>
