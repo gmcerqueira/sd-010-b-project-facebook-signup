@@ -31,3 +31,7 @@ body {
 .form-control {
   align-self: flex-end;
 }
+
+.main-content {
+  flex-direction: column;
+}
