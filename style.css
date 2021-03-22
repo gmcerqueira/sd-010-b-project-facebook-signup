@@ -9,12 +9,19 @@
   background-color: rgb(66, 103, 178);
   height: 100px;
   width: 100%;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 150px 0 100px;
+}
+
+.top-bar img {
+  width: 200px;
+  height: max-content;
+  align-self: center;
 }
 
 .facebook-login {
   display: flex;
-  align-self: center ;
+  align-self: center;
 }
 
 .form-group {
