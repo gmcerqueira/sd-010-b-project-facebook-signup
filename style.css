@@ -11,7 +11,7 @@ header {
 }
 
 .top-bar {
-  width: 980px;
+  width: 100%;
   height: 82px;
   background-color: rgb(66, 103, 178);
   display: block;
@@ -42,8 +42,14 @@ header {
   align-self: flex-end;
 }
 
-/* --------------------------------------------Andre----------------------------------- */
 .main-content {
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+}
+
+/* --------------------------------------------Andre----------------------------------- */
+/* .main-content {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -65,10 +71,10 @@ div.right-content {
   border: 3px solid red;
   display: flex;
   flex-direction: column;
-  flex-basis: 400px
+  flex-basis: 400px;
 }
 
-/* border: 3px solid blue; */
+border: 3px solid blue;
 div.first-last {
   display: flex;
   flex-direction: row;
@@ -87,4 +93,4 @@ input.celular-email {
 input.password {
   display: flex;
   width: 100%;
-}
+} */
