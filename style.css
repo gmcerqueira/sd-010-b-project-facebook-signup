@@ -19,3 +19,8 @@
   width: 980px;
   max-width: 980px;
 }
+
+.top-bar div a {
+  display: flex;
+  justify-content: left;
+}
