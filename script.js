@@ -48,3 +48,15 @@ const inputSenha = document.createElement('input');
 inputSenha.setAttribute('type', 'password');
 inputSenha.id = 'user-password';
 secSenha.appendChild(inputSenha);
+
+// criado o elemento que vai o botão
+const secBotao = document.createElement('div');
+secBotao.className = 'form-control';
+inputs.appendChild(secBotao);
+
+// criado o elemento botão
+const buttonEntrar = document.createElement('button');
+buttonEntrar.id = 'button-login';
+buttonEntrar.innerText = 'Entrar';
+secBotao.appendChild(buttonEntrar);
+const signin = document.getElementById('button-login');
