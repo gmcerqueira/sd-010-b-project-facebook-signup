@@ -30,3 +30,13 @@
 .right-content {
   width: 300px;
 }
+
+.full-name {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.full-name input {
+  width: 40%;
+}
