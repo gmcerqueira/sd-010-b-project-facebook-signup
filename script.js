@@ -66,10 +66,12 @@ cadastroBtn.addEventListener('click', (event) => {
 
   const rightContent = document.querySelector('.right-content');
   rightContent.innerHTML = `
-  <p>Olá, ${inputs[0]} ${inputs[1]}</p> 
-  <p>Email ou telefone: ${inputs[2]}</p>
-  <p>Data de nascimento: ${inputs[4]}</p>
-  <p>Gênero: ${selecionarGender()}</p>
+  <p>
+    Olá, ${inputs[0]} ${inputs[1]} <br>
+    Email ou telefone: ${inputs[2]} <br>
+    Data de nascimento: ${inputs[4]} <br>
+    Gênero: ${selecionarGender()}
+  </p>
   `;
 });
 
