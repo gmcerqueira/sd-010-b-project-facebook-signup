@@ -37,7 +37,7 @@
   width: 300px;
 }
 
-.right-content input {
+.right-content input[ type = 'text' ] , .right-content input[ type = 'password' ] {
   width: 289px;
 }
 
