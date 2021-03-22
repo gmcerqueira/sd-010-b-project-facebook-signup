@@ -13,7 +13,7 @@
   align-items: center;
 }
 
-.content-header {
+.top-bar {
   width: 980px;
   display: flex;
   justify-content: space-between;
@@ -39,3 +39,80 @@
   display: flex;
   align-self: flex-end;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------Andre----------------------------------- */
+.main-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: justify;
+}
+
+.left-content {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 800px;
+}
+
+.right-content {
+  display: flex;
+  flex-basis: 300px;
+}
+div.right-content {
+  border: 3px solid red;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 400px
+}
+
+div.first-last {
+  /* border: 3px solid blue; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+div.first-last input {
+  flex-basis: 200px;
+}
+
+
+input.celular-email {
+  display: flex;
+  width: 100%;
+}
+
+input.password {
+  display: flex;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
