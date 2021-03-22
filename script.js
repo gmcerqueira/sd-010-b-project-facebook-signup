@@ -45,7 +45,7 @@ function genero() {
 const personalizado = document.querySelector('#personalizado');
 
 function clicaPersonalizado() {
-  personalizado.addEventListener('click', genero);
+  personalizado.addEventListener('change', genero);
 }
 
 clicaPersonalizado();
