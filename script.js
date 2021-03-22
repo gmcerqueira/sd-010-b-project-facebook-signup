@@ -36,15 +36,15 @@ personalizado.addEventListener('click', selectedGender);
 
 // Referêcia utilizada para realizar o requisito 20: https://stackoverflow.com/questions/2010892/storing-objects-in-html5-localstorage //
 
-// function printtext() {
-//   const rightContent = document.querySelector('.right-content');
-//   rightContent.innerHTML = '';
-//   const paragraph = document.createElement('p');
-//   paragraph.id = 'paragraph';
-//   rightContent.appendChild(paragraph);
-//   const recoverdInfo = JSON.parse(localStorage.formPreenchido);
-//   paragraph.innerText = ` Olá, ${recoverdInfo.firstName} ${recoverdInfo.lastName}.\n Recebemos o teu cadastro com sucesso!\n Confira os seus dados: \n\n E-mail/Telefone: ${recoverdInfo.mail} \n Data de Nascimento: ${recoverdInfo.birthDate} \n Gênero: ${recoverdInfo.gender}`;
-// }
+function printtext() {
+  const rightContent = document.querySelector('.right-content');
+  rightContent.innerHTML = '';
+  const paragraph = document.createElement('p');
+  paragraph.id = 'paragraph';
+  rightContent.appendChild(paragraph);
+  const recoverdInfo = JSON.parse(localStorage.formPreenchido);
+  paragraph.innerText = ` Olá, ${recoverdInfo.firstName} ${recoverdInfo.lastName}.\n Recebemos o teu cadastro com sucesso!\n Confira os seus dados: \n\n E-mail/Telefone: ${recoverdInfo.mail} \n Data de Nascimento: ${recoverdInfo.birthDate} \n Gênero: ${recoverdInfo.gender}`;
+}
 
 function guardaFormulario() {
   const formPreenchido = {
@@ -55,7 +55,7 @@ function guardaFormulario() {
     gender: document.querySelector('.selected').value,
   };
   localStorage.setItem('formPreenchido', JSON.stringify(formPreenchido));
-  // printtext();
+  printtext();
 }
 
 const btnCadastro = document.querySelector('#facebook-register');
