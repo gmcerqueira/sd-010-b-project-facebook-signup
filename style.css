@@ -25,7 +25,6 @@ body {
   justify-content: flex-end;
   width: 900px;
   margin: 0 auto;
-  flex-direction: column;
 }
 
 .facebook-login {
@@ -45,4 +44,3 @@ body {
 .left-container {
   width: 800px;
 }
-
