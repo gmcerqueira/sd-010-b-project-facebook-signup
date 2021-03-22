@@ -1,17 +1,19 @@
 .top-bar {
   display: flex;
   background-color: rgb(66, 103, 178);
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .facebook-logo {
   display: flex;
   align-self: flex-start;
+  margin-left: auto;
 }
 
 .facebook-login {
   display: flex;
   flex-direction: row;
+  margin-left: auto;
 }
 
 #user-email-phone-label {
@@ -54,4 +56,8 @@
 #form-nome-sobrenome {
   display: flex;
   flex-direction: row;
+}
+
+#genero-personalizado {
+  display: none;
 }
