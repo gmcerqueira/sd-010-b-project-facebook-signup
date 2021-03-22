@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
@@ -44,7 +50,12 @@
   padding: 3px;
 }
 
+main {
+  flex: 1;
+}
+
 .main-content {
+  padding: 20px 0;
   display: flex;
   justify-content: center;
   background: linear-gradient(180deg, rgb(254, 254, 254) 0%, rgb(210, 217, 231) 100%);
@@ -147,4 +158,43 @@ Code: min-width: 0 -> Serve para o input entrar nas regras de grow e shrink do f
   border: 1px solid #e2ecf8;
   color: white;
   font-weight: 700;
+}
+
+footer {
+  text-align: center;
+  background-color: #272727;
+  height: auto;
+  color: white;
+  font-size: large;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+.created-by {
+  padding-top: 15px;
+}
+
+footer div {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.author {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+footer img {
+  width: 50px;
+}
+
+.sponsor {
+  display: flex;
+  flex-direction: column;
+}
+
+.sponsor img {
+  margin: 10px 0;
 }
