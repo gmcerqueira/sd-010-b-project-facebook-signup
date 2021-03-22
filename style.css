@@ -38,9 +38,19 @@ body {
 }
 
 .main-content {
+  display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  width: 800px;
+  margin: 0 auto;
 }
 
 .left-container {
+  display: flex;
   width: 800px;
+}
+
+.right-container {
+  display: flex;
+  align-self: flex-end;
 }
