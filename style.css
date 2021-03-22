@@ -17,8 +17,8 @@
     align-self: flex-end;
     margin-bottom: 5px;
   }
-/* Requisito 3 */
 
+/* Requisito 3 */
 .facebook-login {
   display: flex;
   justify-content: space-around;
@@ -28,7 +28,7 @@
 .form-group {
   display: flex;
   flex-direction: column;
-  align-items:center;
+  align-items: center;
   margin: 5px;
   color: white;
   font-size: small;
@@ -41,10 +41,20 @@
 }
 
 a {
-    text-decoration: none;
-    opacity: 0.7;
+  text-decoration: none;
+  opacity: 0.7;
 }
 
 #user-email-phone-label {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+/* Requisito 10 */
+.right-content {
+  width: 300px;   
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
 }
