@@ -57,3 +57,13 @@
 #button-login:hover {
   background-color: opa;
 }
+
+.left-content {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 800px;
+}
+
+.left-content img {
+  width: 60%;
+}
