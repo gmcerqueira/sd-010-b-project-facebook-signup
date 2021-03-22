@@ -38,3 +38,8 @@
 #name-section {
   display: flex;
 }
+
+#gender-section {
+  display: flex;
+  flex-direction: column;
+}
