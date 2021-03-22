@@ -7,16 +7,23 @@
   display: flex;
   flex: 1;
   background-color: rgb(66, 103, 178);
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .facebook-login {
+  display: flex;
   align-self: center;
+
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
+}
+
+.form-control {
+  align-self: flex-end;
+
 }
 
 .main-content {
