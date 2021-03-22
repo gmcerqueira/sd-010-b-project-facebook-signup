@@ -12,13 +12,16 @@
   <header class ='top-bar'>
     <img src="imgs/facebook-logo.png" class='facebook-logo'>
      <form action="" class='facebook-login'>
-         <div class='form-login'>
-             <label for="login">Email ou telefone</label>
-             <input id='login 'type="email" required>
+         <div class='form-group'>
+             <label for='user-email-phone' id = 'user-email-phone-label'>Email ou telefone</label>
+             <input id='user-email-phone'type="email" required>
          </div>
-         <div class='form-login'>
-            <label for="pass">Senha</label>
-            <input id='pass'type="password" required>
+         <div class='form-group'>
+            <label for="user-password" id = 'user-password-label'>Senha</label>
+            <input id='user-password'type="password" required>
+        </div>
+        <div class = 'form-control'>
+          <button id = 'button-login'>Entrar</button>
         </div>
      </form>
   </header>
