@@ -95,7 +95,7 @@ h1Content.innerText = 'Abra uma conta';
 rightContent.appendChild(h1Content);
 
 // Criado o Elemento span que vai dentro Rigth content
-const spanContent = document.createElement('span');
+const spanContent = document.createElement('form');
 spanContent.className = 'quick-easy';
 spanContent.innerText = 'É rápido e fácil.';
 rightContent.appendChild(spanContent);
