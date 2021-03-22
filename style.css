@@ -28,6 +28,9 @@
 
 .main-content {
   display: flex;
-  padding: 500px;
   background-image: linear-gradient(to bottom, white, rgb(211, 216, 232));
+}
+
+.left-content {
+  width: 800px;
 }
