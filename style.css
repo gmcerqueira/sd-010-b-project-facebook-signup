@@ -39,3 +39,8 @@
 .fullName {
   display: flex;
 }
+
+.subscriptionForms {
+  display: flex;
+  flex-direction: column;
+}
