@@ -56,17 +56,12 @@ const secBotao = document.createElement('section');
 secBotao.className = 'form-control';
 inputs.appendChild(secBotao);
 
-// criado função do alerta
-function alerta() {
-  alert('Email ou telefone');
-}
-
 // criado o elemento botão
 const buttonEntrar = document.createElement('button');
 buttonEntrar.id = 'button-login';
 buttonEntrar.innerText = 'Entrar';
 secBotao.appendChild(buttonEntrar);
-buttonEntrar.addEventListener('click', alerta);
+const signin = document.getElementById("button-login");
 
 // Criado o Elemento que vai conter o Main do site
 const mainSite = document.createElement('section');
@@ -100,3 +95,10 @@ const spanContent = document.createElement('span');
 spanContent.className = 'quick-easy';
 spanContent.innerText = 'É rápido e fácil.';
 rightContent.appendChild(spanContent);
+
+// criado função do alerta
+function alerta() {
+  alert("Email ou telefone");
+}  
+
+signin.addEventListener('click', alerta);
