@@ -16,8 +16,8 @@ const botaoCadastro = document.querySelector('#facebook-register');
 function criaAviso() {
   const div = document.querySelector('#verifica-cadastro');
   const p = document.createElement('p');
-  const criaP = div.appendChild(p).innerHTML = 'Campos Inválidos';
-  return criaP
+  const criaP = (div.appendChild(p).innerHTML = 'Campos Inválidos');
+  return criaP;
 }
 
 function verificaCadastro() {
@@ -28,10 +28,10 @@ function verificaCadastro() {
   const campoDataNasc = document.querySelector('#birth-date').value;
 
   if (
-    campoNome 
-    || campoSobrenome 
-    || campoEmailPhone 
-    || campoSenha 
+    campoNome
+    || campoSobrenome
+    || campoEmailPhone
+    || campoSenha
     || campoDataNasc === null
   ) {
     criaAviso();
