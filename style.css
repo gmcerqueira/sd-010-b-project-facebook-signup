@@ -1,4 +1,16 @@
 .top-bar {
-  display: flex;
   background-color: rgb(66, 103, 178);
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.facebook-login {
+  color: white;
+  display: flex;
+}
+
+.facebook-logo {
+  height: 60px;
 }

@@ -8,9 +8,22 @@
 </head>
 <body>
   <header>
-    <nav class="top-bar">
-      <img  class="facebook-logo" src="imgs/facebook-logo.png" alt="">
-    </nav>
+    <div class="top-bar">
+      <img class="facebook-logo" src="imgs/facebook-logo.png" alt="">
+      <form action="" class="facebook-login">
+        <div class="form-group">
+          <label id="user-email-phone-label" for="user-email-phone">Email ou telefone</label>
+          <input id="user-email-phone" type="text">
+        </div>
+        <div class="form-group">
+          <label id="user-password-label" for="user-password">Senha</label>
+          <input type="password" id="user-password">
+        </div>
+        <div class="form-control">
+          <button type="submit" id="button-login" class="button-login">Entrar</button>
+        </div>
+      </form>
+    </div>
   </header>
   
 </body>
