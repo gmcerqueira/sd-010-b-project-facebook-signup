@@ -6,9 +6,9 @@ loginBtn.addEventListener('click', () => {
   return alert(res);
 });
 
+const inputsCadastro = document.querySelectorAll('.input-cadastro');
 function validaInputs() {
   let inputInvalido = false;
-  const inputsCadastro = document.querySelectorAll('.input-cadastro');
   for (let i = 0; i < inputsCadastro.length; i += 1) {
     if (!inputsCadastro[i].value) {
       inputInvalido = true;
@@ -17,8 +17,8 @@ function validaInputs() {
   return inputInvalido;
 }
 
+const inputsGender = document.querySelectorAll('.input-gender');
 function validateGender() {
-  const inputsGender = document.querySelectorAll('.input-gender');
   let validaGender = false;
   for (let i = 0; i < inputsGender.length; i += 1) {
     if (inputsGender[i].checked) {
@@ -28,19 +28,44 @@ function validateGender() {
   return validaGender;
 }
 
-const cadastroBtn = document.querySelector('#facebook-register');
+function selecionarGender() {
+  for (let i = 0; i < inputsGender.length; i += 1) {
+    if (inputsGender[i].checked) {
+      return inputsGender[i].value;
+    }
+  }
+}
 
-cadastroBtn.addEventListener('click', (event) => {
+function validaCadastro() {
   const erro = document.querySelector('#campos-invalidos');
   erro.innerHTML = '';
 
   const formCadastro = document.querySelector('#form-cadastro');
 
-  event.preventDefault();
-
   if (!validateGender() || validaInputs()) erro.innerHTML = 'Campos inválidos';
 
   formCadastro.appendChild(erro);
+}
+
+const cadastroBtn = document.querySelector('#facebook-register');
+
+cadastroBtn.addEventListener('click', (event) => {
+  event.preventDefault();
+
+  validaCadastro();
+
+  const inputs = [];
+  for (let i = 0; i < inputsCadastro.length; i += 1) {
+    inputs.push(inputsCadastro[i].value);
+  }
+
+  const rightContent = document.querySelector('.right-content');
+  rightContent.innerHTML = `
+  <p>Olá, ${inputs[0]} ${inputs[1]}</p> 
+  <p>Email ou telefone: ${inputs[2]}</p>
+  <p>Data de nascimento: ${inputs[4]}</p>
+  <p>Gênero: ${selecionarGender()}</p>
+  `;
 });
 
 const genderPersonalizado = document.querySelector('#personalizado');
