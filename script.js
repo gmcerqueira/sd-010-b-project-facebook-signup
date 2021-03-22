@@ -6,6 +6,28 @@ loginBtn.addEventListener('click', () => {
   return alert(res);
 });
 
+function validaInputs() {
+  let inputInvalido = false;
+  const inputsCadastro = document.querySelectorAll('.input-cadastro');
+  for (let i = 0; i < inputsCadastro.length; i += 1) {
+    if (!inputsCadastro[i].value) {
+      inputInvalido = true;
+    }
+  }
+  return inputInvalido;
+}
+
+function validateGender() {
+  const inputsGender = document.querySelectorAll('.input-gender');
+  let validaGender = false;
+  for (let i = 0; i < inputsGender.length; i += 1) {
+    if (inputsGender[i].checked) {
+      validaGender = true;
+    }
+  }
+  return validaGender;
+}
+
 const cadastroBtn = document.querySelector('#facebook-register');
 
 cadastroBtn.addEventListener('click', (event) => {
@@ -15,24 +37,8 @@ cadastroBtn.addEventListener('click', (event) => {
   const formCadastro = document.querySelector('#form-cadastro');
 
   event.preventDefault();
-  const inputsCadastro = document.querySelectorAll('.input-cadastro');
-  for (let i = 0; i < inputsCadastro.length; i += 1) {
-    if (!inputsCadastro[i].value) {
-      erro.innerHTML = 'Campos inválidos';
-      formCadastro.appendChild(erro);
-      break;
-    }
-  }
 
-  const inputsGender = document.querySelectorAll('.input-gender');
-  let validaGender = false;
-  for (let i = 0; i < inputsGender.length; i += 1) {
-    if (inputsGender[i].checked) {
-      validaGender = true;
-    }
-  }
-  if (!validaGender) {
-    erro.innerHTML = 'Campos inválidos';
-    formCadastro.appendChild(erro);
-  }
+  if (!validateGender() || validaInputs()) erro.innerHTML = 'Campos inválidos';
+
+  formCadastro.appendChild(erro);
 });
