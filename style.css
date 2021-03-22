@@ -47,14 +47,12 @@
   align-items: flex-end;
 }
 
-#user-email-phone-label , 
-#user-password-label {
+#user-email-phone-label , #user-password-label {
   color: white;
   font-family: Times, serif;
 }
 
-#user-email-phone , 
-#user-password {
+#user-email-phone , #user-password {
   width: 150px;
 }
 
@@ -106,14 +104,6 @@
   margin-bottom: 20px;
 }
 
-.right-content input[ type = 'text' ] , 
-.right-content input[ type = 'password'] {
-  padding: 8px 10px;
-  font-size: 16px;
-  border: 1px solid #bdc7d8;
-  border-radius: 5px;
-}
-
 .full-name-form {
   width: 100%;
   display: flex;
@@ -123,20 +113,36 @@
 
 .first-name-form {
   width: 49%;
+  padding: 8px 10px;
+  font-size: 16px;
+  border: 1px solid #bdc7d8;
+  border-radius: 5px;
 }
 
 .last-name-form {
   width: 49%;
+  padding: 8px 10px;
+  font-size: 16px;
+  border: 1px solid #bdc7d8;
+  border-radius: 5px;
 }
 
 .phone-email-form {
   width: 100%;
   margin-bottom: 10px;
+  padding: 8px 10px;
+  font-size: 16px;
+  border: 1px solid #bdc7d8;
+  border-radius: 5px;
 }
 
 .password-form {
   width: 100%;
   margin-bottom: 20px;
+  padding: 8px 10px;
+  font-size: 16px;
+  border: 1px solid #bdc7d8;
+  border-radius: 5px;
 }
 
 #label-birthdate {
@@ -147,6 +153,10 @@
 .date-birthdate-form {
   width: 100%;
   margin: 5px 0;
+  padding: 8px 10px;
+  font-size: 16px;
+  border: 1px solid #bdc7d8;
+  border-radius: 5px;
 }
 
 .gender-form {
@@ -187,6 +197,10 @@
 
 #other-input {
   width: 100%;
+  padding: 8px 10px;
+  font-size: 16px;
+  border: 1px solid #bdc7d8;
+  border-radius: 5px;
 }
 
 @media screen and ( max-width: 480px ) {
