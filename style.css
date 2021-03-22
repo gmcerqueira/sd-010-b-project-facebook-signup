@@ -2,17 +2,21 @@
   display: flex;
   background-color: rgb(66, 103, 178);
 }
+
 .facebook-logo {
   margin: left;
 }
+
 .facebook-login {
   display: flex;
   margin-left: 70%;
   float: right;
 }
+
 .formulario-column {
   flex-direction: column;
 }
+
 .form-group {
   display: flex;
   flex-direction: column;
