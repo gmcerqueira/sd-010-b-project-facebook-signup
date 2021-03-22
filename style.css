@@ -116,20 +116,24 @@
   width: 300px;
 }
 
-.full-name {
+.full-name-form {
   width: 100%;
   display: flex;
   justify-content: space-around;
 }
 
-.first-name {
+.first-name-form {
   width: 50%;
 }
 
-.last-name {
+.last-name-form {
   width: 50%;
 }
 
-.phone-email {
+.phone-email-form {
+  width: 100%;
+}
+
+.password-form {
   width: 100%;
 }
