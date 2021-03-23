@@ -25,6 +25,7 @@ header {
 
 header .facebook-login {
   display: flex;
+  align-self: flex-end;
 }
 
 .formulario-column {
@@ -37,4 +38,8 @@ header .facebook-login {
 .form-group {
   display: flex;
   flex-direction: column;
+}
+.main-content {
+  display: flex;
+  position: absolute;
 }
