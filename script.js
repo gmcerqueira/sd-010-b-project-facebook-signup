@@ -20,9 +20,11 @@ function userLoged(props) {
   const v3 = `Data de Nascimento ${props[3]}`;
   const v4 = document.querySelector('input[type="radio"]:checked').value;
   mainContent.removeChild(rightForm);
+  const div = document.createElement('div');
+  mainContent.appendChild(div);
   const createSection = document.createElement('p');
   createSection.innerText = `${v1}. ${v2}. ${v3}. Gênero ${v4}`;
-  mainContent.appendChild(createSection);
+  div.appendChild(createSection);
 }
 
 function checarCampo() {
