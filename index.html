@@ -31,9 +31,36 @@
     </div>
   </header>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <main class="main-content">
     <div class="left-content">
-      <p id=" facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua
+      <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua
         vida.</p>
       <img src="imgs/networking.png" alt="" id="facebook-networking">
     </div>
@@ -45,8 +72,30 @@
           <input type="text" name="firstname" placeholder="Nome">
           <input type="text" name="lastname" placeholder="Sobrenome">
         </div>
-        <input type="text" name="phone_email" placeholder="Celular ou email" class="celular-email">
-        <input type="password" name="password" placeholder="Nova senha" class="password">
+
+        <div class="cel-email-password">
+          <input type="text" name="phone_email" placeholder="Celular ou email" class="celular-email">
+          <input type="password" name="password" placeholder="Nova senha" class="password">
+        </div>
+
+        <div class="birth">
+          <label for="" id="label-birthdate">Data de nascimento</label>
+          <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
+        </div>
+
+        <div>
+          <div>
+          <label for="" id="label-gender ">Gênero</label>
+        </div>
+          <input type="radio" value="fem" name="gender" id="gender">
+          <label for="gender">Feminino</label>
+          <input type="radio" value="masc" name="gender" id="gender">
+          <label for="gender">Masculino</label>
+          <input type="radio" value="pern" name="gender" id="gender">
+          <label for="gender">Personalizado</label>
+        </div>
+        <button  type="submit" id="facebook-register">"Cadastre-se"</button>
+
       </form>
     </div>
   </main>
