@@ -51,7 +51,8 @@
         <br>
         <label for="" id="label-birthdate">Data de nascimento</label>
         <input id="label-birthdate" type="text" name="birthdate" 
-        placeholder="dd/mm/aaaa" required oninvalid="this.setCustomValidity('Campos inválidos')">
+        placeholder="dd/mm/aaaa" required oninvalid="this.setCustomValidity('Campos inválidos')" 
+        onchange="try{setCustomValidity('')}catch(e){}">
         <br>
         <label for="" class="label-content" id="label-gender">Gênero</label>
         <div class="radios">
