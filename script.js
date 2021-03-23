@@ -52,13 +52,6 @@ function verifica() {
   return saida;
 }
 
-function valida() {
-  const saida = verifica();
-  if (saida) {
-    document.getElementById('campos-invalidos').style.display = 'flex';
-  }
-}
-
 function mostrarInfos(event) {
   event.preventDefault();
   const nome = document.getElementById('nameLogin').value;
@@ -79,28 +72,34 @@ function mostrarInfos(event) {
 }
 
 function dados(event) {
-  event.preventDefault();
   const nome = document.getElementById('nameLogin').value;
   const sobrenome = document.getElementById('lastnameLogin').value;
   const contato = document.getElementById('phoneEmailLogin').value;
   const nascimento = document.getElementById('nascimentoLogin').value;
   const senha = document.getElementById('senhaLogin').value;
   const elementos = [nome, sobrenome, contato, nascimento, senha];
-  let saida = true;
+  let estado = true;
   for (let index = 0; index < elementos.length; index += 1) {
     if (elementos[index] === '') {
-      saida = false;
+      estado = false;
     }
   }
-  if (saida) {
+  if (estado) {
     mostrarInfos(event);
   }
+}
+
+function valida(event) {
+  const saida = verifica();
+  if (saida) {
+    document.getElementById('campos-invalidos').style.display = 'flex';
+  }
+  dados(event);
 }
 
 function bttCadastro() {
   const botaoCadastro = document.getElementById('facebook-register');
   botaoCadastro.addEventListener('click', valida);
-  botaoCadastro.addEventListener('click', dados);
 }
 
 bttCadastro();
