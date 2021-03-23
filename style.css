@@ -6,6 +6,13 @@
   box-sizing: border-box;
 }
 
+/* header div {
+  display: flex;
+  background-color: rgb(66, 103, 178);
+  height: 82px;
+  justify-content: center;
+} */
+
 .top-bar {
   display: flex;
   background-color: rgb(66, 103, 178);
@@ -37,7 +44,7 @@
 
 .main-content {
   display: flex;
-  background-color: wheat;
+  background-image: linear-gradient(white, #D3D8E8);
   flex-direction: row;
   height: 614px;
   min-width: 980px;
