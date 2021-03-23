@@ -14,6 +14,15 @@ function alertEmail() {
   alert(`${document.getElementById('user-email-phone').value}`);
 }
 
+function createElement(fullName, emailPhone, birthday, genderUser) {
+  const createSection = document.createElement('section');
+  createSection.appendChild(fullName);
+  createSection.appendChild(emailPhone);
+  createSection.appendChild(birthday);
+  createSection.appendChild(genderUser);
+  return createSection;
+}
+
 function userLoged(props) {
   const fullName = document.createElement('h1');
   const birthdayP = props[3];
@@ -30,22 +39,6 @@ function userLoged(props) {
   mainContent.appendChild(
     createElement(fullName, emailPhone, birthday, genderUser)
   );
-}
-
-function createElement(fullName, emailPhone, birthday, genderUser) {
-  const createSection = document.createElement('section');
-  for (let index = 0; index < 4; index += 1) {
-    if (index === 0) {
-      createSection.appendChild(fullName);
-    } else if (index === 1) {
-      createSection.appendChild(emailPhone);
-    } else if (index === 2) {
-      createSection.appendChild(birthday);
-    } else {
-      createSection.appendChild(genderUser);
-    }
-  }
-  return createSection;
 }
 
 function checarCampo() {
