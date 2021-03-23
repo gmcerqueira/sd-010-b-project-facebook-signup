@@ -19,11 +19,13 @@ function userLoged(props) {
   mainContent.removeChild(rightForm);
   const div = document.createElement('div');
   mainContent.appendChild(div);
-  let elemento = document.createElement('aside');
-  elemento.className = "right-content";
+  const elemento = document.createElement('aside');
+  elemento.className = 'right-content';
   mainContent.appendChild(elemento);
-  elemento.innerHTML = `<h1>Olá, ${props[0]} ${props[1]}</h1><p>${props[2]}</p>`;
-  elemento.innerHTML += `<p>${props[3]}</p><p>${gender}</p>`;
+  elemento.innerHTML = `<h1>Olá, ${props[0]} ${props[1]}</h1>`;
+  elemento.innerHTML += `<p>${props[2]}</p>`;
+  elemento.innerHTML += `<p>${props[3]}</p>`;
+  elemento.innerHTML += `<p>${gender}</p>`;
 }
 
 function checarCampo() {
