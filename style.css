@@ -58,8 +58,8 @@
   display: flex;
   flex-direction: column;
 }
+
 .generos {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+ flex-flow: row wrap;
 }
