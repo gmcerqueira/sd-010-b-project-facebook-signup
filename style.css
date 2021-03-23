@@ -9,18 +9,21 @@
   font-size: 12px;
   padding: 13px;
   border: 1px solid black;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
 }
-
-.ajuste {
+/* para centralizar */
+/* .bar-contanier {
   width: 1000px;
   margin: auto;
   display: flex;
   flex-flow: row;
   align-items: center;
   justify-content: space-between;
-}
+} */
 
 .facebook-logo {
   display: flex;
-  height: 60px;
+  height: 85px;
 }
