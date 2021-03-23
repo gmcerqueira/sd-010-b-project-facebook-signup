@@ -1,3 +1,4 @@
+// Requisito 7
 function entrar() {
   const btnentrar = document.getElementById('button-login');
   const email = document.getElementById('user-email-phone');
@@ -28,3 +29,37 @@ function checkfilled() {
 }
 
 checkfilled();
+
+// Requisito 19
+function createInputGenrer() {
+  const localGenderPersonal = document.querySelector('.genderPersonal');
+  const radioPersonal = document.querySelector('#personalizado');
+  radioPersonal.addEventListener('click', () => {
+    if (!document.querySelector('#inputP')) {
+      const inputPersonal = document.createElement('input');
+      inputPersonal.placeholder = 'Gênero (opcional)';
+      inputPersonal.type = 'text';
+      inputPersonal.id = 'inputP';
+      inputPersonal.name = 'gender-custom';
+      localGenderPersonal.appendChild(inputPersonal);
+    }
+  });
+}
+
+createInputGenrer();
+
+// Requisito 19 - Adicional -- Remove input gênero personalizado caso clicado em Masculino / Feminino
+function removeInputGenrer() {
+  const radioMasc = document.querySelector('#masculino');
+  radioMasc.addEventListener('click', () => {
+    const inputPCreated = document.querySelector('#inputP');
+    if (inputPCreated) { inputPCreated.remove(); }
+  });
+  const radioFem = document.querySelector('#feminino');
+  radioFem.addEventListener('click', () => {
+    const inputPCreated = document.querySelector('#inputP');
+    if (inputPCreated) { inputPCreated.remove(); }
+  });
+}
+
+removeInputGenrer();
