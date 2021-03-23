@@ -3,6 +3,8 @@ const botaoLogin = document.getElementById('button-login');
 const personalizadoRadio = document.getElementById('personalizado');
 const personalizado = document.getElementById('genero-personalizado');
 const campo = document.getElementById('campos-invalidos');
+const mainContent = document.querySelector('.main-content');
+const rightForm = document.querySelector('.right-content');
 
 function mostrarElemento() {
   personalizado.style.display = 'flex';
@@ -13,7 +15,6 @@ function alertEmail() {
 }
 
 function userLoged(props) {
-  const rightForm = document.querySelector('.right-content');
   const fullName = document.createElement('h1');
   const birthdayP = props[3];
   const phoneP = props[2];
@@ -25,11 +26,13 @@ function userLoged(props) {
   const genderUser = document.createElement('p');
   const valorR = document.querySelector('input[type="radio"]:checked').value;
   genderUser.innerText = valorR;
-  rightForm.innerHTML = '';
-  rightForm.appendChild(fullName);
-  rightForm.appendChild(emailPhone);
-  rightForm.appendChild(birthday);
-  rightForm.appendChild(genderUser);
+  mainContent.removeChild(rightForm);
+  const createSection = document.createElement('section');
+  mainContent.appendChild(createSection);
+  createSection.appendChild(fullName);
+  createSection.appendChild(emailPhone);
+  createSection.appendChild(birthday);
+  createSection.appendChild(genderUser);
 }
 
 function checarCampo() {
