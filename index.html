@@ -42,16 +42,16 @@
         </div>
         <input name="phone_email" type="text" placeholder="Celular ou email">
         <input type="password" name="password" placeholder="Nova senha">
-        <label for="birthdate" id="label-birthdate">Data de Nascimento:</label>
+        <label for="birthdate" id="label-birthdate">Data de nascimento</label>
         <input type="text" placeholder="dd/mm/aaaa" name="birthdate" id="birthdate">
         <label for="" id="label-gender">Gênero</label>
         <div class="radio-labels">
-          <label class="radio-input" for=""><input type="radio" name="gender" id="" checked> Masculino</label>
-          <label class="radio-input" for=""><input type="radio" name="gender" id=""> Feminino</label>
-          <label class="radio-input" for=""><input type="radio" id="custom" name="gender" id=""> Personalizado</label>
+          <label class="radio-input" for="female"><input type="radio" name="gender" value="female" id='female' id="" checked> Feminino</label>
+          <label class="radio-input" for="male"><input type="radio" name="gender" id='male' value="male" id=""> Masculino</label>
+          <label class="radio-input" for="custom"><input type="radio" id="custom" value="other" name="gender" id=""> Personalizado</label>
         </div>
 
-        <input type="text" class="hidden" name="gender-custom" placeholder="Gênero (opcional)">
+        <input type="text" id='gender-custom' class="hidden" name="gender-custom" placeholder="Gênero (opcional)">
 
         <button id="facebook-register" type="submit">Cadastre-se</button>
       </form>

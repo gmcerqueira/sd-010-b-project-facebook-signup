@@ -191,8 +191,3 @@ footer img {
   display: none;
   visibility: hidden;
 }
-
-.visible {
-  display: initial;
-  visibility: visible;
-}
