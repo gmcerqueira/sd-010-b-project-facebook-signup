@@ -186,3 +186,13 @@ footer img {
 .sponsor img {
   margin: 10px 0;
 }
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.visible {
+  display: initial;
+  visibility: visible;
+}
