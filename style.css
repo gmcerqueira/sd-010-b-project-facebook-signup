@@ -1,10 +1,15 @@
 * {
   margin: 0;
+  padding: 0;
+  font-size: 100%;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .top-bar {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   border-bottom: 1px solid #133783;
   padding: 20px;
   background-color: rgb(66, 103, 178);
@@ -22,13 +27,25 @@
 
 .facebook-login {
   display: flex;
+}
+
+.top-bar label {
+  color: white;
   position: absolute;
-  padding: 5px;
-  right: 0;
-  flex-direction: row;
+  flex-direction: flex-end;
+  top: 10px;
+  margin-left: 4px;
+}
+
+.top-bar input {
+  margin-left: 5px;
 }
 
 .form-group {
+  flex-direction: column;
   display: flex;
-  flex-direction: row;
+}
+
+.form-control {
+  margin-left: 10px;
 }
