@@ -11,7 +11,7 @@
 <body>
     <main>
         <header class="top-bar" ><!-- REQUISITO 1 -->
-						<img class="facebook-logo" src="imgs/facebook-logo.png" alt="logo facebook"> <!-- REQUISITO 2 -->
+		    <img class="facebook-logo" src="imgs/facebook-logo.png" alt="logo facebook"> <!-- REQUISITO 2 -->
             <form action="" method="GET" class="facebook-login">  
                 <section class="form-group">  <!-- REQUISITO 3 -->
                     <label for="user-email-phone-label" id='user-email-phone-label'>Email ou telefone</label>
@@ -26,7 +26,6 @@
                     <button id="button-login">Entrar</button>
                 </section>
             </form>
-            <script src="script.js"></script>
         </header>
         <section class="main-content">
             <section class="left-content"> <!-- REQUISITO 9 -->
@@ -56,11 +55,21 @@
                 <input type="radio" name="gender" id="personalizado" value="Personalizado" >
                 <label for="personalizado">Personalizado</label>
                 </label>
+                
+                <div class="userTerms" > <!-- REQUISITO 17 -->
+                    <p>Ao clicar em Cadastre-se, você concorda com nossos <span>Termos, Política de Dados e Política de Cookies.</span> 
+                        Você pode receber notificações por SMS e pode cancelar isso quando quiser.</p>
+                </div>
+                <div class="btnSumit" > <!-- REQUISITO 17 -->
+                    <button type="submit" id="facebook-register">Cadastre-se</button>
+                </div>
+                <div > <!-- REQUISITO 18 -->
+                    <p id="msgInvalid"></p>
+                </div>
             </form>
         </section>
         </section>
     </main>
-    
-    
+<script src="script.js"></script>
 </body>
 </html>
