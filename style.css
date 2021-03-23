@@ -76,6 +76,7 @@ a {
 }
 
 .data {
+  box-sizing: border-box;
   height: 30px;
   width: 100%;
   border-radius: 5px;
@@ -87,4 +88,8 @@ a {
 
 #label-birthdate {
   width: 100%;
+}
+
+#label-gender {
+  display: block;
 }
