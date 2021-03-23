@@ -17,4 +17,15 @@
 .facebook-logo {
   display: flex;
   height: 85px;
+  padding-left: 100px;
+}
+
+.facebook-login {
+  display: flex;
+  padding-right: 100px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
 }
