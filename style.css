@@ -34,3 +34,11 @@
   margin-bottom: 23px;
   align-self: flex-end;
 }
+
+.main-content {
+  display: flex;
+  background-color: wheat;
+  flex-direction: row;
+  height: 614px;
+  min-width: 980px;
+}
