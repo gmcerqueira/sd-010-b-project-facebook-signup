@@ -1,5 +1,3 @@
-// Código verificado no projeto da dupla henrique-victor
-//https://github.com/tryber/sd-010-b-project-facebook-signup/blob/henrique-victor-facebook-signup/
 function mostrarElemento() {
   const personalizado = document.getElementById('genero-personalizado');
   personalizado.style.display = 'flex';
