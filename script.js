@@ -31,3 +31,18 @@ const masc = document.getElementById('Masculino');
 masc.addEventListener('click', removeCustomGenderInput);
 const fem = document.getElementById('Feminino');
 fem.addEventListener('click', removeCustomGenderInput);
+
+function requisito18() {
+  const check = document.querySelectorAll(':required');
+  let s = 0;
+  for (let i = 0; i < check.length; i += 1) {
+    if (check[i].value === '') {
+      s += 1;
+    }
+  }
+  if (s > 0) {
+    document.querySelector('.invalido').innerHTML = 'Campos inválidos';
+  }
+}
+const req18 = document.getElementById('facebook-register');
+req18.addEventListener('click', requisito18);

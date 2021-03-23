@@ -57,3 +57,7 @@
   display: flex;
   width: 100%;
 }
+
+.invalido {
+  color: red;
+}
