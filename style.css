@@ -45,7 +45,7 @@ input {
 
 .main-content {
   display: flex;
-    
+
 }
 
 .left-content {
@@ -53,11 +53,6 @@ input {
   min-width: 800px;
   flex-direction: column;
 }
-
-.left-content {
-  display: flex;
-}
-
 
 #facebook-slogan {
   margin: 20px;
@@ -74,9 +69,8 @@ input {
 .quick-easy {
   display: flex;
   color: dimgrey;
-  
 }
- h1{
-   font-size: 30px;
- }
 
+h1 {
+  font-size: 30px;
+}
