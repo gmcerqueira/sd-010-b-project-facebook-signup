@@ -4,7 +4,8 @@ document.getElementById('button-login').addEventListener('click', () => {
 
 const getTextInput = document.getElementsByClassName('inputForm');
 const formButton = document.getElementById('facebook-register');
-
+const textCamp = document.getElementById('divId');
+const optionalGender = document.createElement('input');
 function validateText() {
   let emptyInput = false;
   for (let x = 0; x < getTextInput.length; x += 1) {
@@ -20,4 +21,14 @@ formButton.addEventListener('click', (e) => {
   if (validateText()) {
     document.getElementById('erro').innerText = 'Campos inválidos';
   }
+});
+
+function createCamp() {
+  textCamp.appendChild(optionalGender);
+  optionalGender.name = 'gender-custom';
+  optionalGender.placeholder = 'Gênero (opcional)';
+}
+
+document.getElementById('personal').addEventListener('click', () => {
+  createCamp();
 });
