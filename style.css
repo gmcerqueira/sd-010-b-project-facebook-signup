@@ -53,6 +53,10 @@
   width: 300px;
 }
 
+#label-gender {
+  display: block;
+}
+
 .nomeSobrenome {
   display: flex;
   flex-wrap: nowrap;
