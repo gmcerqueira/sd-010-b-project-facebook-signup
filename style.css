@@ -14,9 +14,9 @@
   padding: 0 150px 0 100px;
 }
 
- .top-bar input {
+.top-bar input {
    height: 25px;
- }
+}
 
 .top-bar img {
   width: 200px;
@@ -80,7 +80,7 @@
   margin: 5px;
 }
 
-.right-content input[type="text"] , .right-content input[type="password"] {
+.right-content input [ type = 'text' ] , .right-content input [ type = 'password' ] {
   margin: 10px 10px 5px 0;
   width: 500px;
   height: 35px;
@@ -91,7 +91,7 @@
 }
 
 .open {
-  color: #333333;
+  color: #333;
   font-size: 36px;
 }
 
@@ -126,8 +126,8 @@
   padding: 7px 20px;
   margin: 10px 0 10px 0;
   font-size: 19px;
-  font-weight: bold;
-  color: #ffffff;
+  font-weight: 800;
+  color: white;
   background-color: #69a74e;
 }
 
