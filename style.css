@@ -86,14 +86,6 @@ input {
   width: 300px;
 }
 
-#usermale {
-  font-size: 10px;
-}
-
-#userfemale {
-  font-size: 10px;
-}
-
-#userother {
+#label-gender {
   font-size: 10px;
 }
