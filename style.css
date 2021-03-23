@@ -6,18 +6,15 @@
 .top-bar {
   display: flex;
   background-color: rgb(66, 103, 178);
-  align-items: center;
 }
 
 .facebook-logo {
   display: flex;
-  justify-self: flex-start;
   margin: auto;
 }
 
 .facebook-login {
   display: flex;
-  justify-self: flex-end;
   margin: auto;
 }
 
