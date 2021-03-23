@@ -17,8 +17,18 @@ function userLoged() {
   const formInputs = document.querySelectorAll('.input-cadastro');
   const fullName = document.createElement('h1');
   fullName.innerText = `Olá, ${formInputs[0].value} ${formInputs[1].value}`;
+  const emailPhone = document.createElement('p');
+  emailPhone.innerText = formInputs[2].value;
+  const birthday = document.createElement('p');
+  birthday.innerText = formInputs[4].value;
+  const genderUser = document.createElement('p');
+  const valorR = document.querySelector('input[type="radio"]:checked').value;
+  genderUser.innerText = valorR;
   rightForm.innerHTML = '';
   rightForm.appendChild(fullName);
+  rightForm.appendChild(emailPhone);
+  rightForm.appendChild(birthday);
+  rightForm.appendChild(genderUser);
 }
 
 function checarCampo() {
