@@ -1,8 +1,6 @@
 const consButton = document.querySelector('#button-login');
 
-function funAlert() {
+consButton.addEventListener('click', () => {
   const aux = document.querySelector('#user-email-phone').value;
   alert(aux);
-}
-
-consButton.addEventListener('click', funAlert);
+});
