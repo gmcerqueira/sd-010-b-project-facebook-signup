@@ -27,7 +27,7 @@
 
 header form {
   align-items: center;
-} 
+}
 
 header input {
   margin: 5px;
@@ -38,7 +38,7 @@ header label {
   margin-left: 5px;
 }
 
-header label, button {
+header label , button {
   color: white;
 }
 
@@ -51,34 +51,34 @@ header button {
   border: solid 1px rgb(41, 66, 87);
 }
 
-/*ederson - ate a linha 45*/
+/* ederson - ate a linha 45 */
 .main-content {
   display: flex;
   justify-content: space-evenly;
 }
-  
+ 
 .left-content {
   width: 800px;
 }
-  
+
 .right-content {
   width: 300px;
 }
-  
+
 .right-content form {
   display: flex;
   flex-flow: wrap row;
 }
-  
+
 .right-content form input {
   width: 129px;
   height: 20px;
 }
-  
+
 #cell-input , #new-password , #label-birth input {
   width: 100%;
 }
-  
+
 #label-gender input {
   margin: 0;
   width: 10px;
