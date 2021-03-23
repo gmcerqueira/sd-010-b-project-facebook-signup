@@ -70,6 +70,15 @@
   margin: 10px;
 }
 
+.left-content p {
+  color: #0e385f;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.5em;
+  width: 400px;
+  margin-top: 25px;
+}
+
 .left-content img {
   width: 60%;
 }
