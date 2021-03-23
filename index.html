@@ -18,29 +18,17 @@
         src="imgs/facebook-logo.png"
         alt="Logo do Facebook"
       />
-      <form class="facebook-login" action="">
-        <div class="form-group field">
-          <label class="label white-text is-small" id="user-email-phone-label"
-            >Email ou telefone</label
-          >
-          <div class="control"> 
-            <input class="input is-small" id="user-email-phone" type="text" />
-          </div> 
+      <form class="facebook-login">
+        <div class="form-group">
+          <label id="user-email-phone-label">Email ou telefone</label>
+          <input type="text" id="user-email-phone">
         </div>
-
-        <div class="form-group field">
-          <label class="label white-text is-small" id="user-password-label"
-            >Senha</label
-          >
-          <div class="control">
-            <input class="input is-small" id="user-password" type="text" />
-          </div>
+        <div class="form-group">
+          <label id="user-password-label">Senha</label>
+          <input type="password" id="user-password">
         </div>
-
-        <div class="field form-control">
-          <button class="button is-link is-small" id="button-login">
-            Entrar
-          </button>
+        <div class="form-control">
+          <button type="button" id="button-login">Entrar</button>
         </div>
       </form>
     </header>
@@ -60,9 +48,7 @@
       </section> 
       <section class="right-content">
         <h1 class="is-size-4 has-text-left">Abra uma conta</h1>
-        <h4 class="quick-easy is-size-5 has-text-left mb-4">
-          É rápido e fácil
-        </h4>
+        <h4 class="quick-easy is-size-5 has-text-left mb-4">É rápido e fácil.</h4>
         <form action="" id="signUpForm" class="field">
           <div class="field is-horizontal">
             <div class="field-body">
@@ -127,16 +113,14 @@
                     type="radio"
                     id="radioFeminine"
                     name="gender"
-                    value="feminino"
-                  />
-                  Feminino
-                </label>
+                    value="Feminino"
+                  />Feminino</label>
                 <label class="radio is-size-7">
                   <input
                     type="radio"
                     id="radioMasculine"
                     name="gender"
-                    value="masculino"
+                    value="Masculino"
                   />
                   Masculino
                 </label>
@@ -145,7 +129,7 @@
                     type="radio"
                     id="radioCustom"
                     name="gender"
-                    value="personalizado"
+                    value="Personalizado"
                   />
                   Personalizado
                 </label>
@@ -158,9 +142,7 @@
               class="button is-success"
               id="facebook-register"
               type="submit"
-            >
-              Cadastre-se
-            </button>
+            >Cadastre-se</button>
           </div>
         </form>
       </section>
