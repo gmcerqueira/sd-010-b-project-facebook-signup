@@ -83,6 +83,10 @@ main {
   justify-content: space-between;
 }
 
+.left-content {
+  width: 800px;
+}
+
 .left-content p {
   display: block;
   width: 450px;
@@ -96,7 +100,8 @@ main {
 }
 
 .right-content {
-  width: 400px;
+  width: 300px;
+  font-size: 15px;
 }
 
 #gender-custom {
@@ -116,7 +121,6 @@ main {
   color: red;
 }
 
-#new-user {
-  width: 400px;
-  height: 500px;
+#label-birthdate {
+  display: block;
 }

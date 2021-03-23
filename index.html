@@ -37,12 +37,13 @@
         <h1>Abra uma conta</h1>
         <p class="quick-easy">É rápido e fácil.</p>
         <form action="" id="new-user">
-          <div class="names">
+
+
             <div class="name_lastname">
               <input type="text" name="firstname" placeholder="Nome" id="name">
-              <label for="last-name"></label>
               <input type="text" name="lastname" placeholder="Sobrenome" id="last-name">
             </div>
+
             <input type="text" name="phone_email" placeholder="Celular ou email" id="phone_email">
             <input type="password" name="password" placeholder="Nova senha" id="password"><br>
             <label for="" id="label-birthdate">Data de nascimento</label>
@@ -59,7 +60,7 @@
             <!-- a utilização de uma função e return false no botão para parar de submeter o form e recarregar a página foi feita usando o stackoverflow
             link: https://stackoverflow.com/questions/21263414/dom-element-disappearing-immediately-after-update -->
             <button type="submit" id="facebook-register"  onclick="returnFalse(); return false;">Cadastre-se</button>
-          </div>
+
         </form>
       </div>
     </section>
