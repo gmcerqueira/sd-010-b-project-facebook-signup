@@ -84,16 +84,6 @@ h1 {
   flex: column;
 }
 
-#email-password {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-#label-birthdate {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .radio-btn {
   display: inline;
   font-size: 15px;
@@ -128,6 +118,11 @@ input {
 
 #label-birthdate , #label-gender {
   font-size: 20px;
+}
+
+#gender {
+  display: flex;
+  flex-direction: row;
 }
 
 #facebook-register {
