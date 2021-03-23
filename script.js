@@ -52,25 +52,51 @@ function validaCadastro() {
   return valido;
 }
 
-function finalizaCadastro() {
-  const inputs = [];
-  for (let i = 0; i < inputsCadastro.length; i += 1) {
-    inputs.push(inputsCadastro[i].value);
-  }
-  const rightContent = document.querySelector('.right-content');
-  rightContent.innerHTML = '';
+function addName() {
+  const firstName = document.querySelector('#first-name').value;
+  const lastName = document.querySelector('#last-name').value;
+
   const fullName = document.createElement('p');
-  const emailOuTelefone = document.createElement('p');
-  const dataNascimento = document.createElement('p');
-  const gender = document.createElement('p');
-  fullName.innerHTML = `Olá, ${inputs[0]} ${inputs[1]}`;
-  emailOuTelefone.innerHTML = `Email ou telefone: ${inputs[2]}`;
-  dataNascimento.innerHTML = `Data de nascimento ${inputs[4]}`;
-  gender.innerHTML = `Gênero ${selecionarGender()}`;
-  rightContent.appendChild(fullName);
-  rightContent.appendChild(emailOuTelefone);
-  rightContent.appendChild(dataNascimento);
-  rightContent.appendChild(gender);
+  fullName.innerHTML = `Olá, ${firstName} ${lastName}`;
+  return fullName;
+}
+
+function addPhoneMail() {
+  const phoneEmail = document.querySelector('#phone_email').value;
+
+  const login = document.createElement('p');
+  login.innerHTML = `Email ou telefone: ${phoneEmail}`;
+  return login;
+}
+
+function addBirthDate() {
+  const birthDate = document.querySelector('#birth-date').value;
+
+  const date = document.createElement('p');
+  date.innerHTML = `Data de nascimento: ${birthDate}`;
+  return date;
+}
+
+function addGender() {
+  const gender = selecionarGender();
+
+  const selected = document.createElement('p');
+  selected.innerHTML = `Gênero: ${gender}`;
+  return selected;
+}
+
+function finalizaCadastro() {
+  const main = document.querySelector('.main-content');
+  const oldRightContent = document.querySelector('.right-content');
+  oldRightContent.style.display = 'none';
+  const newRightContent = document.createElement('div');
+  newRightContent.className = 'right-content';
+  newRightContent.appendChild(addName());
+  newRightContent.appendChild(addPhoneMail());
+  newRightContent.appendChild(addBirthDate());
+  newRightContent.appendChild(addGender());
+
+  main.appendChild(newRightContent);
 }
 
 const cadastroBtn = document.querySelector('#facebook-register');
