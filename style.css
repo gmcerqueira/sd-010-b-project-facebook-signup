@@ -59,4 +59,41 @@
 
 .formContato {
   display: flex;
+  flex-wrap: wrap;
+  width: 250px;
+}
+
+#firstname {
+  width: 115px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 5px;
+  border: 1px solid rgb(66, 103, 178);
+  border-radius: 3px;
+}
+
+#lastname {
+  width: 115px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 5px;
+  border: 1px solid rgb(66, 103, 178);
+  border-radius: 3px;
+}
+
+#phone_email {
+  width: 240px;
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid rgb(66, 103, 178);
+  border-radius: 3px;
+}
+
+#password {
+  width: 240px;
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid rgb(66, 103, 178);
+  border-radius: 3px;
 }
