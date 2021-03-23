@@ -17,8 +17,8 @@
             <input id="user-password" name="user-password" type="text" required>
           </div>
           <div class="form-control">
-            <button type="button-login" class="btn-login" id="button-login">Entrar</button>
-          </div>
+            <button type="button-login" class="btn-login" id="button-login" onclick="textAlert();">Entrar</button>
+        </div>
        </form> 
     </header>
 
@@ -38,28 +38,28 @@
       <form class="data" id="form-register" name="form-register" action="" method="GET">
           <div class="identification">
             <div class="nameFirst">
-                <input class="input-data" name="firstname" id="firstname" placeholder="Nome" type="text">
+                <input class="input-data" name="firstname" id="firstname" placeholder="Nome" type="text" required>
             </div>
 
             <div class="lname">
-              <input class="input-data" name="lastname" id="lastname" placeholder="Sobrenome" type="text">
+              <input class="input-data" name="lastname" id="lastname" placeholder="Sobrenome" type="text" required>
             </div>
           </div>
           <div class="email-telefone">
-              <input class="input-data" name="phone_email" id="phone_email" placeholder="Celular ou email" type="text">
+              <input class="input-data" name="phone_email" id="phone_email" placeholder="Celular ou email" type="text" required>
           </div>
             
           <div class="senha">
-            <input class="input-data" name="password" id="password" placeholder="Nova senha" type="password">
+            <input class="input-data" name="password" id="password" placeholder="Nova senha" type="password" required>
           </div>
           <div class="birthday">
             <label id="label-birthdate" for="birthdate">Data de nascimento</label>
-            <input class="input-element" name="birthdate" id="birthdate" placeholder="dd/mm/aaaa" type="text">
+            <input class="input-element" name="birthdate" id="birthdate" placeholder="dd/mm/aaaa" type="text" required>
           </div>
           <div class="gender">
             <label id="label-gender" for="gender">Gênero</label>
             <div class="gender-input">
-            <input class="input-data radio-options" name="gender" id="gender-female" type="radio" value="Feminino"><span class="radio">Feminino</span>
+            <input class="input-data radio-options" name="gender" id="gender-female" type="radio" value="Feminino" checked><span class="radio">Feminino</span>
             <input class="input-data radio-options" name="gender" id="gender-male" type="radio" value="Masculino"><span class="radio">Masculino</span>
             <input class="input-data radio-options" name="gender" id="gender-customized" type="radio" value="Personalizado"><span class="radio">Personalizado</span>
             </div>
