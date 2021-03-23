@@ -11,10 +11,8 @@ body {
 .top-bar {
   display: flex;
   background-color: rgb(66, 103, 178);
-  /* width: 100%; */
   justify-content: space-between;
   align-items: center;
-  /* height: 80px; */
 }
 
 
