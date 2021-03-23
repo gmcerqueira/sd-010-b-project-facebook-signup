@@ -74,6 +74,21 @@ body {
   padding: 5px 6px;
 }
 
+.right-content button {
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  color: white;
+  height: 39px;
+  width: 194px;
+  border-radius: 6px;
+  border: 1px solid rgb(74, 74, 74);
+  background-color: #6aa656;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
 .form-control button:hover {
   background-color: #3b5a98;
 }
@@ -126,6 +141,17 @@ body {
   flex-direction: row;
 }
 
+.right-content .birthday input {
+  color: #1c1e21;
+  font-size: 18px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid lightgray;
+  height: 39px;
+  width: 430px;
+  margin-top: 8px;
+}
+
 .right-content form .name-lastname input {
   height: 39px;
   width: 210px;
@@ -157,4 +183,49 @@ body {
   height: 39px;
   width: 430px;
   margin-top: 14px;
+}
+
+.right-content .birthday {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-content .birthday label {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 21px;
+  color: #90949c;
+  margin-top: 20px;
+}
+
+.right-content .gender {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-content .gender label {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 21px;
+  color: #90949c;
+  margin-top: 20px;
+}
+
+.right-content .gender .genders {
+  display: flex;
+  flex-direction: row;
+  padding: 8px 0;
+}
+
+.right-content .gender .genders input {
+  color: #1d2129;
+  font-size: 18px;
+  line-height: 18px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.right-content button:hover {
+  background-color: #5d944b;
+  transition: background-color 300ms;
 }
