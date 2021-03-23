@@ -11,6 +11,7 @@ opcaoPersonalizada.addEventListener('click', () => {
   inputP.type = 'text';
   inputP.name = 'gender-custom';
   inputP.placeholder = 'Gênero (opcional)';
+  inputP.required = true;
   inputP.classList.add('opcaoPersonalizada');
   escolhaGenero.appendChild(inputP);
 });
