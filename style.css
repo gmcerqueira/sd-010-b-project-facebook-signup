@@ -10,7 +10,6 @@
   padding: 13px;
   border: 1px solid black;
   flex-flow: row;
-  align-items: center;
   justify-content: space-between;
 }
 
