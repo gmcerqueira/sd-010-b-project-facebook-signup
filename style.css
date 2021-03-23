@@ -44,3 +44,7 @@ header .facebook-login {
   display: flex;
   position: absolute;
 }
+
+.form-control{
+  align-self: flex-end;
+}
