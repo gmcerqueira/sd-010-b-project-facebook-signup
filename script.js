@@ -63,3 +63,57 @@ window.onload = function init() {
   // define uma função init para carregar valores e realizar setup relacionado a eventos
   setupEvents(); // realiza setup relacionado a eventos.
 };
+
+// Criação de input de texto caso seja selecionado Gênero Personalizado
+const divInputGender = document.getElementById('other-gender');
+
+function inputOtherGender() {
+  const inputGender = document.createElement('input');
+  inputGender.type = 'name';
+  inputGender.name = 'gender-custom';
+  inputGender.placeholder = 'Gênero (opcional)';
+
+  divInputGender.appendChild(inputGender);
+}
+
+function clearOtherGender() {
+  divInputGender.innerHTML = '';
+}
+
+function radioChange() {
+  const other = document.getElementById('other');
+
+  if (other.checked === true) {
+    if (divInputGender.innerHTML === '') {
+      inputOtherGender();
+    }
+  } else {
+    clearOtherGender();
+  }
+}
+
+window.onchange = (radioChange);
+
+// Criação e alteração das respostas do form
+
+const signUp = document.getElementById('facebook-register');
+
+function message() {
+  const firstname = document.getElementById('firstname').value;
+  const lastname = document.getElementById('lastname').value;
+  const phoneEmail = document.getElementById('phone_email').value;
+  const birthdate = document.getElementById('birthdate').value;
+  const gender = document.querySelector('input:checked').value;
+
+  return `Olá, ${firstname} ${lastname}
+  ${phoneEmail}
+  ${birthdate}
+  ${gender}`;
+}
+
+function subscribe() {
+  const rightContent = document.querySelector('.right-content');
+  rightContent.innerHTML = message();
+}
+
+signUp.addEventListener('click', subscribe);
