@@ -3,13 +3,13 @@ function alerta() {
   alert(email);
 }
 
-function validaDados() {
-  const name = document.getElementById('firstname');
-  const nameLastname = document.getElementById('lastname');
-  const phone = document.getElementById('phone_email');
-  const password = document.getElementById('password');
-  const birthdate = document.getElementById('birthdate');
-  if ((name.value === '') || (nameLastname.value === '') || (phone.value === '') || (password.value === '') || (birthdate.value === '')) {
+function valida() {
+  const name = document.getElementById('firstname').value;
+  const Last = document.getElementById('lastname').value;
+  const phone = document.getElementById('phone_email').value;
+  const passwd = document.getElementById('password').value;
+  const date = document.getElementById('birthdate').value;
+  if ((name === '') || (Last === '') || (phone === '') || (passwd === '') || (date === '')) {
     const pai = document.getElementById('campo-obrigatorio');
     const p = document.createElement('p');
     p.innerHTML = 'Campos inválidos';
@@ -18,4 +18,4 @@ function validaDados() {
 }
 
 document.getElementById('button-login').addEventListener('click', alerta);
-document.getElementById('facebook-register').addEventListener('click', validaDados);
+document.getElementById('facebook-register').addEventListener('click', valida);
