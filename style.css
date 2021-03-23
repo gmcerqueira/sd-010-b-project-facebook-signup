@@ -23,7 +23,7 @@
   flex-direction: column;
 }
 
-.form-control, .formulario-column {
+.form-control , .formulario-column {
   align-self: flex-end;
 }
 
