@@ -9,24 +9,22 @@
 </head>
   <header class="top-bar">
    <img class="facebook-logo" src="imgs/facebook-logo.png" alt="Logo Facebook">
-  <div class="login">
+  <div class="forms">
   <form action="" method="GET" class="facebook-login">
   <div class="form-group">
-    <label for="email-phone" id="id user-email-phone-label">Email ou telefone</label>
-    <input type="text" name="email-phone" id="id user-email-phone-label" class="email-phone" required>
+    <label for="email-phone" id="user-email-phone-label">Email ou telefone</label>
+    <input type="text" name="email-phone" id="user-email-phone" class="email-phone" required>
   </div>
   <div class="form-group">
-    <label for="password">Senha</label>
-    <input type="password" name="password" required>
+    <label for="password" id="user-password-label">Senha</label>
+    <input type="password" name="password" id="user-password" required>
   </div>
-  <div class="button">
-    <button type="submit" name="button-login">Entrar</button>
-  </div>
-  <div class="forget">
-    <p>Esqueceu a conta?</p>
+  <div class="form-control">
+    <button type="submit" name="login" id="button-login">Entrar</button>
   </div>
   </form>
   </div>
+  <p class="forget">Esqueceu a conta?</p>
 </header>
 <body>
 <div class="main-content">
