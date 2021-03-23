@@ -1,7 +1,9 @@
 let validRadio = false;
+const leftContent = document.querySelector('.left-content');
+const rightInputs = document.querySelectorAll('input');
 
 function validateRadioButtons() {
-  const inputs = document.querySelectorAll('input');
+  const inputs = rightInputs;
   for (let index = 2; index < inputs.length; index += 1) {
     if (inputs[index].checked) {
       validRadio = true;
@@ -20,7 +22,7 @@ function createNewParagraph() {
 
 function validateForm() {
   const parent = document.querySelector('.main-form');
-  const inputs = document.querySelectorAll('input');
+  const inputs = rightInputs;
   const paragraph = createNewParagraph();
   if (document.querySelector('.invalid')) {
     parent.removeChild(document.querySelector('.invalid'));
@@ -50,12 +52,63 @@ function createGenderInput() {
   parent.appendChild(input);
 }
 
+function createNameParagraph(first, last) {
+  const paragraph = document.createElement('p');
+  paragraph.classList += 'return';
+  const fullName = `${first} ${last}`;
+  paragraph.innerText = `Olá, ${fullName}`;
+  return paragraph;
+}
+
+function createNameOutput() {
+  const container = leftContent;
+  const inputs = rightInputs;
+  for (let index = 3; index < inputs.length; index += 1) {
+    if (index === 3) {
+      const firstName = inputs[index - 1].value;
+      const lastName = inputs[index].value;
+      const paragraph = createNameParagraph(firstName, lastName);
+      container.appendChild(paragraph);
+    }
+  }
+}
+
+function createOthersOutput() {
+  const container = leftContent;
+  const inputs = rightInputs;
+  for (let index = 4; index < 7; index += 1) {
+    if (index === 4 || index === 6) {
+      const paragraph = document.createElement('p');
+      paragraph.innerText = inputs[index].value;
+      paragraph.classList += 'return';
+      container.appendChild(paragraph);
+    }
+  }
+}
+
+function createRadioOutput() {
+  const container = leftContent;
+  const inputs = rightInputs;
+  console.log(inputs);
+  for (let index = 7; index < inputs.length; index += 1) {
+    if (inputs[index].checked) {
+      const paragraph = document.createElement('p');
+      paragraph.classList += 'return';
+      paragraph.innerText = inputs[index].value;
+      container.appendChild(paragraph);
+    }
+  }
+}
+
 document.getElementById('facebook-register').addEventListener('click',
   (event) => {
     event.preventDefault();
     validateForm();
     if (validateForm()) {
-      removeAllChildNodes(document.querySelector('.left-content'));
+      removeAllChildNodes(leftContent);
+      createNameOutput();
+      createOthersOutput();
+      createRadioOutput();
     }
   });
 
