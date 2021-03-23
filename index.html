@@ -33,7 +33,7 @@
     </section>
 </header>
 
-<main class="main-content">
+<section class="main-content">
     <aside class="left-content">
         <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua
             vida.</p>
@@ -41,16 +41,25 @@
     </aside>
     <aside class="right-content">
         <h1>Abra uma conta</h1>
-        <div class="quick-easy">
+        <section class="quick-easy">
             <p>É rápido e fácil.</p>
-        </div>
+        </section>
 
         <form method="GET" id="registro">
-            
+            <section class="user-name">
+                <input class="input-cadastro" type="text" name="firstname" placeholder="Nome" />
+                <input class="input-cadastro" type="text" name="lastname" placeholder="Sobrenome" />
+            </section>
+
+            <input type="text" name="phone_email" placeholder="Celular ou email" class="input-cadastro" />
+            <input type="password" name="password" placeholder="Nova senha" class="input-cadastro" />
+            <label id="label-birthdate" for="birthdate">Data de nascimento</label>
+            <input type="text" name="birthdate" placeholder="dd/mm/aaaa" class="input-cadastro" />
+
         </form>
 
     </aside>
-</main>
+</section>
 
 <body>
     <script src="script.js"></script>
