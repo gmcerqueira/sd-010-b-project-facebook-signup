@@ -15,11 +15,13 @@ function alertEmail() {
 function userLoged(props) {
   const rightForm = document.querySelector('.right-content');
   const fullName = document.createElement('h1');
+  const birthdayP = props[3];
+  const phoneP = props[2];
   fullName.innerText = `Olá, ${props[0]} ${props[1]}`;
   const emailPhone = document.createElement('p');
-  emailPhone.innerText = props[2];
+  emailPhone.innerText = phoneP;
   const birthday = document.createElement('p');
-  birthday.innerText = props[3];
+  birthday.innerText = birthdayP;
   const genderUser = document.createElement('p');
   const valorR = document.querySelector('input[type="radio"]:checked').value;
   genderUser.innerText = valorR;
