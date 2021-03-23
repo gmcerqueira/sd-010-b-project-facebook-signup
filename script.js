@@ -21,3 +21,15 @@ function verify() {
 }
 
 registerButton.addEventListener('click', verify);
+
+const getPersonalizado = document.getElementById('personalizado');
+
+function createDiv() {
+  const inputNewGender = document.createElement('input');
+  inputNewGender.type = 'text';
+  inputNewGender.name = 'gender-custom';
+  inputNewGender.placeholder = 'Gênero (opcional)';
+  document.getElementById('gender-div').appendChild(inputNewGender);
+}
+
+getPersonalizado.addEventListener('click', createDiv);
