@@ -9,7 +9,7 @@
 .facebook-login {
   display: flex;
   color: white;
-  align-items: center; 
+  align-items: center;
 }
 
 .form-group {
@@ -51,8 +51,9 @@
   outline: none;
   background: linear-gradient(#6fad5a, #66a150, #60974c);
 }
+
 .right-content .form-subscribe #facebook-register:hover {
-  background: linear-gradient(#74b85e, #598B45);
+  background: linear-gradient(#74b85e, #598b45);
 }
 
 .form-subscribe {
@@ -82,7 +83,7 @@
   width: 100%;
 }
 
-.form-group input {
+.right-content .form-group input {
   height: 23px;
   width: 150px;
   padding-left: 5px;
@@ -105,13 +106,12 @@
 }
 
 #button-login:hover {
-  background: #3B5998;
+  background: #3b5998;
 }
 
 body {
   height: 614px;
   width: 100%;
   top: 800px;
-  background: linear-gradient(#FDFDFE, #EFF1F6, #E3E6F0, #D6DBEA);
-  font-family: verdana;
+  background: linear-gradient(#fdfdfe, #eff1f6, #e3e6f0, #d6dbea);
 }
