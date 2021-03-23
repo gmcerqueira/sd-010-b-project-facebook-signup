@@ -4,32 +4,30 @@
   box-sizing: border-box;
 }
 
-.borda {
+/* .borda {
   border: 1px solid black;
-}
+} */
 
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
-  justify-content: space-around;
-
+  justify-content: space-between;
 }
 
 .facebook-logo {
   width: 12%;
   padding: 1%;
-  justify-self: left;
 }
 
 .facebook-login {
   display: flex;
   padding: 1%;
-  justify-self: right;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
+  padding-left: 5px;
 }
 
 .form-control {
