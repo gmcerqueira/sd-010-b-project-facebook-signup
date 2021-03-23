@@ -92,7 +92,7 @@
 //     console.log(form, values);
 //   }});
 
-function btnLogin () {
+function btnLogin() {
   const btnEnviar = document.querySelector('#button-login');
   const alertText = document.querySelector('#user-email-phone');
 
@@ -101,4 +101,4 @@ function btnLogin () {
   });
 }
 
-btnLogin ()
+btnLogin();
