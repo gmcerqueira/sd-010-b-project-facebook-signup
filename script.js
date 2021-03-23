@@ -5,11 +5,8 @@ const buttonRegister = document.getElementById('facebook-register');
 function buttonIn() {
   alert(inputEmailPhone.value);
 }
+// function register() {
 
-function register() {
-  
-}
-
-
-buttonRegister.addEventListener('click', register)
+// }
+// buttonRegister.addEventListener('click', register);
 buttonGetIn.addEventListener('click', buttonIn);
