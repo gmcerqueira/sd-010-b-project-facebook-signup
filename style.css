@@ -7,8 +7,10 @@
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 82px;
+  width: 1200px;
+  margin: auto;
 }
 
 .facebook-logo {
