@@ -15,6 +15,7 @@ header {
   background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .facebook-login {
@@ -25,6 +26,11 @@ header {
   display: flex;
   flex-direction: column;
   padding-right: 15px;
+}
+
+.form-control {
+  display: flex;
+  align-self: flex-end;
 }
 
 /* -------------------------------------------------------------------- */
