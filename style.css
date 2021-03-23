@@ -15,7 +15,7 @@
 }
 
 .top-bar input {
-   height: 25px;
+  height: 25px;
 }
 
 .top-bar img {
@@ -124,7 +124,7 @@
   border: 1px solid;
   border-radius: 5px;
   padding: 7px 20px;
-  margin: 10px 0 10px 0;
+  margin: 10px 0;
   font-size: 19px;
   font-weight: 800;
   color: white;
