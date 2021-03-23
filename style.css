@@ -68,3 +68,8 @@
 .names {
   width: 130px;
 }
+
+.label-birthdate, #birthday {
+  display: flex;
+  flex-direction: column;
+}
