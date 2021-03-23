@@ -69,3 +69,11 @@
   width: 130px;
 }
 
+.genders {
+  display: flex;
+}
+
+.gender-container {
+  display: flex;
+  flex-direction: column;
+}
