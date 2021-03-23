@@ -39,19 +39,33 @@ iemail.type = 'text';
 iemail.innerText = 'Email ou telefone';
 document.querySelector('fieldset').appendChild(iemail);
 
+const field2 = document.createElement('fieldset');
+field2.className = 'form-control';
+field2.id = 'field2';
+field2.style.display = 'flex';
+field2.style.flexDirection = 'column';
+document.querySelector('form').appendChild(field2);
+
 const lpass = document.createElement('label');
 lpass.id = 'user-password-label';
 lpass.htmlFor = 'user-password';
 lpass.innerText = 'Senha';
-document.querySelector('fieldset').appendChild(lpass);
+document.querySelector('#field2').appendChild(lpass);
 
 const ipass = document.createElement('input');
 ipass.id = 'user-password';
 ipass.type = 'password';
 ipass.innerText = 'Senha';
-document.querySelector('fieldset').appendChild(ipass);
+document.querySelector('#field2').appendChild(ipass);
+
+const field3 = document.createElement('fieldset');
+field3.className = 'form-control';
+field3.id = 'field3';
+field3.style.display = 'flex';
+field3.style.flexDirection = 'column';
+document.querySelector('form').appendChild(field3);
 
 const button = document.createElement('button');
 button.id = 'button-login';
 button.innerText = 'Entrar';
-document.querySelector('fieldset').appendChild(button);
+document.querySelector('#field3').appendChild(button);
