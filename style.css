@@ -10,6 +10,11 @@ body {
   font-size: 12px;
 }
 
+header {
+  background-color: rgb(66, 103, 178);
+  margin-bottom: 13px;
+}
+
 .top-bar {
   display: flex;
   height: 78px;
@@ -17,6 +22,8 @@ body {
   justify-content: space-between;
   align-items: center;
   color: white;
+  width: 980px;
+  margin: auto;
 }
 
 .facebook-logo {
@@ -53,10 +60,11 @@ main {
 .main-content {
   display: flex;
   justify-content: center;
+  width: 980px;
 }
 
 .left-content {
-  width: 800px;
+  width: 580px;
 }
 
 .left-content p {
@@ -70,7 +78,7 @@ main {
 }
 
 .right-content {
-  width: 300px;
+  width: 400px;
 }
 
 .signUp {
@@ -79,4 +87,32 @@ main {
 
 .gender-radios {
   display: flex;
+}
+
+h1 {
+  font-size: 36px;
+  color: #333;
+  margin: 5px 0;
+}
+
+.quick-easy {
+  font-size: 19px;
+  color: #1d2129;
+}
+
+.input {
+  padding: 8px 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  border-color: #bdc7d8;
+  border: 1px solid #ccd0d5;
+  margin-bottom: 10px;
+}
+
+.name, .last{
+  width: 194px;
+}
+
+.name{
+  margin-right: 8px;
 }
