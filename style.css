@@ -12,7 +12,6 @@ body {
   display: flex;
   background-color: rgb(66, 103, 178);
   height: 60px;
-  justify-content: center;
 }
 
 .facebook-logo {
@@ -21,9 +20,14 @@ body {
 
 .form-group {
   display: flex;
+<<<<<<< HEAD
   align-content: space-between;
   flex-direction: column;
   flex-wrap: wrap;
+=======
+  align-content: center;
+  flex-flow: column wrap;
+>>>>>>> 6d780d00721edc6cd79a0c2e97ca52e88ed34853
   justify-content: center;
   width: 900px;
 }
@@ -39,20 +43,29 @@ body {
 
 .main-content {
   display: flex;
-  flex-flow: column wrap;
   width: 800px;
   margin: 0 auto;
-  height: 200px;
 }
 
-.left-container {
+.left-content {
   display: flex;
+  flex-direction: column;
   width: 800px;
 }
 
-.right-container {
+.right-content {
   display: flex;
+  flex-direction: column;
   align-self: flex-end;
+  width: 300px;
+}
+
+.name-lastname {
+  display: flex;
+}
+
+#facebook-register {
+  background-color: rgb(4, 7, 7);
 }
 
 #facebook-slogan {
