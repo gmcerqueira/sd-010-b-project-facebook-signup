@@ -44,8 +44,12 @@
 
 .main-content {
   display: flex;
-  background-image: linear-gradient(white, #D3D8E8);
+  background-image: linear-gradient(white, #d3d8e8);
   flex-direction: row;
   height: 614px;
   min-width: 980px;
+}
+
+.left-content {
+  width: 800px;
 }
