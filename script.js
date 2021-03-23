@@ -4,6 +4,40 @@ const signIn = document.querySelector('#button-login');
 const submitBtn = document.getElementById('facebook-register');
 const initialEl = document.querySelector('.initial');
 const inputList = document.querySelectorAll('#register-form input');
+const btn = document.getElementById('custom-gender')
+const btn1 = document.getElementById('male-gender');
+const btn2 = document.getElementById('female-gender');
+const form = document.getElementById('register-form')
+const register = document.getElementById('facebook-register');
+
+function addGender () {
+  const labelGender = document.getElementById('label-gender');
+  if (document.querySelector("#custom-gender").checked) {
+    const newInput = document.createElement('input');
+    newInput.className = "input-gender"
+    form.insertBefore(newInput, register);
+    newInput.id = 'newInput';
+    newInput.name = 'gender-custom';
+    newInput.placeholder = 'Gênero (opcional)';
+  }
+}
+
+btn.addEventListener('click', checkNewInput)
+
+function checkNewInput () {
+  if(document.getElementById('newInput')) {
+    return true;
+  } else {
+    addGender ();
+  }
+}
+
+btn1.addEventListener('click', removeChild)
+btn2.addEventListener('click', removeChild)
+
+function removeChild () {
+  newInput.remove ();
+}
 
 function getAttributes(array) {
   function inputsToShow(e) {

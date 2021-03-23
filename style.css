@@ -60,3 +60,8 @@
   font-weight: 900;
   font-family: cursive;
 }
+
+.input-gender {
+  display: flex;
+  flex-direction: column
+}
