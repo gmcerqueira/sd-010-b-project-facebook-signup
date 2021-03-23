@@ -4,14 +4,20 @@ function alerta() {
 }
 
 function valida() {
-  const name = document.getElementById('firstname').value;
-  const Last = document.getElementById('lastname').value;
-  const fone = document.getElementById('phone_email').value;
-  const pwd = document.getElementById('password').value;
-  const date = document.getElementById('birthdate').value;
-  if ((name === '') || (Last === '') || (fone === '') || (pwd === '') || (date === '')) {
+  const array = document.getElementsByClassName('verifica');
+  let cont = 0
+  for (let i = 0; i < array.length; i += 1) {
+    if (array[i].value === '') {
+      cont = cont;
+    } else {
+      cont += 1;
+    }
+  }
+
+  if (cont != 5) {
     const pai = document.getElementById('campo-obrigatorio');
-    const p = document.createElement('p').innerHTML =  'Campos inválidos';
+    const p = document.createElement('p');
+    p.innerHTML = 'Campos inválidos';
     pai.appendChild(p);
   }
 }
