@@ -56,4 +56,4 @@ function showData() {
 }
 
 registerButton.addEventListener('click', showData);
-registerButton.addEventListener('click', (event) => event.preventDefault());
+registerButton.addEventListener('click', (event) => event.preventDefault);
