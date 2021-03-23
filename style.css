@@ -103,4 +103,58 @@ body {
 
 .right-content {
   width: 300px;
+  margin-right: 20%;
+}
+
+.right-content h1 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 48px;
+  color: #333;
+  padding: 16px 0;
+}
+
+.right-content p {
+  font-size: 19px;
+  line-height: 25px;
+  color: #1d2129;
+  padding-bottom: 15px;
+}
+
+.right-content form .name-lastname {
+  display: flex;
+  flex-direction: row;
+}
+
+.right-content form .name-lastname input {
+  height: 39px;
+  width: 210px;
+  margin-right: 12px;
+  color: #1c1e21;
+  font-size: 18px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid lightgray;
+}
+
+.right-content .mail {
+  color: #1c1e21;
+  font-size: 18px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid lightgray;
+  height: 39px;
+  width: 430px;
+  margin-top: 14px;
+}
+
+.right-content .password {
+  color: #1c1e21;
+  font-size: 18px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid lightgray;
+  height: 39px;
+  width: 430px;
+  margin-top: 14px;
 }
