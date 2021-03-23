@@ -21,10 +21,10 @@ function addGender() {
   }
 }
 
-btn.addEventListener('click', checkNewInput)
+btn.addEventListener('click', checkNewInput);
 
 function checkNewInput() {
-  if(document.getElementById('newInput')) {
+  if (document.getElementById('newInput')) {
     return true;
   } else {
     addGender();
