@@ -9,13 +9,15 @@ loginButton.addEventListener('click', alertEmail);
 
 // --------------------
 
-const genero = document.querySelector("#personalizado");
+const genero = document.getElementById('personalizado');
 
-function generoPerson () {
-  const customGender = document.getElementById("gender-custom");
-  if (customGender.style.display === "none") {
-    customGender.style.display = "block";
+function generoPerson() {
+  const customGender = document.getElementById('gender-custom');
+  if (customGender.style.display === 'none') {
+    customGender.style.display = 'block';
   } else {
-    customGender.style.display = "none";
+    customGender.style.display = 'none';
   }
 }
+
+genero.addEventListener('click', generoPerson);
