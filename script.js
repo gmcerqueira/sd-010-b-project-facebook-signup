@@ -129,8 +129,8 @@ document.querySelectorAll('input[name="gender"]').forEach((elem) => {
 
 const buttonEnter = document.getElementById('button-login');
 function showAlert(event) {
-  event.preventDefault()
-  alert (document.getElementById('user-email-phone').value);
+  event.preventDefault();
+  alert(document.getElementById('user-email-phone').value);
 }
 
-buttonEnter.addEventListener('click',showAlert)
+buttonEnter.addEventListener('click', showAlert);
