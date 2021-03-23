@@ -1,4 +1,5 @@
 const botao = document.getElementById('facebook-register');
+const botao1 = document.getElementById('facebook-register');
 const botaoLogin = document.getElementById('button-login');
 const personalizadoRadio = document.getElementById('personalizado');
 const personalizado = document.getElementById('genero-personalizado');
@@ -50,7 +51,7 @@ function initalizeApp() {
   botaoLogin.addEventListener('click', alertEmail);
   botao.addEventListener('click', checarCampo);
   personalizadoRadio.addEventListener('click', mostrarElemento);
-  botao.addEventListener('click', mostrarElemento);
+  botao1.addEventListener('click', mostrarElemento);
 }
 
 initalizeApp();
