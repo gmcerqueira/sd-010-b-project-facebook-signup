@@ -102,6 +102,7 @@ form label {
 
 .facebook-login {
   display: flex;
+  
   /* flex-wrap: wrap;
   max-width: 15%; */
 }
