@@ -6,11 +6,58 @@
 .top-bar {
   display: flex;
   background-color: rgb(66, 103, 178);
-}
+  align-items: center;
+  justify-content: space-between;
+} 
 
 .left-content {
   display: flex;
-  justify-self: flex-start;
+  align-self: flex-start;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
 }
 
+.right-content {
+  display: flex;
+  align-self: flex-end;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.facebook-login {
+  display: flex;
+}
+
+.form-group {
+  flex-direction: column;
+  padding: 15px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.input-email , .input-senha {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+
+.form-control {
+  align-self: flex-end;
+  margin-bottom: 22px;
+}
+
+#button-login {
+  background-color: rgb(41, 89, 187);
+  border-radius: 6px;
+  padding: 5px;
+  border: black solid 1px;
+  color: white;
+  cursor: pointer;
+}
+
+#button-login:hover {
+  background-color: white;
+  color: rgb(66, 103, 178);;
+}
 
