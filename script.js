@@ -15,3 +15,10 @@ function cadastrarButton() {
 }
 
 cadastrarButton();
+
+const buttonEnter = document.getElementById('button-login');
+const showImput = document.getElementById('user-email-phone');
+
+buttonEnter.addEventListener('click', () => {
+  alert(showImput.value);
+});

@@ -102,11 +102,16 @@ form label {
 
 .facebook-login {
   display: flex;
-  flex-wrap: wrap;
-  max-width: 15%;
+  /* flex-wrap: wrap;
+  max-width: 15%; */
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
+}
+
+.form-control {
+  display: flex;
+  align-self: flex-end;
 }
