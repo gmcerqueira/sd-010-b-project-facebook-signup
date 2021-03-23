@@ -39,16 +39,12 @@ personalizado.addEventListener('click', selectedGender);
 function printtext() {
   const rightContent = document.querySelector('.right-content');
   rightContent.innerHTML = '';
-  const paragraph = document.createElement('p');
-  paragraph.id = 'paragraph';
-  rightContent.appendChild(paragraph);
-  const recoverdInfo = JSON.parse(localStorage.formPreenchido);
-  paragraph.innerText = `Olá, ${recoverdInfo.first} ${recoverdInfo.last}`;
   const createUl = document.createElement('ul');
   rightContent.appendChild(createUl);
+  const recoverdInfo = JSON.parse(localStorage.formPreenchido);
+  createUl.innerText = `Olá, ${recoverdInfo.first} ${recoverdInfo.last}`;
   const arrayOfInfos = Object.values(recoverdInfo);
-  console.log(arrayOfInfos);
-  for (let index = 2; index < arrayOfInfos.length; index += 1) {
+  for (let index = 3; index < arrayOfInfos.length; index += 1) {
     const selectUl = document.querySelector('ul');
     const createLi = document.createElement('li');
     createLi.innerText = arrayOfInfos[index];
@@ -62,6 +58,7 @@ function guardaFormulario() {
   const formPreenchido = {
     first: document.querySelector('.firstname').value,
     last: document.querySelector('.lastname').value,
+    password: document.querySelector('#password').value,
     mail: document.querySelector('.phone_email').value,
     birthDate: document.getElementById('birthdate').value,
     gender: document.querySelector('.selected').value,
