@@ -11,28 +11,31 @@ function createEl(tagName) {
 }
 
 function getAttributes(array) {
-  function removePassword(e) {
-    const el = e.type !== 'password';
+  function inputsToShow(e) {
+    const el = (e.type !== 'password'
+               && e.name !== 'firstname'
+               && e.name !== 'lastname');
     return el;
   }
-  function removeGender(e) {
+  function rmGender(e) {
     const rad = e.type !== 'radio' || e.checked !== false;
     return rad;
   }
 
-  const arr = [...array].filter(removePassword).filter(removeGender);
+  const arr = [...array].filter(inputsToShow).filter(rmGender);
+  console.log(arr);
   return arr;
 }
 
 function showFields() {
   const dataList = getAttributes(inputList);
-  const greetings = `Olá ${dataList[0].value} ${dataList[1].value}`;
+  const greetings = `Olá, ${inputList[0].value} ${inputList[1].value}`;
   const boldText = createEl('span');
   dataEl.appendChild(boldText);
   boldText.classList.add('bold-text');
   boldText.innerText = `${greetings}`;
   dataList.forEach((el) => {
-    const data = `${el.name}: ${el.value}`;
+    const data = `${el.value}`;
     const div = createEl('div');
     div.textContent = data;
     dataEl.appendChild(div);
