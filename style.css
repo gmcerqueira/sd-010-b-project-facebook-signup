@@ -48,7 +48,7 @@
   flex-direction: row;
   height: 614px;
   min-width: 980px;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .left-content {
@@ -59,4 +59,21 @@
 .right-content {
   width: 300px;
   justify-self: flex-end;
+}
+
+.facebook-form {
+  display: flex;
+  flex-flow: row wrap;
+  line-height: 40px;
+}
+
+.facebook-form input {
+  margin: 5px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.name {
+  width: 120px;
 }
