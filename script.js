@@ -7,13 +7,11 @@ function alerta() {
 
 submitBtn.addEventListener('click', alerta);
 
-
-
-function verificarTexto(){
-  if (cadastro.firstname.value === '' || cadastro.lastname.value === '' || cadastro.phone_email.value === '' || cadastro.password.value === '' || cadastro.birthdate.value === '')
-  { alert ("Campos inválidos"); }
-}
-
+// function verificarTexto() {
+//   if (cadastro.firstname.value === '' || cadastro.lastname.value === '' || cadastro.phone_email.value === '' || cadastro.password.value === '' || cadastro.birthdate.value === '') {
+//      alert ("Campos inválidos"); 
+//   };
+// }
 // function verificarTexto(){
 //   if (cadastro.lastname.value == "")
 //   {alert ("Campos inválidos") }
