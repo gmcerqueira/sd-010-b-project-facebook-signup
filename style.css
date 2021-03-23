@@ -50,3 +50,14 @@
   background-color: white;
   color: rgb(66, 103, 178);
 }
+
+.main-content {
+  display: flex;
+  padding: 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-content {
+  max-width: 800px;
+}
