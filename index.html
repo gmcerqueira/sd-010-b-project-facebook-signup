@@ -40,7 +40,30 @@
     <div class="right-content">
       <h1>Abra uma conta</h1>
       <p class="quick-easy">É rápido e fácil.</p>
-      <form></form>
+      <form class="registration" action="#" method="GET">
+        <div class="register">
+          <input class="info" type="text" name="firstname" id="firstname" placeholder="Nome">
+          <input class="info" type="text" name="lastname" id="lastname" placeholder="Sobrenome">
+        </div>
+        <input class="info" type="text" name="phone_email" id="phone-email" placeholder="Celular ou email">
+        <input class="info" type="password" name="password" id="password" placeholder="Nova senha">
+        <div class="birthdate-container">
+          <label id="label-birthdate" for="birthdate">Data de nascimento</label>
+          <input class="info" type="text" name="birthdate" id="birthdate" placeholder="dd/mm/aaaa">
+        </div>
+        <div class="gender-container">
+          <label for="gender" id="label-gender">Gênero</label>
+          <div class="label-gender-content">
+            <input type="radio" name="gender" id="feminino" value="Feminino">
+            <label for="feminino" id="label-feminino">Feminino</label>
+            <input type="radio" name="gender" id="masculino" value="Masculino">
+            <label for="masculino" id="label-masculino">Masculino</label>
+            <input type="radio" name="gender" id="personalizado" value="Personalizado">
+            <label for="personalizado" id="label-personalizado">Personalizado</label>
+          </div>
+        </div>
+        <button id="facebook-register" type="submit">Cadastre-se</button>
+      </form>
     </div>
 
   </main>
