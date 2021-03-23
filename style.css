@@ -8,11 +8,10 @@
 .top-bar {
   background-color: rgb(66, 103, 178);
   margin: 0 auto;
-  padding: 10px 60px;
+  padding: 10px 60px; /* padding-top, padding-left, padding-bottom, padding-right */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 13px;
 }
 
 .facebook-logo {
@@ -28,18 +27,14 @@
   flex-direction: column;
   border-color: #1d2a5b;
   width: 142px;
-  padding-bottom: 14px;
-  border: 0px solid #ccd0d5;
+  border: 0 solid #ccd0d5;
 }
 
 .form-control {
   align-self: flex-end;
 }
 
-#facebook-slogan{
-  font-size: 20px;
-}
-#facebook-slogan{
+#facebook-slogan { /* Isso não é o mesmo que está na linha 45? */
   font-size: 20px;
 }
 
@@ -47,3 +42,6 @@
   display: flex;
   flex-direction: row;
   }
+
+/* Não apagues essa linha vazia antes e depois desse ponto,
+o final do código tem de ter sempre uma linha vazia! */
