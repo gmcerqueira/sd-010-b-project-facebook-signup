@@ -40,6 +40,12 @@ input {
   margin: 5px;
 }
 
+#senha {
+  margin-top: 40px;
+  position: absolute;
+  left: 800px;
+}
+
 .form-control {
   align-self: flex-end;
 }
