@@ -24,17 +24,52 @@
   display: flex;
   align-items: center;
   color: white;
-  width: 350px;
+  width: 392px;
+}
+
+input {
+  padding: 5px;
+  margin: 4px 0;
+  width: 100%;
+  font-size: 18px;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
+  padding: 13px 0 0 14px;
+  font-size: small;
 }
 
-#user-email-phone , #user-password {
-  margin: 2px;
+.form-group label {
+  padding-bottom: 4px;
+}
+
+.form-group input {
+  margin: 0;
+  border: 1px solid #ccd0d5;
+  padding: 3px 3px 4px;
+  height: 23px;
   width: 150px;
+}
+
+.form-line-fill {
+  padding-bottom: 19px;
+}
+
+.form-group a {
+  color: rgb(156, 180, 216);
+  text-decoration: none;
+  opacity: 0.5;
+  padding-top: 4px;
+}
+
+.form-group a:hover {
+  opacity: 1;
+}
+
+.form-group a:visited , .form-group a:hover , .form-group a:active {
+  color: inherit;
 }
 
 .main-content {
@@ -88,13 +123,6 @@ h1 {
   display: inline;
   font-size: 15px;
   margin: 0;
-}
-
-input {
-  padding: 5px;
-  margin: 4px 0;
-  width: 100%;
-  font-size: 18px;
 }
 
 .radio {
