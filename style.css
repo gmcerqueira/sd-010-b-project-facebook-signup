@@ -107,7 +107,6 @@ header button {
 }
 
 .right-content form input {
-  /* width: 133px; */
   height: 20px;
   padding: 14px;
   border-radius: 5%;
@@ -160,6 +159,6 @@ header button {
   width: 145px;
 }
 
-.linha label{
+.linha label {
   padding-right: 10px;
 }
