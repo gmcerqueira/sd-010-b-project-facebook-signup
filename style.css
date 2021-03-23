@@ -51,4 +51,5 @@ body {
 .right-container {
   display: flex;
   align-self: flex-end;
+  width: 300px;
 }

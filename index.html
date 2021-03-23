@@ -40,20 +40,26 @@
 
     <section class="right-content">
       <h1>Abra uma conta</h1>
-      <h3>É rápido e fácil.</h3>
+      <div class="quick-easy">
+        É rápido e fácil.
+      </div>
       <form action="">
         <div class="name-lastname">
           <input type="text" required maxlength="20" name="firstname" placeholder="Nome">
           <input type="text" required maxlength="20" name="lastname" placeholder="Sobrenome">
         </div>
         <div class="email">
-          <input type="email" required maxlength="40" name="phone_email" placeholder="Celular ou Email" >
+          <input type="email" required maxlength="40" name="phone_email" placeholder="Celular ou email" >
         </div>
         <div class="password">
           <input type="password" required max="16" name="password" placeholder="Nova senha">
         </div>
-        <label for="">Data de nascimento</label>
-        <input type="text" placeholder="dd/mm/aaaa" id="birthdate">
+        <label for="birthdate" id="label-birthdate" name="birthdate" >Data de nascimento</label><br>
+        <input type="text" placeholder="dd/mm/aaaa" id="birthdate"> <br>
+        <label for="" id="label-gender" >Gênero <br>
+        <input type="radio" name="male" checked>Feminino</label>
+        <input type="radio" name="famale">Masculino</label>
+        <input type="radio" name="famale">Personalizado</label>
       </form>
     </section>
   </section>
