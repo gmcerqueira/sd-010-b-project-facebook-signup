@@ -51,7 +51,6 @@ header button {
   border: solid 1px rgb(41, 66, 87);
 }
 
-/* ederson - ate a linha 45 */
 .main-content {
   display: flex;
   background-color: lavender;
@@ -100,6 +99,7 @@ header button {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
 .right-content form input {
   width: 133px;
   height: 20px;
