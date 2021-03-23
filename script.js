@@ -1,4 +1,4 @@
-let entrarButton = document.getElementById('button-login');
+const entrarButton = document.getElementById('button-login');
 
 function alertMessage(evento) {
   evento.preventDefault();
