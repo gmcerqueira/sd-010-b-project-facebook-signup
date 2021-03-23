@@ -4,3 +4,5 @@ function enviar() {
   alert(`Olá, ${valor}, seja bem vindo de volta.`);
 }
 /* uma função que recebe o valor colocado dentro do input do login e mostra na tela por meio de um alert */
+
+enviar();
