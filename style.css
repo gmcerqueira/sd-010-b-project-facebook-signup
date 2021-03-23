@@ -8,6 +8,7 @@
   background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: space-between;
+  height: 82px;
 }
 
 .facebook-logo {
@@ -24,20 +25,31 @@
   justify-content: space-between;
 }
 
+header form {
+  align-items: center;
+} 
 
+header input {
+  margin: 5px;
+  padding: 2px;
+}
 
+header label {
+  margin-left: 5px;
+}
 
+header button {
+  margin: 18px;
+  margin-top: 37px;
+  margin-left: 10px;
+  padding: 2.5px;
+  background-color: steelblue;
+  border: solid 1px rgb(41, 66, 87);
+}
 
-
-
-
-
-
-
-
-
-
-
+header label, button {
+  color: white;
+}
 
 
 
