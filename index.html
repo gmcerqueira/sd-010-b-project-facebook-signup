@@ -5,7 +5,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="dist/css/DatePickerX.min.css">
   <title>Document</title>
 </head>
 <body>
@@ -47,7 +46,7 @@
             <label for="" id="label-birthdate">Data de nascimento</label>
           </div>
           <div>
-            <input type="date" name="birthdate" placeholder="dd/mm/aaaa" required>
+            <input type="text" name="birthdate" placeholder="dd/mm/aaaa"required>
           </div>
         </div>
         <div>
@@ -55,9 +54,9 @@
             <label for="" id="label-gender">Gênero</label>
           </div>
           <div>
-            <input type="radio" name="gender" checked>Feminino
-            <input type="radio" name="gender">Masculino
-            <input type="radio" name="gender" id="personalizado">Personalizado
+            <label for="feminino"><input type="radio" name="gender" id="feminino" value="feminino">Feminino</label>
+            <label for="masculino"><input type="radio" name="gender" id="masculino" value="masculino" >Masculino</label>
+            <label for="personalizado"><input type="radio" name="gender" id="personalizado" value="personalizado">Personalizado</label>
               <div>
                 <input type="text" name="gender-custom" id="gender-custom" placeholder="Gênero (opcional)">
               </div>
@@ -68,6 +67,5 @@
     </section>
   </main>
   <script src="script.js"></script>
-  <script src="dist/js/DatePickerX.min.js"></script>
 </body>
 </html>
