@@ -102,6 +102,9 @@ form label {
 
 .facebook-login {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  max-width: 15%;
 }
 
 .form-group {
