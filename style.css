@@ -37,19 +37,27 @@ body {
 
 .main-content {
   display: flex;
-  flex-flow: column wrap;
   width: 800px;
   margin: 0 auto;
-  height: 200px;
 }
 
 .left-content {
   display: flex;
+  flex-direction: column;
   width: 800px;
 }
 
 .right-content {
   display: flex;
+  flex-direction: column;
   align-self: flex-end;
   width: 300px;
+}
+
+.name-lastname {
+  display: flex;
+}
+
+#facebook-register {
+  background-color: rgb(4, 7, 7);
 }
