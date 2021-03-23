@@ -14,9 +14,9 @@ function alertEmail() {
   alert(`${document.getElementById('user-email-phone').value}`);
 }
 
-function createElement(fullName, emailPhone, birthday, genderUser) {
+function createElement(f, e, b, g) {
   const createSection = document.createElement('p');
-  createSection.innerText = `${fullName}, ${emailPhone}, ${birthday}, ${genderUser}`;
+  createSection.innerText = `${f}, ${e}, ${b}, ${g}`;
   return createSection;
 }
 
@@ -26,7 +26,6 @@ function userLoged(props) {
   const v3 = props[3];
   const v4 = document.querySelector('input[type="radio"]:checked').value;
 
-  gd.innerText = valorR;
   mainContent.removeChild(rightForm);
   mainContent.appendChild(createElement(v1, v2, v3, v4));
 }
