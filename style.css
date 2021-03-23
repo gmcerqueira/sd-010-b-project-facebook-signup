@@ -8,9 +8,7 @@
   background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: space-between;
-  height: 82px;
-  width: 1200px;
-  margin: auto;
+  height: 82px;  
 }
 
 .facebook-logo {
@@ -135,9 +133,4 @@ header button {
   padding: 10px 30px;
   border-radius: 5%;
   margin-top: 10px;
-}
-
-#label-birthdate {
-  display: flex;
-  flex-direction: column;
 }
