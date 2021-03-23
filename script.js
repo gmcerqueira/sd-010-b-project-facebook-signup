@@ -1,6 +1,6 @@
 const email = document.getElementById('user-email-phone');
 const buttonLogin = document.getElementById('button-login');
-const form = document.querySelector('#forms');
+const buttonSubmit = document.querySelector('#facebook-register');
 const forms = document.querySelectorAll('#forms input');
 const error = document.querySelector('#erro-msg');
 // const rightContent = document.querySelector(
@@ -25,11 +25,10 @@ const inputGender4 = document.querySelector(
 const getEmailValue = () => alert(email.value);
 const genderAdd = () => inputGender4.classList.remove('disable');
 const genderRemove = () => inputGender4.classList.add('disable');
-const check = (e) => {
+const check = () => {
   [...forms].forEach((index) => {
     if (index.value === '' && index.name !== 'gender-custom') {
       error.classList.remove('disable');
-      e.preventDefault();
     }
   });
 };
@@ -38,4 +37,4 @@ buttonLogin.addEventListener('click', getEmailValue);
 inputGender1.addEventListener('click', genderRemove);
 inputGender2.addEventListener('click', genderRemove);
 inputGender3.addEventListener('click', genderAdd);
-form.addEventListener('submit', check);
+buttonSubmit.addEventListener('click', check);
