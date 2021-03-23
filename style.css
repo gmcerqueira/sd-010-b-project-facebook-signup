@@ -10,7 +10,7 @@
 .facebook-login {
   display: flex;
   align-self: flex-end;
-  text-align: right;
+  justify-content: flex-end;
 }
 
 .formulario-column {
