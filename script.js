@@ -11,18 +11,20 @@ function adcEvntoGenPers() {
 adcEvntoGenPers();
 
 function checarCampo() {
-  let campo = document.getElementById('campos-invalidos');
-  campo.innerText = '';
+  const nome = document.getElementById('nomeLogin').value;
+  const sobrenome = document.getElementById('sobrenomeLogin').value;
+  const telefone = document.getElementById('telefoneLogin').value;
+  const nascimento = document.getElementById('nascimentoLogin').value;
+  const senha = document.getElementById('senhaLogin').value;
+  const elementos = [nome, sobrenome, telefone, nascimento, senha];
 
-    let nome = document.getElementById('nomeLogin').value;
-    let sobrenome = document.getElementById('sobrenomeLogin').value;
-    let telefone = document.getElementById('telefoneLogin').value;
-    let nascimento = document.getElementById('nascimentoLogin').value;
-    let senha = document.getElementById('senhaLogin').value;
-
-  if (nome === '' || sobrenome === '' || telefone === '' || nascimento === '' || senha === '' ) {
-    campo.style.display = 'flex';
-    campo.innerText = 'Campos inválidos';
+  for (let index = 0; index < elementos.length; index += 1) {
+    if (elementos[index] === '') {
+      const campo = document.getElementById('campos-invalidos');
+      campo.style.display = 'flex';
+      campo.innerText = 'Campos inválidos';
+      break;
+    }
   }
 }
 
