@@ -14,7 +14,9 @@ const userInfoArray = document.querySelectorAll('.user-info');
 function verify() {
   for (let index = 0; index < userInfoArray.length; index += 1) {
     if (userInfoArray[index].value === '') {
-      alert('Campos inválidos');
+      const p = document.createElement('p');
+      p.innerText = 'Campos inválidos';
+      document.getElementById('user-info-form').appendChild(p);
       break;
     }
   }
