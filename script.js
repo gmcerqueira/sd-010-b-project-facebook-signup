@@ -2,14 +2,22 @@ document.getElementById('button-login').addEventListener('click', () => {
   alert(document.getElementById('user-email-phone').value);
 });
 
-document.getElementById('facebook-register').addEventListener('click', () => {
-  const forms = document.getElementById('main-form');
-  const Invalido = document.createElement('p');
-  const inputs = document.getElementsByTagName('input');
-  for (let x = 2; x < inputs.length; x += 1) {
-    if (inputs[x].value === '') {
-      forms.appendChild(Invalido);
-      Invalido.innerText = 'Campos inválidos';
+const getTextInput = document.getElementsByClassName("inputForm");
+const formButton = document.getElementById('facebook-register')
+
+function validateText() {
+  let emptyInput = false;
+  for (let x=0; x < getTextInput.length; x += 1){
+    if (getTextInput[x].value == ''){
+      emptyInput = true
     }
   }
-});
+  return emptyInput;
+}
+
+formButton.addEventListener('click', (e) =>{ 
+  e.preventDefault();
+  if (validateText()){
+    document.getElementById('erro').innerText = 'Campos inválidos'
+  }
+})
