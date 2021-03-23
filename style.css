@@ -56,11 +56,11 @@
   display: flex;
 }
 
-#genero {
-  display: flex;
-}
-
 .container-radios {
   display: flex;
   flex-direction: column;
+}
+
+#genero {
+  display: flex;
 }

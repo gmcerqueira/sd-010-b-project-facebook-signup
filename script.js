@@ -1,8 +1,10 @@
 const buttonLogin = document.querySelector('#button-login');
 const nomeSenha = document.querySelector('#user-email-phone');
-
 const divold = document.querySelector('.right-content');
 const divmain = document.querySelector('.main-content');
+const buttonSalvar = document.querySelector('#facebook-register');
+const input = document.querySelectorAll('input');
+const mensagem = document.querySelector('#mensagem');
 
 function info(string, genero, index) {
   if (index === 6) {
@@ -22,10 +24,6 @@ function info(string, genero, index) {
 buttonLogin.addEventListener('click', () => {
   alert(nomeSenha.value);
 });
-
-const buttonSalvar = document.querySelector('#facebook-register');
-const input = document.querySelectorAll('input');
-const mensagem = document.querySelector('#mensagem');
 
 buttonSalvar.addEventListener('click', (event) => {
   event.preventDefault();
