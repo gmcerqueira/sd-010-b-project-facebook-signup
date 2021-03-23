@@ -87,6 +87,6 @@ input {
 
 #label-gender {
   display: flex;
-  flex-basis: auto;
+  flex-flow: wrap;
   font-size: 18px;
 }
