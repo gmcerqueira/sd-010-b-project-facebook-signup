@@ -27,7 +27,9 @@ function userLoged(props) {
   const valorR = document.querySelector('input[type="radio"]:checked').value;
   genderUser.innerText = valorR;
   mainContent.removeChild(rightForm);
-  mainContent.appendChild(createElement(fullName, emailPhone, birthday, genderUser));
+  mainContent.appendChild(
+    createElement(fullName, emailPhone, birthday, genderUser)
+  );
 }
 
 function createElement(fullName, emailPhone, birthday, genderUser) {
@@ -43,7 +45,7 @@ function createElement(fullName, emailPhone, birthday, genderUser) {
       createSection.appendChild(genderUser);
     }
   }
-    return createSection;
+  return createSection;
 }
 
 function checarCampo() {
