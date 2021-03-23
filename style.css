@@ -23,9 +23,10 @@ header {
   text-align: left;
 }
 
-header .facebook-login {
+.facebook-login {
   display: flex;
   align-self: flex-end;
+  text-align: right;
 }
 
 .formulario-column {
@@ -45,6 +46,6 @@ header .facebook-login {
   position: absolute;
 }
 
-.form-control {
+.form-control, .formulario-column {
   align-self: flex-end;
 }
