@@ -15,7 +15,8 @@ header {
 }
 
 .facebook-logo {
-  align-items: left;
+  display: flex;
+  align-items: flex-end;
 }
 
 .facebook-login {
