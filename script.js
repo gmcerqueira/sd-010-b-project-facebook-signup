@@ -120,6 +120,11 @@ function alertmissing() {
 function checkfilled() {
   const btnsumit = document.getElementsByClassName('btnSumit')[0];
   btnsumit.addEventListener('click', alertmissing);
+
+  btnsumit.addEventListener('click', function(event) {
+    event.preventDefault();
+  });
 }
 
 checkfilled();
+
