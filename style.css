@@ -14,10 +14,6 @@
   justify-content: center;
 }
 
-section {
-  border: solid black 1px;
-}
-
 .left-content {
   width: 800px;
 }
@@ -30,21 +26,20 @@ section {
   display: flex;
 }
 
-form {
+#main-form {
   display: flex;
   flex-direction: column;
-  border: black solid 1px;
   font-size: 18px;
   padding: 8px 10px;
   border-radius: 4px;
   width: 100%;
 }
 
-form input {
+#main-form input {
   margin: 8px 0;
 }
 
-form label {
+#main-form label {
   color: #90949c;
   font-size: 16px;
   font-weight: 800;
@@ -60,16 +55,14 @@ form label {
   width: 50%;
 }
 
-#firstname {
-  margin-right: 8px;
-}
-
 #firstname , #lastname , #phone_email , #password {
   font-size: 18px;
   padding: 8px 10px;
   border: 1px solid #ccd0d5;
   border-radius: 4px;
 }
+
+
 
 #facebook-register {
   background: linear-gradient(#67ae55, #578843);
@@ -98,6 +91,7 @@ form label {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  font-size: 14px;
 }
 
 .facebook-login {
@@ -112,4 +106,8 @@ form label {
 .form-control {
   display: flex;
   align-self: flex-end;
+}
+
+#firstname {
+  margin-right: 8px;
 }
