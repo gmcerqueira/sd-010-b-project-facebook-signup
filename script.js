@@ -1,16 +1,15 @@
 const form = document.querySelector('.form');
 const erro = document.createElement('p');
-  
+
 const firstName = document.getElementById('first-name-form');
 const lastName = document.getElementById('last-name-form');
 const phoneEmail = document.getElementById('phone-email-form');
 const password = document.getElementById('password-form');
 const birthDay = document.getElementById('date-birthdate-form');
-const otherInput = document.getElementById('other-input')
+const otherInput = document.getElementById('other-input');
   
 const genderOtherDiv = document.querySelector('.gender-other');
 const radios = document.querySelectorAll('input[type=radio]');
-
 
 function entrarFacebook() {
   const entrarBotao = document.getElementById('button-login');
@@ -25,34 +24,6 @@ function erroText() {
   erro.innerText = 'Campos Inválidos';
   erro.style.color = 'red';
 }
-
-const botaoCadastro = document.getElementById('facebook-register');
-const rightContent = document.querySelector('.right-content')
-
-botaoCadastro.addEventListener('click', (e) => {
-  e.preventDefault();
-  erro.innerText = ''
-  validacao();
-  
-  const inputs = document.querySelectorAll('.form input')
-  if (erro.innerText === '') {
-    rightContent.innerHTML = '';
-    for (let index = 0; index < inputs.length; index += 1) {
-      if (inputs[index].type === 'radio') {
-        if (!inputs[index].checked) {
-          continue;
-        }
-        if (inputs[index].id === 'other') {
-          continue
-        }        
-      }    
-      const createPara = document.createElement('p')
-      createPara.innerText = inputs[index].value;
-      rightContent.appendChild(createPara) 
-       
-    }
-  }
-});
 
 function validacao(){
   const validarInput = [firstName, lastName, phoneEmail, password, birthDay]
@@ -79,3 +50,32 @@ radios.forEach((radio) => {
     }
   });
 });
+
+const botaoCadastro = document.getElementById('facebook-register');
+const rightContent = document.querySelector('.right-content');
+
+function btnCad() {
+  e.preventDefault();
+  erro.innerText = ''
+  validacao();
+  const inputs = document.querySelectorAll('.form input')
+  if (erro.innerText === '') {
+    rightContent.innerHTML = '';
+    for (let index = 0; index < inputs.length; index += 1) {
+      if (inputs[index].type === 'radio') {
+        if (!inputs[index].checked) {
+          continue;
+        }
+        if (inputs[index].id === 'other') {
+          continue;
+        }
+      }
+      const createPara = document.createElement('p')
+      createPara.innerText = inputs[index].value;
+      rightContent.appendChild(createPara)
+    }
+  }
+}
+
+botaoCadastro.addEventListener('click', btnCad);
+
