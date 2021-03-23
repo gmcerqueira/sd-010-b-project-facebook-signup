@@ -38,16 +38,13 @@ body {
   font-weight: 700;
 }
 
-main {
-  flex: 1;
-}
-
 .main-content {
   padding: 20px 0;
   display: flex;
   justify-content: center;
   background: linear-gradient(180deg, rgb(254, 254, 254) 0%, rgb(210, 217, 231) 100%);
   font-family: Helvetica, Arial, sans-serif;
+  flex: 1;
 }
 
 .left-content {
@@ -115,6 +112,10 @@ Code: min-width: 0 -> Serve para o input entrar nas regras de grow e shrink do f
   margin-right: 10px;
 }
 
+.radio-labels input {
+  margin-right: 5px;
+}
+
 .name-input input:last-of-type {
   margin-right: 0;
 }
@@ -173,7 +174,6 @@ footer div {
   align-items: center;
 }
 
-
 footer img {
   width: 50px;
 }
@@ -187,7 +187,113 @@ footer img {
   margin: 10px 0;
 }
 
-.hidden {
+.hidden , .mobile-element {
   display: none;
   visibility: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and ( max-width : 870px ) {
+
+  .left-content , .right-content , #login-form-top-bar {
+    display: none;
+    visibility: hidden;
+  }
+
+  .top-bar {
+    justify-content: center;
+  }
+
+  .facebook-login {
+    flex-direction: column;
+    width: 80vw;
+  }
+
+  .facebook-login input {
+    padding: 8px 10px;
+    font-size: large;
+    border: 1px solid #e3e3e3;
+    background: #f5f6f7;
+  }
+
+  #user-password {
+    border-top: 0;
+  }
+
+  .main-content {
+    padding-top: 50px;
+    background: white;
+    flex-direction: column;
+    align-items: center;
+    min-height: 450px;
+    justify-content: flex-start;
+  }
+
+  .form-control {
+    align-self: stretch;
+  }
+
+  #button-login {
+    width: 100%;
+    margin: 15px 0;
+    height: 40px;
+    border: transparent;
+    border-radius: 5px;
+    font-size: large;
+    background: #007eec;
+  }
+
+  .mobile-element {
+    display: initial;
+    visibility: visible;
+  }
+
+  hr {
+    border: 1px solid #ccd0d5;
+  }
+
+  #or-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  #or-container hr {
+    flex: 1;
+    height: 1px;
+  }
+
+  #or-container p {
+    width: 40px;
+  }
+
+  .register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .register button {
+    margin: 15px 0;
+    padding: 0 15px;
+    height: 40px;
+    border: transparent;
+    border-radius: 5px;
+    font-size: large;
+    color: white;
+    font-weight: 700;
+    background: #00bb2e;
+  }
+
+  footer img {
+    width: 75px;
+  }
+
+  .created-by {
+    margin-bottom: 20px;
+  }
 }
