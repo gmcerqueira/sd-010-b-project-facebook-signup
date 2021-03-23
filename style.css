@@ -21,7 +21,7 @@ body {
   height: 44px;
 }
 
-#facebook-login {
+.facebook-login {
   display: flex;
   justify-content: flex-end;
 }
@@ -42,6 +42,12 @@ a {
   display: flex;
   align-self: flex-end;
   margin-left: 10px;
+}
+
+#button-login {
+  display: flex;
+  background-color: rgb(66, 103, 178);
+  color: white;
 }
 
 .main-content {
