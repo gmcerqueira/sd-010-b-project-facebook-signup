@@ -1,5 +1,6 @@
 let validRadio = false;
-const leftContent = document.querySelector('.left-content');
+// const leftContent = document.querySelector('.left-content');
+const rightContent = document.querySelector('.right-content');
 const rightInputs = document.querySelectorAll('input');
 
 function validateRadioButtons() {
@@ -61,7 +62,7 @@ function createNameParagraph(first, last) {
 }
 
 function createNameOutput() {
-  const container = leftContent;
+  const container = rightContent;
   const inputs = rightInputs;
   for (let index = 3; index < inputs.length; index += 1) {
     if (index === 3) {
@@ -74,7 +75,7 @@ function createNameOutput() {
 }
 
 function createOthersOutput() {
-  const container = leftContent;
+  const container = rightContent;
   const inputs = rightInputs;
   for (let index = 4; index < 7; index += 1) {
     if (index === 4 || index === 6) {
@@ -87,7 +88,7 @@ function createOthersOutput() {
 }
 
 function createRadioOutput() {
-  const container = leftContent;
+  const container = rightContent;
   const inputs = rightInputs;
   console.log(inputs);
   for (let index = 7; index < inputs.length; index += 1) {
@@ -105,7 +106,7 @@ document.getElementById('facebook-register').addEventListener('click',
     event.preventDefault();
     validateForm();
     if (validateForm()) {
-      removeAllChildNodes(leftContent);
+      removeAllChildNodes(rightContent);
       createNameOutput();
       createOthersOutput();
       createRadioOutput();
