@@ -48,8 +48,15 @@
   flex-direction: row;
   height: 614px;
   min-width: 980px;
+  justify-content: space-between;
 }
 
 .left-content {
   width: 800px;
+  justify-self: flex-start;
+}
+
+.right-content {
+  width: 300px;
+  justify-self: flex-end;
 }
