@@ -10,10 +10,12 @@ btnEntrar.addEventListener('click', entrar);
 const registerBtn = document.querySelector('#facebook-register');
 const campos = document.querySelectorAll('.input');
 
-registerBtn.addEventListener('click', function () {
+registerBtn.addEventListener('click', function (event) {
+  const invalid = document.querySelector('#invalid');
   for (let index = 0; index < campos.length; index += 1) {
     if (campos[index].value === '') {
-      campos[index].value = 'Campos inválidos';
+      event.preventDefault();
+      invalid.innerText = 'Campos inválidos';
     }
   }
 });
