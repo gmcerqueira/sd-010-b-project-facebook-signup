@@ -6,18 +6,11 @@ const formsAll = document.querySelectorAll('#forms')[0];
 const form = document.querySelector('#forms');
 const error = document.querySelector('#erro-msg');
 const rightContent = document.querySelector('.right-content');
-const inputGender1 = document.querySelector(
-  '.form-group-row > input[type=radio]:nth-child(1)',
-);
-const inputGender2 = document.querySelector(
-  '.form-group-row > input[type=radio]:nth-child(2)',
-);
-const inputGender3 = document.querySelector(
-  '.form-group-row > input[type=radio]:nth-child(3)',
-);
-const inputGender4 = document.querySelector(
-  'body > main > div > div.right-content > form > div:nth-child(4) > input',
-);
+const inputGender1 = document.querySelector('#gender input:nth-child(1)');
+const inputGender2 = document.querySelector('#gender input:nth-child(2)');
+const inputGender3 = document.querySelector('#gender input:nth-child(3)');
+const inputGender4 = document.querySelector('#forms div:nth-child(4) > input');
+
 /* ----------------------------------------------------------------------------- */
 
 const getEmailValue = () => alert(email.value);
@@ -44,6 +37,8 @@ const insertInfo = (e) => {
   <p>Data de nascimento: ${formsAll[4].value}</p>
   <p>Sexo: ${gender}</p>`;
 };
+
+/* ----------------------------------------------------------------------------- */
 
 buttonLogin.addEventListener('click', getEmailValue);
 inputGender1.addEventListener('click', genderRemove);
