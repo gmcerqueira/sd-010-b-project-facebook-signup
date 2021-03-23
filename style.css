@@ -39,7 +39,7 @@
 
 .main-content {
   display: flex;
-  flex-direction: row git;
+  flex-direction: row;
 }
 
 .left-content {
@@ -57,4 +57,9 @@
 .aniversario {
   display: flex;
   flex-direction: column;
+}
+.generos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
