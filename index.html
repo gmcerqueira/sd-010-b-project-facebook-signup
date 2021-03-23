@@ -37,6 +37,7 @@
       <p class="quick-easy">É rápido e fácil.</p>
 
       <form class="signup-form" action="" method="post">
+        <div id='outPutErros'></div>
         <input type="text" name="firstname" placeholder="Nome" maxlength="120" required>
         <input type="text" name="lastname" placeholder="Sobrenome" maxlength="120" required>
         <input type="text" name="phone_email" placeholder="Celular ou email" maxlength="120" required>
@@ -62,8 +63,10 @@
               <label for="radio-three">Personalizado</label>
             </span>
 
-            <span class="gender-item">
-              <div class="custom-gender-container"></div>
+            <span class="gender-item hide" id="gener-custom">
+              <div class="custom-gender-container">
+                <input names='gender-custom' placeholder="Gênero (opcional)" id="input-gener-custom" required>
+              </div>
             </span>
 
           </div>
