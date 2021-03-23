@@ -28,7 +28,6 @@ function showFields() {
   const dataList = getAttributes(inputList);
   const greetings = `Olá ${dataList[0].value} ${dataList[1].value}`;
   const boldText = createEl('span');
-  console.log(greetings);
   dataEl.appendChild(boldText);
   boldText.classList.add('bold-text');
   boldText.innerText = `${greetings}`;
@@ -62,7 +61,9 @@ function validateForm(event) {
       count += 1;
     }
   });
-  if (count > 3 && genCheck && validateDate()) { showFields(); } else {
+  const booleans = [(count <= 3), genCheck, validateDate()];
+
+  if (booleans.every((el) => el === true)) { showFields(); } else {
     document.querySelector('.required').innerText = 'Campos inválidos';
   }
 }
@@ -71,6 +72,7 @@ function alert1() {
   const login = document.getElementById('user-email-phone').value;
   alert(login);
 }
+
 function load() {
   signIn.addEventListener('click', alert1);
   submitBtn.addEventListener('click', validateForm);
