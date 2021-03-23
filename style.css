@@ -13,15 +13,18 @@
   display: flex;
   justify-content: space-between;
 }
-
 .facebook-logo {
   width: 12%;
   padding: 1%;
+  margin-left: 10%;
 }
 
 .facebook-login {
   display: flex;
   padding: 1%;
+  margin-right: 10%;
+ 
+  
 }
 
 .form-group {
