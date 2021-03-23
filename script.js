@@ -52,53 +52,6 @@ function validaCadastro() {
   return valido;
 }
 
-function addName() {
-  const firstName = document.querySelector('#first-name').value;
-  const lastName = document.querySelector('#last-name').value;
-
-  const fullName = document.createElement('p');
-  fullName.innerHTML = `Olá, ${firstName} ${lastName}`;
-  return fullName;
-}
-
-function addPhoneMail() {
-  const phoneEmail = document.querySelector('#phone_email').value;
-
-  const login = document.createElement('p');
-  login.innerHTML = `Email ou telefone: ${phoneEmail}`;
-  return login;
-}
-
-function addBirthDate() {
-  const birthDate = document.querySelector('#birth-date').value;
-
-  const date = document.createElement('p');
-  date.innerHTML = `Data de nascimento: ${birthDate}`;
-  return date;
-}
-
-function addGender() {
-  const gender = selecionarGender();
-
-  const selected = document.createElement('p');
-  selected.innerHTML = `Gênero: ${gender}`;
-  return selected;
-}
-
-function finalizaCadastro() {
-  const main = document.querySelector('.main-content');
-  const oldRightContent = document.querySelector('.right-content');
-
-  const newRightContent = document.createElement('div');
-  newRightContent.className = 'right-content';
-  newRightContent.appendChild(addName());
-  newRightContent.appendChild(addPhoneMail());
-  newRightContent.appendChild(addBirthDate());
-  newRightContent.appendChild(addGender());
-  main.removeChild(oldRightContent);
-  main.appendChild(newRightContent);
-}
-
 const cadastroBtn = document.querySelector('#facebook-register');
 
 cadastroBtn.addEventListener('click', (event) => {
@@ -106,7 +59,13 @@ cadastroBtn.addEventListener('click', (event) => {
 
   if (!validaCadastro()) return;
 
-  finalizaCadastro();
+  const rightContent = document.querySelector('.right-content');
+  rightContent.innerHTML = `
+    Olá, ${inputsCadastro[0].value} ${inputsCadastro[1].value}
+    ${inputsCadastro[2].value}
+    ${inputsCadastro[4].value}
+    ${selecionarGender()}
+  `;
 });
 
 const genderPersonalizado = document.querySelector('#personalizado');
