@@ -22,9 +22,9 @@ body {
 .form-group {
   display: flex;
   margin-top: 18px;
-  align-content:flex-end;
+  align-content: flex-end;
   flex-flow: column wrap;
-  justify-content:space-between;
+  justify-content: space-between;
   border: 1px solid red;
 }
 
