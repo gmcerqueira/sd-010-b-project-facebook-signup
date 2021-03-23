@@ -38,6 +38,10 @@ header label {
   margin-left: 5px;
 }
 
+header label, button {
+  color: white;
+}
+
 header button {
   margin: 18px;
   margin-top: 37px;
@@ -47,49 +51,7 @@ header button {
   border: solid 1px rgb(41, 66, 87);
 }
 
-header label, button {
-  color: white;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  /*ederson - ate a linha 45*/
+/*ederson - ate a linha 45*/
 .main-content {
   display: flex;
   justify-content: space-evenly;
