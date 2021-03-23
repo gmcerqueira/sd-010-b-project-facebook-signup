@@ -57,3 +57,7 @@ img {
 .right-content {
   width: 300px;
 }
+
+form div {
+  display: flex;
+}
