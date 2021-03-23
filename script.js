@@ -5,16 +5,13 @@ function alerta() {
 
 function valida() {
   const array = document.getElementsByClassName('verifica');
-  let cont = 0
+  let cont = 0;
   for (let i = 0; i < array.length; i += 1) {
     if (array[i].value === '') {
-      cont = cont;
-    } else {
       cont += 1;
     }
   }
-
-  if (cont != 5) {
+  if (cont !== 0) {
     const pai = document.getElementById('campo-obrigatorio');
     const p = document.createElement('p');
     p.innerHTML = 'Campos inválidos';
