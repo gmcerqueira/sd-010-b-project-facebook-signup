@@ -22,6 +22,7 @@ function elementToggleVisibility(event) {
     customGenderInput.classList.remove('hidden');
   } else {
     customGenderInput.classList.add('hidden');
+    customGenderInput.value = '';
   }
 }
 
