@@ -16,7 +16,7 @@ function alertEmail() {
 
 function createElement(f, e, b, g) {
   const createSection = document.createElement('p');
-  createSection.innerText = `${f}, ${e}, ${b}, ${g}`;
+  createSection.innerText = `${f} ${e} ${b} ${g}`;
   return createSection;
 }
 
