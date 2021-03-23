@@ -5,13 +5,6 @@ const personalizado = document.getElementById('genero-personalizado');
 const campo = document.getElementById('campos-invalidos');
 const rightForm = document.querySelector('.right-content');
 
-window.onload = function () {
-  botaoLogin.addEventListener('click', alertEmail);
-  botao.addEventListener('click', checarCampo);
-  personalizadoRadio.addEventListener('click', mostrarElemento);
-  botao.addEventListener('click', mostrarElemento);
-};
-
 function mostrarElemento() {
   personalizado.style.display = 'flex';
 }
@@ -25,7 +18,7 @@ function checarCampo() {
       break;
     }
   }
-  if (campo.innerText != 'Campos inválidos') {
+  if (campo.innerText !== 'Campos inválidos') {
     userLoged();
   }
 }
@@ -43,10 +36,18 @@ function userLoged() {
   const birthday = document.createElement('p');
   birthday.innerText = formInputs[4].value;
   const genderUser = document.createElement('p');
-  genderUser.innerText = document.querySelector('input[type="radio"]:checked').value;
+  let vI = document.querySelector('input[type="radio"]:checked').value;
+  genderUser.innerText = vI;
   rightForm.innerHTML = '';
   rightForm.appendChild(fullName);
   rightForm.appendChild(emailPhone);
   rightForm.appendChild(birthday);
   rightForm.appendChild(genderUser);
 }
+
+window.onload = function () {
+  botaoLogin.addEventListener('click', alertEmail);
+  botao.addEventListener('click', checarCampo);
+  personalizadoRadio.addEventListener('click', mostrarElemento);
+  botao.addEventListener('click', mostrarElemento);
+};
