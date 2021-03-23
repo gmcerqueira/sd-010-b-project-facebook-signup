@@ -93,7 +93,6 @@ main label {
 
 .gender-radios {
   display: flex;
-  justify-content: space-around;
 }
 
 fieldset {
