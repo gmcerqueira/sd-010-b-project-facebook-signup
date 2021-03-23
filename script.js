@@ -15,10 +15,26 @@ function verifyInputs() {
       if (inputs[i].value === '') {
         errorMesage.innerHTML = 'Campos inválidos';
         e.preventDefault();
-        // console.log(inputs);
       }
     }
   });
 }
 
 verifyInputs();
+
+function personalizedGender() {
+  const customGender = document.querySelectorAll('input[name="gender"]');
+  const inputGenderCustom = document.querySelector('.gender-custom');
+
+  for (let i = 0; i < customGender.length; i += 1) {
+    customGender[i].addEventListener('click', () => {
+      if (customGender[i].value === 'Personalizado') {
+        inputGenderCustom.style.display = 'block';
+      } else {
+        inputGenderCustom.style.display = 'none';
+      }
+    });
+  }
+}
+
+personalizedGender();
