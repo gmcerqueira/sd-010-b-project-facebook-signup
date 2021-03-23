@@ -12,18 +12,14 @@ function alertEmail() {
   alert(`${document.getElementById('user-email-phone').value}`);
 }
 
-function userLoged() {
-  let rightForm = document.querySelector('.right-content');
-  const nome = document.getElementById('nomeLogin').value;
-  const sobrenome = document.getElementById('sobrenomeLogin').value;
-  const telefone = document.getElementById('telefoneLogin').value;
-  const nascimento = document.getElementById('nascimentoLogin').value;
+function userLoged(props) {
+  const rightForm = document.querySelector('.right-content');
   const fullName = document.createElement('h1');
-  fullName.innerText = `Olá, ${nome} ${sobrenome}`;
+  fullName.innerText = `Olá, ${props[0]} ${props[1]}`;
   const emailPhone = document.createElement('p');
-  emailPhone.innerText = telefone;
+  emailPhone.innerText = props[2];
   const birthday = document.createElement('p');
-  birthday.innerText = nascimento;
+  birthday.innerText = props[3];
   const genderUser = document.createElement('p');
   const valorR = document.querySelector('input[type="radio"]:checked').value;
   genderUser.innerText = valorR;
@@ -49,7 +45,7 @@ function checarCampo() {
     }
   }
   if (campo.innerText !== 'Campos inválidos') {
-    userLoged();
+    userLoged(elementos);
   }
 }
 
