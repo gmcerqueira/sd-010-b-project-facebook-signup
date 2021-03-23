@@ -29,7 +29,7 @@ function checarCampo() {
 }
 
 function validarCadastro() {
-  let botao = document.getElementById('facebook-register');
+  const botao = document.getElementById('facebook-register');
   botao.addEventListener('click', checarCampo);
 }
 
