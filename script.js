@@ -37,9 +37,10 @@ function createDiv() {
 getPersonalizado.addEventListener('click', createDiv);
 
 const dataKey = {};
-const mainContent = document.querySelector('.main-content');
-// const rightContent = document.querySelector('.right-content');
+const rightContent = document.querySelector('.right-content');
+const deleteDiv = document.getElementById('delete');
 const createElement = document.createElement('div');
+
 
 function showData() {
   for (let index = 0; index < userInfoArray.length; index += 1) {
@@ -53,7 +54,8 @@ function showData() {
       <p>${dataKey.phoneEmail}</p>
       <p>${dataKey.birthDate}</p>
       <p>${dataKey.gen}</p>`;
-      mainContent.appendChild(createElement);
+      rightContent.removeChild(deleteDiv);
+      rightContent.appendChild(createElement);
       break;
     }
   }
