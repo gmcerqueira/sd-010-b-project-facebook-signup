@@ -1,12 +1,10 @@
 const loginBtn = document.querySelector('#button-login');
-const user = document.querySelector('#user-email-phone');
-
-loginBtn.addEventListener('click', () => {
-  const res = user.value;
-  return alert(res);
-});
-
 const inputsCadastro = document.querySelectorAll('.input-cadastro');
+const user = document.querySelector('#user-email-phone');
+const inputsGender = document.querySelectorAll('.input-gender');
+const genderPersonalizado = document.querySelector('#personalizado');
+const cadastroBtn = document.querySelector('#facebook-register');
+
 function validaInputs() {
   let inputInvalido = false;
   for (let i = 0; i < inputsCadastro.length; i += 1) {
@@ -17,7 +15,6 @@ function validaInputs() {
   return inputInvalido;
 }
 
-const inputsGender = document.querySelectorAll('.input-gender');
 function validateGender() {
   let validaGender = false;
   for (let i = 0; i < inputsGender.length; i += 1) {
@@ -52,26 +49,10 @@ function validaCadastro() {
   return valido;
 }
 
-const cadastroBtn = document.querySelector('#facebook-register');
-
-cadastroBtn.addEventListener('click', (event) => {
-  event.preventDefault();
-
-  if (validaCadastro()) {
-    const registro = document.querySelector('.registro');
-    registro.style.display = 'none';
-    const sucesso = document.querySelector('.sucesso');
-
-    sucesso.innerHTML = `
-      Olá, ${inputsCadastro[0].value} ${inputsCadastro[1].value}
-      ${inputsCadastro[2].value}
-      ${inputsCadastro[4].value}
-      ${selecionarGender()}
-    `;
-  }
+loginBtn.addEventListener('click', () => {
+  const res = user.value;
+  return alert(res);
 });
-
-const genderPersonalizado = document.querySelector('#personalizado');
 
 genderPersonalizado.addEventListener('click', () => {
   const novoInput = document.createElement('input');
@@ -82,4 +63,19 @@ genderPersonalizado.addEventListener('click', () => {
   const genders = document.querySelector('.genders');
 
   genders.insertAdjacentElement('afterend', novoInput);
+});
+
+cadastroBtn.addEventListener('click', (event) => {
+  event.preventDefault();
+
+  if (validaCadastro()) {
+    const rightContent = document.querySelector('.right-content');
+
+    rightContent.innerHTML = `
+      Olá, ${inputsCadastro[0].value} ${inputsCadastro[1].value}
+      ${inputsCadastro[2].value}
+      ${inputsCadastro[4].value}
+      ${selecionarGender()}
+    `;
+  }
 });
