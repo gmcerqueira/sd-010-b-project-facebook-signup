@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 .top-bar {
@@ -40,16 +40,40 @@
 .main-content {
   display: flex;
   flex-direction: row;
+  justify-content:center;
+  background-image: linear-gradient(rgb(247, 241, 241), rgb(219, 225, 243));
+  padding: 30px;
 }
 
 .left-content {
   width: 800px;
+ }
+
+#facebook-slogan{
+font-size: 20px;
+padding: 10px;
+margin-right: 25px;
+font-weight: bold;
+line-height: 25px;
+width: 450px;
 }
 
 .right-content {
   width: 300px;
-}
+ }
 
+ .right-content h1{
+   font-size: 35px;
+   font-weight: 700;
+   line-height: 1.5;
+ }
+
+ .right-content h2{
+   font-size: 20px;
+   font-weight: normal;
+   line-height: 1.5
+ }
+ 
 .linhaform {
   display: flex;
 }
@@ -57,9 +81,50 @@
 .aniversario {
   display: flex;
   flex-direction: column;
+  font-size: 18px;
+  color: rgb(153, 153, 153);
+  font-weight: bold;
+}
+
+.quadrogenero{
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: rgb(153, 153, 153);
+  font-weight: bold;
 }
 
 .generos {
-  display: flex;
-  flex-flow: row wrap;
+  display:flex;
+  flex-flow: row nowrap;
+  padding: 5px 0 5px 4px;
+}
+
+.labelgenero{
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 18px;
+  padding: 0 10px 0 3px;
+  margin-right: 4px;
+  margin-top: -1px;
+}
+
+.linhaform input{
+  border-radius: 5px;
+  border:1px solid;
+  font-size: 20px;
+  padding: 5px;
+  margin: 5px;
+  width: 350px;
+  border-color: rgb(206, 210, 214);
+  text-align: start;
+}
+
+.botaoenviar{
+  background-color: forestgreen;
+  color: white;
+  font-size: 20px;
+  border-radius: 5px;
+  width: 200px;
+  height: 50px;
 }

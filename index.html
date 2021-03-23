@@ -53,22 +53,22 @@
         <div class="linhaform">
           <input type="password" name="password" id="password" placeholder="Nova senha" required>
         </div>
-        <div class="aniversario">
+        <div class="linhaform aniversario">
           <label for="birthdate" id="label-birthdate">Data de nascimento</label>
          <input type="text" name="birthdate" id="birthdate" placeholder="dd/mm/aaaa" required>
         </div>
-        <div class="generos">
+        <div class="quadrogenero">
           <label for="gender" id="label-gender">Gênero</label>
           <div class="generos">
             <input type="radio" name="gender" value="Feminino" id="feminino" checked required>
-            <label for="feminino">Feminino</label>
+            <label class="labelgenero" for="feminino">Feminino</label>
             <input type="radio" name="gender" value="Masculino" id="masculino">
-            <label for="masculino">Masculino</label>
+            <label class="labelgenero" for="masculino">Masculino</label>
             <input type="radio" name="gender" value="Personalizado" id="personalizado">
-            <label for="personalizado">Personalizado</label>
+            <label class="labelgenero" for="personalizado">Personalizado</label>
           </div>
         </div>
-        <button type="submit" id="facebook-register">Cadastre-se</button>
+        <button type="submit" class="botaoenviar" id="facebook-register">Cadastre-se</button>
       </form>
     </div>
   </div>
