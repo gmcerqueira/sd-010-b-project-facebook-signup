@@ -36,7 +36,14 @@
 }
 
 input {
-  height: 18px;
+  border: solid 1px black;
+  margin: 5px;
+}
+
+#senha {
+  margin-top: 40px;
+  position: absolute;
+  left: 800px;
 }
 
 .form-control {
@@ -45,29 +52,44 @@ input {
 
 .main-content {
   display: flex;
-  border: blueviolet 2px dashed;
-  margin-top: 20px;
-  height: 300px;
-  margin-left: 272px;
-  justify-content: center;
+
 }
 
 .left-content {
-  width: 800px;
-  border: black 1px solid;
+  display: flex;
+  min-width: 800px;
+  flex-direction: column;
 }
 
 #facebook-slogan {
-  margin: 10px;
+  margin: 20px;
+  margin-left: 130px;
 }
 
 .right-content {
   display: flex;
-  width: 300px;
-  border: red 1px solid;
+  min-width: 300px;
+  flex-direction: column;
 }
 
 .quick-easy {
   display: flex;
-  margin-top: 60px;
+  color: dimgrey;
 }
+
+h1 {
+  font-size: 30px;
+}
+
+#date {
+  position: absolute;
+  margin-top: 0;
+  margin-left: 5px;
+}
+
+#date input {
+  left: 0;
+  position: absolute;
+  margin-top: 25px;
+}
+
