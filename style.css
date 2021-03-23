@@ -15,8 +15,10 @@
 .facebook-logo {
   height: 60px;
 }
-.twoInputs{
-    display: flex;
+
+.twoInputs {
+  display: flex;
+
 }
 
 .form-group {
@@ -28,7 +30,7 @@
 .form-control {
   display: flex;
   align-self: flex-end;
-  
+
 }
 
 .facebook-login {

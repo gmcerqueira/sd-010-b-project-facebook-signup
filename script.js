@@ -50,8 +50,10 @@ document.querySelectorAll('input[name="gender"]').forEach((elem) => {
 
 //alert no botão Entrar
 
-/* let buttonEnter=getElementById('button-login');
-buttonEnter.addEventListener('click',showAlert)
-function showAlert(){
-  alert(document.getElementById('user-email-phone').value()
-} */
+let buttonEnter = document.getElementById('button-login');
+function showAlert(event){
+  event.preventDefault()
+  alert(document.getElementById('user-email-phone').value);
+}
+
+buttonEnter.addEventListener('click', showAlert)
