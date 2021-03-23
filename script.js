@@ -18,6 +18,15 @@
 //   });
 // }
 
+// /*
+//    Essa função retorna um alert informando o conteudo do elemento disparou o evento.
+//   */
+// function alertWithUserEmailPhoneContent() {
+//   // obtem um elemento de cssSelector e armazena em element
+//   const userEmailPhone = document.getElementById('user-email-phone').value;
+//   return alert(`Email ou telefone: ${userEmailPhone}`);
+// }
+
 /*
    Essa função adiciona um escutador de eventos eventName que dispara a function functionName para um elemento que tenha o cssSelector.
   */
@@ -34,11 +43,17 @@ function addEventListener(cssSelector, eventName, functionName) {
   */
 function setupEvents() {
   // para elemento de id button-login adiciona um escutador de evento click que dispara um alert com o valor do campo "Email ou telefone"
-  addEventListener('#button-login', 'click', () => {
-    alert(
-      `Email ou telefone: ${document.getElementById('user-email-phone').value}`,
-    );
-  });
+  // addEventListener('#button-login', 'click', () =>
+  //   alert(
+  //     `Email ou telefone: ${document.getElementById('user-email-phone').value}`,
+  //   ));
+
+  // addEventListener('#button-login', 'click', alert(
+  //     `Email ou telefone: ${document.getElementById('user-email-phone').value}`,
+  //   ));
+
+  addEventListener('#button-login', 'click', () => alert(`Email ou telefone: ${
+    document.getElementById('user-email-phone').value}`));
 }
 
 /*
