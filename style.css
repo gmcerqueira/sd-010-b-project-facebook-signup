@@ -98,3 +98,7 @@
 .facebook-form #label-gender {
   margin-right: 250px;
 }
+
+span {
+  display: flex;
+}
