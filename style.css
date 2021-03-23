@@ -48,3 +48,7 @@
 .divs-gender {
   display: flex;
 }
+
+#label-birthdate {
+  display: block;
+}
