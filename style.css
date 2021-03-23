@@ -4,15 +4,14 @@
 }
 
 .top-bar {
+  padding: 20px;
   background-color: rgb(66, 103, 178);
-  height: 90px;
-  width: 100%;
   display: flex;
   justify-content: center;
 }
 
 .facebook-logo {
-  width: 150px;
+  width: 170px;
 }
 
 .facebook-login {
@@ -23,8 +22,6 @@
 .form-group {
   display: flex;
   flex-direction: column;
-  width: fit-content;
-  float: right;
   font-family: Georgia, Times, serif;
   color: aliceblue;
   margin-right: 70px;
@@ -32,21 +29,17 @@
 
 .form-control {
   width: 60px;
-  float: right;
-  margin-top: -21px;
-  margin-left: 60%;
   display: flex;
 }
 
 #button-login {
-  float: right;
   background-color: rgb(66, 103, 178);
   color: aliceblue;
 }
 
 .main-content {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .left-content {
