@@ -3,26 +3,28 @@
   padding: 0;
 }
 
+body {
+  width: 1366px;
+}
+
 .top-bar {
   display: flex;
   background-color: rgb(66, 103, 178);
-  font-size: 12px;
   padding: 13px;
   border: 1px solid black;
+  flex-flow: row;
   justify-content: space-between;
 }
 
 .facebook-logo {
-  height: 85px;
-  padding-left: 100px;
+  display: flex;
 }
 
 .facebook-login {
   display: flex;
-  padding-right: 100px;
 }
-/* 
-.form-group {
+
+/* .form-group {
   display: flex;
   flex-direction: column;
 } */
