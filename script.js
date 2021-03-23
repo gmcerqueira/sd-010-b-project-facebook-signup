@@ -122,9 +122,8 @@ function checkfilled() {
   btnsumit.addEventListener('click', alertmissing);
   function prevent(event) {
     event.preventDefault();
-  };
+  }
   btnsumit.addEventListener('click', prevent);
 }
 
 checkfilled();
-
