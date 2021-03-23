@@ -125,12 +125,12 @@ document.querySelectorAll('input[name="gender"]').forEach((elem) => {
   });
 });
 
-//alert no botão Entrar
+//  alert no botão Entrar
 
-let buttonEnter = document.getElementById('button-login');
-function showAlert(event){
+const buttonEnter = document.getElementById('button-login');
+function showAlert(event) {
   event.preventDefault()
-  alert(document.getElementById('user-email-phone').value);
+  alert (document.getElementById('user-email-phone').value);
 }
 
-buttonEnter.addEventListener('click', showAlert)
+buttonEnter.addEventListener('click',showAlert)
