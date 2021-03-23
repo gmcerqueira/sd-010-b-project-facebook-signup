@@ -13,17 +13,17 @@ clicaBotao();
 
 const botaoCadastro = document.querySelector('#facebook-register');
 
-function criaAviso() {
-  const div = document.querySelector('#verifica-cadastro');
-  const p = document.createElement('p');
-  div.appendChild(p).innerHTML = 'Campos Inválidos';
-}
+// function criaAviso() {
+//   const div = document.querySelector('#verifica-cadastro');
+//   const p = document.createElement('p');
+//   div.appendChild(p).innerHTML = 'Campos Inválidos';
+// }
 
 function verificaCadastro() {
   const cadastro = document.querySelectorAll('.cadastro');
   for (let index = 0; index < cadastro.length; index += 1) {
     if (cadastro[index].value === '') {
-      criaAviso();
+      alert('Campos Inválidos');
     }
   }
 }
