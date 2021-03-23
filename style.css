@@ -6,15 +6,21 @@
 
 body {
   margin: auto;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
 }
 
 .top-bar {
   display: flex;
-  height: 98px;
+  height: 78px;
   background-color: rgb(66, 103, 178);
   justify-content: space-around;
   align-items: center;
-  margin: auto;
+  color: white;
+}
+
+.facebook-logo {
+  width: 170px;
 }
 
 .facebook-login {
@@ -31,14 +37,31 @@ body {
   align-self: flex-end;
 }
 
+main {
+  margin: auto;
+  background: linear-gradient(white, #d3d8e8);
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+}
+
 /* CÓDIGO DO LP */
 .main-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .left-content {
   width: 800px;
+}
+
+.left-content p {
+  color: #0e385f;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-top: 40px;
+  width: 450px;
+  word-spacing: -1px;
 }
 
 .right-content {
