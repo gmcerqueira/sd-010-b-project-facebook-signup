@@ -69,7 +69,7 @@
   width: 130px;
 }
 
-.label-birthdate , #birthday {
+.label-birthdate {
   display: flex;
   flex-direction: column;
 }
