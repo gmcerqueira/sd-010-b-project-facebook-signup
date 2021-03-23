@@ -7,7 +7,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 500;
-  background: linear-gradient(white, #D3D8E8);
+  background: linear-gradient(white, #d3d8e8);
 }
 
 header {
@@ -101,7 +101,7 @@ header {
 }
 
 .right-content h1 {
-  font-size: 36px;
+  font-size: 28px;
   color: #333;
   font-weight: 600;
   padding-bottom: 5px;
