@@ -55,6 +55,6 @@ function initalizeApp() {
   botao.addEventListener('click', checarCampo);
   personalizadoRadio.addEventListener('click', mostrarElemento);
   botao.addEventListener('click', mostrarElemento);
-};
+}
 
 initalizeApp();
