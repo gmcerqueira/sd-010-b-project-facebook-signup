@@ -8,11 +8,11 @@
 .top-bar {
   background-color: rgb(66, 103, 178);
   margin: 0 auto;
-  padding: 10px 60px; /*padding-top, padding-left, padding-bottom, padding-right*/
+  padding: 10px 60px; /* padding-top, padding-left, padding-bottom, padding-right */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 13px; /*Esta linha é redundante, pois na linha 11 já tem um padding-top*/
+  padding-top: 13px; /* Esta linha é redundante, pois na linha 11 já tem um padding-top */
 }
 
 .facebook-logo {
@@ -29,7 +29,7 @@
   border-color: #1d2a5b;
   margin: 0;
   width: 142px;
-  padding-bottom: 14px; /*Essa linha cria conflito com o padding do container top-bar*/
+  padding-bottom: 14px; /* Essa linha cria conflito com o padding do container top-bar */
   border: 0 solid #ccd0d5;
 }
 
@@ -37,17 +37,20 @@
   align-self: flex-end;
 }
 
-#facebook-slogan { /*Isso não é o mesmo que está na linha 44?*/
+#facebook-slogan { /* Isso não é o mesmo que está na linha 45? */
   font-size: 20px;
 }
 
+/*
 #facebook-slogan {
   font-size: 20px;
 }
+*/
 
 .test {
   display: flex;
   flex-direction: column;
 }
 
-/*Não apagues essa linha vazia antes e depois desse ponto, o final do código tem de ter sempre uma linha vazia*/
+/* Não apagues essa linha vazia antes e depois desse ponto,
+o final do código tem de ter sempre uma linha vazia! */
