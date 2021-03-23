@@ -1,12 +1,17 @@
 const inputEmailPhone = document.getElementById('user-email-phone');
 const buttonGetIn = document.getElementById('button-login');
-// const buttonRegister = document.getElementById('facebook-register');
 
 function buttonIn() {
   alert(inputEmailPhone.value);
 }
-// function register() {
 
-// }
-// buttonRegister.addEventListener('click', register);
 buttonGetIn.addEventListener('click', buttonIn);
+
+//https://www.w3schools.com/js/js_validation.asp
+function validateForm() {
+  var x = document.forms["Form"]["firstname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
