@@ -16,12 +16,12 @@ function alertEmail() {
 
 function userLoged(props) {
   const v1 = `Olá, ${props[0]} ${props[1]}`;
-  const v2 = props[2];
-  const v3 = props[3];
+  const v2 = `Celular/Email ${props[2]}`;
+  const v3 = `Data de Nascimento ${props[3]}`;
   const v4 = document.querySelector('input[type="radio"]:checked').value;
   mainContent.removeChild(rightForm);
   const createSection = document.createElement('p');
-  createSection.innerText = `${v1} ${v2} ${v3} ${v4}`;
+  createSection.innerText = `${v1}. ${v2}. ${v3}. Gênero ${v4}`;
   mainContent.appendChild(createSection);
 }
 
