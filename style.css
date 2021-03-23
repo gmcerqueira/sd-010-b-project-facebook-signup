@@ -22,7 +22,8 @@
 
 .facebook-login {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
+  align-items: top;
   color: white;
   width: 392px;
 }
@@ -37,7 +38,7 @@ input {
 .form-group {
   display: flex;
   flex-direction: column;
-  padding: 13px 0 0 14px;
+  padding: 13px 0 0;
   font-size: small;
 }
 
@@ -70,6 +71,30 @@ input {
 
 .form-group a:visited , .form-group a:hover , .form-group a:active {
   color: inherit;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 25px;
+  font-size: small;
+  align-self: flex-end;
+}
+
+#button-login {
+  background-color: rgb(124, 154, 234);
+  border: 1px solid #29487d;
+  padding: 4px;
+  border-radius: 2px;
+  color: white;
+  font-weight: 900;
+
+  /* A 20% lighter version of the original color rgb(66, 103, 178)
+  https://convertingcolors.com/rgb-color-66_103_178.html */
+}
+
+#button-login:hover {
+  background-color: rgb(66, 103, 178);
 }
 
 .main-content {
