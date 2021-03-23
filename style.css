@@ -29,7 +29,7 @@
 .form-control {
   display: flex;
   flex-direction: row;
-  align-self: center;
+  align-self: flex-end;
   justify-content: center;
 }
 
