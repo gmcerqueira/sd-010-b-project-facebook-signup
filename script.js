@@ -77,7 +77,7 @@ function validationPassed() {
 
 singUpBtn.addEventListener('click', validationPassed);
 
-// Cria novos elementos para telas com largura abaixo de 500px.
+// --> Cria novos elementos para telas com largura abaixo de 500px.
 
 // FONTE AUXILIAR : https://cursos.alura.com.br/forum/topico-como-executar-uma-funcao-do-javascript-se-a-janela-do-browser-diminuir-de-800px-41605
 
