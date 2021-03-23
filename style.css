@@ -12,18 +12,16 @@
 
 .facebook-logo {
   display: flex;
-  margin: auto;
-  margin-top: 20px;
+  justify-self: flex-start;
 }
 
 .facebook-login {
   display: flex;
-  margin: auto;
+  justify-self: flex-end;
 }
 
 .form-group {
   font-family: helvetica;
-  font-weight: 600;
   display: flex;
   flex-direction: column;
   padding: 15px;
