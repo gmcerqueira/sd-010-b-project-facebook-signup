@@ -4,7 +4,7 @@ const emailTelefone = document.getElementById('user-email-phone');
 // verifica se a pessoa digitou o email e clicou em entrar
 function entrar() {
   const emailPessoa = emailTelefone.value;
-  if (emailPessoa == '') {
+  if (emailPessoa === '') {
     alert('Digite seu email!');
   } else {
     alert(emailPessoa);
