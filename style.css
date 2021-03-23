@@ -39,6 +39,8 @@ header {
   width: 150px;
   height: 25px;
   margin: 5px 0;
+  outline: none;
+  border: 1px solid #1d2a5b;
 }
 
 .form-control {
@@ -77,12 +79,19 @@ header {
   text-align: center;
 }
 
+.form-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-flex input[type= radio] {
+  flex-direction: row;
+}
+
 .first-last {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  flex-basis: 300px;
-
 }
 
 .first-last input {
