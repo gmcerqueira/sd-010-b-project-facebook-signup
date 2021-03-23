@@ -36,21 +36,6 @@ function adcEvntoMascFem() {
 
 adcEvntoMascFem();
 
-// function mostrarInfos() {
-//   const nome = document.getElementById("nameLogin").value;
-//   const sobrenome = document.getElementById("lastnameLogin").value;
-//   const contato = document.getElementById("phoneEmailLogin").value;
-//   const nascimento = document.getElementById("nascimentoLogin").value;
-//   const form = document.getElementById('registro');
-//   const genero = form.elements.gender.value;
-//   document.getElementsByTagName('h1')[0].innerText = `Olá ${nome} ${sobrenome}`;
-//   document.getElementsByClassName('quick-easy')[0].style.display = 'none';
-//   document.getElementById('registro').style.display = 'none';
-//   const infos = document.getElementById('infos');
-//   infos.style.display = 'flex';
-//   infos.innerHTML = `<p>Contato: ${contato}</p><p>Nascimento: ${nascimento}</p><p>Gênero: ${genero}</p>`;
-// }
-
 function verifica() {
   const nome = document.getElementById('nameLogin').value;
   const sobrenome = document.getElementById('lastnameLogin').value;
@@ -60,18 +45,62 @@ function verifica() {
   const elementos = [nome, sobrenome, contato, nascimento, senha];
   let saida = false;
   for (let index = 0; index < elementos.length; index += 1) {
-    if (elementos[index] !== '') {
+    if (elementos[index] === '') {
       saida = true;
     }
   }
+  return saida;
+}
+
+function valida() {
+  const saida = verifica();
   if (saida) {
     document.getElementById('campos-invalidos').style.display = 'flex';
   }
 }
 
+function mostrarInfos(event) {
+  event.preventDefault();
+  const nome = document.getElementById('nameLogin').value;
+  const sobrenome = document.getElementById('lastnameLogin').value;
+  const contato = document.getElementById('phoneEmailLogin').value;
+  const nascimento = document.getElementById('nascimentoLogin').value;
+  const form = document.getElementById('registro');
+  const genero = form.elements.gender.value;
+  const tituloNome = document.getElementsByTagName('h1')[0];
+  tituloNome.innerText = `Olá, ${nome} ${sobrenome}`;
+  document.getElementsByClassName('quick-easy')[0].style.display = 'none';
+  document.getElementById('registro').style.display = 'none';
+  const infos = document.getElementById('infos');
+  infos.style.display = 'flex';
+  infos.style.flexDirection = 'column';
+  infos.innerHTML = `<p>Contato: ${contato}</p>`;
+  infos.innerHTML += `<p>Nascimento: ${nascimento}</p><p>Gênero: ${genero}</p>`;
+}
+
+function dados(event) {
+  event.preventDefault();
+  const nome = document.getElementById('nameLogin').value;
+  const sobrenome = document.getElementById('lastnameLogin').value;
+  const contato = document.getElementById('phoneEmailLogin').value;
+  const nascimento = document.getElementById('nascimentoLogin').value;
+  const senha = document.getElementById('senhaLogin').value;
+  const elementos = [nome, sobrenome, contato, nascimento, senha];
+  let saida = true;
+  for (let index = 0; index < elementos.length; index += 1) {
+    if (elementos[index] === '') {
+      saida = false;
+    }
+  }
+  if (saida) {
+    mostrarInfos(event);
+  }
+}
+
 function bttCadastro() {
   const botaoCadastro = document.getElementById('facebook-register');
-  botaoCadastro.addEventListener('click', verifica);
+  botaoCadastro.addEventListener('click', valida);
+  botaoCadastro.addEventListener('click', dados);
 }
 
 bttCadastro();
