@@ -8,6 +8,28 @@ header {
   background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: center;
+}
+
+.top-bar {
+  width: 980px;
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
+}
+
+.facebook-login {
+  display: flex;
+}
+
+.form-group {
+  display: flex;
+}
+
+/*
+header {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -45,7 +67,7 @@ header {
 .form-control {
   display: flex;
   align-self: flex-end;
-}
+} */
 
 
 
