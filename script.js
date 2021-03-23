@@ -57,15 +57,15 @@ const cadastroBtn = document.querySelector('#facebook-register');
 cadastroBtn.addEventListener('click', (event) => {
   event.preventDefault();
 
-  if (!validaCadastro()) return;
-
-  const rightContent = document.querySelector('.right-content');
-  rightContent.innerHTML = `
-    Olá, ${inputsCadastro[0].value} ${inputsCadastro[1].value}
-    ${inputsCadastro[2].value}
-    ${inputsCadastro[4].value}
-    ${selecionarGender()}
-  `;
+  if (validaCadastro()) {
+    const rightContent = document.querySelector('.right-content');
+    rightContent.innerHTML = `
+      Olá, ${inputsCadastro[0].value} ${inputsCadastro[1].value}
+      ${inputsCadastro[2].value}
+      ${inputsCadastro[4].value}
+      ${selecionarGender()}
+    `;
+  }
 });
 
 const genderPersonalizado = document.querySelector('#personalizado');
