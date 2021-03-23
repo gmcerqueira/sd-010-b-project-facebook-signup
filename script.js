@@ -6,3 +6,16 @@ function alertEmail() {
 }
 
 loginButton.addEventListener('click', alertEmail);
+
+// --------------------
+
+const genero = document.querySelector("#personalizado");
+
+function generoPerson () {
+  const customGender = document.getElementById("gender-custom");
+  if (customGender.style.display === "none") {
+    customGender.style.display = "block";
+  } else {
+    customGender.style.display = "none";
+  }
+}
