@@ -49,7 +49,8 @@ function validaCadastro() {
   return valido;
 }
 
-loginBtn.addEventListener('click', () => {
+loginBtn.addEventListener('click', (event) => {
+  event.preventDefault();
   const res = user.value;
   return alert(res);
 });
