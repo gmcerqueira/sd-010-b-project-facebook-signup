@@ -42,7 +42,7 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .left-content {
@@ -50,7 +50,6 @@
   flex-direction: column;
   justify-content: flex-start;
   width: 800px;
-  background-color: aliceblue;
 }
 
 .right-content {
@@ -58,8 +57,6 @@
   flex-flow: column wrap;
   justify-content: flex-start;
   width: 300px;
-  height: 100px;
-  background-color: beige;
 }
 
 .footer-site {
@@ -79,4 +76,9 @@
   display: flex;
   width: 100%;
   flex-wrap: wrap;
+}
+
+.user-name {
+  display: flex;
+  flex-direction: row;
 }
