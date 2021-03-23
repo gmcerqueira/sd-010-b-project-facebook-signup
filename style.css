@@ -45,5 +45,6 @@
 }
 
 .form-cadastro {
-  display: inline;
+  display: flex;
+  align-items: center;
 }
