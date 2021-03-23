@@ -92,6 +92,13 @@
 //     console.log(form, values);
 //   }});
 
+// Importa os input's da área gênero do form de cadastro
+const genderCustom = document.getElementById('gender-custom');
+const genderPer = document.getElementById('gender-per')
+const genderMasc = document.getElementById('gender-masc');
+const genderFem = document.getElementById('gender-fem');
+
+// cria um alert com o valor digitado no input email ou telefone
 function btnLogin() {
   const btnEnviar = document.querySelector('#button-login');
   const alertText = document.querySelector('#user-email-phone');
@@ -101,4 +108,22 @@ function btnLogin() {
   });
 }
 
+// habilita o input de "Gênero (opcional)"
+function outroGenreno() {
+  genderCustom.style.display = 'none';
+  
+  genderPer.addEventListener('click', () => {
+    genderCustom.style.display = 'block';
+  });
+  
+  genderFem.addEventListener('click', () => {
+    genderCustom.style.display = 'none';
+  });
+  
+  genderMasc.addEventListener('click', () => {
+    genderCustom.style.display = 'none';
+  });
+}
+
 btnLogin();
+outroGenreno();
