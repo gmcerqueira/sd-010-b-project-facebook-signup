@@ -45,12 +45,15 @@
         <input type="text" placeholder="Celular ou email" name="phone_email">
         <input type="password" placeholder="Nova senha" name="password">
         <br>
-        <label for="gender" id="label-gender">Gênero</label>
-  
-        <br>
-        <input type="radio" name="gender" id="label-gender">Feminino 
-        <input type="radio" name="gender" id="label-gender">Masculino      
-        <input type="radio" name="gender" id="label-gender">Personalizado  
+        <label for="" class="label-content" id="label-gender">Gênero</label>
+        <div class="radios">
+          <input type="radio" name="gender" class="gender" id="Feminino" value="Feminino" required>
+          <label for="Feminino">Feminino</label>
+          <input type="radio" name="gender" class="gender" id="Masculino" value="Masculino" required>
+          <label for="Masculino">Masculino</label>
+          <input type="radio" name="gender" class="gender" id="Personalizado" value="Personalizado" required>
+          <label for="Personalizado">Personalizado</label>
+        </div>
         <label for="" id="label-birthdate">Data de nascimento</label>
         <input id="label-birthdate" type="text" name="birthdate" 
         placeholder="dd/mm/aaaa">
