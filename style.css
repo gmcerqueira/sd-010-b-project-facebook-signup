@@ -34,7 +34,7 @@
   margin-top: 20px;
   height: 300px;
   margin-left: 272px;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .left-content {
@@ -54,6 +54,6 @@
 
 .quick-easy {
   display: flex;
-  margin-top: 20px;
+  margin-top: 60px;
 }
 
