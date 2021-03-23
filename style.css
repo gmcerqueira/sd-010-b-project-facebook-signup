@@ -71,6 +71,7 @@
 
 .genders {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .gender-container {
