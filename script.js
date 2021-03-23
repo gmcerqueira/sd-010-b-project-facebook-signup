@@ -34,13 +34,19 @@ masc.addEventListener('click', selectedGender);
 fem.addEventListener('click', selectedGender);
 personalizado.addEventListener('click', selectedGender);
 
+// Referêcia utilizada para transformar valores do objeto em array: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Object/values
+
 function printText() {
   const rightContent = document.querySelector('.right-content');
   rightContent.innerHTML = '';
+  const createH2 = document.createElement('h3');
+  rightContent.appendChild(createH2);
   const createUl = document.createElement('ul');
   rightContent.appendChild(createUl);
   const recoverdInfo = JSON.parse(localStorage.formPreenchido);
-  createUl.innerText = `Olá, ${recoverdInfo.first} ${recoverdInfo.last}`;
+  createH2.innerText = `Olá, ${recoverdInfo.first} ${recoverdInfo.last}! Blza?`;
+  const cool = ' Recebemos seu cadastro com sucesso! =]\n Confira teus dados:';
+  createUl.innerText = `\n${cool}\n`;
   const arrayOfInfos = Object.values(recoverdInfo);
   for (let index = 3; index < arrayOfInfos.length; index += 1) {
     const selectUl = document.querySelector('ul');
