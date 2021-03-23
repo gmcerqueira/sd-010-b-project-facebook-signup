@@ -30,7 +30,6 @@ function filledradios() {
   const input = form.getElementsByTagName('input');
   if (!(input[5].checked) && !(input[6].checked) && !(input[7].checked)) {
     missingData = true;
-    break;
   }
 }
 
