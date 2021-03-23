@@ -1,38 +1,20 @@
-body {
-  margin: 0;
-  padding: 0;
-}
-
-header {
-  display: flex;
-  max-width: 1366px;
-  width: 100%;
-  position: absolute;
-  padding: 5px 50px;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .top-bar {
   display: flex;
   background-color: rgb(66, 103, 178);
 }
 
 .facebook-logo {
-  float: left;
   text-align: left;
 }
 
-header .facebook-login {
+.facebook-login {
   display: flex;
   align-self: flex-end;
 }
 
 .formulario-column {
-  color: white;
-  display: flex;
-  margin: 0;
-  padding: 0;
+  flex-direction: column;
+  text-align: right;
 }
 
 .form-group {
@@ -42,9 +24,5 @@ header .facebook-login {
 
 .main-content {
   display: flex;
-  position: absolute;
-}
-
-.form-control {
-  align-self: flex-end;
+  flex-direction: column;
 }
