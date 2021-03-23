@@ -43,7 +43,6 @@
 /* body content */
 .main-content {
   display: flex;
-  justify-content: space-evenly;
 }
 
 .left-content {
@@ -52,7 +51,6 @@
 
 .right-content {
   width: 300px;
-  margin: 10px 270px 10px 50px;
 }
 
 .nomeSobrenome {
