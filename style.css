@@ -8,6 +8,8 @@ body {
   margin: auto;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 12px;
+  background: linear-gradient(white, #d3d8e8);
+  height: 630px;
 }
 
 header {
@@ -51,12 +53,16 @@ header {
 
 main {
   margin: auto;
-  background: linear-gradient(white, #d3d8e8);
   font-family: Helvetica, Arial, sans-serif;
   font-size: 12px;
 }
 
 /* CÓDIGO DO LP */
+
+main label {
+  font-size: 14px;
+}
+
 .main-content {
   display: flex;
   justify-content: center;
@@ -117,4 +123,13 @@ h1 {
 
 .name {
   margin-right: 8px;
+}
+
+#facebook-register {
+  font-size:19px;
+  padding: 7px 20px;
+  margin: 10px 0;
+  background: linear-gradient(#67ae55, #578843);
+  border-radius: 5px;
+  color: #fff;
 }
