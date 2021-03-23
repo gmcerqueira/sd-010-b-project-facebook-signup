@@ -54,21 +54,19 @@ function verifica() {
 
 function mostrarInfos(event) {
   event.preventDefault();
+  const elemento = document.getElementsByClassName('right-content')[0];
   const nome = document.getElementById('nameLogin').value;
   const sobrenome = document.getElementById('lastnameLogin').value;
   const contato = document.getElementById('phoneEmailLogin').value;
   const nascimento = document.getElementById('nascimentoLogin').value;
   const form = document.getElementById('registro');
   const genero = form.elements.gender.value;
-  const tituloNome = document.getElementsByTagName('h1')[0];
-  tituloNome.innerText = `Olá, ${nome} ${sobrenome}`;
-  document.getElementsByClassName('quick-easy')[0].style.display = 'none';
-  document.getElementById('registro').style.display = 'none';
-  const infos = document.getElementById('infos');
-  infos.style.display = 'flex';
-  infos.style.flexDirection = 'column';
-  infos.innerHTML = `<p>${contato}</p>`;
-  infos.innerHTML += `<p>${nascimento}</p><p>${genero}</p>`;
+  while (elemento.firstChild) {
+    elemento.removeChild(elemento.lastChild);
+  }
+  elemento.style.flexDirection = 'column';
+  elemento.innerHTML = `<h1>Olá, ${nome} ${sobrenome}</h1><p>${contato}</p>`;
+  elemento.innerHTML += `<p>${nascimento}</p><p>${genero}</p>`;
 }
 
 function dados(event) {
