@@ -15,16 +15,13 @@ function alertEmail() {
 }
 
 function userLoged(props) {
-  const v1 = `Olá, ${props[0]} ${props[1]}`;
-  const v2 = `Celular/Email ${props[2]}`;
-  const v3 = `Data de Nascimento ${props[3]}`;
   const v4 = document.querySelector('input[type="radio"]:checked').value;
   mainContent.removeChild(rightForm);
   const div = document.createElement('div');
   mainContent.appendChild(div);
-  const createSection = document.createElement('p');
-  createSection.innerText = `${v1}. ${v2}. ${v3}. Gênero ${v4}`;
-  div.appendChild(createSection);
+  div.style.flexDirection = 'column';  
+  div.innerHTML = `<h1>Olá, ${props[0]} ${props[1]}</h1><p>${props[2]}</p>`;
+  div.innerHTML += `<p>${props[3]}</p><p>${v4}</p>`;
 }
 
 function checarCampo() {
