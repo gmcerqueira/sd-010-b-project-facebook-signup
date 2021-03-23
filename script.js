@@ -53,9 +53,7 @@ function setupEvents() {
   //   ));
 
   addElemEventListener('#button-login', 'click', () =>
-    alert(
-      `Email ou telefone: ${document.getElementById('user-email-phone').value}`,
-    ));
+    alert(document.getElementById('user-email-phone').value));
 }
 
 /*
