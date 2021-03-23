@@ -128,11 +128,3 @@ document.getElementById('button-login').addEventListener('click',
     event.preventDefault();
     alert(document.getElementById('user-email-phone').value);
   });
-
-// alert no botão Entrar
-
-/* let buttonEnter=getElementById('button-login');
-buttonEnter.addEventListener('click',showAlert)
-function showAlert(){
-  alert(document.getElementById('user-email-phone').value()
-} */
