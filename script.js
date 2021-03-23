@@ -5,7 +5,7 @@ const personalizado = document.getElementById('genero-personalizado');
 const campo = document.getElementById('campos-invalidos');
 const rightForm = document.querySelector('.right-content');
 
-window.onload = function () {
+function initalizeApp() {
   botaoLogin.addEventListener('click', alertEmail);
   botao.addEventListener('click', checarCampo);
   personalizadoRadio.addEventListener('click', mostrarElemento);
@@ -56,3 +56,5 @@ function userLoged() {
   rightForm.appendChild(birthday);
   rightForm.appendChild(genderUser);
 }
+
+initalizeApp();
