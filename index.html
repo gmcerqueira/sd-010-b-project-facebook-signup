@@ -43,19 +43,23 @@
 
                 <input type="password" name="password" placeholder="Nova senha" class="data">
 
-                <label for="label-birthdate" id="label-birthdate">Data de nascimento</label>
+								<div class="birthdate" ><!-- REQUISITO 15 -->
+									<label for="label-birthdate" id="label-birthdate">Data de nascimento</label>
                 <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
-
-                <label for="" id="label-gender">Gênero
-                <br>
-                <input type="radio" name="gender" id="feminino" value="Feminino">
-                <label for="feminino">Feminino</label>
-                <input type="radio" name="gender" id="masculino" value="Masculino">
-                <label for="masculino">Masculino</label>
-                <input type="radio" name="gender" id="personalizado" value="Personalizado" >
-                <label for="personalizado">Personalizado</label>
-                </label>
-                
+								</div>
+              
+							<section class="genders"> <!-- REQUISITO 16 -->
+								<label for="" id="label-gender">Gênero </label>
+								<div class="inputs_labels_genders" >
+									<input type="radio" name="gender" id="feminino" value="Feminino">
+									<label for="feminino">Feminino</label>
+									<input type="radio" name="gender" id="masculino" value="Masculino">
+									<label for="masculino">Masculino</label>
+									<input type="radio" name="gender" id="personalizado" value="Personalizado" >
+									<label for="personalizado">Personalizado</label>
+								</div>
+							</section> 
+            
                 <div class="userTerms" > <!-- REQUISITO 17 -->
                     <p>Ao clicar em Cadastre-se, você concorda com nossos <span>Termos, Política de Dados e Política de Cookies.</span> 
                         Você pode receber notificações por SMS e pode cancelar isso quando quiser.</p>
