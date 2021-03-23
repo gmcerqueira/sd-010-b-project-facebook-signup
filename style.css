@@ -20,13 +20,17 @@
 
 .facebook-login {
   display: flex;
-  flex-flow: row;
   align-items: center;
-  justify-content: right;
   color: white;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
+}
+
+.form-control {
+  display: flex;
+  margin-bottom: 23px;
+  align-self: flex-end;
 }
