@@ -1,13 +1,13 @@
 const form = document.querySelector('.form');
 const erro = document.createElement('p');
-  
+
 const firstName = document.getElementById('first-name-form');
 const lastName = document.getElementById('last-name-form');
 const phoneEmail = document.getElementById('phone-email-form');
 const password = document.getElementById('password-form');
 const birthDay = document.getElementById('date-birthdate-form');
 const otherInput = document.getElementById('other-input')
-  
+
 const genderOtherDiv = document.querySelector('.gender-other');
 const radios = document.querySelectorAll('input[type=radio]');
 
@@ -28,12 +28,16 @@ function erroText() {
   erro.style.color = 'red';
 }
 
-//botão
+// botão
 botaoCadastro.addEventListener('click', (e) => {
   e.preventDefault();
   erro.innerText = '';
   validacao();
-  const inputs = document.querySelectorAll('.form input')
+  addValueContent ();
+});
+
+function addValueContent () {
+  const inputs = document.querySelectorAll('.form input');
   if (erro.innerText === '') {
     rightContent.innerHTML = '';
     for (let index = 0; index < inputs.length; index += 1) {
@@ -48,28 +52,28 @@ botaoCadastro.addEventListener('click', (e) => {
       createRightText(inputs[index]);
     }
   }
-});
+}
 
 //criando texto do right-content
 function createRightText(input) {
-  const createPara = document.createElement('p')
+  const createPara = document.createElement('p');
   createPara.innerText = input.value;
-  rightContent.appendChild(createPara)
+  rightContent.appendChild(createPara);
 }
 
-//validação
+// validação
 function validacao(){
-  const validarInput = [firstName, lastName, phoneEmail, password, birthDay]
+  const validarInput = [firstName, lastName, phoneEmail, password, birthDay];
   for (let index = 0; index < validarInput.length; index += 1) {
     if (validarInput[index].value === '') {
       erroText();
-    } 
+    }
   }
   form.appendChild(erro);
-  const radioOther = document.querySelector('input[type=radio]:checked')
+  const radioOther = document.querySelector('input[type=radio]:checked');
   if (radioOther.id === 'other' && otherInput.value === '') {
-    erroText();   
-  } 
+    erroText();
+  }
   form.appendChild(erro);
 }
 
