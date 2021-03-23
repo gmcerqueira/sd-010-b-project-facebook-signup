@@ -136,3 +136,8 @@ header button {
   border-radius: 5%;
   margin-top: 10px;
 }
+
+.vertical {
+  display: flex;
+  flex-direction: column;
+}
