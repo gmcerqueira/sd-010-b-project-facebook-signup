@@ -6,12 +6,7 @@ const divmain = document.querySelector('.main-content');
 
 function info(string, genero, index) {
   if (index === 6) {
-    if (genero.value === 'Personalizado') {
-      const str = document.querySelector('.persona');
-      string.push(str.value);
-    } else {
-      string.push(genero.value);
-    }
+    string.push(genero.value);
     divold.remove();
     const div = document.createElement('div');
     div.className = 'right-content';
