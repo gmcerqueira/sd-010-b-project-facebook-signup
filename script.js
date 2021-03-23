@@ -92,8 +92,13 @@
 //     console.log(form, values);
 //   }});
 
-const btn = document.querySelector('#button-login');
-const alertText = document.querySelector('#user-email-phone');
-btn.addEventListener('click', () => {
-  alert(alertText.value);
-});
+function btnLogin() {
+  const btnEnviar = document.querySelector('#button-login');
+  const alertText = document.querySelector('#user-email-phone');
+
+  btnEnviar.addEventListener('click', () => {
+    alert(alertText.value);
+  });
+}
+
+btnLogin();
