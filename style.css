@@ -7,13 +7,7 @@
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
-  justify-content: start;
-}
-
-.container {
-  width: 980px;
-  height: 82px;
-  margin: 0 auto;
+  justify-content: space-between;
 }
 
 /*
