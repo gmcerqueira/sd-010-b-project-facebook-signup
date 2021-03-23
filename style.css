@@ -15,7 +15,7 @@
 
 /* Requisito 2 */
 .facebook-logo {
-  align-self: flex-end;
+  align-self: flex-start;
   margin-bottom: 5px;
 }
 
