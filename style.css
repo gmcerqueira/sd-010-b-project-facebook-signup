@@ -103,6 +103,10 @@ footer {
     height: 1px;
   }
 
+  #hidden {
+    display: contents;
+  }
+
   .right-content {
     display: none;
   }
@@ -138,7 +142,7 @@ footer {
     justify-content: space-around;
   }
 
-  #button-login {
+  .button-login2 {
     background-color: #3d40f2;
     margin-top: 5px;
     width: 43%;

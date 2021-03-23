@@ -1,11 +1,13 @@
 let validRadio = false;
 // const leftContent = document.querySelector('.left-content');
 const rightContent = document.querySelector('.right-content');
-const rightInputs = document.querySelectorAll('input');
+// const rightInputs = document.querySelectorAll('.main-form');
+const form = document.getElementById('mainContent');
+const rightInputs = form.querySelectorAll('input');
 
 function validateRadioButtons() {
   const inputs = rightInputs;
-  for (let index = 2; index < inputs.length; index += 1) {
+  for (let index = 0; index < inputs.length; index += 1) {
     if (inputs[index].checked) {
       validRadio = true;
     }
@@ -28,7 +30,7 @@ function validateForm() {
   if (document.querySelector('.invalid')) {
     parent.removeChild(document.querySelector('.invalid'));
   }
-  for (let index = 2; index < inputs.length; index += 1) {
+  for (let index = 0; index < inputs.length; index += 1) {
     if (!inputs[index].value || !validateRadioButtons()) {
       parent.appendChild(paragraph);
       return false;
@@ -64,8 +66,8 @@ function createNameParagraph(first, last) {
 function createNameOutput() {
   const container = rightContent;
   const inputs = rightInputs;
-  for (let index = 3; index < inputs.length; index += 1) {
-    if (index === 3) {
+  for (let index = 1; index < inputs.length; index += 1) {
+    if (index === 1) {
       const firstName = inputs[index - 1].value;
       const lastName = inputs[index].value;
       const paragraph = createNameParagraph(firstName, lastName);
@@ -77,8 +79,8 @@ function createNameOutput() {
 function createOthersOutput() {
   const container = rightContent;
   const inputs = rightInputs;
-  for (let index = 4; index < 7; index += 1) {
-    if (index === 4 || index === 6) {
+  for (let index = 2; index < 5; index += 1) {
+    if (index === 2 || index === 4) {
       const paragraph = document.createElement('p');
       paragraph.innerText = inputs[index].value;
       paragraph.classList += 'return';
@@ -91,7 +93,7 @@ function createRadioOutput() {
   const container = rightContent;
   const inputs = rightInputs;
   console.log(inputs);
-  for (let index = 7; index < inputs.length; index += 1) {
+  for (let index = 5; index < inputs.length; index += 1) {
     if (inputs[index].checked) {
       const paragraph = document.createElement('p');
       paragraph.classList += 'return';
