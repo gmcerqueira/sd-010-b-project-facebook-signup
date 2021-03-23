@@ -13,20 +13,37 @@
 
   <header class="top-bar">
     <img class="facebook-logo" src="imgs/facebook-logo.png" alt="facebooklogo">
-    <form action="" method="GET" class="facebook-login">
+    <form method="GET" class="facebook-login">
       <div class="form-group">
         <label for="user-email-phone" id="user-email-phone-label">Email ou telefone</label>
-        <input type="text" name="login" id="user-email-phone" required>
+        <input type="text" id="user-email-phone">
       </div>
       <div class="form-group">
         <label for="user-password" id="user-password-label">Senha</label>
-        <input type="password" name="password" id="user-password" required>
+        <input type="text" id="user-password">
       </div>
       <div class="form-control">
-        <button onclick="enviar()" id="button-login" type="submit">Entrar</button>
+        <button id="button-login" type="submit">Entrar</button>
       </div>
     </form>
   </header>
+
+  <main class="main-content">
+    <div class="left-content">
+      <p id="facebook-slogan">
+        O Facebook ajuda você a se conectar e compartilhar com as 
+        pessoas que fazem parte da sua vida.
+      </p>
+      <img src="imgs/networking.png" alt="facebook networking" id="facebook-networking">
+    </div>
+
+    <div class="right-content">
+      <h1>Abra uma conta</h1>
+      <p class="quick-easy">É rápido e fácil.</p>
+      <form></form>
+    </div>
+
+  </main>
 
   <script src="script.js"></script>
 </body>
