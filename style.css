@@ -49,8 +49,17 @@
 
 .nome-sobrenome {
   display: flex;
-
 }
+
+/* .right-content .nome-sobrenome input {
+  margin-top: 50px;
+  height: 38px;
+  width: 190px;
+  padding-left: 10px;
+  font-size: 18px;
+  border: 1px solid silver;
+  border-radius: 4px;
+} */
 
 .row {
   display: flex;
