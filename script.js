@@ -41,7 +41,6 @@ const rightContent = document.querySelector('.right-content');
 const deleteDiv = document.getElementById('delete');
 const createElement = document.createElement('div');
 
-
 function showData() {
   for (let index = 0; index < userInfoArray.length; index += 1) {
     if (userInfoArray[index] !== '') {
