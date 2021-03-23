@@ -29,10 +29,18 @@
   flex-direction: column;
   border-color: #1d2a5b;
   width: 142px;
-  padding-left: 13px;
+  padding-right: 5px;
   color: whitesmoke;
   font-family: Helvetica, sans-serif;
   font-size: 12px;
+}
+
+input {
+  height: 18px;
+}
+
+.form-control {
+  align-self: flex-end;
 }
 
 .main-content {
