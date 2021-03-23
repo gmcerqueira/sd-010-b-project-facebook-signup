@@ -1,5 +1,46 @@
 //                     Aux Functions
 
+//             Remove Error message before inserting another
+
+const removeElement = (element) => {
+  if (element) {
+    element.parentElement.removeChild(element);
+  }
+};
+
+//   append childs to father
+
+const appendToElement = (children, father) => {
+  children.forEach((child) => {
+    father.appendChild(child);
+  });
+  father.setAttribute('class', 'right-content');
+  return father;
+};
+
+// Show Success Screen
+const mainContent = document.querySelector('.main-content');
+const showSuccessScreen = () => {
+  const userData = {
+    name: document.querySelector('input[name="firstname"]').value,
+    lastName: document.querySelector('input[name="lastname"]').value,
+    emailOrPhone: document.querySelector('input[name="phone_email"]').value,
+    date: document.querySelector('input[name="birthdate"]').value,
+    gender: document.querySelector('input:checked').value,
+  };
+  removeElement(document.querySelector('.right-content'));
+  const elements = [];
+  for (let index = 0; index < 4; index += 1) {
+    elements.push(document.createElement('p'));
+  }
+  elements[0].innerText = `Olá, ${userData.name} ${userData.lastName}`;
+  elements[1].innerText = userData.emailOrPhone;
+  elements[2].innerText = userData.date;
+  elements[3].innerText = userData.gender;
+  const page = appendToElement(elements, document.createElement('div'));
+  mainContent.appendChild(page);
+};
+
 // Check All Inputs from Sign Up Form
 
 const checkSignUpFormInputs = () => {
@@ -12,14 +53,6 @@ const checkSignUpFormInputs = () => {
     } else if (input.checked) radioIsChecked = true;
   });
   return emptyInput || !radioIsChecked;
-};
-
-//             Remove Error message before inserting another
-
-const removeElement = (element) => {
-  if (element) {
-    element.parentElement.removeChild(element);
-  }
 };
 
 //            create custom gender input or remove if needed
@@ -59,7 +92,7 @@ const setSignUp = () => {
       removeElement(oldErrorMessage);
       form.insertBefore(errorMessage, form.firstChild);
     } else {
-      removeElement(oldErrorMessage);
+      showSuccessScreen();
     }
   });
 };
