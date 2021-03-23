@@ -6,6 +6,7 @@ function entrarFacebook() {
   });
 }
 entrarFacebook();
+
 const getPrimeiroNome = document.getElementById('first-name-form').value;
 const getUltimoNome = document.getElementById('last-name-form').value;
 const getEmailCelular = document.getElementById('phone-email-form').value;
@@ -15,8 +16,8 @@ const botaoCadastro = document.getElementById('facebook-register');
 
 function substituiConteudo() {
   botaoCadastro.addEventListener('click', () => {
-    const NomeCompleto = document.createElement('h2');
-    NomeCompleto.innerText = `Olá, ${getPrimeiroNome} ${getUltimoNome}`;
+    const nomeCompleto = document.createElement('h2');
+    nomeCompleto.innerText = `Olá, ${getPrimeiroNome} ${getUltimoNome}`;
     const emailCelular = document.createElement('p');
     emailCelular.innerText = getEmailCelular;
     const dataNascimento = document.createElement('p');
@@ -26,7 +27,7 @@ function substituiConteudo() {
     opcaoGenero.innerText = inputRadio.value;
     const formDireita = document.querySelector('.right-content');
     formDireita.innerHTML = '';
-    formDireita.appendChild(NomeCompleto);
+    formDireita.appendChild(nomeCompleto);
     formDireita.appendChild(emailCelular);
     formDireita.appendChild(dataNascimento);
     formDireita.appendChild(opcaoGenero);
