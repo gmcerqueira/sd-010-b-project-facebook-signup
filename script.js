@@ -36,7 +36,7 @@ function setupEvents() {
   // para elemento de id button-login adiciona um escutador de evento click que dispara um alert com o valor do campo "Email ou telefone"
   addEventListener('#button-login', 'click', () => {
     alert(
-      `Email ou telefone: ${document.getElementById('user-email-phone').value}`
+      `Email ou telefone: ${document.getElementById('user-email-phone').value}`,
     );
   });
 }
