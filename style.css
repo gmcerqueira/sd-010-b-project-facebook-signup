@@ -13,10 +13,12 @@
   justify-content: space-around;
 }
 
-/* Requisito 2 */
+.top-bar img {
+  align-self: center;
+}
 
+/* Requisito 2 */
 .facebook-logo {
-  align-self: flex-end;
   margin-bottom: 5px;
 }
 
@@ -53,7 +55,7 @@ a {
 
 /* Requisito 10 */
 .right-content {
-  width: 300px;   
+  width: 300px;
 }
 
 .main-content {
