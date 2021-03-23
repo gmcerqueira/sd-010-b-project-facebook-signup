@@ -5,9 +5,14 @@
 }
 
 .top-bar {
+  width: 980px;
   background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: space-between;
+}
+
+.facebook-login {
+  display: flex;
 }
 
 /*
