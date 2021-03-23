@@ -15,13 +15,13 @@ function alertEmail() {
 }
 
 function userLoged(props) {
-  const v4 = document.querySelector('input[type="radio"]:checked').value;
+  const gender = document.querySelector('input[type="radio"]:checked').value;
   mainContent.removeChild(rightForm);
   const div = document.createElement('div');
   mainContent.appendChild(div);
-  div.style.flexDirection = 'column';  
+  div.style.flexDirection = 'column';
   div.innerHTML = `<h1>Olá, ${props[0]} ${props[1]}</h1><p>${props[2]}</p>`;
-  div.innerHTML += `<p>${props[3]}</p><p>${v4}</p>`;
+  div.innerHTML += `<p>${props[3]}</p><p>${gender}</p>`;
 }
 
 function checarCampo() {
