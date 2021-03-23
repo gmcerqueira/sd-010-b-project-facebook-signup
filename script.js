@@ -34,7 +34,7 @@ masc.addEventListener('click', selectedGender);
 fem.addEventListener('click', selectedGender);
 personalizado.addEventListener('click', selectedGender);
 
-// Referêcia utilizada para realizar o requisito 20: https://stackoverflow.com/questions/2010892/storing-objects-in-html5-localstorage //
+// Para transformar objeto em array, utilizamos como referência este site: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Object/values
 
 function printtext() {
   const rightContent = document.querySelector('.right-content');
@@ -55,6 +55,8 @@ function printtext() {
     selectUl.appendChild(createLi);
   }
 }
+
+// Referêcia utilizada para realizar o requisito 20: https://stackoverflow.com/questions/2010892/storing-objects-in-html5-localstorage //
 
 function guardaFormulario() {
   const formPreenchido = {
