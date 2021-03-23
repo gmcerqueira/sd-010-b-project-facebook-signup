@@ -1,5 +1,5 @@
 const radio = document.querySelectorAll('.user-gender input');
-const dataEl = document.querySelector('.data');
+const rightContent = document.querySelector('.right-content');
 const signIn = document.querySelector('#button-login');
 const submitBtn = document.getElementById('facebook-register');
 const initialEl = document.querySelector('.initial');
@@ -21,11 +21,11 @@ function getAttributes(array) {
 
 function showFields() {
   const dataList = getAttributes(inputList);
-  const greetings = ` Olá, ${dataList[0].value} ${dataList[1].value} <br>
-    ${dataList[2].value} <br>
-    ${dataList[3].value} <br>
-    ${dataList[4].value} <br> `;
-  dataEl.innerHTML = greetings;
+  const greetings = ` Olá, ${dataList[0].value} ${dataList[1].value}
+    ${dataList[2].value}
+    ${dataList[3].value}
+    ${dataList[4].value} `;
+  rightContent.innerHTML = greetings;
   initialEl.style.display = 'none';
 }
 
