@@ -9,10 +9,17 @@ const btn1 = document.getElementById('male-gender');
 const btn2 = document.getElementById('female-gender');
 const form = document.getElementById('register-form');
 const register = document.getElementById('facebook-register');
+const newInput = document.createElement('input');
+
+function removeChild() {
+  newInput.remove();
+}
+
+btn1.addEventListener('click', removeChild);
+btn2.addEventListener('click', removeChild);
 
 function addGender() {
   if (document.querySelector('#custom-gender').checked) {
-    const newInput = document.createElement('input');
     newInput.className = 'input-gender';
     form.insertBefore(newInput, register);
     newInput.id = 'newInput';
@@ -21,22 +28,13 @@ function addGender() {
   }
 }
 
-btn.addEventListener('click', checkNewInput);
-
 function checkNewInput() {
-  if (document.getElementById('newInput')) {
-    return true;
-  } else {
+  if (!document.getElementById('newInput')) {
     addGender();
   }
 }
 
-btn1.addEventListener('click', removeChild);
-btn2.addEventListener('click', removeChild);
-
-function removeChild() {
-  newInput.remove();
-}
+btn.addEventListener('click', checkNewInput);
 
 function getAttributes(array) {
   function inputsToShow(e) {
