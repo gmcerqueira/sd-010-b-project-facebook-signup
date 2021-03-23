@@ -9,9 +9,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: linear-gradient(#FEFEFE , #D3D8E8);
+  background-image: linear-gradient(#fefefe, #d3d8e8);
 }
-.top-bar{
+.top-bar {
   width: 100%;
   background-color: rgb(66, 103, 178);
   display: flex;
@@ -25,7 +25,7 @@
   padding: 10px;
   display: flex;
 }
-.facebook-login div{
+.facebook-login div {
   margin-left: 10px;
 }
 .facebook-login div #button-login {
@@ -51,7 +51,7 @@
   font-family: Helvetica, Arial, sans-serif;
   color: #0e385f;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 900;
   line-height: 29px;
   margin-top: 40px;
   width: 450px;
@@ -70,12 +70,13 @@
   flex-flow: row wrap;
 }
 .forms-abra-conta input {
-  background-color: #FEFEFE;
+  background-color: #fefefe;
   margin: 5px;
   border-radius: 5px;
   border: 1px solid #90949c;
   padding: 10px;
 }
+
 /* .container-footer {
   display: flex;
   width: 70%;
@@ -110,11 +111,10 @@
 
 /* aqui */
 .container-footer {
-  background-color: #FFFFFF;
+  background-color: white;
   width: 100%;
   display: flex;
   flex-flow: column wrap;
-
   align-items: center;
 }
 .container-footer div ul {
@@ -129,7 +129,7 @@
   font-size: 12px;
 }
 hr {
-  border:  1px solid #dddfe2;
+  border: 1px solid #dddfe2;
   font-size: 1px;
   height: 8px;
   margin-bottom: 8px;
@@ -148,7 +148,4 @@ hr {
 .copy {
   color: #737373;
   font-size: 11px;
- 
 }
-
-
