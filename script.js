@@ -1,11 +1,3 @@
-const getPrimeiroNome = document.getElementById('first-name-form').value;
-const getUltimoNome = document.getElementById('last-name-form').value;
-const getEmailCelular = document.getElementById('phone-email-form').value;
-const dateBirthdate = document.getElementById('date-birthdate-form');
-const getDataNascimento = dateBirthdate.value;
-const botaoCadastro = document.getElementById('facebook-register');
-const inputText = document.querySelectorAll('.form input[type=text');
-
 function entrarFacebook() {
   const entrarBotao = document.getElementById('button-login');
   entrarBotao.addEventListener('click', () => {
@@ -15,10 +7,15 @@ function entrarFacebook() {
 }
 entrarFacebook();
 
+const getPrimeiroNome = document.getElementById('first-name-form').value;
+const getUltimoNome = document.getElementById('last-name-form').value;
+const getEmailCelular = document.getElementById('phone-email-form').value;
+const dateBirthdate = document.getElementById('date-birthdate-form');
+const getDataNascimento = dateBirthdate.value;
+const botaoCadastro = document.getElementById('facebook-register');
+
 function substituiConteudo() {
-  botaoCadastro.addEventListener('click', (e) => {
-    e.preventDefault();
-    validacaoForm();
+  botaoCadastro.addEventListener('click', () => {
     const nomeCompleto = document.createElement('h2');
     nomeCompleto.innerText = `Olá, ${getPrimeiroNome} ${getUltimoNome}`;
     const emailCelular = document.createElement('p');
@@ -38,8 +35,10 @@ function substituiConteudo() {
 }
 substituiConteudo();
 // Validando campos
+const inputText = document.querySelectorAll('.form input[type=text');
 
-function validacaoForm() {
+botaoCadastro.addEventListener('click', (e) => {
+  e.preventDefault();
   const form = document.querySelector('.form');
   const erro = document.createElement('p');
   erro.innerText = 'Campos inválidos';
@@ -49,7 +48,7 @@ function validacaoForm() {
       form.appendChild(erro);
     }
   }
-}
+});
 //  campo personalizar genero
 const genderOtherDiv = document.querySelector('.gender-other');
 const radios = document.querySelectorAll('input[type=radio]');
