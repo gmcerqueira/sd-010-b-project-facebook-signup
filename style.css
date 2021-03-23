@@ -4,11 +4,7 @@
   box-sizing: border-box;
 }
 
-img {
-  height: auto;
-  width: 220px;
-}
-
+/* header */
 .top-bar {
   display: flex;
   background-color: rgb(66, 103, 178);
@@ -16,10 +12,16 @@ img {
   align-items: center;
 }
 
+.facebook-logo {
+  height: auto;
+  width: 220px;
+}
+
 .facebook-login {
   display: flex;
 }
 
+/* forms */
 .form-group {
   display: flex;
   flex-direction: column;
@@ -27,16 +29,12 @@ img {
   align-self: flex-end;
 }
 
-.form-group > input {
-  width: 150px;
-}
-
 .form-group input {
   width: 150px;
 }
 
 .top-bar label {
-  font-size: 12px;
+  font-size: 13px;
   font-family: inherit;
   color: white;
 }
