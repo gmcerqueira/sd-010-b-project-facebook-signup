@@ -20,7 +20,7 @@ function filledfields() {
   for (let index = 0; index < input.length; index += 1) {
     if (index < 5 && input[index].value === '') {
       missingData = true;
-      break;  
+      break;
     }
   }
 }
