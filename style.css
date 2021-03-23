@@ -69,7 +69,7 @@
 
 .facebook-form input {
   margin: 5px;
-  border: 1px solid gray;
+  border: 1px solid lightblue;
   border-radius: 5px;
   padding: 5px;
 }
@@ -93,4 +93,8 @@
 
 .right-content p {
   font-size: 20px;
+}
+
+.facebook-form #label-gender {
+  margin-right: 250px;
 }
