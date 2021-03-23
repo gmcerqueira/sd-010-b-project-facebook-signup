@@ -5,16 +5,9 @@ const submitBtn = document.getElementById('facebook-register');
 const initialEl = document.querySelector('.initial');
 const inputList = document.querySelectorAll('#register-form input');
 
-function createEl(tagName) {
-  const element = document.createElement(tagName);
-  return element;
-}
-
 function getAttributes(array) {
   function inputsToShow(e) {
-    const el = (e.type !== 'password'
-               && e.name !== 'firstname'
-               && e.name !== 'lastname');
+    const el = (e.type !== 'password');
     return el;
   }
   function rmGender(e) {
@@ -23,23 +16,16 @@ function getAttributes(array) {
   }
 
   const arr = [...array].filter(inputsToShow).filter(rmGender);
-  console.log(arr);
   return arr;
 }
 
 function showFields() {
   const dataList = getAttributes(inputList);
-  const greetings = `Olá, ${inputList[0].value} ${inputList[1].value}`;
-  const boldText = createEl('span');
-  dataEl.appendChild(boldText);
-  boldText.classList.add('bold-text');
-  boldText.innerText = `${greetings}`;
-  dataList.forEach((el) => {
-    const data = `${el.value}`;
-    const div = createEl('div');
-    div.textContent = data;
-    dataEl.appendChild(div);
-  });
+  const greetings = ` Olá, ${dataList[0].value} ${dataList[1].value} <br>
+    ${dataList[2].value} <br>
+    ${dataList[3].value} <br>
+    ${dataList[4].value} <br> `;
+  dataEl.innerHTML = greetings;
   initialEl.style.display = 'none';
 }
 
