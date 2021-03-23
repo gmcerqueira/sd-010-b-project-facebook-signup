@@ -4,17 +4,18 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.top-bar {
-  background-color: rgb(66, 103, 178);
+.top-bar-container {
   display: flex;
   justify-content: center;
-  padding: 15px 0;
+  background-color: rgb(66, 103, 178);
 }
 
-.top-bar-container {
+.top-bar {
   width: 1100px;
+  background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: space-between;
+  padding: 15px 0;
 }
 
 .facebook-logo {
