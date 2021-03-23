@@ -29,8 +29,7 @@
 }
 
 .form-control {
-  width: 80px;
-  margin: auto 0;
+  align-self: flex-end;
 }
 
 #button-login {
@@ -59,4 +58,13 @@
 
 .right-content {
   width: 300px;
+}
+
+#main-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.names {
+  width: 130px;
 }
