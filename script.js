@@ -1,5 +1,5 @@
 function emailTelephoneAlert() {
-  const emailTel = document.getElementById('user-email-phone-label');
+  const emailTel = document.getElementById('user-email-phone');
   const item = String(emailTel.value);
   alert(item);
 }
