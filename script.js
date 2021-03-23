@@ -76,6 +76,7 @@ function btnCad() {
           continue;
         }
       }
+    }
   }
 }
 
