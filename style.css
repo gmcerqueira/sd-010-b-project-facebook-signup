@@ -20,14 +20,8 @@ body {
 
 .form-group {
   display: flex;
-<<<<<<< HEAD
-  align-content: space-between;
-  flex-direction: column;
-  flex-wrap: wrap;
-=======
   align-content: center;
   flex-flow: column wrap;
->>>>>>> 6d780d00721edc6cd79a0c2e97ca52e88ed34853
   justify-content: center;
   width: 900px;
 }
