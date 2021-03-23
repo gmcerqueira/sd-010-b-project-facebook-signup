@@ -14,13 +14,16 @@ function alertEmail() {
 }
 
 function userLoged() {
-  const formInputs = document.querySelectorAll('.input-cadastro');
+  const nome = document.getElementById('nomeLogin').value;
+  const sobrenome = document.getElementById('sobrenomeLogin').value;
+  const telefone = document.getElementById('telefoneLogin').value;
+  const nascimento = document.getElementById('nascimentoLogin').value;
   const fullName = document.createElement('h1');
-  fullName.innerText = `Olá, ${formInputs[0].value} ${formInputs[1].value}`;
+  fullName.innerText = `Olá, ${nome} ${sobrenome}`;
   const emailPhone = document.createElement('p');
-  emailPhone.innerText = formInputs[2].value;
+  emailPhone.innerText = telefone;
   const birthday = document.createElement('p');
-  birthday.innerText = formInputs[4].value;
+  birthday.innerText = nascimento;
   const genderUser = document.createElement('p');
   const valorR = document.querySelector('input[type="radio"]:checked').value;
   genderUser.innerText = valorR;
