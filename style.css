@@ -188,3 +188,10 @@ h1 {
   font-size: 20px;
   font-weight: 800;
 }
+
+#error-message {
+  color: red;
+  font-weight: 800;
+  padding: 10px 0;
+  font-size: 20px;
+}

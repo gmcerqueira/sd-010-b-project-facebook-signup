@@ -66,6 +66,9 @@ window.onload = function init() {
 
 // Criação de input de texto caso seja selecionado Gênero Personalizado
 const divInputGender = document.getElementById('other-gender');
+const otherGender = document.getElementById('other');
+const male = document.getElementById('male');
+const female = document.getElementById('female');
 
 function inputOtherGender() {
   const inputGender = document.createElement('input');
@@ -80,23 +83,35 @@ function clearOtherGender() {
   divInputGender.innerHTML = '';
 }
 
-function radioChange() {
-  const other = document.getElementById('other');
+otherGender.addEventListener('click', inputOtherGender);
+male.addEventListener('click', clearOtherGender);
+female.addEventListener('click', clearOtherGender);
 
-  if (other.checked === true) {
-    if (divInputGender.innerHTML === '') {
-      inputOtherGender();
+// Validação dos campos e adição de paragráfo de campos inválidos
+const signUp = document.getElementById('facebook-register');
+const formInput = document.getElementsByClassName('form-input');
+
+function validate(event) {
+  const element = event;
+  element.preventDefault();
+  const isError = document.getElementById('error-message');
+  if (isError !== null) {
+    isError.remove();
+  }
+  for (let index = 0; index < formInput.length; index += 1) {
+    if (formInput[index].value === '') {
+      const newElement = document.createElement('p');
+      newElement.id = 'error-message';
+      newElement.innerHTML = 'Campos inválidos';
+      document.querySelector('.form').appendChild(newElement);
+      break;
     }
-  } else {
-    clearOtherGender();
   }
 }
 
-window.onchange = (radioChange);
+signUp.addEventListener('click', validate);
 
 // Criação e alteração das respostas do form
-
-const signUp = document.getElementById('facebook-register');
 
 function message() {
   const firstname = document.getElementById('firstname').value;
@@ -112,8 +127,15 @@ function message() {
 }
 
 function subscribe() {
-  const rightContent = document.querySelector('.right-content');
-  rightContent.innerHTML = message();
+  let validForm = true;
+  for (let i = 0; i < formInput.length; i += 1) {
+    if (formInput[i].value === '') {
+      validForm = false;
+    }
+  }
+  if (validForm === true) {
+    document.querySelector('.right-content').innerHTML = message();
+  }
 }
 
 signUp.addEventListener('click', subscribe);
