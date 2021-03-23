@@ -11,23 +11,23 @@ function login() {
 
 login();
 
-// function createDate() {
-//   let getSelect = document.querySelector('.select-date');
-//   let createOptionDate = document.createElement('option');
-//   createOptionDate.className = 'option-days';
+function addOtherGender() {
+  const radiosDiv = document.querySelector('.radios');
+  console.log(radiosDiv);
+  const otherGender = document.querySelector('#Personalizado');
+  console.log(otherGender);
 
-//   getSelect.appendChild(createOptionDate);
-// }
+  otherGender.addEventListener('click', () => {
+    if ((otherGender.value = 'checked')) {
+      let createInput = document.createElement('input');
+      createInput.type = 'text';
+      createInput.name = 'gender-custom';
+      createInput.placeholder = 'Gênero (opcional)';
+      createInput.className = 'other';
 
-// createDate();
+      radiosDiv.appendChild(createInput);
+    }
+  });
+}
 
-// function addDays() {
-//   let optionDay = document.querySelector('.option-days');
-//   let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
-//   for (let item = 0; item < array.length; item += 1) {
-//     optionDay.innerText += array[item];
-//   }
-// }
-
-// addDays();
+addOtherGender();
