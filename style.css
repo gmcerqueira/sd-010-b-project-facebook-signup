@@ -14,22 +14,28 @@ body {
   display: flex;
   height: 78px;
   background-color: rgb(66, 103, 178);
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   color: white;
 }
 
 .facebook-logo {
-  width: 170px;
+  width: 900px;
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
 }
 
 .facebook-login {
   display: flex;
+  justify-content: right;
+  align-items: flex-end;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
+  margin: 0 14px 0 0;
 }
 
 .form-control {
