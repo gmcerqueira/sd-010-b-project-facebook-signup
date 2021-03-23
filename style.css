@@ -86,10 +86,6 @@ a {
   margin-bottom: 5px;
 }
 
-#label-birthdate {
-  width: 100%;
-}
-
-#label-gender {
+#label-gender , #label-birthdate {
   display: block;
 }
