@@ -1,5 +1,3 @@
 function textAlert() {
-  const textMsg = document.getElementById('user-email-phone').value;
-  alert(textMsg);
+  alert(document.getElementById('user-email-phone').value);
 }
-textAlert();
