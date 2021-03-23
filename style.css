@@ -53,11 +53,17 @@ a {
   margin-bottom: 15px;
 }
 
-/* Requisito 10 */
+/* Requisito 9 */
 .left-content {
+  color: rgb(14, 56, 95);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
   width: 800px;
 }
 
+/* Requisito 10 */
 .right-content {
   width: 300px;
 }
