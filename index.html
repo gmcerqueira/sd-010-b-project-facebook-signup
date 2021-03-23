@@ -31,9 +31,7 @@
     </div>
     <div class="right-content">
       <h1>Abra uma conta</h1>
-      <div class="quick-easy">
-        É rápido e fácil.
-      </div>
+      <div class="quick-easy">É rápido e fácil.</div>
       <form action="" class="formContato" method="get">
         <input type="text" name="firstname" placeholder="Nome" id="firstname">
         <input type="text" name="lastname" placeholder="Sobrenome" id="lastname">
@@ -41,6 +39,18 @@
         <input type="text" name="phone_email" placeholder="Celular ou email" id="phone_email">
         <!-- 14 -->
         <input type="password" name="password" placeholder="Nova senha" id="password">
+        <!-- 15 -->
+        <div class="flex-form2">
+          <label for="birthdate" id="label-birthdate">Data de nascimento</label>
+          <input type="text" name="birthdate" id="birthdate" placeholder="dd/mm/aaaa">
+          <!-- 16 -->
+          <label for="genero-feminino" name="gender" id="label-gender">Gênero</label>
+          <div class="genders">
+            <input type="radio" name="gender" id="genero-feminino" value="Feminino"><span class="radio-gender">Feminino</span>
+            <input type="radio" name="gender" id="genero-masculino" value="Masculino"><span class="radio-gender">Masculino</span>
+            <input type="radio" name="gender" id="genero-personalizado" value="Personalização"><span class="radio-gender">Personalização</span>
+          </div>
+        </div>
       </form>
     </div>
   </main>
