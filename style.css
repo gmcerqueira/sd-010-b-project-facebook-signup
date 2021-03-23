@@ -8,7 +8,7 @@
   background-color: rgb(66, 103, 178);
   align-items: center;
   justify-content: space-between;
-} 
+}
 
 .left-content {
   display: flex;
@@ -58,6 +58,5 @@
 
 #button-login:hover {
   background-color: white;
-  color: rgb(66, 103, 178);;
+  color: rgb(66, 103, 178);
 }
-
