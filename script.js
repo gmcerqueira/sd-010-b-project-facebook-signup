@@ -10,22 +10,38 @@ function entrar() {
 entrar();
 
 // Requisito 18
+let missingData = false
+
 function filledfields() {
+  missingData = false
   const form = document.getElementById('subscription');
   const input = form.getElementsByTagName('input');
   for (let index = 0; index < input.length; index += 1) {
     if (index < 5 && input[index].value === '') {
-      return alert('Campos inválidos');
+      return (missingData = true);
     }
-    if (!(input[5].checked) && !(input[6].checked) && !(input[7].checked)) {
-      alert('Campos inválidos');
-    }
+  }
+}
+
+function filledradios(){
+  const form = document.getElementById('subscription');
+  const input = form.getElementsByTagName('input');
+  if (!(input[5].checked) && !(input[6].checked) && !(input[7].checked)) {
+    return (missingData = true);
+  }
+}
+
+function alertmissing() {
+  filledfields();
+  filledradios();
+  if (missingData === true ) {
+    alert('Campos inválidos');
   }
 }
 
 function checkfilled() {
   const btnsumit = document.getElementsByClassName('btnSumit')[0];
-  btnsumit.addEventListener('click', filledfields);
+  btnsumit.addEventListener('click', alertmissing );
 }
 
 checkfilled();
