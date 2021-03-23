@@ -23,6 +23,8 @@ header {
 
 .form-group {
   display: flex;
+  flex-direction: column;
+  padding-right: 15px;
 }
 
 /* -------------------------------------------------------------------- */
