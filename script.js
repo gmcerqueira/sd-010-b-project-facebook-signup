@@ -1,6 +1,6 @@
 const inputEmailPhone = document.getElementById('user-email-phone');
 const buttonGetIn = document.getElementById('button-login');
-const buttonRegister = document.getElementById('facebook-register');
+// const buttonRegister = document.getElementById('facebook-register');
 
 function buttonIn() {
   alert(inputEmailPhone.value);
