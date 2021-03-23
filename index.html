@@ -63,12 +63,13 @@
                 <div class="gender">
                     <label id="label-gender" for="">Gênero</label>
                         <div class="genders">
-                            <input name="gender" type="radio" value="Feminino">Feminino
-                            <input name="gender" type="radio" value="Masculino">Masculino
-                            <input name="gender" type="radio" value="Personalizado">Personalizado
+                            <input name="gender" type="radio" value="Feminino" required>Feminino
+                            <input name="gender" type="radio" value="Masculino" required>Masculino
+                            <input name="gender" type="radio" value="Personalizado" required>Personalizado
                         </div>
                 </div>
 
+                <p id="invalid-field"></p>
                 <button id="facebook-register" type="submit">Cadastre-se</button>
 
             </form>
