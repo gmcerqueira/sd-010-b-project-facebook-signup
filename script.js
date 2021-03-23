@@ -34,18 +34,20 @@ masc.addEventListener('click', selectedGender);
 fem.addEventListener('click', selectedGender);
 personalizado.addEventListener('click', selectedGender);
 
-function printtext() {
+function printText() {
   const rightContent = document.querySelector('.right-content');
   rightContent.innerHTML = '';
-  const createH2 = document.createElement('h3');
-  rightContent.appendChild(createH2);
-  const recInfo = JSON.parse(localStorage.formPreenchido);
-  const birth = `Data de Nascimento: ${recInfo.birthDate}`;
-  const mail = `E-mail ou Telefone: ${recInfo.mail}`;
-  const gender = `Gênero: ${recInfo.gender}`;
-  const cool = 'Recebemos o teu cadastro com sucesso! Confira os seus dados:';
-  const infoData = `\n ${cool}\n ${mail}\n ${birth}\n ${gender}`;
-  createH2.innerText = `Olá, ${recInfo.first} ${recInfo.last}! ${infoData}`;
+  const createUl = document.createElement('ul');
+  rightContent.appendChild(createUl);
+  const recoverdInfo = JSON.parse(localStorage.formPreenchido);
+  createUl.innerText = `Olá, ${recoverdInfo.first} ${recoverdInfo.last}`;
+  const arrayOfInfos = Object.values(recoverdInfo);
+  for (let index = 3; index < arrayOfInfos.length; index += 1) {
+    const selectUl = document.querySelector('ul');
+    const createLi = document.createElement('li');
+    createLi.innerText = arrayOfInfos[index];
+    selectUl.appendChild(createLi);
+  }
 }
 
 // Referêcia utilizada para realizar o requisito 20: https://stackoverflow.com/questions/2010892/storing-objects-in-html5-localstorage //
@@ -60,7 +62,7 @@ function guardaFormulario() {
     gender: document.querySelector('.selected').value,
   };
   localStorage.setItem('formPreenchido', JSON.stringify(formPreenchido));
-  printtext();
+  printText();
 }
 
 const btnCadastro = document.querySelector('#facebook-register');
