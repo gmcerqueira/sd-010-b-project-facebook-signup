@@ -123,6 +123,12 @@ document.querySelectorAll('input[name="gender"]').forEach((elem) => {
   });
 });
 
+document.getElementById('button-login').addEventListener('click',
+  (event) => {
+    event.preventDefault();
+    alert(document.getElementById('user-email-phone').value);
+  });
+
 // alert no botão Entrar
 
 /* let buttonEnter=getElementById('button-login');
