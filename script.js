@@ -88,14 +88,14 @@ function addGender() {
 function finalizaCadastro() {
   const main = document.querySelector('.main-content');
   const oldRightContent = document.querySelector('.right-content');
-  
+
   const newRightContent = document.createElement('div');
   newRightContent.className = 'right-content';
   newRightContent.appendChild(addName());
   newRightContent.appendChild(addPhoneMail());
   newRightContent.appendChild(addBirthDate());
   newRightContent.appendChild(addGender());
-  main.removeChild(oldRightContent)
+  main.removeChild(oldRightContent);
   main.appendChild(newRightContent);
 }
 
