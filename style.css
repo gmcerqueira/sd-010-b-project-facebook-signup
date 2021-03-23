@@ -2,10 +2,10 @@
   margin: 0;
   padding: 0;
 }
-
+/* 
 body {
   width: 1366px;
-}
+} */
 
 .top-bar {
   display: flex;
@@ -16,13 +16,13 @@ body {
   justify-content: space-between;
 }
 
-.facebook-logo {
+/* .facebook-logo {
   display: flex;
 }
 
 .facebook-login {
   display: flex;
-}
+} */
 
 /* .form-group {
   display: flex;
