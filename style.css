@@ -106,12 +106,12 @@ a {
 /* Requisito 15 */
 .birthdate {
   color: rgb(133, 137, 145);
-  font-weight: bold;
+  font-weight: 600;
   font-size: 1.08em;
 }
 
 .birthdate label {
-  margin: 10px 8px 0px 8px;
+  margin: 10px 8px 0;
 }
 
 #label-gender , #label-birthdate {
@@ -119,14 +119,14 @@ a {
 }
 
 /* Requisito 16 */
-.genders  #label-gender {
-  margin: 10px 8px 8px 8px;
+.genders #label-gender {
+  margin: 10px 8px 8px;
   color: rgb(133, 137, 145);
-  font-weight: bold;
+  font-weight: 600;
   font-size: 1.08em;
 }
 
-.inputs_labels_genders label{
+.inputs_labels_genders label {
   font-size: 0.95em;
   color: rgb(27, 30, 36);
 }
