@@ -108,7 +108,8 @@ function alertmissing() {
   filledfields();
   filledradios();
   if (missingData === true) {
-    alert('Campos inválidos');
+    let message = document.getElementById('invalidMessage');
+    message.innerText = 'Campos inválidos';
   } else {
     createtext();
     addgender();
