@@ -4,7 +4,7 @@ function emailTelephoneAlert() {
   alert(item);
 }
 
-window.onload = function () {
-    const buttonLogin = document.getElementById('button-login');
+window.onload = function() {
+  const buttonLogin = document.getElementById('button-login');
   buttonLogin.addEventListener('click', emailTelephoneAlert);
 };
