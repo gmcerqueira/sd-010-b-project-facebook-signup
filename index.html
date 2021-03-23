@@ -58,6 +58,7 @@
       </div>
       
       <form class="signup-form" action="" method="post">
+        <div id='outPutErros'></div>
         <div class="full-name">
           <input class="name-width" type="text" name="firstname" placeholder="Nome" maxlength="120" required>
           <input class="name-width" type="text" name="lastname" placeholder="Sobrenome" maxlength="120" required>
@@ -68,7 +69,6 @@
           <label id="label-birthdate" for="date">Data de nascimento</label>
           <input class="input-date" type="text" name="birthdate" id="date" placeholder="dd/mm/aaaa" maxlength="20" required>
         </div>
-        
         <div class="data-container-two">
           <div id="label-gender">Gênero</div>
           <div class="gender-container">
@@ -87,8 +87,10 @@
               <label for="radio-three">Personalizado</label>
             </span>
 
-            <span class="gender-item">
-              <div class="custom-gender-container"></div>
+            <span class="gender-item hide" id="gener-custom">
+              <div class="custom-gender-container">
+                <input names='gender-custom' placeholder="Gênero (opcional)" id="input-gener-custom" required>
+              </div>
             </span>
 
           </div>
