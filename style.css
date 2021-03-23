@@ -67,7 +67,7 @@ a {
   justify-content: center;
 }
 
-#name,#lastname{
+#name , #lastname {
   box-sizing: border-box;
   width: 147px;
   padding: 8px 10px;
@@ -80,8 +80,12 @@ a {
   border-radius: 5px;
 }
 
-.right-content input, h1 , p {
+.right-content input , h1 , p {
   margin-bottom: 5px;
+}
+
+.main-content {
+  margin-top: 30px;
 }
 
 #label-birthdate {
