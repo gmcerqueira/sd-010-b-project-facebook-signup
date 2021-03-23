@@ -1,8 +1,6 @@
 const btnLogin = document.getElementById('button-login');
 const txtEmailtel = document.getElementById('user-email-phone');
 
-let selectedGender;
-
 function elertEmail() {
   alert(txtEmailtel.value);
 }
@@ -11,18 +9,12 @@ btnLogin.addEventListener('click', elertEmail);
 
 function switchGenderCustom(origin) {
   const element = origin.target.id;
+
   if (element === 'other') {
     document.getElementById('gender-custom').style.display = 'inline';
-    selectedGender = 'Personalizado';
-  } else if (element === 'female') {
+  } else if (element === 'female' || element === 'male') {
     document.getElementById('gender-custom').style.display = 'none';
-    selectedGender = 'Feminino';
-  } else if (element === 'male') {
-    document.getElementById('gender-custom').style.display = 'none';
-    selectedGender = 'Masculino';
   }
-  console.log(selectedGender);
-  return selectedGender;
 }
 
 const radioBtns = document.getElementsByName('gender');
@@ -46,7 +38,7 @@ function checkInputValues() {
 //   const rightContent = document.querySelector('.right-content');
 //   rightContent.innerHTML = '';
 //   const customH3 = document.createElement('h3');
-  
+
 //   customH3.innerText = 'teste';
 //   rightContent.appendChild(customH3);
 // }
