@@ -38,7 +38,7 @@ getPersonalizado.addEventListener('click', createDiv);
 
 const dataKey = {};
 const mainContent = document.querySelector('.main-content');
-const rightContent = document.querySelector('.right-content');
+// const rightContent = document.querySelector('.right-content');
 const createElement = document.createElement('div');
 
 function showData() {
@@ -49,14 +49,15 @@ function showData() {
       dataKey.phoneEmail = document.getElementById('phone-email').value;
       dataKey.birthDate = document.getElementById('birthdate').value;
       dataKey.gen = document.querySelector('input[type="radio"]:checked').value;
-      mainContent.removeChild(rightContent);
       createElement.innerHTML = `<p>Olá, ${dataKey.firstN} ${dataKey.lastN}</p>
       <p>${dataKey.phoneEmail}</p>
       <p>${dataKey.birthDate}</p>
       <p>${dataKey.gen}</p>`;
       mainContent.appendChild(createElement);
+      break;
     }
   }
 }
 
 registerButton.addEventListener('click', showData);
+registerButton.addEventListener('click', (event) => event.preventDefault());
