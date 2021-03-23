@@ -21,3 +21,26 @@ function validate(event) {
 }
 
 registerBtn.addEventListener('click', validate);
+
+const custom = document.querySelector('#custom');
+const male = document.querySelector('#male');
+const female = document.querySelector('#female');
+
+function customField(event) {
+  const inputGender = document.querySelector('#input-gender');
+  const fieldGender = document.createElement('input');
+  let checked = false;
+  if (event.target.id === 'custom' && !checked) {
+    checked = true;
+    fieldGender.name = 'gender-custom';
+    fieldGender.placeholder = 'Gênero (opcional)';
+    fieldGender.type = 'text';
+    inputGender.appendChild(fieldGender);
+  }else if (event.target.id !== 'custom') {
+    checked = false;
+    inputGender.removeChild(fieldGender);
+  }
+}
+custom.addEventListener('click', customField);
+male.addEventListener('click', customField);
+female.addEventListener('click', customField);
