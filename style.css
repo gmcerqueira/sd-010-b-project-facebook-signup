@@ -22,7 +22,7 @@ header {
   justify-content: space-between;
   align-items: center;
   color: white;
-  width: 980px;
+  width: 1100px;
   margin: auto;
 }
 
@@ -60,11 +60,11 @@ main {
 .main-content {
   display: flex;
   justify-content: center;
-  width: 980px;
+  width: 1100px;
 }
 
 .left-content {
-  width: 580px;
+  width: 800px;
 }
 
 .left-content p {
@@ -78,11 +78,13 @@ main {
 }
 
 .right-content {
-  width: 400px;
+  width: 300px;
+  align-content:stretch;
 }
 
 .signUp {
   display: flex;
+  justify-content: start;
 }
 
 .gender-radios {
@@ -110,7 +112,7 @@ h1 {
 }
 
 .name , .last {
-  width: 194px;
+  width: 130px;
 }
 
 .name {
