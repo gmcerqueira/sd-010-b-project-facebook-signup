@@ -40,39 +40,39 @@
 .main-content {
   display: flex;
   flex-direction: row;
-  justify-content:center;
+  justify-content: center;
   background-image: linear-gradient(rgb(247, 241, 241), rgb(219, 225, 243));
   padding: 30px;
 }
 
 .left-content {
   width: 800px;
- }
+}
 
-#facebook-slogan{
-font-size: 20px;
-padding: 10px;
-margin-right: 25px;
-font-weight: bold;
-line-height: 25px;
-width: 450px;
+#facebook-slogan {
+  font-size: 20px;
+  padding: 10px;
+  margin-right: 25px;
+  font-weight: bold;
+  line-height: 25px;
+  width: 450px;
 }
 
 .right-content {
   width: 300px;
- }
+}
 
- .right-content h1{
-   font-size: 35px;
-   font-weight: 700;
-   line-height: 1.5;
- }
+.right-content h1 {
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 1.5;
+}
 
- .right-content h2{
-   font-size: 20px;
-   font-weight: normal;
-   line-height: 1.5
- }
+.right-content h2 {
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.5;
+}
  
 .linhaform {
   display: flex;
@@ -86,7 +86,7 @@ width: 450px;
   font-weight: bold;
 }
 
-.quadrogenero{
+.quadrogenero {
   margin-top: 10px;
   margin-bottom: 5px;
   font-size: 18px;
@@ -95,12 +95,12 @@ width: 450px;
 }
 
 .generos {
-  display:flex;
+  display: flex;
   flex-flow: row nowrap;
   padding: 5px 0 5px 4px;
 }
 
-.labelgenero{
+.labelgenero {
   font-size: 18px;
   font-weight: normal;
   line-height: 18px;
@@ -109,9 +109,9 @@ width: 450px;
   margin-top: -1px;
 }
 
-.linhaform input{
+.linhaform input {
   border-radius: 5px;
-  border:1px solid;
+  border: git1px solid;
   font-size: 20px;
   padding: 5px;
   margin: 5px;
@@ -120,7 +120,7 @@ width: 450px;
   text-align: start;
 }
 
-.botaoenviar{
+.botaoenviar {
   background-color: forestgreen;
   color: white;
   font-size: 20px;
