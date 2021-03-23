@@ -80,7 +80,7 @@
   margin: 5px;
 }
 
-.right-content input [ type = 'text' ] , .right-content input [ type = 'password' ] {
+.right-content [ type = 'text' ] , .right-content [ type = 'password' ] {
   margin: 10px 10px 5px 0;
   width: 500px;
   height: 35px;
