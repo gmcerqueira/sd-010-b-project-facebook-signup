@@ -1,8 +1,8 @@
-//Declarações:
+//  Declarações:
 const submitBtn = document.getElementById('button-login');
 const user = document.getElementById('user-email-phone');
 
-//Funções:
+//  Funções:
 function alerta() {
   alert(user.value);
 }
@@ -19,5 +19,5 @@ function alerta() {
 //   }
 // Peguei informações desse site: http://www.linhadecodigo.com.br/artigo/3503/configurando-funcoes-de-um-formulario-html-com-javascript.aspx#ixzz6ptmsOtje
 
-//Chamadas das funções:
+//  Chamadas das funções:
 submitBtn.addEventListener('click', alerta);
