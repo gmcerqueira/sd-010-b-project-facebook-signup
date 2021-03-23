@@ -236,7 +236,7 @@ a {
     align-self: stretch;
   }
 
-  #button-login {
+  .button-enter-mobile {
     width: 100%;
     margin: 15px 0;
     height: 40px;
@@ -244,6 +244,8 @@ a {
     border-radius: 5px;
     font-size: large;
     background: #007eec;
+    color: white;
+    font-weight: 700;
   }
 
   .mobile-element {
