@@ -10,12 +10,15 @@
   width: 100%;
   height: 81px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+.top-bar img {
+  align-self: center;
 }
 
 /* Requisito 2 */
 .facebook-logo {
-  align-self: flex-start;
   margin-bottom: 5px;
 }
 
@@ -62,4 +65,25 @@ a {
 .main-content {
   display: flex;
   justify-content: center;
+}
+
+#name,#lastname{
+  box-sizing: border-box;
+  width: 147px;
+  padding: 8px 10px;
+  border-radius: 5px;
+}
+
+.data {
+  height: 30px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.right-content input, h1 , p {
+  margin-bottom: 5px;
+}
+
+#label-birthdate {
+  width: 100%;
 }
