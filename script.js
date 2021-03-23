@@ -16,24 +16,19 @@ function alertEmail() {
 
 function createElement(fullName, emailPhone, birthday, genderUser) {
   const createSection = document.createElement('p');
-  createSection.innerText = `${fullName.innerText}, ${emailPhone.innerText}, ${birthday.innerText}, ${genderUser.innerText}`;
+  createSection.innerText = `${fullName}, ${emailPhone}, ${birthday}, ${genderUser}`;
   return createSection;
 }
 
 function userLoged(props) {
-  const fn = document.createElement('h1');
-  const birthdayP = props[3];
-  const phoneP = props[2];
-  fn.innerText = `Olá, ${props[0]} ${props[1]}`;
-  const ep = document.createElement('p');
-  ep.innerText = phoneP;
-  const bt = document.createElement('p');
-  bt.innerText = birthdayP;
-  const gd = document.createElement('p');
-  const valorR = document.querySelector('input[type="radio"]:checked').value;
+  const v1 = `Olá, ${props[0]} ${props[1]}`;
+  const v2 = props[2];
+  const v3 = props[3];
+  const v4 = document.querySelector('input[type="radio"]:checked').value;
+
   gd.innerText = valorR;
   mainContent.removeChild(rightForm);
-  mainContent.appendChild(createElement(fn, ep, bt, gd));
+  mainContent.appendChild(createElement(v1, v2, v3, v4));
 }
 
 function checarCampo() {
