@@ -74,21 +74,6 @@ body {
   padding: 5px 6px;
 }
 
-.right-content button {
-  font-size: 19px;
-  font-weight: 700;
-  line-height: 24px;
-  text-align: center;
-  color: white;
-  height: 39px;
-  width: 194px;
-  border-radius: 6px;
-  border: 1px solid rgb(74, 74, 74);
-  background-color: #6aa656;
-  margin-top: 20px;
-  cursor: pointer;
-}
-
 .form-control button:hover {
   background-color: #3b5a98;
 }
@@ -225,7 +210,22 @@ body {
   margin-left: 10px;
 }
 
-.right-content button:hover {
+.right-content #facebook-register {
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  color: white;
+  height: 39px;
+  width: 194px;
+  border-radius: 6px;
+  border: 1px solid rgb(74, 74, 74);
+  background-color: #6aa656;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.right-content #facebook-register:hover {
   background-color: #5d944b;
   transition: background-color 300ms;
 }
