@@ -30,7 +30,7 @@
 /*
    Essa função adiciona um escutador de eventos eventName que dispara a function functionName para um elemento que tenha o cssSelector.
   */
-function addEventListener(cssSelector, eventName, functionName) {
+function addElemEventListener(cssSelector, eventName, functionName) {
   // obtem um elemento de cssSelector e armazena em element
   const element = document.querySelector(cssSelector);
 
@@ -52,8 +52,10 @@ function setupEvents() {
   //     `Email ou telefone: ${document.getElementById('user-email-phone').value}`,
   //   ));
 
-  addEventListener('#button-login', 'click', () => alert(`Email ou telefone: ${
-    document.getElementById('user-email-phone').value}`));
+  addElemEventListener('#button-login', 'click', () =>
+    alert(
+      `Email ou telefone: ${document.getElementById('user-email-phone').value}`,
+    ));
 }
 
 /*
