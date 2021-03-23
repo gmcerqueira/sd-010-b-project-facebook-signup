@@ -39,15 +39,15 @@
       <p class="quick-easy">É rápido e fácil.</p>
       <form action="get">
         <div>
-        <input type="text" id="name" placeholder="Nome" name="firstname" >
-        <input type="text" id="name" placeholder="Sobrenome" name="lastname">
+        <input type="text" id="name" placeholder="Nome" name="firstname" required oninvalid="this.setCustomValidity('Campos inválidos')">
+        <input type="text" id="name" placeholder="Sobrenome" name="lastname" required oninvalid="this.setCustomValidity('Campos inválidos')">
       </div>
-        <input type="text" placeholder="Celular ou email" name="phone_email">
-        <input type="password" placeholder="Nova senha" name="password">
+        <input type="text" placeholder="Celular ou email" name="phone_email" required oninvalid="this.setCustomValidity('Campos inválidos')">
+        <input type="password" placeholder="Nova senha" name="password" required oninvalid="this.setCustomValidity('Campos inválidos')">
         <br>
         <label for="" id="label-birthdate">Data de nascimento</label>
         <input id="label-birthdate" type="text" name="birthdate" 
-        placeholder="dd/mm/aaaa">
+        placeholder="dd/mm/aaaa" required oninvalid="this.setCustomValidity('Campos inválidos')">
         <br>
         <label for="" class="label-content" id="label-gender">Gênero</label>
         <div class="radios">
