@@ -73,4 +73,10 @@ input {
 
 .quick-easy {
   display: flex;
+  color: dimgrey;
+  
 }
+ h1{
+   font-size: 30px;
+ }
+
