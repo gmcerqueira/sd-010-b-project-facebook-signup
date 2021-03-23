@@ -3,7 +3,6 @@ const botaoLogin = document.getElementById('button-login');
 const personalizadoRadio = document.getElementById('personalizado');
 const personalizado = document.getElementById('genero-personalizado');
 const campo = document.getElementById('campos-invalidos');
-const rightForm = document.querySelector('.right-content');
 
 function mostrarElemento() {
   personalizado.style.display = 'flex';
@@ -14,6 +13,7 @@ function alertEmail() {
 }
 
 function userLoged() {
+  let rightForm = document.querySelector('.right-content');
   const nome = document.getElementById('nomeLogin').value;
   const sobrenome = document.getElementById('sobrenomeLogin').value;
   const telefone = document.getElementById('telefoneLogin').value;
