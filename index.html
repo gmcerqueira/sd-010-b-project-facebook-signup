@@ -45,6 +45,7 @@
               id="firstname"
               name="firstname"
               placeholder="Nome"
+              maxlength="12"
               required
             />
             <input
@@ -52,6 +53,7 @@
               id="lastname"
               name="lastname"
               placeholder="Sobrenome"
+              maxlength="15"
               required
             />
           </div>
@@ -60,6 +62,7 @@
             id="phone_email"
             name="phone_email"
             placeholder="Celular ou email"
+            maxlength="25"
             required
           />
           <input
@@ -67,6 +70,7 @@
             id="password"
             name="password"
             placeholder="Nova senha"
+            maxlength="8"
             required
           />
 
@@ -79,6 +83,8 @@
               id="birthdate"
               name="birthdate"
               placeholder="dd/mm/aaaa"
+              minlength="10"
+              maxlength="10"
               required
             />
           </div>
@@ -92,6 +98,7 @@
                   class="radio"
                   name="gender"
                   id="female"
+                  value="female"
                   checked
                 />Feminino
               </label>
@@ -101,6 +108,7 @@
                   class="radio"
                   name="gender"
                   id="male"
+                  value="male"
                 />Masculino
               </label>
               <label class="radio-btn" for="other">
@@ -109,6 +117,7 @@
                   class="radio"
                   name="gender"
                   id="other"
+                  value="other"
                 />Personalizado
               </label>
             </div>
