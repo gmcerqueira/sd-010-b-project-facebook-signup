@@ -98,6 +98,8 @@ main label {
 
 fieldset {
   border: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 h1 {
@@ -137,9 +139,4 @@ h1 {
   background: linear-gradient(#67ae55, #578843);
   border-radius: 5px;
   color: white;
-}
-
-fieldset {
-  margin-top: 5px;
-  margin-bottom: 5px;
 }
