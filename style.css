@@ -6,13 +6,12 @@
 
 .top-bar {
   background-color: rgb(66, 103, 178);
-}
-
-.container {
   display: flex;
   justify-content: space-between; /* mudança */
   align-items: center;
 }
+
+
 
 .facebook-logo {
   display: flex;
