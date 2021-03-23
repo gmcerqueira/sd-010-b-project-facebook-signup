@@ -36,26 +36,36 @@ personalizado.addEventListener('click', selectedGender);
 
 // Referêcia utilizada para realizar o requisito 20: https://stackoverflow.com/questions/2010892/storing-objects-in-html5-localstorage //
 
-// function printtext() {
-//   const rightContent = document.querySelector('.right-content');
-//   rightContent.innerHTML = '';
-//   const paragraph = document.createElement('p');
-//   paragraph.id = 'paragraph';
-//   rightContent.appendChild(paragraph);
-//   const recoverdInfo = JSON.parse(localStorage.formPreenchido);
-//   paragraph.innerText = ` Olá, ${recoverdInfo.firstName} ${recoverdInfo.lastName}.\n Recebemos o teu cadastro com sucesso!\n Confira os seus dados: \n\n E-mail/Telefone: ${recoverdInfo.mail} \n Data de Nascimento: ${recoverdInfo.birthDate} \n Gênero: ${recoverdInfo.gender}`;
-// }
+function printtext() {
+  const rightContent = document.querySelector('.right-content');
+  rightContent.innerHTML = '';
+  const paragraph = document.createElement('p');
+  paragraph.id = 'paragraph';
+  rightContent.appendChild(paragraph);
+  const recoverdInfo = JSON.parse(localStorage.formPreenchido);
+  paragraph.innerText = `Olá, ${recoverdInfo.first} ${recoverdInfo.last}`;
+  const createUl = document.createElement('ul');
+  rightContent.appendChild(createUl);
+  const arrayOfInfos = Object.values(recoverdInfo);
+  console.log(arrayOfInfos);
+  for (let index = 2; index < arrayOfInfos.length; index += 1) {
+    const selectUl = document.querySelector('ul');
+    const createLi = document.createElement('li');
+    createLi.innerText = arrayOfInfos[index];
+    selectUl.appendChild(createLi);
+  }
+}
 
 function guardaFormulario() {
   const formPreenchido = {
-    firstName: document.querySelector('.firstname').value,
-    lastName: document.querySelector('.lastname').value,
+    first: document.querySelector('.firstname').value,
+    last: document.querySelector('.lastname').value,
     mail: document.querySelector('.phone_email').value,
     birthDate: document.getElementById('birthdate').value,
     gender: document.querySelector('.selected').value,
   };
   localStorage.setItem('formPreenchido', JSON.stringify(formPreenchido));
-  // printtext();
+  printtext();
 }
 
 const btnCadastro = document.querySelector('#facebook-register');
