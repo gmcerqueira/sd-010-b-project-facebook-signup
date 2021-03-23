@@ -5,13 +5,6 @@ const personalizado = document.getElementById('genero-personalizado');
 const campo = document.getElementById('campos-invalidos');
 const rightForm = document.querySelector('.right-content');
 
-function initalizeApp() {
-  botaoLogin.addEventListener('click', alertEmail);
-  botao.addEventListener('click', checarCampo);
-  personalizadoRadio.addEventListener('click', mostrarElemento);
-  botao.addEventListener('click', mostrarElemento);
-};
-
 function mostrarElemento() {
   personalizado.style.display = 'flex';
 }
@@ -56,5 +49,12 @@ function userLoged() {
   rightForm.appendChild(birthday);
   rightForm.appendChild(genderUser);
 }
+
+function initalizeApp() {
+  botaoLogin.addEventListener('click', alertEmail);
+  botao.addEventListener('click', checarCampo);
+  personalizadoRadio.addEventListener('click', mostrarElemento);
+  botao.addEventListener('click', mostrarElemento);
+};
 
 initalizeApp();
