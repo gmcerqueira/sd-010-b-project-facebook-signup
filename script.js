@@ -11,15 +11,16 @@ function entrar() {
 entrar();
 
 // Requisito 18
-let missingData = false
+let missingData = false;
 
 function filledfields() {
-  missingData = false
+  missingData = false;
   const form = document.getElementById('subscription');
   const input = form.getElementsByTagName('input');
   for (let index = 0; index < input.length; index += 1) {
     if (index < 5 && input[index].value === '') {
-      return (missingData = true);
+     missingData = true;
+     break
     }
   }
 }
@@ -35,14 +36,14 @@ function filledradios(){
 function alertmissing() {
   filledfields();
   filledradios();
-  if (missingData === true ) {
+  if (missingData === true) {
     alert('Campos inválidos');
   }
 }
 
 function checkfilled() {
   const btnsumit = document.getElementsByClassName('btnSumit')[0];
-  btnsumit.addEventListener('click', alertmissing );
+  btnsumit.addEventListener('click', alertmissing);
 }
 
 checkfilled();
