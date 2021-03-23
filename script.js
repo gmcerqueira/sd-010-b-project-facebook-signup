@@ -18,8 +18,8 @@ function addOtherGender() {
   console.log(otherGender);
 
   otherGender.addEventListener('click', () => {
-    if ((otherGender.value = 'checked')) {
-      let createInput = document.createElement('input');
+    if (otherGender.value !== 'checked') {
+      const createInput = document.createElement('input');
       createInput.type = 'text';
       createInput.name = 'gender-custom';
       createInput.placeholder = 'Gênero (opcional)';
