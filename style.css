@@ -6,3 +6,14 @@
 .facebook-logo {
   margin-left: 0;
 }
+
+.facebook-login {
+  display: flex;
+  position: absolute;
+  left: 0;
+}
+
+.form-group {
+  display: flex;
+  align-items: stretch;
+}
