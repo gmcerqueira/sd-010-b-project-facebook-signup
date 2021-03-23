@@ -15,6 +15,7 @@
 }
 
 .facebook-login {
+  width: 391px;
   display: flex;
   justify-content: right;
 }
@@ -40,7 +41,7 @@
 
 .main-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .left-content {
