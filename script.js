@@ -14,20 +14,15 @@ function alertEmail() {
   alert(`${document.getElementById('user-email-phone').value}`);
 }
 
-function createElement(f, e, b, g) {
-  const createSection = document.createElement('p');
-  createSection.innerText = `${f} ${e} ${b} ${g}`;
-  return createSection;
-}
-
 function userLoged(props) {
   const v1 = `Olá, ${props[0]} ${props[1]}`;
   const v2 = props[2];
   const v3 = props[3];
   const v4 = document.querySelector('input[type="radio"]:checked').value;
-
   mainContent.removeChild(rightForm);
-  mainContent.appendChild(createElement(v1, v2, v3, v4));
+  const createSection = document.createElement('p');
+  createSection.innerText = `${v1} ${v2} ${v3} ${v4}`;
+  mainContent.appendChild(createSection);
 }
 
 function checarCampo() {
