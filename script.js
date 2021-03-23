@@ -17,8 +17,8 @@ function filledfields() {
   missingData = false;
   const form = document.getElementById('subscription');
   const input = form.getElementsByTagName('input');
-  for (let index = 0; index < input.length; index += 1) {
-    if (index < 5 && input[index].value === '') {
+  for (let index = 0; index < 5; index += 1) {
+    if (input[index].value === '') {
       missingData = true;
       break;
     }
@@ -32,21 +32,6 @@ function filledradios() {
     missingData = true;
   }
 }
-
-function alertmissing() {
-  filledfields();
-  filledradios();
-  if (missingData === true) {
-    alert('Campos inválidos');
-  }
-}
-
-function checkfilled() {
-  const btnsumit = document.getElementsByClassName('btnSumit')[0];
-  btnsumit.addEventListener('click', alertmissing);
-}
-
-checkfilled();
 
 // Requisito 19
 function createInputGenrer() {
@@ -81,3 +66,59 @@ function removeInputGenrer() {
 }
 
 removeInputGenrer();
+
+// Requisito 20
+function createtext() {
+const createp = document.createElement('p');
+createp.id = 'paragraph';
+createp.innerText = 'Olá, ';
+const form = document.getElementById('subscription');
+const input = form.getElementsByTagName('input');
+
+for (let index = 0 ; index < 5 ; index += 1) {
+  if (index !== 3) {
+  createp.innerText = `${createp.innerText} ${input[index].value}`;
+  }
+}
+form.parentNode.appendChild(createp);
+}
+
+function addgender() {
+  const form = document.getElementById('subscription');
+  const input = form.getElementsByTagName('input');
+  const paragraph = document.getElementById('paragraph');
+  for (let index = 5; index < 8 ; index += 1) {
+    if (input[index].checked){
+      paragraph.innerText = `${paragraph.innerText} ${input[index].value}`;
+    }
+  }
+}
+
+function removeform() {
+  const rightcontent = document.getElementsByClassName('right-content')[0];
+  const form = document.getElementById('subscription');
+  const quickeasy = document.getElementsByClassName('quick-easy')[0];
+  const title = rightcontent.getElementsByTagName('h1')[0];
+  rightcontent.removeChild(form);
+  rightcontent.removeChild(quickeasy);
+  rightcontent.removeChild(title);
+}
+
+function alertmissing() {
+  filledfields();
+  filledradios();
+  if (missingData === true) {
+    alert('Campos inválidos');
+  } else {
+    createtext();
+    addgender();
+    removeform();
+  }
+}
+
+function checkfilled() {
+  const btnsumit = document.getElementsByClassName('btnSumit')[0];
+  btnsumit.addEventListener('click', alertmissing);
+}
+
+checkfilled();
