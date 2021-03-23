@@ -65,8 +65,8 @@ function mostrarInfos(event) {
     elemento.removeChild(elemento.lastChild);
   }
   elemento.style.flexDirection = 'column';
-  elemento.innerHTML = `<p>Olá, ${nome} ${sobrenome} ${contato}`;
-  elemento.innerHTML += `${nascimento} ${genero}</p>`;
+  elemento.innerHTML = `<h1>Olá, ${nome} ${sobrenome}</h1><p>${contato}</p>`;
+  elemento.innerHTML += `<p>${nascimento}</p><p>${genero}</p>`;
 }
 
 function dados(event) {
