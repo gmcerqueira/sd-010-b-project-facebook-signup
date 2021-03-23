@@ -10,6 +10,7 @@ const otherInput = document.getElementById('other-input');
   
 const genderOtherDiv = document.querySelector('.gender-other');
 const radios = document.querySelectorAll('input[type=radio]');
+const validarInput = [firstName, lastName, phoneEmail, password, birthDay]
 
 function entrarFacebook() {
   const entrarBotao = document.getElementById('button-login');
@@ -26,16 +27,15 @@ function erroText() {
 }
 
 function validacao(){
-  const validarInput = [firstName, lastName, phoneEmail, password, birthDay]
   for (let index = 0; index < validarInput.length; index += 1) {
     if (validarInput[index].value === '') {
       erroText();
-    } 
+    }
   }
   form.appendChild(erro);
   const radioOther = document.querySelector('input[type=radio]:checked')
-  if (radioOther.id === 'other' && otherInput.value === '') {   
-    erroText();   
+  if (radioOther.id === 'other' && otherInput.value === '') {
+    erroText();
   } 
   form.appendChild(erro);
 }
@@ -53,12 +53,18 @@ radios.forEach((radio) => {
 
 const botaoCadastro = document.getElementById('facebook-register');
 const rightContent = document.querySelector('.right-content');
+const inputs = document.querySelectorAll('.form input')
+
+function criarParagrafo() {
+  const createPara = document.createElement('p')
+  createPara.innerText = inputs[index].value;
+  rightContent.appendChild(createPara);
+};
 
 function btnCad() {
   e.preventDefault();
   erro.innerText = ''
   validacao();
-  const inputs = document.querySelectorAll('.form input')
   if (erro.innerText === '') {
     rightContent.innerHTML = '';
     for (let index = 0; index < inputs.length; index += 1) {
@@ -70,12 +76,7 @@ function btnCad() {
           continue;
         }
       }
-      const createPara = document.createElement('p')
-      createPara.innerText = inputs[index].value;
-      rightContent.appendChild(createPara)
-    }
   }
 }
 
 botaoCadastro.addEventListener('click', btnCad);
-
