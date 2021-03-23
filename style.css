@@ -77,3 +77,6 @@ main {
 .signUp {
   display: flex;
 }
+.gender-radios {
+  display: flex;
+}
