@@ -5,12 +5,23 @@
   box-sizing: border-box;
 }
 
+header {
+  width: 100%;
+  background-color: rgb(66, 103, 178);
+}
+
+main {
+  width: 980px;
+  margin: 0 auto;
+}
+
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 980px;
   height: 82px;
+  margin: 0 auto;
 }
 
 .top-bar input {
@@ -72,12 +83,20 @@
   justify-content: space-between;
 }
 
-.left-content {
-  width: 800px;
+.left-content p {
+  display: block;
+  width: 450px;
+  height: 87px;
+  margin: 40px 0 0;
+  color: #0e385f;
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 29px;
+  word-spacing: -1px;
 }
 
 .right-content {
-  width: 300px;
+  width: 400px;
 }
 
 #gender-custom {
@@ -95,4 +114,9 @@
 
 #alert {
   color: red;
+}
+
+#new-user {
+  width: 400px;
+  height: 500px;
 }
