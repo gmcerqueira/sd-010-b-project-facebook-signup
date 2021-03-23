@@ -50,7 +50,6 @@ body {
 
 .main-content {
   display: flex;
-  width: 800px;
   margin: 0 auto;
   margin-top: 20px;
 }
@@ -58,7 +57,7 @@ body {
 .left-content {
   display: flex;
   flex-direction: column;
-  width: 1063px;
+  width: 800px;
 }
 
 .right-content {
