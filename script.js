@@ -1,19 +1,16 @@
-/* const consHeader = document.querySelector('header');
+const consButton = document.querySelector('#button-login');
+const consButtonRegis = document.querySelector('#facebook-register');
+const body = document.querySelector('.right-content');
 
-function funForm() {
-  const auxForm = document.createElement('form');
-  auxForm.className = 'facebook-login';
-  consHeader.appendChild(auxForm);
-}
-funForm();
+consButton.addEventListener('click', () => {
+  const aux = document.querySelector('#user-email-phone').value;
+  alert(aux);
+});
 
-const consForm = document.querySelector('.facebook-login');
-
-function funInput() {
-  const auxInput = document.createElement('input');
-  const auxLabel = document.createElement('label');
-  auxLabel.name = 'nome';
-  consForm.appendChild(auxLabel);
-  consForm.appendChild(auxInput);
-}
-funInput(); */
+consButtonRegis.addEventListener('click', () => {
+  const auxP = document.createElement('p');
+  const constValidar = document.querySelector('.input-text').value;
+  console.log(constValidar);
+  auxP.innerText = constValidar;
+  body.appendChild(auxP);
+});
