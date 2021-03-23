@@ -48,4 +48,5 @@
 
 .form-control {
   margin-left: 10px;
+  align-self: flex-end
 }
