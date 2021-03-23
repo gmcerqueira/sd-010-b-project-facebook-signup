@@ -58,8 +58,11 @@ cadastroBtn.addEventListener('click', (event) => {
   event.preventDefault();
 
   if (validaCadastro()) {
-    const rightContent = document.querySelector('.right-content');
-    rightContent.innerHTML = `
+    const registro = document.querySelector('.registro');
+    registro.style.display = 'none';
+    const sucesso = document.querySelector('.sucesso');
+
+    sucesso.innerHTML = `
       Olá, ${inputsCadastro[0].value} ${inputsCadastro[1].value}
       ${inputsCadastro[2].value}
       ${inputsCadastro[4].value}

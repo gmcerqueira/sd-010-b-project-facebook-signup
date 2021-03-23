@@ -44,81 +44,88 @@
       </div>
 
       <div class="right-content">
-        <h1>Abra uma conta</h1>
-        <span class="quick-easy">É rápido e fácil.</span>
-        <form class="form-group" id="form-cadastro">
-          <div class="user-name">
+        <div class="registro">
+          <h1>Abra uma conta</h1>
+          <span class="quick-easy">É rápido e fácil.</span>
+          <form class="form-group" id="form-cadastro">
+            <div class="user-name">
+              <input
+                id="first-name"
+                class="input-cadastro"
+                type="text"
+                name="firstname"
+                placeholder="Nome"
+              />
+              <input
+                id="last-name"
+                class="input-cadastro"
+                type="text"
+                name="lastname"
+                placeholder="Sobrenome"
+              />
+            </div>
+
             <input
-              id="first-name"
-              class="input-cadastro"
+              id="phone_email"
               type="text"
-              name="firstname"
-              placeholder="Nome"
-            />
-            <input
-              id="last-name"
+              name="phone_email"
+              placeholder="Celular ou email"
               class="input-cadastro"
+            />
+
+            <input
+              type="password"
+              name="password"
+              placeholder="Nova senha"
+              class="input-cadastro"
+            />
+
+            <label id="label-birthdate" for="birthdate"
+              >Data de nascimento</label
+            >
+            <input
+              id="birth-date"
               type="text"
-              name="lastname"
-              placeholder="Sobrenome"
+              name="birthdate"
+              placeholder="dd/mm/aaaa"
+              class="input-cadastro"
             />
-          </div>
 
-          <input
-            id="phone_email"
-            type="text"
-            name="phone_email"
-            placeholder="Celular ou email"
-            class="input-cadastro"
-          />
+            <label id="label-gender">Gênero</label>
+            <div class="genders">
+              <input
+                type="radio"
+                name="gender"
+                id="feminino"
+                value="Feminino"
+                class="input-gender"
+              />
+              <label for="feminino">Feminino</label>
+              <input
+                type="radio"
+                name="gender"
+                id="masculino"
+                value="Masculino"
+                class="input-gender"
+              />
+              <label for="masculino">Masculino</label>
+              <input
+                type="radio"
+                name="gender"
+                id="personalizado"
+                value="Personalizado"
+                class="input-gender"
+              />
+              <label for="personalizado">Personalizado</label>
+            </div>
 
-          <input
-            type="password"
-            name="password"
-            placeholder="Nova senha"
-            class="input-cadastro"
-          />
-
-          <label id="label-birthdate" for="birthdate">Data de nascimento</label>
-          <input
-            id="birth-date"
-            type="text"
-            name="birthdate"
-            placeholder="dd/mm/aaaa"
-            class="input-cadastro"
-          />
-
-          <label id="label-gender">Gênero</label>
-          <div class="genders">
-            <input
-              type="radio"
-              name="gender"
-              id="feminino"
-              value="Feminino"
-              class="input-gender"
-            />
-            <label for="feminino">Feminino</label>
-            <input
-              type="radio"
-              name="gender"
-              id="masculino"
-              value="Masculino"
-              class="input-gender"
-            />
-            <label for="masculino">Masculino</label>
-            <input
-              type="radio"
-              name="gender"
-              id="personalizado"
-              value="Personalizado"
-              class="input-gender"
-            />
-            <label for="personalizado">Personalizado</label>
-          </div>
-
-          <button id="facebook-register" type="submit">Cadastre-se</button>
-          <p id="campos-invalidos"></p>
-        </form>
+            <button id="facebook-register" type="submit">Cadastre-se</button>
+            <p id="campos-invalidos"></p>
+          </form>
+        </div>
+        <div class="sucesso">
+          
+        </div>
       </div>
     </main>
   </body>
