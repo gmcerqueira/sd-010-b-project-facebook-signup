@@ -11,26 +11,21 @@ const getUltimoNome = document.getElementById('last-name-form').value;
 const getEmailCelular = document.getElementById('phone-email-form').value;
 const dateBirthdate = document.getElementById('date-birthdate-form');
 const getDataNascimento = dateBirthdate.value;
+const botaoCadastro = document.getElementById('facebook-register');
 
 function substituiConteudo() {
-  const botaoCadastro = document.getElementById('facebook-register');
   botaoCadastro.addEventListener('click', () => {
     const NomeCompleto = document.createElement('h2');
     NomeCompleto.innerText = `Olá, ${getPrimeiroNome} ${getUltimoNome}`;
-
     const emailCelular = document.createElement('p');
     emailCelular.innerText = getEmailCelular;
-
     const dataNascimento = document.createElement('p');
     dataNascimento.innerText = getDataNascimento;
-
     const opcaoGenero = document.createElement('p');
     const inputRadio = document.querySelector('input[type="radio"]:checked');
     opcaoGenero.innerText = inputRadio.value;
-
     const formDireita = document.querySelector('.right-content');
     formDireita.innerHTML = '';
-
     formDireita.appendChild(NomeCompleto);
     formDireita.appendChild(emailCelular);
     formDireita.appendChild(dataNascimento);
