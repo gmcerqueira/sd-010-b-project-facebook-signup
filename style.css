@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  color: white;
+  color: black;
+  font-family: Helvetica, sans-serif;
 }
 
 body {
@@ -20,15 +21,19 @@ body {
 
 .form-group {
   display: flex;
-  align-content: center;
+  margin-top: 18px;
+  align-content:flex-end;
   flex-flow: column wrap;
-  justify-content: center;
-  width: 900px;
+  justify-content:space-between;
+  border: 1px solid red;
 }
 
 .facebook-login {
+  border: 1px solid orange;
   display: flex;
-  align-content: center;
+  align-content: flex-end;
+  align-self: flex-end;
+  align-items: flex-end;
 }
 
 .form-control {
@@ -44,7 +49,7 @@ body {
 .left-content {
   display: flex;
   flex-direction: column;
-  width: 800px;
+  width: 1063px;
 }
 
 .right-content {

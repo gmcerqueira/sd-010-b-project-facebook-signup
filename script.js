@@ -11,3 +11,13 @@ function alertLogin() {
 }
 
 btnLogin.addEventListener('click', alertLogin);
+
+const btnCadastro = document.getElementById('facebook-register');
+
+
+
+
+function cadastroInvalido () {
+
+}
+
