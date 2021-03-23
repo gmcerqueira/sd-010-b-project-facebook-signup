@@ -6,7 +6,7 @@ const divmain = document.querySelector('.main-content');
 
 function info(string, genero, index) {
   if (index === 6) {
-    if (genero.value === 'Personlizado') {
+    if (genero.value === 'Personalizado') {
       const str = document.querySelector('.persona');
       string.push(str.value);
     } else {
@@ -59,7 +59,7 @@ personalizado.addEventListener('click', () => {
   input2.className = 'persona';
   input2.name = 'gender-custom';
   input2.placeholder = 'Gênero';
-  div.appendChild(input);
+  div.appendChild(input2);
   feminino.addEventListener('click', () => {
     input.remove();
   });
