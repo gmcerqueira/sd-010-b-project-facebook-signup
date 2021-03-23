@@ -14,6 +14,7 @@ const appendToElement = (children, father) => {
   children.forEach((child) => {
     father.appendChild(child);
   });
+  father.setAttribute('class', 'right-content');
   return father;
 };
 
