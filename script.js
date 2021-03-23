@@ -51,4 +51,3 @@ inputGender2.addEventListener('click', genderRemove);
 inputGender3.addEventListener('click', genderAdd);
 form.addEventListener('submit', insertInfo);
 buttonSubmit.addEventListener('click', check);
-//Apaga depois
