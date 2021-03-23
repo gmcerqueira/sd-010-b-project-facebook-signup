@@ -55,3 +55,8 @@
   display: flex;
   flex-direction: column;
 }
+
+.label-gender {
+  display: flex;
+  justify-content: space-between;
+}

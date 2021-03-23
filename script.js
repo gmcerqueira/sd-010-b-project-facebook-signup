@@ -4,3 +4,9 @@ function alerta() {
 }
 
 document.getElementById('button-login').addEventListener('click', alerta);
+
+ function validaDados( event) {
+const name  = document.getElementById('firstname');
+
+ }
+ document.getElementById('facebook-register').addEventListener('click',validaDados)
