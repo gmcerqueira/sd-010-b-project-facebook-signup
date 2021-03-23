@@ -23,7 +23,7 @@
   justify-self: right;
 }
 
-.button{
+.button {
   display: flex;
   align-self: flex-end;
   margin-right: 5px;
