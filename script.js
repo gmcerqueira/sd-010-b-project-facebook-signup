@@ -91,3 +91,9 @@
 //   submitHandler: function (form, values) {
 //     console.log(form, values);
 //   }});
+
+let btn = document.querySelector('#button-login');
+let alertText = document.querySelector('#user-email-phone');
+btn.addEventListener('click', () => {
+  alert(alertText.value);
+});
