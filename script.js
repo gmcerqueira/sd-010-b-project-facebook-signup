@@ -36,7 +36,7 @@ function customField(event) {
     fieldGender.placeholder = 'Gênero (opcional)';
     fieldGender.type = 'text';
     inputGender.appendChild(fieldGender);
-  }else if (event.target.id !== 'custom') {
+  } else if (event.target.id !== 'custom') {
     checked = false;
     inputGender.removeChild(fieldGender);
   }
