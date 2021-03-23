@@ -49,11 +49,15 @@ a {
   opacity: 0.7;
 }
 
-#user-email-phone-label {
+#user-email-phone {
   margin-bottom: 15px;
 }
 
 /* Requisito 10 */
+.left-content {
+  width: 800px;
+}
+
 .right-content {
   width: 300px;
 }
