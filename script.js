@@ -108,7 +108,7 @@ function alertmissing() {
   filledfields();
   filledradios();
   if (missingData === true) {
-    let message = document.getElementById('invalidMessage');
+    const message = document.getElementById('invalidMessage');
     message.innerText = 'Campos inválidos';
   } else {
     createtext();
