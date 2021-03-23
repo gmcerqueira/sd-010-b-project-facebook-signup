@@ -25,11 +25,12 @@ body {
 
 #facebook-login {
   display: flex;
+  justify-content: flex-end;
 }
 
 .form-group {
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
   color: white;
   margin-left: 10px;
   font-size: 12px;
