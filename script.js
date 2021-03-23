@@ -11,13 +11,14 @@ entrar();
 
 // Requisito 18
 function filledfields() {
-  const input = document.getElementById('subscription').getElementsByTagName('input');
-  for ( let index = 0 ; index < 5; index += 1) {
-    if (input[index].value === "" ) {
+  const form = document.getElementById('subscription');
+  const input = form.getElementsByTagName('input')
+  for (let index = 0; index < input.length; index += 1) {
+    if (index < 5 && input[index].value === '') {
+      return alert('Campos inválidos');
+    } 
+    if (!(input[5].checked) || !(input[6].checked) || !(input[7].checked)) {
       alert('Campos inválidos');
-      break;
-    } else if (!(input[5].checked) || !(input[6].checked) || !(input[7].checked)) {
-    alert('Campos inválidos');
     }
   }
 }
