@@ -58,7 +58,6 @@ main {
 }
 
 /* CÓDIGO DO LP */
-
 main label {
   font-size: 14px;
 }
@@ -126,10 +125,10 @@ h1 {
 }
 
 #facebook-register {
-  font-size:19px;
+  font-size: 19px;
   padding: 7px 20px;
   margin: 10px 0;
   background: linear-gradient(#67ae55, #578843);
   border-radius: 5px;
-  color: #fff;
+  color: white;
 }
