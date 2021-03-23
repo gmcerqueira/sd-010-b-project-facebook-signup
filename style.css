@@ -81,3 +81,14 @@ h1 {
   font-size: 30px;
 }
 
+#date {
+  position: absolute;
+  margin-top: 0;
+  margin-left: 5px;
+}
+
+#date input {
+  left: 0;
+  position: absolute;
+  margin-top: 25px;
+}
