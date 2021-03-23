@@ -41,10 +41,16 @@ function checkSecond() {
   return second;
 }
 
+function newP() {
+  let newPar = document.createElement('p');
+  newPar.innerText = 'Campos inválidos';
+  document.querySelector('.facebook-form').appendChild(newPar);
+}
+
 facebookRegister.addEventListener('click', () => {
   checkFirst();
   checkSecond();
   if (checkFirst() === true || checkSecond() === true) {
-    alert('Campos inválidos');
+    newP()    
   }
 });
