@@ -55,4 +55,5 @@
 
 .genero {
   display: flex;
+  flex-wrap: wrap;
 }
