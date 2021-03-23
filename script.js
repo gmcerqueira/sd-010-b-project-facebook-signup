@@ -16,7 +16,7 @@ function filledfields() {
     if (input[index].value === "" ) {
       alert('Campos inválidos');
       break;
-    } else if (!(input[5].checked) || !(input[6].checked) || !(input[7].checked)){
+    } else if (!(input[5].checked) || !(input[6].checked) || !(input[7].checked)) {
     alert('Campos inválidos');
     }
   }
