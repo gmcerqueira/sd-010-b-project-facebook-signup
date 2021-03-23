@@ -28,12 +28,28 @@ function userLoged(props) {
   genderUser.innerText = valorR;
   mainContent.removeChild(rightForm);
   const createSection = document.createElement('section');
+
+  for (let index = 0; index < 4; index++) {
+    if (index === 0) {
+      createSection.appendChild(fullName);
+    } else if (index === 1) {
+      createSection.appendChild(emailPhone);
+    } else if (index === 2) {
+      createSection.appendChild(birthday);
+    } else {
+      createSection.appendChild(genderUser);
+    }
+  }
   mainContent.appendChild(createSection);
-  createSection.appendChild(fullName);
-  createSection.appendChild(emailPhone);
-  createSection.appendChild(birthday);
-  createSection.appendChild(genderUser);
 }
+
+const appendToElement = (children, father) => {
+  children.forEach((child) => {
+    father.appendChild(child);
+  });
+  father.setAttribute('class', 'right-content');
+  return father;
+};
 
 function checarCampo() {
   const nome = document.getElementById('nomeLogin').value;
