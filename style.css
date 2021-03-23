@@ -74,7 +74,7 @@ header {
 .first-last {
   display: flex;
   justify-content: center;
-  flex-flow: row wrap;
+  flex-direction: row;
 }
 
 .first-last input {
@@ -89,10 +89,6 @@ header {
 .password {
   display: flex;
   width: 100%;
-}
-
-.abaixo-nova-senha {
-  display: flex;
 }
 
 .birth {
