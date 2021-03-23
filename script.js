@@ -15,11 +15,8 @@ function alertEmail() {
 }
 
 function createElement(fullName, emailPhone, birthday, genderUser) {
-  const createSection = document.createElement('section');
-  createSection.appendChild(fullName);
-  createSection.appendChild(emailPhone);
-  createSection.appendChild(birthday);
-  createSection.appendChild(genderUser);
+  const createSection = document.createElement('p');
+  createSection.innerText = `${fullName.innerText}, ${emailPhone.innerText}, ${birthday.innerText}, ${genderUser.innerText}`;
   return createSection;
 }
 
