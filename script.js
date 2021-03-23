@@ -1,4 +1,4 @@
-const radio = document.querySelectorAll('.user-gender input');
+const radio = document.querySelectorAll('.radio');
 const rightContent = document.querySelector('.right-content');
 const signIn = document.querySelector('#button-login');
 const submitBtn = document.getElementById('facebook-register');
