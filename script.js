@@ -24,19 +24,19 @@ function createElement(fullName, emailPhone, birthday, genderUser) {
 }
 
 function userLoged(props) {
-  const fullName = document.createElement('h1');
+  const fn = document.createElement('h1');
   const birthdayP = props[3];
   const phoneP = props[2];
-  fullName.innerText = `Olá, ${props[0]} ${props[1]}`;
-  const emailPhone = document.createElement('p');
-  emailPhone.innerText = phoneP;
-  const birthday = document.createElement('p');
-  birthday.innerText = birthdayP;
-  const genderUser = document.createElement('p');
+  fn.innerText = `Olá, ${props[0]} ${props[1]}`;
+  const ep = document.createElement('p');
+  ep.innerText = phoneP;
+  const bt = document.createElement('p');
+  bt.innerText = birthdayP;
+  const gd = document.createElement('p');
   const valorR = document.querySelector('input[type="radio"]:checked').value;
-  genderUser.innerText = valorR;
+  gd.innerText = valorR;
   mainContent.removeChild(rightForm);
-  mainContent.appendChild(createElement(fullName, emailPhone, birthday, genderUser));
+  mainContent.appendChild(createElement(fn, ep, bt, gd));
 }
 
 function checarCampo() {
