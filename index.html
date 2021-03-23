@@ -17,7 +17,7 @@
         <form method="GET" class="facebook-login">
             <section class="form-group">
                 <label for="user-email-phone" id="user-email-phone-label">Email ou telefone</label>
-                <input id="user-email-phone" type="text" name="email-telefone" required>
+                <input id="user-email-phone" type="text" name="email-telefone" required oninvalid="this.setCustomValidity('Email ou telefone')">
             </section>
             <section class="form-group">
                 <label for="user-password" id="user-password-label">Senha</label>
@@ -31,6 +31,15 @@
         </form>
     </section>
 </header>
+
+<main class="main-content">
+      <aside class="left-content">
+        
+      </aside>
+      <aside class="right-content">
+        
+      </aside>
+    </main>
 
 <body>
     <script src="script.js"></script>
