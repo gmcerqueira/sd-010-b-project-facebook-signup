@@ -106,8 +106,7 @@ header button {
   padding-bottom: 20px;
 }
 
-.right-content form input {
-  width: 133px;
+.right-content form input { /* width: 133px; */
   height: 20px;
   padding: 14px;
   border-radius: 5%;
@@ -140,4 +139,10 @@ header button {
 .vertical {
   display: flex;
   flex-direction: column;
+}
+
+.horizontal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
