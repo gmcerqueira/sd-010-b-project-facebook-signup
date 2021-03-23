@@ -27,7 +27,8 @@ function checarCampo() {
 }
 
 function validarCadastro() {
-  document.getElementById('facebook-register').addEventListener('click', checarCampo);
+  let botao = document.getElementById('facebook-register');
+  botao.addEventListener('click', checarCampo);
 }
 
 validarCadastro();
