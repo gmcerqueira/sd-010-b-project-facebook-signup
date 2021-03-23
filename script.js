@@ -69,26 +69,26 @@ removeInputGenrer();
 
 // Requisito 20
 function createtext() {
-const createp = document.createElement('p');
-createp.id = 'paragraph';
-createp.innerText = 'Olá, ';
-const form = document.getElementById('subscription');
-const input = form.getElementsByTagName('input');
+  const createp = document.createElement('p');
+  createp.id = 'paragraph';
+  createp.innerText = 'Olá, ';
+  const form = document.getElementById('subscription');
+  const input = form.getElementsByTagName('input');
 
-for (let index = 0 ; index < 5 ; index += 1) {
-  if (index !== 3) {
-  createp.innerText = `${createp.innerText} ${input[index].value}`;
+  for (let index = 0; index < 5; index += 1) {
+    if (index !== 3) {
+      createp.innerText = `${createp.innerText} ${input[index].value}`;
+    }
   }
-}
-form.parentNode.appendChild(createp);
+  form.parentNode.appendChild(createp);
 }
 
 function addgender() {
   const form = document.getElementById('subscription');
   const input = form.getElementsByTagName('input');
   const paragraph = document.getElementById('paragraph');
-  for (let index = 5; index < 8 ; index += 1) {
-    if (input[index].checked){
+  for (let index = 5; index < 8; index += 1) {
+    if (input[index].checked) {
       paragraph.innerText = `${paragraph.innerText} ${input[index].value}`;
     }
   }
