@@ -39,8 +39,10 @@
         <p class="quick-easy">É rápido e fácil.</p>
       </div>
       <form action="">
-        <input type="text" name="firstname" placeholder="Nome" required>
-        <input type="text" name="lastname" placeholder="Sobrenome" required>
+        <div id="nome-sobrenome">
+          <input type="text" name="firstname" placeholder="Nome" required>
+          <input type="text" name="lastname" placeholder="Sobrenome" required>
+        </div>
         <input type="text" name="phone_email" placeholder="Celular ou email" id="cell-input" required>
         <input type="password" name="password" placeholder="Nova senha" id="new-password" required>
 
@@ -49,15 +51,15 @@
           <input type="text" name="birthdate" placeholder="dd/mm/aaaa" required>
         </div>
 
-        <div>
-          <label id="label-gender">Gênero</label>
-          <div class="horizontal">
-            <label for="female">Feminino</label>
-            <input class="radio" type="radio" id="female" name="gender" value="female">
-            <label for="male">Masculino</label>
-            <input class="radio" type="radio" id="male" name="gender" value="male">
-            <label for="other">Personalizado</label>
-            <input class="radio" type="radio" id="other" name="gender" value="other">
+        <div class="coluna">
+          <label id="label-gender">Gênero</label> <br>
+          <div class="linha">
+            <input type="radio" id="female" name="gender" value="Feminino">
+            <label for="female"> Feminino </label>
+            <input type="radio" id="male" name="gender" value="Masculino">
+            <label for="male"> Masculino </label>
+            <input type="radio" id="other" name="gender" value="Personalizado">
+            <label for="other"> Personalizado </label>
           </div>
         </div>
 

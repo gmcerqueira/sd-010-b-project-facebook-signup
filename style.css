@@ -106,7 +106,8 @@ header button {
   padding-bottom: 20px;
 }
 
-.right-content form input { /* width: 133px; */
+.right-content form input {
+  /* width: 133px; */
   height: 20px;
   padding: 14px;
   border-radius: 5%;
@@ -141,8 +142,24 @@ header button {
   flex-direction: column;
 }
 
-.horizontal {
+.coluna {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+}
+
+.linha {
+  display: flex;
   align-items: center;
+}
+
+#nome-sobrenome {
+  display: flex;
+}
+
+#nome-sobrenome input {
+  width: 145px;
+}
+
+.linha label{
+  padding-right: 10px;
 }
