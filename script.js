@@ -1,3 +1,9 @@
+const nome = document.getElementById('nomeLogin').value;
+const sobrenome = document.getElementById('sobrenomeLogin').value;
+const telefone = document.getElementById('telefoneLogin').value;
+const nascimento = document.getElementById('nascimentoLogin').value;
+const senha = document.getElementById('senhaLogin').value;
+
 function mostrarElemento() {
   const personalizado = document.getElementById('genero-personalizado');
   personalizado.style.display = 'flex';
@@ -11,11 +17,6 @@ function adcEvntoGenPers() {
 adcEvntoGenPers();
 
 function checarCampo() {
-  const nome = document.getElementById('nomeLogin').value;
-  const sobrenome = document.getElementById('sobrenomeLogin').value;
-  const telefone = document.getElementById('telefoneLogin').value;
-  const nascimento = document.getElementById('nascimentoLogin').value;
-  const senha = document.getElementById('senhaLogin').value;
   const elementos = [nome, sobrenome, telefone, nascimento, senha];
 
   for (let index = 0; index < elementos.length; index += 1) {
