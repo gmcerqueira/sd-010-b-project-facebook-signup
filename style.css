@@ -48,15 +48,15 @@ header label {
   margin-left: 5px;
 }
 
-header label button {
-  color: white;
-}
-
 header button {
   border: 1px solid rgb(188, 202, 229);
   background-color: rgb(91, 123, 187);
   color: white;
-  font-weight: bold;
+  font-weight: 200;
   margin-left: 5px;
   margin-top: 15px;
+}
+
+header label button {
+  color: white;
 }
