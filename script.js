@@ -27,9 +27,12 @@ function userLoged(props) {
   const valorR = document.querySelector('input[type="radio"]:checked').value;
   genderUser.innerText = valorR;
   mainContent.removeChild(rightForm);
-  const createSection = document.createElement('section');
+  mainContent.appendChild(createElement(fullName, emailPhone, birthday, genderUser));
+}
 
-  for (let index = 0; index < 4; index++) {
+function createElement(fullName, emailPhone, birthday, genderUser) {
+  const createSection = document.createElement('section');
+  for (let index = 0; index < 4; index += 1) {
     if (index === 0) {
       createSection.appendChild(fullName);
     } else if (index === 1) {
@@ -40,16 +43,8 @@ function userLoged(props) {
       createSection.appendChild(genderUser);
     }
   }
-  mainContent.appendChild(createSection);
+    return createSection;
 }
-
-const appendToElement = (children, father) => {
-  children.forEach((child) => {
-    father.appendChild(child);
-  });
-  father.setAttribute('class', 'right-content');
-  return father;
-};
 
 function checarCampo() {
   const nome = document.getElementById('nomeLogin').value;
