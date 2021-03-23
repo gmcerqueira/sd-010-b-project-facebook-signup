@@ -65,6 +65,7 @@ a {
 .main-content {
   display: flex;
   justify-content: center;
+  margin-top: 30px;
 }
 
 #name , #lastname {
@@ -82,10 +83,6 @@ a {
 
 .right-content input , h1 , p {
   margin-bottom: 5px;
-}
-
-.main-content {
-  margin-top: 30px;
 }
 
 #label-birthdate {
