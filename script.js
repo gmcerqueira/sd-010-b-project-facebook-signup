@@ -14,13 +14,13 @@ function checarCampo() {
   let campo = document.getElementById('campos-invalidos');
   campo.innerText = '';
 
-  if (
-    document.getElementById('nomeLogin').value === '' ||
-    document.getElementById('sobrenomeLogin').value === '' ||
-    document.getElementById('telefoneLogin').value === '' ||
-    document.getElementById('nascimentoLogin').value === '' ||
-    document.getElementById('senhaLogin').value === ''
-  ) {
+    let nome = document.getElementById('nomeLogin').value;
+    let sobrenome = document.getElementById('sobrenomeLogin').value;
+    let telefone = document.getElementById('telefoneLogin').value;
+    let nascimento = document.getElementById('nascimentoLogin').value;
+    let senha = document.getElementById('senhaLogin').value;
+
+  if (nome === '' || sobrenome === '' || telefone === '' || nascimento === '' || senha === '' ) {
     campo.style.display = 'flex';
     campo.innerText = 'Campos inválidos';
   }
