@@ -88,5 +88,9 @@ input {
 #label-gender {
   display: flex;
   flex-flow: wrap;
-  font-size: 18px;
+  font-size: 15px;
+}
+
+.radio-gender{
+  display: flex;
 }
