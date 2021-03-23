@@ -32,18 +32,23 @@
 		<div class="left-content">
 			<p id="facebook-slogan ">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua
 				vida.</p>
-			<img iid="facebook-networking" src="imgs/networking.png" alt="">
+			<img id="facebook-networking" src="imgs/networking.png" alt="">
 		</div>
 		<div class="right-content">
 			<h1>Abra uma conta</h1>
 			<p class="quick-easy">É rápido e fácil.</p>
 			<form action="">
-				<div>
-					<!-- coloque o input do NOME aqui nessa linha :) -->
-					<input type="text" name="lastname" placeholder="Sobrenome" id="">
+				<div class="sub-container-one">
+					<input type="text" name="firstname" placeholder="Nome" id="input-one">
+					<input type="text" name="lastname" placeholder="Sobrenome" id="input-two">
 				</div>
-				<!-- input do celular e-mail aqui :) -->
-				<input type="password" name="password" placeholder="Nova senha" id="">
+        <div class="sub-container-two">
+          <input type="text" name="phone_email" placeholder="Celular ou email" id="input-two-one">
+          <input type="password" name="password" placeholder="Nova senha" id="input-two-two">
+          <label for="" id="label-birthdate">Data de nascimento</label>
+          <input type="text" name="birthdate" placeholder="dd/mm/aaaa" id="input-date">
+        </div>
+        <button type="submit" id="facebook-register">Cadastre-se</button>
 			</form>
 		</div>
 	</main>
