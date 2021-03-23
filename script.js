@@ -67,8 +67,8 @@ function mostrarInfos(event) {
   const infos = document.getElementById('infos');
   infos.style.display = 'flex';
   infos.style.flexDirection = 'column';
-  infos.innerHTML = `<p>Contato: ${contato}</p>`;
-  infos.innerHTML += `<p>Nascimento: ${nascimento}</p><p>Gênero: ${genero}</p>`;
+  infos.innerHTML = `<p>${contato}</p>`;
+  infos.innerHTML += `<p>${nascimento}</p><p>${genero}</p>`;
 }
 
 function dados(event) {
