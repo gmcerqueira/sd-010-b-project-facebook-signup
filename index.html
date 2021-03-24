@@ -32,24 +32,24 @@
     <section class="right-content">
       <h1>Abra uma conta</h1>
       <p class="quick-easy">É rápido e fácil.</p>
-      <form action="" method="GET">
+      <form id="formulario" action="" method="GET">
         <div id="cadastro-nome">
-          <input type="text" name="firstname" placeholder="Nome" required>
-          <input type="text" name="lastname" placeholder="Sobrenome" required>
+          <input id="name" type="text" name="firstname" placeholder="Nome" >
+          <input id="sName" type="text" name="lastname" placeholder="Sobrenome" >
         </div>
-        <input type="text" name="phone_email" placeholder="Celular ou email" required>        
-        <input type="password" name="password" placeholder="Nova senha" required>        
+        <input id="foEmail" type="text" name="phone_email" placeholder="Celular ou email">        
+        <input id="foSenha" type="password" name="password" placeholder="Nova senha" >        
         <div id="birthdate">
           <label id="label-birthdate" for="birthdate">Data de nascimento</label>
-          <input type="text" name="birthdate" placeholder="dd/mm/aaaa" required>
+          <input id="label-birthdatee" type="text" name="birthdate" placeholder="dd/mm/aaaa" >
         </div>
         <label id="label-gender" for="gender">Gênero</label>
-        <div>
-          <input type="radio" id="female" name="gender" value="female" required>
+        <div id="genders">
+          <input type="radio" id="female" name="gender" value="female" >
           <label for="female">Feminino</label>
-          <input type="radio" id="male" name="gender" value="male" required>
+          <input type="radio" id="male" name="gender" value="male" >
           <label for="male">Masculino</label>
-          <input type="radio" id="other" name="gender" value="other" required>
+          <input id="other" type="radio" id="other" name="gender" value="other" >
           <label for="other">Personalizado</label>
         </div>
         <button id="facebook-register" type="submit">Cadastre-se</button>
