@@ -56,8 +56,8 @@ function showFields() {
     ${dataList[2].value}
     ${dataList[3].value}
     ${dataList[4].value} `;
-  rightContent.innerHTML = greetings;
-  initialEl.style.display = 'none';
+  rightContent.innerText = greetings;
+  // initialEl.style.display = 'none';
 }
 
 function validateDate() {
