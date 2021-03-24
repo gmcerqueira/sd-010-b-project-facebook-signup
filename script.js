@@ -42,7 +42,33 @@ function requisito18() {
   }
   if (s > 0) {
     document.querySelector('.invalido').innerHTML = 'Campos inválidos';
+    return false;
   }
+  return true;
 }
+
+function requisito20(event) {
+  const getCheckedButton = document.querySelector(':checked');
+  const getTypeInput = document.querySelectorAll('input[type=text]');
+  const rightContent = document.querySelector('.right-content');
+  const firstName = getTypeInput[0].value;
+  const lastName = getTypeInput[1].value;
+  const emailCelphone = getTypeInput[2].value;
+  const birthDate = getTypeInput[3].value;
+  const gender = getCheckedButton.value;
+  const newP = document.createElement('p');
+  rightContent.innerHTML = '';
+  newP.innerText = `Olá, ${firstName} ${lastName}
+  E-mail ou telefone: ${emailCelphone}
+  Data de Nascimento: ${birthDate}
+  Gênero: ${gender}`;
+  rightContent.appendChild(newP);
+}
+
 const req18 = document.getElementById('facebook-register');
-req18.addEventListener('click', requisito18);
+req18.addEventListener('click', () =>{
+  requisito18();
+  if(requisito18() === true){
+    requisito20();
+  }
+});
