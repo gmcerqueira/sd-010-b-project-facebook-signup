@@ -20,16 +20,15 @@ function validarGenero() {
   return true;
 }
 
-//https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault
+//  https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault
 function cadastrarButton() {
   const submitButton = document.getElementById('facebook-register');
-  submitButton.addEventListener('click', function (event) {
+  submitButton.addEventListener('click', event => {
     const div = document.getElementById('div-error')
 
     if (validarCampos() || validarGenero()) {
       div.innerHTML = 'Campos inválidos';
       event.preventDefault();
-      console.log("aqui")
     }
   });
 }
