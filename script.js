@@ -45,3 +45,35 @@ function valida(event) {
 
 const botaoCadastrar = document.getElementById('facebook-register');
 botaoCadastrar.addEventListener('click', valida);
+
+// Selecionamos a div que contém os radio buttons com opções de genêro e a opção "Personalizado".
+
+const genderOptions = document.getElementById('gender-options');
+const personalizado = document.getElementById('personalizado');
+
+/*
+Determinamos que, ao clicar em "personalizado", uma função vai verificar quantos são os nós filhos da div que contém as opções de gênero. Se forem 7 (3 para as opçẽs, 2 para os espaços entre elas e 2 que englobam o conteúdo todo) nós, adicionamos um input para o usuário inserir o gênero. Esse processo serve para garantir que não será criada mais de uma caixa caso o usuário clique em "personalizado" mais de uma vez.
+*/
+
+function criaInputGenero() {
+  const input = document.createElement('input');
+
+  if (genderOptions.childNodes.length === 7) {
+    input.placeholder = 'Gênero (opcional)';
+    input.name = 'gender-custom';
+    input.style.width = '292px';
+    input.id = 'input-personalizado';
+    genderOptions.appendChild(input);
+  }
+}
+
+personalizado.addEventListener('click', criaInputGenero);
+
+function retiraInputPersonalizado() {
+  const inputPersonalizado = document.getElementById('input-personalizado');
+  if (personalizado.checked === false) {
+    inputPersonalizado.remove();
+  }
+}
+
+genderOptions.addEventListener('click', retiraInputPersonalizado);
