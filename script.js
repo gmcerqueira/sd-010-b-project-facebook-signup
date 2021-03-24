@@ -4,9 +4,8 @@ enterButton.addEventListener('click', () => {
   alert(document.getElementById('user-email-phone').value);
 });
 
-  form.addEventListener('submit', validador)
-  const form = document.getElementById('formulario');
-function validador() {
+const form = document.getElementById('formulario');
+form.addEventListener('submit', () => {
   const CadName = document.getElementById('name');
   const CadLastName = document.getElementById('sName');
   const CadPhoneEmail = document.getElementById('foEmail');
@@ -16,25 +15,33 @@ function validador() {
 
   if (CadName.value === '') {
     alert('Campos inválidos');
+    return;
   }
 
   if (CadLastName.value === '') {
     alert('Campos inválidos');
+    return;
   }
 
   if (CadPhoneEmail.value === '') {
     alert('Campos inválidos');
+    return;
   }
 
   if (CadPassword.value === '') {
     alert('Campos inválidos');
+    return;
   }
 
   if (CadBirthdate.value === '') {
     alert('Campos inválidos');
+    return;
   }
 
   if (CadRadio === null) {
     alert('Campos inválidos');
+    return;
   }
-}
+
+});
+validador();
