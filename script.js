@@ -5,7 +5,7 @@ const labelGender = document.getElementById('generos');
 const genderCustom = document.createElement('input');
 
 const createGenderCustom = () => labelGender.appendChild(genderCustom);
-const alerta = () => alert('Email ou telefone');
+const alerta = () => alert(`${document.getElementById('user-email-phone').value}`);
 
 btnEntrar.addEventListener('click', alerta);
 personalizado.addEventListener('click', createGenderCustom);
