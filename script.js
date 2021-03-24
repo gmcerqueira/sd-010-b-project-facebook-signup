@@ -21,19 +21,17 @@ function validaInput() {
 }
 
 function validaRadioButton() {
-    const gender = document.getElementsByClassName('radio-button');
-    let opcoesSemCheck = 0;
-    
-    for (let i = 0; i < gender.length; i += 1) {
+  const gender = document.getElementsByClassName('radio-button');
+  let opcoesSemCheck = 0;
+  for (let i = 0; i < gender.length; i += 1) {
     if (gender[i].checked === false) {
-    opcoesSemCheck += 1;
+      opcoesSemCheck += 1;
     }
-    }
-    if (opcoesSemCheck === 3) {
+  }
+  if (opcoesSemCheck === 3) {
     alert('Campos inválidos');
-    }
-} 
-
+  }
+}
 
 function valida() {
   validaInput();
