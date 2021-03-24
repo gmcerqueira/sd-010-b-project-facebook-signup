@@ -10,7 +10,7 @@ function alertLogin() {
 
 btnLogin.addEventListener('click', alertLogin);
 
-const newGenderElem = document.getElementById('label-gender');
+const newGenderElem = document.getElementById('form-container');
 const newGenderInput = document.createElement('input');
 const genderRadio = document.getElementById('generico');
 
