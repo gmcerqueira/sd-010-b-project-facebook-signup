@@ -24,13 +24,6 @@ body {
   align-items: center;
 }
 
-/* .top-bar-logo {
-  display: flex;
-  justify-content: flex-start;
-  flex-grow: 1;
-  align-self:flex-start; 
-}*/
-
 .facebook-logo {
   width: 170px;
   height: 64px;
