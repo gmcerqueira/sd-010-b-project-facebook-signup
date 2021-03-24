@@ -13,23 +13,30 @@ clicaBotao();
 
 const botaoCadastro = document.querySelector('#facebook-register');
 
-// function criaAviso() {
-//   const div = document.querySelector('#verifica-cadastro');
-//   const p = document.createElement('p');
-//   div.appendChild(p).innerHTML = 'Campos Inválidos';
-// }
+function criaAviso() {
+  const div = document.querySelector('#verifica-cadastro');
+  const p = document.createElement('p');
+  div.appendChild(p).innerHTML = 'Campos Inválidos';
+}
 
 function verificaCadastro() {
+  let naoValido = false;
   const cadastro = document.querySelectorAll('.cadastro');
   for (let index = 0; index < cadastro.length; index += 1) {
     if (cadastro[index].value === '') {
-      alert('Campos Inválidos');
+      naoValido = true;
     }
   }
+  return naoValido;
 }
 
 function clicaCadastro() {
-  botaoCadastro.addEventListener('click', verificaCadastro);
+  botaoCadastro.addEventListener('click', (e) => {
+    if (verificaCadastro() === true){
+      criaAviso();
+      e.preventDefault();
+    }
+  });
 }
 
 clicaCadastro();
