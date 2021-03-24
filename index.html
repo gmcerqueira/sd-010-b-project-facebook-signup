@@ -21,6 +21,7 @@
       </div>
       <div class="form-control">
         <button type="submit" id="button-login">Entrar</button>
+      </div>
     </form>
   </header>
   
@@ -38,18 +39,18 @@
       </div>
       <form action="" id="form-container">
         <div class="name-lastname">
-          <input type="text" required maxlength="20" name="firstname" placeholder="Nome">
-          <input type="text" required maxlength="20" name="lastname" placeholder="Sobrenome">
+          <input type="text" required maxlength="20" name="firstname" placeholder="Nome" class="validInfo">
+          <input type="text" required maxlength="20" name="lastname" placeholder="Sobrenome" class="validInfo">
         </div>
         <div class="email">
-          <input type="text" required maxlength="40" name="phone_email" placeholder="Celular ou email">
+          <input type="text" required maxlength="40" name="phone_email" placeholder="Celular ou email" class="validInfo">
         </div>
         <div class="password">
-          <input type="password" required max="16" name="password" placeholder="Nova senha">
+          <input type="password" required max="16" name="password" placeholder="Nova senha" class="validInfo">
         </div>
         <label for="birthdate" id="label-birthdate"  >Data de nascimento<br></label>
         <input type="text" id="birthdate" name="birthdate" placeholder="dd/mm/aaaa"> <br>
-          <label for="gender" id="label-gender" aria-required="true" >Gênero<br></label>
+          <label for="gender" id="label-gender" aria-required="true">Gênero<br></label>
           <input type="radio" name="gender" value="Feminino">Feminino
           <input type="radio" name="gender" value="Masculino">Masculino
           <input type="radio" name="gender" value="Personalizado" id='generico'>Personalizado        
