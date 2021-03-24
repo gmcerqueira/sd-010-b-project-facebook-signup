@@ -7,15 +7,24 @@
   display: flex;
   background-color: rgb(66, 103, 178);
   justify-content: space-between;
+  height: 84px;
 }
 
 .facebook-login {
   display: flex;
+  color: aliceblue;
+  font-size: 12px;
   max-height: 30px;
   align-self: center;
+  margin-bottom: 60px;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
+}
+
+.form-control {
+  background-color: rgb(66, 103, 178);
+  align-self: flex-end
 }
