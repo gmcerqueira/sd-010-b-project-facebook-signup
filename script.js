@@ -1,12 +1,6 @@
-const buttonLogin = document.getElementById('button-login');
-const emailValue = document.getElementById('user-email-phone');
 const fm = document.querySelector('#f');
 const mm = document.getElementById('m');
 let count = 0;
-
-buttonLogin.addEventListener('click', () => {
-  alert(emailValue.value);
-});
 
 function testaRadio() {
   localStorage.gender = '';
@@ -21,19 +15,16 @@ function testaRadio() {
 
 function secondRightContent() {
   const containerRC = document.querySelector('.right-content');
-  const saveName = (document.getElementById('firt-name').value);
+  const saveName = (document.getElementById('first-name').value);
   const saveLastName = (document.getElementById('lastName').value);
   const saveDate = (document.getElementById('date').value);
   const saveEmail = (document.getElementById('email').value);
-  localStorage.name = saveName;
-  localStorage.lastName = saveLastName;
-  localStorage.email = saveEmail;
-  localStorage.date = saveDate;
   testaRadio();
   const creatP = document.createElement('p');
-  creatP.innerText = `Olá, ${localStorage.name} ${localStorage.lastName}
-  E-mail: ${localStorage.email}
-  Data: ${localStorage.date}
+  creatP.classList = 'userData';
+  creatP.innerText = `Olá, ${saveName} ${saveLastName}
+  E-mail: ${saveEmail}
+  Data: ${saveDate}
   Genero: ${localStorage.gender}`;
   containerRC.innerHTML = '';
   containerRC.appendChild(creatP);

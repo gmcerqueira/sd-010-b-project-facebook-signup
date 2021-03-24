@@ -247,3 +247,15 @@ body {
   background-color: #5d944b;
   transition: background-color 300ms;
 }
+
+.userData {
+  background-color: whitesmoke;
+  height: 80%;
+  width: 300px;
+  padding: 50px 20px;
+  font-family: Helvetica, sans-serif;
+  border-radius: 8px;
+  border: 1px solid lightgray;
+  box-shadow: 1px 1px 10px 1px gray;
+  margin-top: 80px;
+}
