@@ -11,6 +11,9 @@
 
 .facebook-login {
   display: flex;
+  max-height: 30px;
+  padding-right: 40px;
+  align-self: center;
 }
 
 .form-group {
