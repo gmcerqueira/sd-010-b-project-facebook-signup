@@ -23,8 +23,8 @@ function validarGenero() {
 //  https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault
 function cadastrarButton() {
   const submitButton = document.getElementById('facebook-register');
-  submitButton.addEventListener('click', event => {
-    const div = document.getElementById('div-error')
+  submitButton.addEventListener('click', (event) => {
+    const div = document.getElementById('div-error');
 
     if (validarCampos() || validarGenero()) {
       div.innerHTML = 'Campos inválidos';
