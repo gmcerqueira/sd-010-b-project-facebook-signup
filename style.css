@@ -95,7 +95,7 @@
   font-size: 19px;
 }
 
-#form-cadastro {
+#form-register {
   margin-top: 15px;
 }
 
@@ -109,7 +109,7 @@
   width: 40%;
 }
 
-.input-cadastro {
+.input-register {
   margin-bottom: 10px;
   padding: 8px 10px;
   font-size: 18px;
@@ -147,4 +147,20 @@
   font-size: 20px;
   font-weight: 600;
   margin-top: 20px;
+}
+
+.user-register {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+#invalid-input {
+  color: red;
+  font-size: 20px;
+}
+
+hr {
+  border: 0;
+  border-top: 2px solid rgb(230, 230, 230);
+  margin: 10px 0;
 }

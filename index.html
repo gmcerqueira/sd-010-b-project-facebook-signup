@@ -31,6 +31,7 @@
               class="login-input"
               name="user"
               type="text"
+              value="exemplo@exemplo.com"
             />
           </div>
           <div class="form-group">
@@ -45,6 +46,7 @@
               class="login-input"
               name="user-password"
               type="password"
+              value="123456"
             />
           </div>
           <div class="form-control">
@@ -66,21 +68,23 @@
         <div class="right-content">
           <h1>Abra uma conta</h1>
           <span class="quick-easy">É rápido e fácil.</span>
-          <form class="form-group" id="form-cadastro">
+          <form class="form-group" id="form-register">
             <div class="user-name">
               <input
                 id="first-name"
-                class="input-cadastro"
+                class="input-register"
                 type="text"
                 name="firstname"
                 placeholder="Nome"
+                value="Roberto"
               />
               <input
                 id="last-name"
-                class="input-cadastro"
+                class="input-register"
                 type="text"
                 name="lastname"
                 placeholder="Sobrenome"
+                value="Magalhães"
               />
             </div>
 
@@ -89,14 +93,16 @@
               type="text"
               name="phone_email"
               placeholder="Celular ou email"
-              class="input-cadastro"
+              class="input-register"
+              value="exemplo@exemplo.com"
             />
 
             <input
               type="password"
               name="password"
               placeholder="Nova senha"
-              class="input-cadastro"
+              class="input-register"
+              value="123456"
             />
 
             <label id="label-birthdate" for="birthdate"
@@ -107,7 +113,8 @@
               type="text"
               name="birthdate"
               placeholder="dd/mm/aaaa"
-              class="input-cadastro"
+              class="input-register"
+              value="22/04/1963"
             />
 
             <label id="label-gender">Gênero</label>
@@ -139,7 +146,7 @@
             </div>
 
             <button id="facebook-register" type="submit">Cadastre-se</button>
-            <p id="campos-invalidos"></p>
+            <p id="invalid-input"></p>
           </form>
         </div>
       </main>

@@ -1,31 +1,31 @@
 const loginBtn = document.querySelector('#button-login');
-const inputsCadastro = document.querySelectorAll('.input-cadastro');
+const inputsRegister = document.querySelectorAll('.input-register');
 const user = document.querySelector('#user-email-phone');
 const inputsGender = document.querySelectorAll('.input-gender');
-const genderPersonalizado = document.querySelector('#personalizado');
-const cadastroBtn = document.querySelector('#facebook-register');
+const otherGender = document.querySelector('#personalizado');
+const registerBtn = document.querySelector('#facebook-register');
 
-function validaInputs() {
+function validatesInputs() {
   let inputInvalido = false;
-  for (let i = 0; i < inputsCadastro.length; i += 1) {
-    if (!inputsCadastro[i].value) {
+  for (let i = 0; i < inputsRegister.length; i += 1) {
+    if (!inputsRegister[i].value) {
       inputInvalido = true;
     }
   }
   return inputInvalido;
 }
 
-function validateGender() {
-  let validaGender = false;
+function validatesGender() {
+  let validGender = false;
   for (let i = 0; i < inputsGender.length; i += 1) {
     if (inputsGender[i].checked) {
-      validaGender = true;
+      validGender = true;
     }
   }
-  return validaGender;
+  return validGender;
 }
 
-function selecionarGender() {
+function selectGender() {
   for (let i = 0; i < inputsGender.length; i += 1) {
     if (inputsGender[i].checked) {
       return inputsGender[i].value;
@@ -33,20 +33,20 @@ function selecionarGender() {
   }
 }
 
-function validaCadastro() {
-  let valido = true;
-  const erro = document.querySelector('#campos-invalidos');
-  erro.innerHTML = '';
+function validatesRegister() {
+  let valid = true;
+  const error = document.querySelector('#invalid-input');
+  error.innerHTML = '';
 
-  const formCadastro = document.querySelector('#form-cadastro');
+  const formRegister = document.querySelector('#form-register');
 
-  if (!validateGender() || validaInputs()) {
-    erro.innerHTML = 'Campos inválidos';
-    valido = false;
+  if (!validatesGender() || validatesInputs()) {
+    error.innerHTML = '<hr>Campos inválidos!';
+    valid = false;
   }
 
-  formCadastro.appendChild(erro);
-  return valido;
+  formRegister.appendChild(error);
+  return valid;
 }
 
 loginBtn.addEventListener('click', (event) => {
@@ -55,28 +55,34 @@ loginBtn.addEventListener('click', (event) => {
   return alert(res);
 });
 
-genderPersonalizado.addEventListener('click', () => {
-  const novoInput = document.createElement('input');
-  novoInput.setAttribute('name', 'gender-custom');
-  novoInput.setAttribute('placeholder', 'Gênero (opcional)');
-  novoInput.className = 'input-cadastro';
+otherGender.addEventListener('click', () => {
+  const newInput = document.createElement('input');
+  newInput.setAttribute('name', 'gender-custom');
+  newInput.setAttribute('placeholder', 'Gênero (opcional)');
+  newInput.className = 'input-register';
 
   const genders = document.querySelector('.genders');
 
-  genders.insertAdjacentElement('afterend', novoInput);
+  genders.insertAdjacentElement('afterend', newInput);
 });
 
-cadastroBtn.addEventListener('click', (event) => {
+registerBtn.addEventListener('click', (event) => {
   event.preventDefault();
 
-  if (validaCadastro()) {
+  if (validatesRegister()) {
     const rightContent = document.querySelector('.right-content');
 
     rightContent.innerHTML = `
-      Olá, ${inputsCadastro[0].value} ${inputsCadastro[1].value}
-      ${inputsCadastro[2].value}
-      ${inputsCadastro[4].value}
-      ${selecionarGender()}
+      <p class="user-register"><strong>Registro completo!</strong></p>
+      <hr>
+      <p class="user-register">Olá,
+      ${inputsRegister[0].value} ${inputsRegister[1].value}!</p>
+      <p class="user-register"><strong>Email:</strong>
+      ${inputsRegister[2].value}</p>
+      <p class="user-register"><strong>Data de nascimento:</strong>
+      ${inputsRegister[4].value}</p>
+      <p class="user-register"><strong>Gênero:</strong>
+      ${selectGender()}</p>
     `;
   }
 });
