@@ -8,7 +8,7 @@
   background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: space-between;
-  height: 85px;
+  height: auto;
   width: 100%;
   margin: auto;
 }
@@ -71,4 +71,8 @@ header label button {
 
 .left-content {
   width: 800px;
+}
+
+.right-content {
+  width: 300px;
 }
