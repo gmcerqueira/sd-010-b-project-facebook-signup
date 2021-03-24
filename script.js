@@ -59,3 +59,22 @@ facebookRegister.addEventListener('click', (e) => {
   e.preventDefault();
   checkBoth();
 });
+
+// Para o request 18, recebemos ajuda do nosso colega Antenor Zapata pelo slack, que explicou como usar o .preventDefault();
+
+const newGender = inputsForm[7];
+newGender.addEventListener('click', (e) => {
+  e.preventDefault();
+  const newInput = document.createElement('input');
+  const genderInputs = document.getElementById('other-gender');
+  genderInputs.appendChild(newInput);
+  const attribute1 = document.createAttribute('type');
+  const attribute2 = document.createAttribute('name');
+  const attribute3 = document.createAttribute('placeholder');
+  attribute1.value = 'text';
+  attribute2.value = 'gender-custom';
+  attribute3.value = 'Gênero (opcional)';
+  newInput.setAttributeNode(attribute1);
+  newInput.setAttributeNode(attribute2);
+  newInput.setAttributeNode(attribute3);
+});
