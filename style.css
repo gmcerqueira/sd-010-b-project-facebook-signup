@@ -21,7 +21,6 @@
 
 .facebook-login {
   display: flex;
-  padding-right: 10px;
 }
 
 .form-group {
@@ -37,6 +36,7 @@
 
 .form-control {
   align-self: flex-end;
+  padding-right: 10px;
 }
 
 header form div input {
