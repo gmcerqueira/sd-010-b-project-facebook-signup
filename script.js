@@ -71,9 +71,24 @@ function cadastroVerificacao() {
   return ativacao;
 }
 
+function opicaoRadio() {
+  const radios = document.querySelectorAll('.gender-radio');
+  for (let index = 0; index < radios.length; index += 1) {
+    if (radios[index].checked === true) {
+      return radios[index].value;
+    }
+  }
+}
+
 btnCadastrase.addEventListener('click', (event) => {
   event.preventDefault();
+  const inputs = document.querySelectorAll('.input');
+  const conteudo = document.querySelector('.right-content')
   if (cadastroVerificacao()) {
-    console.log('ok');
+    conteudo.innerHTML = `Olá, ${inputs[0].value} ${inputs[1].value}, 
+    email/telefone: ${inputs[2].value}, 
+    data nascimento: ${inputs[3].value}
+    genero: ${opicaoRadio()}`
+    
   }
 });
