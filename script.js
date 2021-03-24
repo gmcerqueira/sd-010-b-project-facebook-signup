@@ -9,6 +9,7 @@ buttonLogin.addEventListener('click', () => {
 });
 
 function testaRadio() {
+  localStorage.gender = '';
   if (fm.checked) {
     localStorage.gender = 'Feminino';
   } else if (mm.checked) {
@@ -28,6 +29,7 @@ function secondRightContent() {
   localStorage.lastName = saveLastName;
   localStorage.email = saveEmail;
   localStorage.date = saveDate;
+  testaRadio();
   const creatP = document.createElement('p');
   creatP.innerText = `Olá, ${localStorage.name} ${localStorage.lastName}
   E-mail: ${localStorage.email}
@@ -35,7 +37,6 @@ function secondRightContent() {
   Genero: ${localStorage.gender}`;
   containerRC.innerHTML = '';
   containerRC.appendChild(creatP);
-  testaRadio();
 }
 
 function verifyInputs() {
