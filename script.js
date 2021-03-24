@@ -29,12 +29,13 @@ document.querySelector('form').appendChild(field);
 
 const lemail = document.createElement('label');
 lemail.id = 'user-email-phone-label';
-lemail.htmlFor = 'user-email-phone';
+const userEmail = 'user-email-phone';
+lemail.htmlFor = userEmail;
 lemail.innerText = 'Email ou telefone';
 document.querySelector('fieldset').appendChild(lemail);
 
 const iemail = document.createElement('input');
-iemail.id = 'user-email-phone';
+iemail.id = userEmail;
 iemail.type = 'text';
 iemail.innerText = 'Email ou telefone';
 document.querySelector('fieldset').appendChild(iemail);
@@ -66,8 +67,13 @@ field3.style.alignSelf = 'flex-end';
 field3.style.flexDirection = 'column';
 document.querySelector('form').appendChild(field3);
 
+function alerta() {
+  const textoDigitado = document.getElementById('user-email-phone');
+  alert(textoDigitado.value);
+}
+
 const button = document.createElement('button');
 button.id = 'button-login';
 button.innerText = 'Entrar';
 document.querySelector('#field3').appendChild(button);
-// button.addEventListener('click', alerta())
+button.addEventListener('click', alerta);
