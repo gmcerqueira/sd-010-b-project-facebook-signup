@@ -10,9 +10,10 @@ btnEnviar.addEventListener('click', alertEmail);
 // 18°
 function teste() {
   const getFilho = document.querySelector('.formContato').children;
+  const getCamposInvalidos = document.getElementById('camposInvalidos');
   for (let i = 1; i < getFilho.length; i += 1) {
     if (getFilho[i].value === '') {
-      alert('Campos inválidos');
+      getCamposInvalidos.innerHTML = 'Campos inválidos';
     }
   }
 }
