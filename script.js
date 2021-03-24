@@ -20,9 +20,9 @@ getButton.addEventListener('click', () => {
     }
   }
   // 20°
-  if(getName.value && getLastName.value){
+  if (getName.value && getLastName.value) {
     alert(`Olá ${getName.value} ${getLastName.value}`);
-}
+  }
 });
 
 // 19
