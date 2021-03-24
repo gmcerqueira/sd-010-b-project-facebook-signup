@@ -1,6 +1,8 @@
 //  Declarações:
 const submitBtn = document.getElementById('button-login');
 const user = document.getElementById('user-email-phone');
+const registerBtn = document.getElementById('facebook-register');
+
 
 //  Funções:
 function alerta() {
@@ -8,13 +10,14 @@ function alerta() {
 }
 
 function verificarTexto() {
-  let campos = document.querySelectorAll('.teste')
+  const campos = document.querySelectorAll('.teste');
   campos.forEach((item, index) => {
-    if (item.value == '') {
-      campos[index].value = "Campos inválidos";
+    if (item.value === '') {
+      campos[index].value = 'Campos inválidos';
     }
-  })
+  });
 }
 
 //  Chamadas das funções:
 submitBtn.addEventListener('click', alerta);
+registerBtn.addEventListener('click', verificarTexto);
