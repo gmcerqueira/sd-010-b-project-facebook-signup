@@ -64,3 +64,13 @@
   flex-direction: column;
   width: 800px;
 }
+
+.right-content {
+  display: flex;
+  width: 300px;
+  flex-direction: column;
+}
+
+.name-lastname-container {
+  display: flex;
+}
