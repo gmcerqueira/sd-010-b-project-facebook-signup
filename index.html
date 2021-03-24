@@ -13,32 +13,34 @@
       <div class="top-bar-logo">
         <img src="imgs/facebook-logo.png" alt="" class="facebook-logo">
       </div>
-      <form action="" method="get" class="facebook-login">
-        <div class="form-group">
-          <div id="user-email-phone-label">
-            <label for="emailTel">
-              Email ou Telefone
-            </label>
+      <div class="top-bar-form">
+        <form action="" method="get" class="facebook-login">
+          <div class="form-group">
+            <div id="user-email-phone-label">
+              <label for="emailTel">
+                Email ou Telefone
+              </label>
+            </div>
+            <div id="user-email-phone">
+              <input type="email" name="email" id="emailTel" required>
+            </div>
           </div>
-          <div id="user-email-phone">
-            <input type="email" name="email" id="emailTel" required>
-          </div>
-        </div>
-        <div class="form-group">
-          <div id="user-password-label">
-            <label for="senha">
-              Senha
-            </label>
-          </div>
-          <div id="user-password">
-            <input type="password" name="senha" id="senha" required>
-          </div>  
-          <a href="#" id="esqueceu-conta-label">Esqueceu a conta?</a> 
-        </div>            
-        <div class="form-control">
-          <button type="submit" id="button-login">Entrar</button>
-        </div>         
-      </form>
+          <div class="form-group">
+            <div id="user-password-label">
+              <label for="senha">
+                Senha
+              </label>
+            </div>
+            <div id="user-password">
+              <input type="password" name="senha" id="senha" required>
+            </div>  
+            <a href="#" id="esqueceu-conta-label">Esqueceu a conta?</a> 
+          </div>            
+          <div class="form-control">
+            <button type="submit" id="button-login">Entrar</button>
+          </div>         
+        </form>
+      </div>
     </div>
   </header>
   <main class="main-content">    
