@@ -48,17 +48,17 @@
             <p class="quick-easy">É rápido e fácil.</p>
             <form action="" class="form-cadastro">
                 <div class="cadastro-nome">
-                <input type="text" name="firstname" placeholder="Nome" >
-                <input type="text" name="lastname" placeholder="Sobrenome">
+                <input required type="text" name="firstname" placeholder="Nome" >
+                <input required type="text" name="lastname" placeholder="Sobrenome">
             </div>
                 <div class="cadastro-email">
-                <input type="text" name="phone_email" placeholder="Celular ou email">
-                <input type="password" name="password" placeholder="Nova senha">
+                <input required type="text" name="phone_email" placeholder="Celular ou email">
+                <input required type="password" name="password" placeholder="Nova senha">
             </div>
                
                 <div>
                     <p> Data de nascimento</p>
-                <input type="text" name="birthdate" id="label-birthdate" placeholder="dd/mm/aaaa">
+                <input required type="text" name="birthdate" id="label-birthdate" placeholder="dd/mm/aaaa">
                 </div>
 
                 <div>
@@ -66,6 +66,8 @@
                     <button type="radio"></button>
 
                 </div>
+
+                <button type="submit" id="facebook-register">Cadastre-se</button>
             </form>
         </div>
     </div>
