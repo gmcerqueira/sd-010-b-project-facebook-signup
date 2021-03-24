@@ -50,26 +50,12 @@ function getAttributes(array) {
   return arr;
 }
 
-// function showFields() {
-//   const dataList = getAttributes(inputList);
-//   const greetings = ` Olá, ${dataList[0].value} ${dataList[1].value}
-//     ${dataList[2].value}
-//     ${dataList[3].value}
-//     ${dataList[4].value} `;
-//   rightContent.innerHTML = greetings;
-//   initialEl.style.display = 'none';
-// }
-const primeiroNome = document.getElementById('primeiroNome');
-const sobreNome = document.getElementById('sobreNome');
-const oemail = document.getElementById('email');
-const nascimento = document.getElementById('birthdate');
-
 function showFields() {
   const dataList = getAttributes(inputList);
-  const greetings = ` Olá, ${primeiroNome.value}${sobreNome.value}
-  ${oemail.value}
-  ${nascimento.value}
-  ${dataList[4].value}`;
+  const greetings = ` Olá, ${dataList[0].value} ${dataList[1].value}
+    ${dataList[2].value}
+    ${dataList[3].value}
+    ${dataList[4].value} `;
   rightContent.innerHTML = greetings;
   initialEl.style.display = 'none';
 }
