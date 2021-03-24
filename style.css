@@ -9,6 +9,7 @@ header {
   width: 100%;
   background-color: rgb(66, 103, 178);
   border-bottom: 1px solid rgb(19, 55, 131);
+  margin: 0 auto;
 }
 
 main {
@@ -128,4 +129,15 @@ main {
 
 #label-birthdate {
   display: block;
+}
+
+#button-login {
+  background-color: rgb(66, 103, 178);
+  color: white;
+  border: 0.5px solid rgb(19, 55, 131);
+  padding: 2px;
+}
+
+#button-login:hover {
+  background-color: rgb(19, 55, 131);
 }
