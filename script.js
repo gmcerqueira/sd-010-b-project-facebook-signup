@@ -19,10 +19,6 @@ getButton.addEventListener('click', () => {
       getCamposInvalidos.innerHTML = 'Campos inválidos';
     }
   }
-  // 20°
-  if (getName.value && getLastName.value) {
-    alert(`Olá ${getName.value} ${getLastName.value}`);
-  }
 });
 
 // 19
@@ -51,5 +47,12 @@ maleRadio.addEventListener('click', () => {
   const elemento2 = document.querySelector('.selected');
   if (elemento2) {
     elemento2.parentNode.removeChild(elemento2);
+  }
+});
+// 20°
+getButton.addEventListener('click', () => {
+  const getInvalid = document.getElementById('camposInvalidos');
+  if (getName.value && getLastName.value) {
+    getInvalid.innerHTML = (`Olá ${getName.value} ${getLastName.value}`);
   }
 });
