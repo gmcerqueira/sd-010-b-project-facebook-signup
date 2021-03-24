@@ -8,7 +8,7 @@ const createGenderCustom = () => labelGender.appendChild(genderCustom);
 
 function alerta() {
   alert(`${document.getElementById('user-email-phone').value}`);
-} 
+}
 
 btnEntrar.addEventListener('click', alerta);
 personalizado.addEventListener('click', createGenderCustom);
