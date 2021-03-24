@@ -40,10 +40,6 @@
   align-self: center;
 }
 
-.formulario-column {
-  align-self: center;
-}
-
 .main-content {
   display: flex;
   justify-content: center;
