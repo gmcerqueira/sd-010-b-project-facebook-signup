@@ -9,12 +9,12 @@ enterButton.addEventListener('click', () => {
  form.addEventListener('submit', validador);
 
  function validador (){
-  var Cadname = document.getElementById("name");
-  var Cadlastname = document.getElementById("sName");
-  var Cadphone_email = document.getElementById("foEmail");
-  var Cadpassword = document.getElementById("foSenha");
-  var Cadbirthdate = document.getElementById("label-birthdate");
-  var Cadradio = document.querySelector('input[name="gender"]:checked');
+ var Cadname = document.getElementById("name");
+ var Cadlastname = document.getElementById("sName");
+ var Cadphone_email = document.getElementById("foEmail");
+ var Cadpassword = document.getElementById("foSenha");
+ var Cadbirthdate = document.getElementById("label-birthdate");
+ var Cadradio = document.querySelector('input[name="gender"]:checked');
 
     if (Cadname.value == "") {
       alert("Campos inválidos");
