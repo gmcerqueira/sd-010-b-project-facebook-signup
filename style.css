@@ -99,3 +99,7 @@ input {
 .radio-gender {
   display: flex;
 }
+
+.hide {
+  display: none;
+}
