@@ -57,7 +57,7 @@ function printText() {
 }
 
 // Referêcia utilizada para realizar o requisito 20: https://stackoverflow.com/questions/2010892/storing-objects-in-html5-localstorage //
-// Referêcia utilizada para selecionar o gênero: https://github.com/tryber/sd-010-b-project-facebook-signup/blob/alessandra-rezende-facebook-project/script.js
+// Referêcia utilizada para selecionar o gênero pelo input-state cheked: https://github.com/tryber/sd-010-b-project-facebook-signup/blob/alessandra-rezende-facebook-project/script.js
 
 function guardaFormulario() {
   const formPreenchido = {
@@ -80,7 +80,8 @@ function invalidation() {
   getParagraph.style.fontSize = '15px';
 }
 
-function validation() {
+function validation(event) {
+  event.preventDefault();
   let count = 0;
   const inputs = {
     first: document.querySelector('.firstname').value,
