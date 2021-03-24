@@ -20,7 +20,7 @@ img {
   color: white;
   display: flex;
   height: 20px;
-  right: auto;
+  right: 20px;
   margin-right: 20px;
   justify-content: center;
 }
