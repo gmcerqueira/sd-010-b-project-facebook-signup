@@ -1,3 +1,10 @@
+const buttonLogin = document.getElementById('button-login');
+const mailOrPhone = document.getElementById('user-email-phone');
+
+buttonLogin.addEventListener('click', () => {
+  alert(mailOrPhone.value);
+});
+
 const fm = document.querySelector('#f');
 const mm = document.getElementById('m');
 let count = 0;
