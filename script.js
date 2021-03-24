@@ -12,7 +12,7 @@ function verifyInputs() {
 
   registerButton.addEventListener('click', (e) => {
     for (let i = 0; i < inputs.length; i += 1) {
-      if (inputs[i].value === '') {
+      if (inputs[i].value === '' || inputs[i].value === ' ') {
         errorMesage.innerHTML = 'Campos inválidos';
         e.preventDefault();
       }
