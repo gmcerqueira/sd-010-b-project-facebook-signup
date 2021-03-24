@@ -2,11 +2,11 @@
 window.onresize = () => {
   const itemHidden = document.getElementById('screen-small');
   itemHidden.style.display = 'none';
-  let screen = window.innerWidth;
+  const screen = window.innerWidth;
   if (screen < 899) {
     itemHidden.style.display = 'flex';
   }
-}
+};
 // variaveis para o item 19
 const genderCustom = document.getElementById('gender-custom');
 const genderPer = document.getElementById('gender-per');
