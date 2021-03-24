@@ -62,6 +62,7 @@ const field3 = document.createElement('fieldset');
 field3.className = 'form-control';
 field3.id = 'field3';
 field3.style.display = 'flex';
+field3.style.alignSelf = 'flex-end';
 field3.style.flexDirection = 'column';
 document.querySelector('form').appendChild(field3);
 
@@ -69,3 +70,4 @@ const button = document.createElement('button');
 button.id = 'button-login';
 button.innerText = 'Entrar';
 document.querySelector('#field3').appendChild(button);
+// button.addEventListener('click', alerta())
