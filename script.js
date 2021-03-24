@@ -40,7 +40,7 @@ iemail.innerText = 'Email ou telefone';
 document.querySelector('fieldset').appendChild(iemail);
 
 const field2 = document.createElement('fieldset');
-field2.className = 'form-control';
+field2.className = 'form-group';
 field2.id = 'field2';
 field2.style.display = 'flex';
 field2.style.flexDirection = 'column';
