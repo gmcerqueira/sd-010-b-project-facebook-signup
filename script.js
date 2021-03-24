@@ -1,5 +1,7 @@
 const inputEmail = document.querySelector('#user-email-phone');
 const btnEnviar = document.querySelector('#button-login');
+const getName = document.getElementById('firstname');
+const getLastName = document.getElementById('lastname');
 
 function alertEmail() {
   alert(inputEmail.value);
@@ -17,6 +19,10 @@ getButton.addEventListener('click', () => {
       getCamposInvalidos.innerHTML = 'Campos inválidos';
     }
   }
+  // 20°
+  if(getName.value && getLastName.value){
+    alert(`Olá ${getName.value} ${getLastName.value}`);
+}
 });
 
 // 19
