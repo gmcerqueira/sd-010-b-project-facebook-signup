@@ -13,13 +13,13 @@
     <form class="facebook-login" method="post">
       <div class="form-group">
         <label id="user-email-phone-label" for="nome">Email ou telefone</label>
-        <input type="text" id="user-email-phone" name="usuário_nome" />
+        <input required type="text" id="user-email-phone" name="usuário_nome" />
         <div class="esconder">---</div>
       </div>
 
       <div class="form-group">
         <label id="user-password-label" for="senha">Senha</label>
-        <input type="password" id="user-password" name="usuário_password" />
+        <input required type="password" id="user-password" name="usuário_password" />
         <div id="esqueceuSenha">
           <label for="nome"><a href="">Esqueceu a conta?</a></label>
         </div>
@@ -43,27 +43,27 @@
       <h3 class="quick-easy">É rápido e fácil.</h3>
       <form action="">
         <div class="nomeSobrenome">
-          <input type="text" name="firstname" placeholder="Nome" class="input-text">
-          <input type="text" name="lastname" placeholder="Sobrenome" class="input-text">
+          <input required type="text" name="firstname" placeholder="Nome" class="input-text">
+          <input required type="text" name="lastname" placeholder="Sobrenome" class="input-text">
         </div>
         <div>
-          <input class="input-text"type="text" name="phone_email" placeholder="Celular ou email">
+          <input required class="input-text"type="text" name="phone_email" placeholder="Celular ou email">
         </div>
         <div>
-          <input type="password" name="password" id="" placeholder="Nova senha">
+          <input required type="password" name="password" id="" placeholder="Nova senha">
         </div>
         <div>
           <label for="" id="label-birthdate">Data de nascimento</label>
-          <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
+          <input required type="text" name="birthdate" placeholder="dd/mm/aaaa">
         </div>
         <div>
           <label for="" id="label-gender">Gênero</label>
-          <input type="radio" name="feminino" id="feminino">
+          <input type="radio" name="gender" id="feminino">
           <label for="feminino">Feminino</label>
-          <input type="radio" name="masculino" id="masculino">
+          <input type="radio" name="gender" id="masculino">
           <label for="masculino">Masculino</label>
-          <input type="radio" name="personalizado" id="genero">
-          <label for="personalizado">Personalizado</label>
+          <input type="radio" name="gender" id="genero">
+          <label for="genero">Personalizado</label>
         </div>
         
         <div>
