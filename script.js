@@ -9,8 +9,8 @@ consButton.addEventListener('click', () => {
 consButtonRegis.addEventListener('click', () => {
   const constValidar = document.querySelectorAll('.input-text');
   for (let index = 0; index < constValidar.length; index += 1) {
-    if (constValidar[index].value === "") {
-      constValidar[index].value = "Campos inválidos";
+    if (constValidar[index].value === '') {
+      constValidar[index].value = 'Campos inválidos';
     }
   }
 });
