@@ -59,15 +59,14 @@ function getAttributes(array) {
 //   rightContent.innerHTML = greetings;
 //   initialEl.style.display = 'none';
 // }
-const primeiroNome = document.getElementById('primeiroNome')
-let sobreNome = document.getElementById('sobreNome')
-let oemail = document.getElementById('email')
-let nascimento = document.getElementById('birthdate')
-let gen = document.getElementsByClassName('user-gender').checked
+const primeiroNome = document.getElementById('primeiroNome');
+const sobreNome = document.getElementById('sobreNome');
+const oemail = document.getElementById('email');
+const nascimento = document.getElementById('birthdate');
 
 function showFields() {
-  let dataList = getAttributes(inputList);
-  let greetings = ` Olá, ${primeiroNome.value}${sobreNome.value}
+  const dataList = getAttributes(inputList);
+  const greetings = ` Olá, ${primeiroNome.value}${sobreNome.value}
   ${oemail.value}
   ${nascimento.value}
   ${dataList[4].value}`;
