@@ -33,12 +33,12 @@
       <h1>Abra uma conta</h1>
       <div class="quick-easy">É rápido e fácil.</div>
       <form action="" class="formContato" method="get">
-        <input type="text" name="firstname" placeholder="Nome" id="firstname">
-        <input type="text" name="lastname" placeholder="Sobrenome" id="lastname">
+        <input type="text" name="firstname" placeholder="Nome" id="firstname" class="aviso" required title="Campo Invalido">
+        <input type="text" name="lastname" placeholder="Sobrenome" id="lastname"class="aviso" required>
         <!-- 13 -->
-        <input type="text" name="phone_email" placeholder="Celular ou email" id="phone_email">
+        <input type="text" name="phone_email" placeholder="Celular ou email" id="phone_email"class="aviso" required>
         <!-- 14 -->
-        <input type="password" name="password" placeholder="Nova senha" id="password">
+        <input type="password" name="password" placeholder="Nova senha" id="password"class="aviso" required >
         <!-- 15 -->
         <div class="flex-form2">
           <label for="birthdate" id="label-birthdate">Data de nascimento</label>
@@ -65,6 +65,7 @@
             
           </div>
         </div>
+        <!-- 17 -->
         <button type="submit" id="facebook-register">Cadastre-se</button>
       </form>
 
