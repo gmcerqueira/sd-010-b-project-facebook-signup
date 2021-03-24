@@ -51,17 +51,11 @@ function apaga() {
 
 function escreve() {
   const boasVindas1 = document.createElement('p');
-  const boasVindas2 = document.createElement('p');
-  const boasVindas3 = document.createElement('p');
-  const boasVindas4 = document.createElement('p');
-  boasVindas1.innerText = `Olá, ${novoCad[0]} ${novoCad[1]}`;
-  boasVindas2.innerText = `Email: ${novoCad[2]}`;
-  boasVindas3.innerText = `Nascimento: ${novoCad[3]}`;
-  boasVindas4.innerText = `Genero: ${novoCad[4]}`;
+  boasVindas1.innerText = `Olá, ${novoCad[0]} ${novoCad[1]}
+  Email: ${novoCad[2]}
+  Nascimento: ${novoCad[3]}
+  Genero: ${novoCad[4]}`;
   right.appendChild(boasVindas1);
-  right.appendChild(boasVindas2);
-  right.appendChild(boasVindas3);
-  right.appendChild(boasVindas4);
 }
 
 // validador
