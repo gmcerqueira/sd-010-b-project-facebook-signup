@@ -44,3 +44,7 @@
 #firstname , #lastname {
   width: 46.5%;
 }
+
+#phone_email , #password {
+  width: 100%;
+}
