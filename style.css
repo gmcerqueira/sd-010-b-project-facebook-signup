@@ -1,5 +1,7 @@
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -10,38 +12,37 @@
   justify-content: space-between;
 }
 
-.forms {
-  margin-top: 15px;
-  color: white;
+.facebook-login {
   display: flex;
-  margin-left: 650px;
+  color: white;
+  font-size: 12px;
 }
 
 .form-group {
-  color: white;
-  font-size: 12px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  margin-top: 15px;
+  padding-left: 5px;
+  color: white;
+  font-size: 12px;
+}
+
+.form-group a {
+  display: flex;
+  flex-direction: column;
+  align-self: left;
+  margin-top: 5px;
+  color: white;
+  text-decoration: none;
+  opacity: 0.5;
 }
 
 .form-control {
-  display: flex;
+  padding: 5px;
   align-self: flex-end;
-}
-
-#button-login {
+  margin-bottom: 25px;
   color: white;
   background-color: #4267b2;
-  align-self: flex-end;
-}
-
-.forget {
-  color: white;
-  font-size: 10px;
-  text-align: center;
-  margin-top: 50px;
-  margin-right: 200px;
 }
 
 .main-content {
