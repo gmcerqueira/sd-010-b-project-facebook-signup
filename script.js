@@ -14,27 +14,27 @@ function validador () {
   const CadPassword = document.getElementById('foSenha"');
   const CadBirthdate = document.getElementById('label-birthdate');
   const CadRadio = document.querySelector('input[name="gender"]:checked');
-
+  
   if (CadName.value === "") {
     alert('Campos inválidos');
   }
 
-  if (CadLastName.value === "") {
+  if (CadLastName.value === '') {
     alert('Campos inválidos');
   }
 
-  if (CadPhoneEmail.value === "") {
+  if (CadPhoneEmail.value === '') {
     alert('Campos inválidos');
   }
 
-  if (CadPassword.value === "") {
+  if (CadPassword.value === '') {
     alert('Campos inválidos');
   }
 
-  if (CadBirthdate.value === "") {
+  if (CadBirthdate.value === '') {
     alert('Campos inválidos');
   }
-    
+
   if (CadRadio === null) {
     alert('Campos inválidos');
   }
