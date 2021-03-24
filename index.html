@@ -37,13 +37,13 @@
       <p class="quick-easy">É rápido e fácil.</p>
       <form action="" method="get">
         <div class="name-input">
-          <input name="firstname" type="text" placeholder="Nome">
-          <input name="lastname" type="text" placeholder="Sobrenome">
+          <input required name="firstname" type="text" placeholder="Nome">
+          <input required name="lastname" type="text" placeholder="Sobrenome">
         </div>
-        <input name="phone_email" type="text" placeholder="Celular ou email">
-        <input type="password" name="password" placeholder="Nova senha">
+        <input required name="phone_email" type="text" placeholder="Celular ou email">
+        <input  required type="password" name="password" placeholder="Nova senha">
         <label for="birthdate" id="label-birthdate">Data de Nascimento:</label>
-        <input type="text" placeholder="dd/mm/aaaa" name="birthdate" id="birthdate">
+        <input required type="text" placeholder="dd/mm/aaaa" name="birthdate" id="birthdate">
         <label for="" id="label-gender">Gênero</label>
         <div class="radio-labels">
           <label class="radio-input" for=""><input type="radio" name="gender" id="" checked> Masculino</label>
@@ -51,6 +51,7 @@
           <label class="radio-input" for=""><input type="radio" name="gender" id=""> Personalizado</label>
         </div>
         <button id="facebook-register" type="submit">Cadastre-se</button>
+        <p id= 'campos'></p>
       </form>
     </section>
   </main>
