@@ -13,13 +13,13 @@
     <form class="facebook-login" method="post">
       <div class="form-group">
         <label id="user-email-phone-label" for="nome">Email ou telefone</label>
-        <input type="text" id="user-email-phone" name="usuário_nome" />
+        <input required type="text" id="user-email-phone" name="usuário_nome" />
         <div class="esconder">---</div>
       </div>
 
       <div class="form-group">
         <label id="user-password-label" for="senha">Senha</label>
-        <input type="password" id="user-password" name="usuário_password" />
+        <input required type="password" id="user-password" name="usuário_password" />
         <div id="esqueceuSenha">
           <label for="nome"><a href="">Esqueceu a conta?</a></label>
         </div>
@@ -41,7 +41,7 @@
     <section class="right-content">
       <h1>Abra uma conta</h1>
       <h3 class="quick-easy">É rápido e fácil.</h3>
-      <form action="">
+      <form action="" method="GET">
         <div class="nomeSobrenome">
           <input type="text" name="firstname" placeholder="Nome" class="input-text">
           <input type="text" name="lastname" placeholder="Sobrenome" class="input-text">
@@ -59,7 +59,7 @@
         <label for="" id="label-gender">Gênero</label>
         <div>
 
-          <input type="radio" name="genero" id="feminino">
+          <input type="radio" checked name="genero" id="feminino">
           <label for="feminino">Feminino</label>
 
           <input type="radio" name="genero" id="masculino">
@@ -69,9 +69,12 @@
           <label for="personalizado">Personalizado</label>
         </div>
         
-        <div>
+        <div class="form-group">
           <button type="submit" id="facebook-register">Cadastre-se</button>
         </div>
+        <span>
+
+        </span>
       </form>
     </section>
 

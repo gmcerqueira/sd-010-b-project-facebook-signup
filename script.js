@@ -10,11 +10,8 @@ consButton.addEventListener('click', (event) => {
 
 consButtonRegister.addEventListener('click', (event) => {
   event.preventDefault();
-  const auxSpan = document.querySelector('span');
-  if () {
-    
-  }
-  const auxP = document.createElement('span');
+  const auxP = document.querySelector('span');
+  auxP.innerHTML = '';
   const constValidar = document.querySelectorAll('.input-text');
   for (let index = 0; index < constValidar.length; index += 1) {
     if (constValidar[index].value === '') {
