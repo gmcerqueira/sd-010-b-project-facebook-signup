@@ -37,7 +37,7 @@
   width: 300px;
 }
 
-.full-size {
+.cad {
   width: 289px;
 }
 
@@ -45,6 +45,6 @@
   width: 46.5%;
 }
 
-#phone_email , #password {
-  width: 100%;
+#birthdate {
+  width: 150px;
 }

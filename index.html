@@ -35,13 +35,12 @@
             <h1>Abra uma conta</h1>
            <p class="quick-easy">É rápido e fácil.</p>
             <form action=""  name="formulario">
-                <input type="text" name="firstname" class="cad"id="firstname" placeholder="Nome">
-                <input type="text" name="lastname" class="cad"id="lastname" placeholder="Sobrenome">
-                <input type="text" name="phone_email" class="cad"id="phone_email" placeholder="Celular ou email" class="full-size">
-                <input type="password" name="password" class="cad"id="password" placeholder="Nova senha" class="full-size">
-                <br>
-                <label for="birthdate" class="cad"id="label-birthdate">Data de nascimento</label>
-                <input type="text" name="birthdate" class="cad"id="birthdate" placeholder="dd/mm/aaaa" class="full-size">
+                <input type="text" name="firstname" class="cad" id="firstname" placeholder="Nome">
+                <input type="text" name="lastname" class="cad" id="lastname" placeholder="Sobrenome">
+                <input type="text" name="phone_email" class="cad" id="phone_email" placeholder="Celular ou email">
+                <input type="password" name="password" class="cad" id="password" placeholder="Nova senha">
+                <label for="birthdate" id="label-birthdate">Data de nascimento</label>
+                <input type="text" name="birthdate" class="cad" id="birthdate" placeholder="dd/mm/aaaa">
                 <br>
                 <label for="" id="label-gender">Gênero</label>
                 <div id="gender-options">
@@ -50,6 +49,7 @@
                     <label for="personalizado" class="text-radio"><input type="radio" name="gender" id="personalizado" class="radio-button" value="Personalizado">Personalizado</label>
                 </div>
                 <button type="submit" id="facebook-register">Cadastre-se</button>
+                <p id="campos-invalidos"></p>
             </form>
         </section>
     </main>
