@@ -79,8 +79,8 @@ main label {
 }
 
 .left-content {
-  display: flex;
-  flex-direction: column;
+/*   display: flex; */
+/*   flex-direction: column; */
   width: 800px;
 }
 
@@ -95,8 +95,8 @@ main label {
 }
 
 .right-content {
-  display: flex;
-  flex-direction: column;
+/*   display: flex; */
+/*   flex-direction: column; */
   width: 300px;
   align-content: stretch;
 }
