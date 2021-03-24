@@ -54,9 +54,12 @@ header button {
   color: white;
   font-weight: 200;
   margin-left: 5px;
-  margin-top: 15px;
 }
 
 header label button {
   color: white;
+}
+
+.form-control {
+  align-self: flex-end;
 }
