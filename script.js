@@ -77,3 +77,8 @@ button.id = 'button-login';
 button.innerText = 'Entrar';
 document.querySelector('#field3').appendChild(button);
 button.addEventListener('click', alerta);
+
+const mainContent = document.createElement('div');
+mainContent.className = 'main-content';
+mainContent.style.flex = 'flex';
+spawn(mainContent);
