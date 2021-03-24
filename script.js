@@ -78,7 +78,7 @@ function changeContent() {
     rightContent.removeChild(rightContent.firstChild);
   }
   const createText = document.createElement('p');
-  createText.innerText = `Olá ${information[0].value} ${information[1].value}
+  createText.innerText = `Olá, ${information[0].value} ${information[1].value}
   ${information[2].value}
   ${informationBirthDate}
   ${informationGen}`;
