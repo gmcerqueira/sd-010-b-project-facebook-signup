@@ -83,12 +83,11 @@ function opicaoRadio() {
 btnCadastrase.addEventListener('click', (event) => {
   event.preventDefault();
   const inputs = document.querySelectorAll('.input');
-  const conteudo = document.querySelector('.right-content')
+  const conteudo = document.querySelector('.right-content');
   if (cadastroVerificacao()) {
     conteudo.innerHTML = `Olá, ${inputs[0].value} ${inputs[1].value}, 
     email/telefone: ${inputs[2].value}, 
     data nascimento: ${inputs[3].value}
-    genero: ${opicaoRadio()}`
-    
+    genero: ${opicaoRadio()}`;
   }
 });
