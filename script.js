@@ -32,7 +32,7 @@ function verificaCadastro() {
 
 function clicaCadastro() {
   botaoCadastro.addEventListener('click', (e) => {
-    if (verificaCadastro() === true){
+    if (verificaCadastro() === true) {
       criaAviso();
       e.preventDefault();
     }
