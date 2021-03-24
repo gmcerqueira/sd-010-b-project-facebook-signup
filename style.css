@@ -61,7 +61,8 @@ header label button {
 }
 
 .form-control {
-  align-self: flex-end;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-content {
