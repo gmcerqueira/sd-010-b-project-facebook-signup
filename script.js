@@ -73,10 +73,10 @@ registerBtn.addEventListener('click', (event) => {
     const rightContent = document.querySelector('.right-content');
 
     rightContent.innerHTML = `
-      <p class="user-register"><strong>Registro completo!</strong></p>
-      <hr>
       <p class="user-register">
       Olá, ${inputsRegister[0].value} ${inputsRegister[1].value}!</p>
+      <hr>
+      <p class="user-register"><strong>Registro completo!</strong></p>
       <p class="user-register"><strong>Email:</strong>
       ${inputsRegister[2].value}</p>
       <p class="user-register"><strong>Data de nascimento:</strong>
