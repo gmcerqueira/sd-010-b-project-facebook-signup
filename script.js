@@ -3,7 +3,6 @@ const submitBtn = document.getElementById('button-login');
 const user = document.getElementById('user-email-phone');
 const registerBtn = document.getElementById('facebook-register');
 
-
 //  Funções:
 function alerta() {
   alert(user.value);
