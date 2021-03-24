@@ -8,7 +8,6 @@ const btnCadastrase = document.querySelector('#facebook-register');
 const inputs = document.querySelectorAll('.input');
 const radios = document.querySelectorAll('.gender-radio');
 
-
 // cria um alert com o valor digitado no input email ou telefone
 function btnLogin() {
   const btnEnviar = document.querySelector('#button-login');
