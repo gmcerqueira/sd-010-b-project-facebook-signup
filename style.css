@@ -21,7 +21,7 @@
 
 .facebook-login {
   display: flex;
-  padding-right: 20px;
+  padding-right: 10px;
 }
 
 .form-group {
@@ -35,9 +35,31 @@
   font-size: 12px;
 }
 
-input {
+.form-control {
+  align-self: flex-end;
+}
+
+form div input {
   border: solid 1px black;
-  margin: 5px;
+  height: 19px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.left-content {
+  display: flex;
+  width: 800px;
+  flex-direction: column;
+}
+
+.right-content {
+  display: flex;
+  width: 300px;
+  flex-direction: column;
 }
 
 #senha {
@@ -46,30 +68,9 @@ input {
   left: 800px;
 }
 
-.form-control {
-  align-self: flex-end;
-}
-
-.main-content {
-  display: flex;
-
-}
-
-.left-content {
-  display: flex;
-  min-width: 800px;
-  flex-direction: column;
-}
-
 #facebook-slogan {
   margin: 20px;
   margin-left: 130px;
-}
-
-.right-content {
-  display: flex;
-  min-width: 300px;
-  flex-direction: column;
 }
 
 .quick-easy {
