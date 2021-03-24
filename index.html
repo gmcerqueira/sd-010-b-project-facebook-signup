@@ -10,9 +10,9 @@
 </head>
 <body>
     <header class="top-bar">
-        
+
         <img class="facebook-logo" src="imgs/facebook-logo.png" alt="Logo facebook">
-        
+
 
         <form class="facebook-login" method="GET">
             <div class="form-group">
@@ -30,7 +30,7 @@
                 <button id="button-login" type="submit">Entrar</button>
             </div>
         </form>
-        
+
     </header>
 
     <section class="main-content">
@@ -46,26 +46,26 @@
 
             <form method="GET">
                 <div class="name-lastname">
-                    <input type="text" name="firstname" placeholder="Nome">
+                    <input id="firt-name" type="text" name="firstname" placeholder="Nome">
 
-                    <input type="text" name="lastname" placeholder="Sobrenome">
+                    <input id="lastName" type="text" name="lastname" placeholder="Sobrenome">
                 </div>
 
-                <input class="mail" type="text" name="phone_email" placeholder="Celular ou email">
+                <input id="email" class="mail" type="text" name="phone_email" placeholder="Celular ou email">
 
                 <input class="password" type="password" name="password" placeholder="Nova senha">
 
                 <div class="birthday">
                     <label id="label-birthdate" for="">Data de nascimento</label>
-                    <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
+                    <input id="date" ype="text" name="birthdate" placeholder="dd/mm/aaaa">
                 </div>
 
                 <div class="gender">
                     <label id="label-gender" for="">Gênero</label>
                         <div class="genders">
-                            <input name="gender" type="radio" value="Feminino" required>Feminino
-                            <input name="gender" type="radio" value="Masculino" required>Masculino
-                            <input name="gender" type="radio" value="Personalizado" required>Personalizado
+                            <input id="f" name="gender" type="radio" value="Feminino" required>Feminino
+                            <input id="m" name="gender" type="radio" value="Masculino" required>Masculino
+                            <input id="outro" name="gender" type="radio" value="Personalizado" required>Personalizado
                         </div>
                 </div>
 

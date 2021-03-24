@@ -1,9 +1,27 @@
 const buttonLogin = document.getElementById('button-login');
 const emailValue = document.getElementById('user-email-phone');
-
 buttonLogin.addEventListener('click', () => {
   alert(emailValue.value);
 });
+
+function secondRightContent() {
+  const containerRC = document.querySelector('.right-content');
+  const saveName = (document.getElementById('firt-name').value);
+  const saveLastName = (document.getElementById('lastName').value);
+  const saveDate = (document.getElementById('date').value);
+  const saveEmail = (document.getElementById('email').value);
+  localStorage.name = saveName;
+  localStorage.lastName = saveLastName;
+  localStorage.email = saveEmail;
+  localStorage.date = saveDate;
+  const creatP = document.createElement('p');
+  creatP.innerText = `Olá, ${localStorage.name} ${localStorage.lastName}
+  E-mail: ${localStorage.email}
+  Data: ${localStorage.date}`;
+  containerRC.innerHTML = '';
+  containerRC.appendChild(creatP);
+  console.log('teste');
+}
 
 function verifyInputs() {
   const registerButton = document.getElementById('facebook-register');
@@ -17,6 +35,7 @@ function verifyInputs() {
         e.preventDefault();
       }
     }
+    secondRightContent();
   });
 }
 
