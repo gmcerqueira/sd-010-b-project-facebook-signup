@@ -55,7 +55,7 @@
   margin-top: 50px;
   display: flex;
   padding: 15px;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -71,6 +71,7 @@
   flex-direction: column;
 }
 
-.name-lastname-container {
+form {
   display: flex;
 }
+
