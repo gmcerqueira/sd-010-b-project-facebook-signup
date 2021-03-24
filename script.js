@@ -11,9 +11,7 @@ let valid;
 
 function validate() {
   valid = true;
-  const inputs = document.querySelectorAll(
-    '#sign-up-form input[type="text"], #sign-up-form input[type="password"]'
-  );
+  const inputs = document.querySelectorAll('#sign-up-form input');
   for (let i = 0; i < inputs.length; i += 1) {
     if (inputs[i].value === '') {
       const validMsg = document.createElement('p');
