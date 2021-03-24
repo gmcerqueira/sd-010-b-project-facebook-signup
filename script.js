@@ -1,16 +1,21 @@
 const consButton = document.querySelector('#button-login');
-const consButtonRegis = document.querySelector('#facebook-register');
+const consButtonRegister = document.querySelector('#facebook-register');
 const body = document.querySelector('.right-content');
 
-consButton.addEventListener('click', () => {
+consButton.addEventListener('click', (event) => {
+  event.preventDefault();
   const aux = document.querySelector('#user-email-phone').value;
   alert(aux);
 });
 
-consButtonRegis.addEventListener('click', () => {
+consButtonRegister.addEventListener('click', (event) => {
+  event.preventDefault();
   const auxP = document.createElement('p');
-  const constValidar = document.querySelector('.input-text').value;
-  console.log(constValidar);
-  auxP.innerText = constValidar;
-  body.appendChild(auxP);
+  const constValidar = document.querySelectorAll('.input-text');
+  for (let index = 0; index < constValidar.length; index += 1) {
+    if (constValidar[index].value === '') {
+      auxP.innerText = 'Campos inválidos';
+      body.appendChild(auxP);
+    }
+  }
 });
