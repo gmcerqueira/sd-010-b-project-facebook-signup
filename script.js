@@ -19,7 +19,7 @@ function criaAviso() {
   div.appendChild(p).innerHTML = 'Campos Inválidos';
 }
 
-function verificaCadastro() {
+function verificaInput() {
   let naoValido = false;
   const cadastro = document.querySelectorAll('.cadastro');
   for (let index = 0; index < cadastro.length; index += 1) {
@@ -30,9 +30,19 @@ function verificaCadastro() {
   return naoValido;
 }
 
+function verificaRadio() {
+  const cadastro = document.querySelectorAll('.radio');
+  for (let index = 0; index < cadastro.length; index += 1) {
+    if (cadastro[index].cheked) {
+      return false;
+    }
+  }
+  return true;
+}
+
 function clicaCadastro() {
   botaoCadastro.addEventListener('click', (e) => {
-    if (verificaCadastro() === true) {
+    if (verificaInput() || verificaRadio() === true) {
       criaAviso();
       e.preventDefault();
     }
