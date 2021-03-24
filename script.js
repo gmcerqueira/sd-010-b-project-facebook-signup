@@ -52,7 +52,6 @@ const CadRadios = document.querySelector('input[name="gender"]:checked');
   if(CadRadios == null){
     alert("Campos inválidos");
     return;
-    
   }
 
 });
