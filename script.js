@@ -6,42 +6,43 @@ enterButton.addEventListener('click', () => {
 
 const form = document.getElementById('formulario');
 
-form.addEventListener('submit', validador);
+//form.addEventListener('submit', validador);
 
-function validador (){
-var Cadname = document.getElementById("name");
-var Cadlastname = document.getElementById("sName");
-var Cadphone_email = document.getElementById("foEmail");
-var Cadpassword = document.getElementById("foSenha");
-var Cadbirthdate = document.getElementById("label-birthdate");
-var Cadradio = document.querySelector('input[name="gender"]:checked');
+function validador () {
+  form.addEventListener("submit", validador);
+const CadName = document.getElementById("name");
+const CadLastName = document.getElementById("sName");
+const CadPhoneEmail = document.getElementById("foEmail");
+const CadPassword = document.getElementById("foSenha");
+const CadBirthdate = document.getElementById("label-birthdate");
+const CadRadio = document.querySelector('input[name="gender"]:checked');
 
-  if (Cadname.value == "") {
+  if (CadName.value == "") {
     alert("Campos inválidos");
     return;
   }
 
-  if (Cadlastname.value == "") {
+  if (CadLastName.value == "") {
     alert("Campos inválidos");
     return;
   }
 
-  if (Cadphone_email.value == "") {
+  if (CadPhoneEmail.value == "") {
     alert("Campos inválidos");
     return;
   }
 
-  if (Cadpassword.value == "") {
+  if (CadPassword.value == "") {
     alert("Campos inválidos");
     return;
   }
 
-  if (Cadbirthdate.value == "") {
+  if (CadBirthdate.value == "") {
     alert("Campos inválidos");
     return;
   }
     
-  if (Cadradio == null) {
+  if (CadRadio == null) {
     alert("Campos inválidos");
     return;
   }
