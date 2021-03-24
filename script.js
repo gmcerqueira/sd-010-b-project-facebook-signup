@@ -47,14 +47,6 @@ function validar() {
   return valor;
 }
 
-buttonRegister.addEventListener('click', () => {
-  // validar();
-  // checkData();
-  if (!validar()) {
-    alert('Campos inválidos');
-  }
-});
-
 const newGenderElem = document.getElementById('form-container');
 const newGenderInput = document.createElement('input');
 const genderRadio = document.getElementById('generico');
@@ -64,4 +56,43 @@ genderRadio.addEventListener('click', () => {
   newGenderInput.setAttribute('type', 'text');
   newGenderInput.setAttribute('name', 'gender-custom');
   newGenderInput.setAttribute('placeholder', 'Gênero (opcional)');
+});
+
+const rightContent = document.querySelector('.right-content');
+
+function getRadioValor() {
+  const rads = document.getElementsByName('gender');
+  for (let i = 0; i < rads.length; i += 1) {
+    if (rads[i].checked) {
+      return rads[i].value;
+    }
+  }
+  return null;
+}
+
+function changeContent() {
+  const information = document.querySelectorAll('.validInfo');
+  const informationBirthDate = document.querySelector('#birthdate').value;
+  const informationGen = getRadioValor();
+  while (rightContent.firstChild) {
+    rightContent.removeChild(rightContent.firstChild);
+  }
+  const createText = document.createElement('p');
+  createText.innerText = `Olá ${information[0].value} ${information[1].value}
+  ${information[2].value}
+  ${informationBirthDate}
+  ${informationGen}`;
+  rightContent.appendChild(createText);
+}
+
+// const btnSwitchRightContent = document.getElementById('teste');
+// btnSwitchRightContent.addEventListener('click', changeContent);
+
+buttonRegister.addEventListener('click', () => {
+  const formCont = document.getElementById('form-container');
+  const divElement = document.createElement('p');
+  divElement.innerText = 'Campos inválidos';
+  if (!validar()) {
+    formCont.appendChild(divElement);
+  } else changeContent();
 });
