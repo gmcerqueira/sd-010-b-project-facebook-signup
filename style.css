@@ -55,7 +55,7 @@
   margin-top: 50px;
   display: flex;
   padding: 15px;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -65,7 +65,7 @@
   width: 800px;
 }
 
-.right-content {
+.right-content {;
   display: flex;
   width: 300px;
   flex-direction: column;
@@ -73,5 +73,9 @@
 
 .form-row {
   display: flex;
+  justify-content: space-between;
 }
 
+.form-group {
+  width: 300px;
+}
