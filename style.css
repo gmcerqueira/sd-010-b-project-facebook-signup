@@ -50,6 +50,10 @@ header {
   border: 1px solid #1d2a5b;
 }
 
+.form-group input::placeholder {
+  visibility: hidden;
+}
+
 .form-control {
   display: flex;
   align-self: flex-end;
@@ -225,4 +229,108 @@ header {
   margin-top: 20px;
   margin-bottom: 30px;
   outline: none;
+}
+
+#screen-small {
+  display: none;
+}
+
+
+@media screen and (max-width: 899px) {
+  body {
+    background: none;
+    background-color: white;
+  }
+
+  .main-content {
+    display: none;
+  }
+
+  header {
+    flex: 1;
+  }
+
+  .top-bar {
+    height: 50px;
+    flex-direction: column;
+  }
+
+  .facebook-logo {
+    order: 2;
+    width: 140px;
+    margin-bottom: 10px;
+  }
+
+  .facebook-login {
+    order: 3;
+    margin-top: 20px;
+    flex-direction: column;
+    align-self: center;
+  }
+
+  .form-group label {
+    display: none;
+  }
+  .form-group {
+    padding-right: 0;
+  }
+
+  .form-group input {
+    width: 320px;
+    height: 40px;
+    margin: 0;
+    background-color: #f5f6f7;
+    border-color: #ededed;
+    font-size: 15px;
+    padding: 14px 16px;
+  }
+
+  .form-group input::placeholder {
+    visibility: visible;
+  }
+
+  .form-group a {
+    display: none;
+  }
+
+  .form-control {
+    order: 4;
+    margin-top: 10px;
+  }
+
+  .form-control button {
+    width: 320px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  #screen-small {
+    order: 6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+ 
+  #screen-small button {
+    width: 160px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid #53a60a;
+    background-color: #53a60a;
+    outline: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  #screen-small a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #9cb4d8;
+    font-weight: 500;
+  }
 }
