@@ -30,7 +30,6 @@ function generoPersonalizado() {
 
   input.setAttribute('class', 'geral');
 
-  console.log(gender.checked)
   if (gender.checked) {
     section.appendChild(input);
   }
@@ -39,7 +38,7 @@ function generoPersonalizado() {
 function verificarGenero() {
   const genders = document.getElementsByClassName('radio-gender');
 
-  for (let index = 0; index < 3; index++){
+  for (let index = 0; index < 3; index += 1) {
     genders[index].addEventListener('click', generoPersonalizado);
   }
 }
