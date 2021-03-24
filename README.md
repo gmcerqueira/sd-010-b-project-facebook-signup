@@ -1,6 +1,6 @@
-- [] Requisito 1
-- [x] Requisito 2
-- [ ] Requisito 3
+- [ ] Requisito 1
+-[ ] Requisito 2
+-[ ] Requisito 3
 - [ ] Requisito 4
 - [ ] Requisito 5
 - [ ] Requisito 6
