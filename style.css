@@ -3,9 +3,9 @@
     margin: 0;
     font-size: 100%;
     box-sizing: border-box;
-  }
-  
-  .content-site {
+}
+
+.content-site {
     display: flex;
     flex-flow: column wrap;
     flex-wrap: wrap;
@@ -13,87 +13,86 @@
     width: 100%;
     height: 100vh;
     justify-content: center;
-  }
-  
-  .form-group {
+}
+
+.form-group {
     display: flex;
     flex-direction: column;
-  }
-  
-  .form-control {
+}
+
+.form-control {
     align-self: flex-end;
-  }
-  
-  .top-bar {
+}
+
+.top-bar {
     background-color: rgb(66, 103, 178);
     display: flex;
     justify-content: space-between;
-  }
-  
-  .facebook-logo {
+}
+
+.facebook-logo {
     align-self: flex-start;
-  }
-  
-  .facebook-login {
+}
+
+.facebook-login {
     display: flex;
-  }
-  
-  .main-content {
+}
+
+.main-content {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-evenly;
-  }
-  
-  .left-content {
+}
+
+.left-content {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     width: 800px;
-  }
-  
-  .right-content {
+}
+
+.right-content {
     display: flex;
     flex-flow: column wrap;
     justify-content: flex-start;
     width: 300px;
-  }
-  
-  .footer-site {
+}
+
+.footer-site {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     height: 80px;
     background-color: white;
-  }
-  
-  .inputs {
+}
+
+.inputs {
     display: flex;
     width: 100%;
     border: 1px;
     border-style: solid;
     border-color: rgba(223, 230, 233, 0.6);
-  }
-  
-  input {
+}
+
+input {
     border: 1px;
     border-style: solid;
     border-color: rgba(223, 230, 233, 0.6);
     border-radius: 5px;
-  }
-  
-  .quick-easy {
+}
+
+.quick-easy {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-  }
-  
-  .user-name {
+}
+
+.user-name {
     display: flex;
     flex-direction: row;
-  }
-  
-  #genero-personalizado {
+}
+
+#genero-personalizado {
     display: none;
-  }
-  
+}
