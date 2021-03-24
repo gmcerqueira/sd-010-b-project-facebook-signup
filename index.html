@@ -39,14 +39,14 @@
       <p class="quick-easy">É rápido e fácil.</p>
       <form action="">
         <div class="name-surname">
-          <input id="input-name" type="text" name="firstname" placeholder="Nome">
-          <input id="input-lastname" type="text" name="lastname" placeholder="Sobrenome">
+          <input id="input-name" class="input-register" type="text" name="firstname" placeholder="Nome">
+          <input id="input-lastname" class="input-register" type="text" name="lastname" placeholder="Sobrenome">
         </div>
         <div class="rest-form">
-          <input id="input-phone-email" type="text" name="phone_email" placeholder="Celular ou email">
-          <input id="input-password" type="password" name="password" placeholder="Nova senha">
+          <input id="input-phone-email" class="input-register" type="text" name="phone_email" placeholder="Celular ou email">
+          <input id="input-password" class="input-register" type="password" name="password" placeholder="Nova senha">
           <label for="input-date" id="label-birthdate">Data de nascimento</label>
-          <input id="input-date" type="text" name="birthdate" placeholder="dd/mm/aaaa">
+          <input id="input-date" class="input-register" type="text" name="birthdate" placeholder="dd/mm/aaaa">
 
           <label id="label-gender">Gênero</label>
           <div id="gender-container">
@@ -58,7 +58,8 @@
             <label for="custom">Personalizado</label>
           </div>
         </div>
-        <button type="submit" id="facebook-register">Cadastre-se</button>
+        <button id="facebook-register" type="submit">Cadastre-se</button>
+        <p id="error-message"></p>
       </form>
     </div>
   </main>
