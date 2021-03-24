@@ -55,7 +55,7 @@
   width: 50%;
 }
 
-.geral, #firstname , #lastname , #phone_email , #password {
+.geral , #firstname , #lastname , #phone_email , #password {
   font-size: 18px;
   padding: 8px 10px;
   border: 1px solid #ccd0d5;
