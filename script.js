@@ -46,11 +46,17 @@ function generoPersonalizado() {
   const gender = document.getElementById('personalizado');
   const section = document.getElementById('div-gender');
   const input = document.createElement('input');
+  const inputs = document.querySelectorAll('.input-form');
+  const genderF = document.getElementById('feminino');
+  const genderM = document.getElementById('masculino');
 
   input.className = 'geral input-form';
-
-  if (gender.checked) {
+  if (gender.checked && (inputs.length == 5)) {
     section.appendChild(input);
+  }
+
+  if ((genderF.checked || genderM.checked) && (inputs.length == 6)) {
+    section.removeChild(section.lastChild);
   }
 }
 
