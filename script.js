@@ -1,33 +1,27 @@
 const btnEntrar = document.getElementById('button-login');
 const campEmail = document.getElementById('user-email-phone');
 
-function entrar() {
-  alert(campEmail.value);
-}
+btnEntrar.addEventListener('click', () => alert(campEmail.value));
 
-btnEntrar.addEventListener('click', entrar);
-
-const registerBtn = document.querySelector('#facebook-register');
+const registerBtn = document.getElementById('facebook-register');
 const campos = document.querySelectorAll('.input');
 
-function validate(event) {
-  const invalid = document.querySelector('#invalid');
+registerBtn.addEventListener('click', event => {
+  const invalid = document.getElementById('invalid');
   for (let index = 0; index < campos.length; index += 1) {
     if (campos[index].value === '') {
       event.preventDefault();
       invalid.innerText = 'Campos inválidos';
     }
   }
-}
+});
 
-registerBtn.addEventListener('click', validate);
-
-const custom = document.querySelector('#custom');
-const male = document.querySelector('#male');
-const female = document.querySelector('#female');
+const custom = document.getElementById('custom');
+const male = document.getElementById('male');
+const female = document.getElementById('female');
 
 function customField(event) {
-  const inputGender = document.querySelector('#input-gender');
+  const inputGender = document.getElementById('input-gender');
   const fieldGender = document.createElement('input');
   let checked = false;
   if (event.target.id === 'custom' && !checked) {
