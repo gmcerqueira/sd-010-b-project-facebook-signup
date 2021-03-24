@@ -51,11 +51,10 @@ function getAttributes(array) {
 }
 
 function showFields() {
-  const dataList = getAttributes(inputList);
-  const greetings = ` Olá, ${dataList[0].value} ${dataList[1].value}
-    ${dataList[2].value}
-    ${dataList[3].value}
-    ${dataList[4].value} `;
+  const greetings = ` Olá, ${inputList[0].value} ${inputList[1].value}
+    ${inputList[2].value}
+    ${inputList[3].value}
+    ${inputList[4].value} `;
   rightContent.innerText = greetings;
   // initialEl.style.display = 'none';
 }
