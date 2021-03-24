@@ -55,14 +55,12 @@
   width: 50%;
 }
 
-#firstname , #lastname , #phone_email , #password {
+.geral, #firstname , #lastname , #phone_email , #password {
   font-size: 18px;
   padding: 8px 10px;
   border: 1px solid #ccd0d5;
   border-radius: 4px;
 }
-
-
 
 #facebook-register {
   background: linear-gradient(#67ae55, #578843);
@@ -87,7 +85,7 @@
 
 #div-gender {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   width: 100%;
@@ -109,8 +107,4 @@
 .form-control {
   display: flex;
   align-self: flex-end;
-}
-
-#firstname {
-  margin-right: 8px;
 }
