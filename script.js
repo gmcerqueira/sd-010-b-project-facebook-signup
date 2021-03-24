@@ -37,14 +37,14 @@ function formError() {
 
   getButton.addEventListener('click', () => {
     const error = document.querySelector('.error');
-    const inputName = document.querySelector('#name');
-
-    if (!inputName.value.length) {
-      error.style.display = 'inline';
+    const inputName = document.getElementsByTagName('input');
+    for (let item = 0; item < inputName.length; item += 1) {
+      if (!inputName[item].value.length) {
+        error.style.display = 'inline';
+      }
     }
+    return false;
   });
-
-  return false;
 }
 
 formError();
