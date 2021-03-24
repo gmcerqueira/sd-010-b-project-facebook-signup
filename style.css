@@ -115,3 +115,9 @@ body {
   top: 800px;
   background: linear-gradient(#fdfdfe, #eff1f6, #e3e6f0, #d6dbea);
 }
+
+#generos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
