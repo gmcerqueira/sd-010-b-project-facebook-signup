@@ -47,7 +47,7 @@ function requisito18() {
   return true;
 }
 
-function requisito20(event) {
+function requisito20() {
   const getCheckedButton = document.querySelector(':checked');
   const getTypeInput = document.querySelectorAll('input[type=text]');
   const rightContent = document.querySelector('.right-content');
@@ -66,9 +66,9 @@ function requisito20(event) {
 }
 
 const req18 = document.getElementById('facebook-register');
-req18.addEventListener('click', () =>{
+req18.addEventListener('click', () => {
   requisito18();
-  if(requisito18() === true){
+  if (requisito18() === true) {
     requisito20();
   }
 });
