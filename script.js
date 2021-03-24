@@ -1,97 +1,3 @@
-// new JustValidate('.js-form', {
-//   rules: {
-//     name: {
-//       required: true,
-//       minLength: 3,
-//       maxLength: 40;
-//     },
-//     email: {
-//       required: true,
-//       email: true,
-//       maxLength: 50;
-//     },
-//     cpf: {
-//       required: true,
-//       maxLength: 11
-//     },
-//     address: {
-//       required: true,
-//       maxLength: 200
-//     },
-//     city: {
-//       required: true,
-//       maxLength: 28
-//     },
-//     state: {
-//       required: true,
-//     },
-//     radio: {
-//       required: true,
-//     },
-//     text: {
-//       required: true,
-//       maxLength: 1000
-//     },
-//     position: {
-//       required: true,
-//       maxLength: 40
-//     },
-//     description: {
-//       required: true,
-//       maxLength: 500
-//     },
-//     date: {
-//       required: true,
-//     }
-//   },
-//   messages: {
-//     name: {
-//       required: 'O campo de nome é obrigatório.',
-//       maxLength: 'O limite é de 40 caracteres.'
-//     },
-//     email: {
-//       required: 'O campo de email é obrigatório.',
-//       email: 'O email digitado não é válido.',
-//       maxLength: 'O limite é de 50 caracteres.'
-//     },
-//     cpf: {
-//       required: 'O campo de CPF é obrigatório.',
-//       maxLength: 'O limite é de 11 caracteres.'
-//     },
-//     address: {
-//       required: 'O campo endereço é obrigatório.',
-//       maxLength: 'O limite é de 200 caracteres.'
-//     },
-//     city: {
-//       required: 'O campo cidade é obrigatório.',
-//       maxLength: 'O limite é de 28 caracteres.'
-//     },
-//     state: {
-//       required: 'O campo estado é obrigatório.',
-//     },
-//     radio: {
-//       required: 'A escolha de um item é obrigatória.',
-//     },
-//     text: {
-//       required: 'Este campo é obrigatório.',
-//       maxLength: 'O limite é de 1000 caracteres.'
-//     },
-//     position: {
-//       required: 'Este campo é obrigatório.',
-//       maxLength: 'O limite é de 40 caracteres.'
-//     },
-//     description: {
-//       required: 'Este campo é obrigatório.',
-//       maxLength: 'O limite é de 500 caracteres.'
-//     },
-//     date: {
-//       required: 'Este campo é obrigatório.',
-//     }
-//   },
-//   submitHandler: function (form, values) {
-//     console.log(form, values);
-//   }});
-
 // Importa os input's da área gênero do form de cadastro
 const genderCustom = document.getElementById('gender-custom');
 const genderPer = document.getElementById('gender-per');
@@ -127,3 +33,48 @@ function outroGenreno() {
 
 btnLogin();
 outroGenreno();
+
+
+const btnCadastrase = document.querySelector('#facebook-register');
+
+function verificaInputs() {
+  const inputs = document.querySelectorAll('.input');
+  let validacaoInput = true;
+  for (let index = 0; index < inputs.length; index += 1) {
+    if (inputs[index].value === '') {
+      validacaoInput = false;
+    }
+  }
+  return validacaoInput;
+}
+
+function verificaRadios() {
+  const radios = document.querySelectorAll('.gender-radio');
+  let validacaoRadios = false;
+  for (let index = 0; index < radios.length; index += 1) {
+    if (radios[index].checked) {
+      validacaoRadios = true;
+    }
+  }
+  return validacaoRadios;
+}
+
+function cadastroVerificacao() {
+  const validacao = document.querySelector('#validacao');
+  const resultado = document.createElement('div');
+  resultado.setAttribute('class', 'resultado');
+  let ativacao = true;
+  if (!verificaInputs() || !verificaRadios()) {
+    resultado.innerText = 'Campos inválidos';
+    validacao.appendChild(resultado);
+    ativacao = false;
+  }
+  return ativacao;
+}
+
+btnCadastrase.addEventListener('click', (event) => {
+  event.preventDefault();
+  if (cadastroVerificacao()) {
+    console.log('ok');
+  }
+});
