@@ -66,6 +66,11 @@ header form div input {
   display: flex;
 }
 
+#birthdate {
+  display: flex;
+  flex-direction: column;
+}
+
 #senha {
   margin-top: 40px;
   position: absolute;
@@ -84,12 +89,6 @@ header form div input {
 
 h1 {
   font-size: 30px;
-}
-
-#date {
-  position: absolute;
-  margin-top: 0;
-  margin-left: 5px;
 }
 
 #date input {
