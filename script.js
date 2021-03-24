@@ -34,7 +34,6 @@ function outroGenreno() {
 btnLogin();
 outroGenreno();
 
-
 const btnCadastrase = document.querySelector('#facebook-register');
 
 function verificaInputs() {
