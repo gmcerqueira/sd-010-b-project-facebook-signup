@@ -1,16 +1,18 @@
 .top-bar {
   display: flex;
   background-color: rgb(66, 103, 178);
+  padding: 5px 50px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .facebook-logo {
   text-align: left;
 }
 
-.facebook-login {
+.top-bar .facebook-login {
   display: flex;
   align-self: flex-end;
-  text-align: right;
 }
 
 .formulario-column {
@@ -30,6 +32,7 @@
 .main-content {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .left-content {
@@ -42,5 +45,6 @@
 }
 
 .form-cadastro {
-  display: inline;
+  display: flex;
+  align-items: center;
 }
