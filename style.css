@@ -17,6 +17,11 @@
   height: 60px;
 }
 
+.twoInputs {
+  display: flex;
+
+}
+
 .form-group {
   color: white;
   display: flex;
@@ -27,12 +32,6 @@
 .form-control {
   display: flex;
   align-self: flex-end;
-}
-
-#button-login {
-  background-color: #4267b2;
-  color: white;
-  padding: 2px 6px;
 }
 
 .facebook-login {
