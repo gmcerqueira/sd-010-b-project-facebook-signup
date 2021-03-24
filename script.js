@@ -1,8 +1,8 @@
-function validarCampos() {
-  const validateFields = document.querySelectorAll('.input-form');
+const inputs = document.querySelectorAll('.input-form');
 
-  for (let index = 0; index < validateFields.length; index += 1) {
-    if (validateFields[index].value === '') {
+function validarCampos() {
+  for (let index = 0; index < inputs.length; index += 1) {
+    if (inputs[index].value === '') {
       return true;
     }
   }
@@ -42,8 +42,7 @@ buttonEnter.addEventListener('click', () => {
   alert(showImput.value);
 });
 
-function removePersonalizado () {
-  const inputs = document.querySelectorAll('.input-form');
+function removePersonalizado() {
   const genderF = document.getElementById('feminino');
   const genderM = document.getElementById('masculino');
   const section = document.getElementById('div-gender');
@@ -57,7 +56,6 @@ function generoPersonalizado() {
   const gender = document.getElementById('personalizado');
   const section = document.getElementById('div-gender');
   const input = document.createElement('input');
-  const inputs = document.querySelectorAll('.input-form');
 
   input.className = 'geral input-form';
 
