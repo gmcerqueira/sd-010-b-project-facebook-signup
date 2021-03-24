@@ -236,7 +236,8 @@ header {
 }
 
 
-@media screen and (max-width: 899px) {
+@media screen and ( max-width : 899px ) {
+
   body {
     background: none;
     background-color: white;
@@ -271,6 +272,7 @@ header {
   .form-group label {
     display: none;
   }
+
   .form-group {
     padding-right: 0;
   }
@@ -310,7 +312,6 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
   }
  
   #screen-small button {

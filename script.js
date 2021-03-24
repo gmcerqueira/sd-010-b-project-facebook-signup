@@ -2,7 +2,8 @@
 window.onresize = () => {
   const itemHidden = document.getElementById('screen-small');
   itemHidden.style.display = 'none';
-  if (screen.width < 600) {
+  let screen = window.innerWidth;
+  if (screen < 899) {
     itemHidden.style.display = 'flex';
   }
 }
