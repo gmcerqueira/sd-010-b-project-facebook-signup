@@ -48,11 +48,11 @@ maleRadio.addEventListener('click', () => {
   }
 });
 // 20°
-// const getName = document.getElementById('firstname');
-// const getLastName = document.getElementById('lastname');
-// getButton.addEventListener('click', () => {
-//   const getInvalid = document.getElementById('camposInvalidos');
-//   if (getName.value && getLastName.value) {
-//     getInvalid.innerHTML = (`Olá ${getName.value} ${getLastName.value}`);
-//   }
-// });
+const getName = document.getElementById('firstname');
+const getLastName = document.getElementById('lastname');
+getButton.addEventListener('click', () => {
+  const getInvalid = document.getElementById('nomeUsuario');
+  if (getName.value && getLastName.value) {
+    getInvalid.innerHTML = (`Olá ${getName.value} ${getLastName.value}`);
+  }
+});
