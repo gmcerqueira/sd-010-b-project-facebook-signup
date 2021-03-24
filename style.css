@@ -9,18 +9,25 @@ body {
 }
 
 /* Inicio da tag header */
-.top-bar {
+
+header {
   background-color: rgb(66, 103, 178);
   background-image: linear-gradient(#4e69a2, #3b5998 50%);
   display: flex;
   justify-content: space-around;
+  align-items: center;
+}
+
+.top-bar {
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 13px;
 }
 
 .facebook-logo {
   width: 170px;
   height: 64px;
-  display: flex;
-  align-self: flex-start;
 }
 
 .facebook-login {
@@ -54,22 +61,19 @@ body {
   margin-bottom: 10px;
 }
 
-#user-email-phone input , #user-password input {
+#user-email-phone , #user-password  {
   border: 1px solid black;
   padding: 3px;
   width: 150px;
 }
 
-#user-password {
-  padding-bottom: 5px;
-}
-
-#esqueceu-conta-label {
+#reset {
   color: #9cb4d8;
+  padding-top: 5px;
   text-decoration: none;
 }
 
-#esqueceu-conta-label:hover {
+#reset:hover {
   text-decoration: underline;
 }
 

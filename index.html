@@ -8,33 +8,30 @@
   <title>Facebook</title>
 </head>
 <body>
-  <header class="top-bar">
-    <div>
-      <a href="index.html"><img src="imgs/facebook-logo.png" alt="" class="facebook-logo top-bar-logo"></a>
-    </div> 
-    <form action="" method="get" class="facebook-login" enctype="multipart/form-data">
-      <div class="form-group">
-        <label for="user-email-phone" id="user-email-phone-label">
-          Email ou Telefone
-        </label>
-        <div id="user-email-phone">
-          <input type="email" name="email" id="user-email-phone" required>
+
+  <header>
+    <div class="top-bar">
+      <div>
+        <a href="index.html"><img src="imgs/facebook-logo.png" alt="" class="facebook-logo top-bar-logo"></a>
+      </div> 
+      <form class="facebook-login" action="" enctype="multipart/form-data">
+        <div class="form-group">
+          <label id="user-email-phone-label" for="user-email-phone">Email ou telefone</label>
+          <input type="email" id="user-email-phone">
         </div>
-      </div>
-      <div class="form-group">
-        <label for="user-password" id="user-password-label">
-          Senha
-        </label>        
-        <div id="user-password">
-          <input type="password" name="senha" id="user-password" required>
-        </div>  
-        <a href="#" id="esqueceu-conta-label">Esqueceu a conta?</a> 
-      </div>
-      <div class="form-control">
-        <button type="submit" id="button-login">Entrar</button>
-      </div>
-    </form>    
+        <div class="form-group">
+          <label id="user-password-label" for="user-password">Senha</label>
+          <input type="password" id="user-password">
+          <a href="#" id="reset">Esqueceu a conta?</a>
+        </div>
+        <div class="form-control">
+          <button id="button-login">Entrar</button>
+        </div>
+      </form>  
+    </div>  
   </header>
+
+
   <main class="main-content">    
     <section class="left-content">
       <div class="content-slogan">
