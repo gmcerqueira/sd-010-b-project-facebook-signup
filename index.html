@@ -13,24 +13,37 @@
         <form action="" class="facebook-login">
             <div class="form-group">
                 <label for="user-email-phone-label" id="user-email-phone-label">Email ou telefone</label>
+<<<<<<< HEAD
                 <input required type="text" id="user-email-phone">
                 <div class="formulario-column">
+=======
+                <input type="text" id="user-email-phone">
+                <div class="formulario-column" hidden>
+>>>>>>> def48ff8f609a2720c6d977a8bec3cae50c78c2f
                     <label for="email">Email ou telefone</label>
                     <input required type="text" id="email">
                 </div>
             </div>
             <div class="form-group">
                 <label for="user-password-label" id="user-password-label">Senha</label>
+<<<<<<< HEAD
                 <input required type="password" id="user-password">
                 <div class="formulario-column">
                     <label for="Senha">Senha </label>
                     <input required type="password" id="Senha">
                     <a href="">Esqueceu a conta?</a>
+=======
+                <input type="password" id="user-password">
+                <div class="formulario-column" hidden>
+                    <label for="Senha">Senha </label>
+                    <input type="password" id="Senha">
+>>>>>>> def48ff8f609a2720c6d977a8bec3cae50c78c2f
                 </div>
+                <a href="">Esqueceu a conta?</a>
             </div>
             <div class="form-control">
                 <button id="button-login">Entrar</button>
-                <div class="formulario-column">
+                <div class="formulario-column" hidden>
                     <button class="button-login">Entrar</button>
                 </div>
             </div>
@@ -50,24 +63,22 @@
                 <div class="cadastro-nome">
                 <input required type="text" name="firstname" placeholder="Nome" >
                 <input required type="text" name="lastname" placeholder="Sobrenome">
-            </div>
+                </div>
                 <div class="cadastro-email">
-                <input required type="text" name="phone_email" placeholder="Celular ou email">
-                <input required type="password" name="password" placeholder="Nova senha">
-            </div>
-               
-                
-                    <label for="" id="label-birthdate"> Data de nascimento</label>
+                    <input required type="text" name="phone_email" placeholder="Celular ou email">
+                    <input required type="password" name="password" placeholder="Nova senha">
+                </div>
+                <label for="" id="label-birthdate"> Data de nascimento</label>
                 <input required type="text" name="birthdate" placeholder="dd/mm/aaaa">
-
                 <div>
                     <label for="" id="label-gender">Gênero</label>
-
-                    <input required type="radio" name="gender"> Feminino
-                    <input required type="radio" name="gender"> Masculino
-                    <input required type="radio" name="gender"> Personalizado
+                    <input required type="radio" class="input-gender" name="gender" value="Feminino">
+                    <label for="female">Feminino</label>
+                    <input required type="radio" class="input-gender" name="gender" value="Masculino">
+                    <label for="male">Masculino</label>
+                    <input required type="radio" class="input-gender" name="gender" value="Personalizado">
+                    <label for="custon">Personalizado</label>
                 </div>
-
                 <button type="submit" id="facebook-register">Cadastre-se</button>
             </form>
         </div>

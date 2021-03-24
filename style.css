@@ -13,6 +13,16 @@
 .top-bar .facebook-login {
   display: flex;
   align-self: flex-end;
+  color: white;
+}
+
+.facebook-login a {
+  color: rgb(163, 185, 228);
+  font-weight: 400;
+  font-size: 13px;
+  padding: 2px 0;
+  margin-top: 2px;
+  text-decoration: none;
 }
 
 .formulario-column {
@@ -23,9 +33,10 @@
 .form-group {
   display: flex;
   flex-direction: column;
+  padding: 0 5px;
 }
 
-.form-control , .formulario-column {
+.form-control {
   align-self: flex-end;
 }
 
