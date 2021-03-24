@@ -1,7 +1,7 @@
-const enterButton = document.querySelector("#button-login");
+const enterButton = document.querySelector('#button-login');
 
-enterButton.addEventListener("click", () => {
-  alert(document.getElementById("user-email-phone").value);
+enterButton.addEventListener('click', () => {
+  alert(document.getElementById('user-email-phone').value);
 });
 // const selectOther = document.querySelector('#other');
 // selectOther.addEventListener('click' , () => {
@@ -10,13 +10,13 @@ enterButton.addEventListener("click", () => {
 //   txt.name = 'gender-custom';
 //   txt.placeholder = 'Gênero (opcional)'
 // });
-const forms = document.querySelector("#formulario");
-forms.addEventListener("submit" , () => {
-const Cadname = document.getElementById("name");
-const CadLastName = document.getElementById("sName") ;
-const CadPhoneEmail = document.getElementById("foEmail");
-const CadPassword = document.getElementById("foSenha");  
-const CadNiver = document.getElementById("label-birthdatee");
+const forms = document.querySelector('#formulario');
+forms.addEventListener('submit', function() {
+const Cadname = document.getElementById('name');
+const CadLastName = document.getElementById('sName');
+const CadPhoneEmail = document.getElementById('foEmail');
+const CadPassword = document.getElementById('foSenha');  
+const CadNiver = document.getElementById('label-birthdatee');
 const CadRadios = document.querySelector('input[name="gender"]:checked');
   
   if(Cadname.value == ""){
