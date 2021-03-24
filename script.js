@@ -3,49 +3,46 @@ const enterButton = document.querySelector('#button-login');
 enterButton.addEventListener('click', () => {
   alert(document.getElementById('user-email-phone').value);
 });
-// const selectOther = document.querySelector('#other');
-// selectOther.addEventListener('click' , () => {
-//   const txt = document.createElement('input')
-//   txt.type = 'Text';
-//   txt.name = 'gender-custom';
-//   txt.placeholder = 'Gênero (opcional)'
-// });
-const forms = document.querySelector('#formulario');
-forms.addEventListener('submit', function() {
-const Cadname = document.getElementById('name');
-const CadLastName = document.getElementById('sName');
-const CadPhoneEmail = document.getElementById('foEmail');
-const CadPassword = document.getElementById('foSenha');  
-const CadNiver = document.getElementById('label-birthdatee');
-const CadRadios = document.querySelector('input[name="gender"]:checked');
-  
-  if(Cadname.value == ""){
-    alert("Campos inválidos");
-    return;
-  }
-  
- if(CadLastName.value == ""){
-  alert("Campos inválidos");
-  return;
- }
 
- if(CadPhoneEmail.value == ""){
-  alert("Campos inválidos");
-  return;
- }
+ const form = document.getElementById('formulario');
 
- if(CadPassword.value == ""){
-  alert("Campos inválidos");
-  return;
- }
+ form.addEventListener('submit', validador);
 
- if(CadNiver.value == "" ){
-  alert("Campos inválidos");
-  return;
- }
-   
- if(CadRadios == null){
-  alert("Campos inválidos");
-  return;
- }
-});
+ function validador (){
+  var Cadname = document.getElementById("name");
+  var Cadlastname = document.getElementById("sName");
+  var Cadphone_email = document.getElementById("foEmail");
+  var Cadpassword = document.getElementById("foSenha");
+  var Cadbirthdate = document.getElementById("label-birthdate");
+  var Cadradio = document.querySelector('input[name="gender"]:checked');
+
+    if (Cadname.value == "") {
+      alert("Campos inválidos");
+      return;
+    }
+
+    if (Cadlastname.value == "") {
+      alert("Campos inválidos");
+      return;
+    }
+
+    if (Cadphone_email.value == "") {
+      alert("Campos inválidos");
+      return;
+    }
+
+    if (Cadpassword.value == "") {
+      alert("Campos inválidos");
+      return;
+    }
+
+    if (Cadbirthdate.value == "") {
+      alert("Campos inválidos");
+      return;
+    }
+    
+    if (Cadradio == null) {
+      alert("Campos inválidos");
+      return;
+    }
+}
