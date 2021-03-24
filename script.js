@@ -42,22 +42,30 @@ buttonEnter.addEventListener('click', () => {
   alert(showImput.value);
 });
 
+function removePersonalizado () {
+  const inputs = document.querySelectorAll('.input-form');
+  const genderF = document.getElementById('feminino');
+  const genderM = document.getElementById('masculino');
+  const section = document.getElementById('div-gender');
+
+  if ((genderF.checked || genderM.checked) && (inputs.length === 6)) {
+    section.removeChild(section.lastChild);
+  }
+}
+
 function generoPersonalizado() {
   const gender = document.getElementById('personalizado');
   const section = document.getElementById('div-gender');
   const input = document.createElement('input');
   const inputs = document.querySelectorAll('.input-form');
-  const genderF = document.getElementById('feminino');
-  const genderM = document.getElementById('masculino');
 
   input.className = 'geral input-form';
-  if (gender.checked && (inputs.length == 5)) {
+
+  if (gender.checked && (inputs.length === 5)) {
     section.appendChild(input);
   }
 
-  if ((genderF.checked || genderM.checked) && (inputs.length == 6)) {
-    section.removeChild(section.lastChild);
-  }
+  removePersonalizado();
 }
 
 function verificarGenero() {
