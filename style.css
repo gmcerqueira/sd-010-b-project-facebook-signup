@@ -39,7 +39,7 @@
   align-self: flex-end;
 }
 
-form div input {
+header form div input {
   border: solid 1px black;
   height: 19px;
 }
