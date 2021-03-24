@@ -28,6 +28,7 @@ function validaRadioButton() {
     alert('Campos inválidos');
   }
 }
+
 function valida() {
   validaInput();
   validaRadioButton();
