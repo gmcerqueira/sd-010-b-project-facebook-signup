@@ -21,21 +21,17 @@ body {
   padding-top: 13px;
   display: flex;
 }
-
+/* 
 .top-bar-logo {
   display: flex;
   justify-content: flex-start;
   flex-grow: 1;
-}
+  /* align-self:flex-start; */
+} */
 
 .facebook-logo {
   width: 170px;
   height: 64px;
-}
-
-.top-bar-form {
-  display: flex;
-  align-content: flex-end;
 }
 
 .facebook-login {
