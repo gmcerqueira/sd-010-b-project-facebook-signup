@@ -1,7 +1,5 @@
 const inputEmail = document.querySelector('#user-email-phone');
 const btnEnviar = document.querySelector('#button-login');
-const getName = document.getElementById('firstname');
-const getLastName = document.getElementById('lastname');
 
 function alertEmail() {
   alert(inputEmail.value);
@@ -50,9 +48,11 @@ maleRadio.addEventListener('click', () => {
   }
 });
 // 20°
-getButton.addEventListener('click', () => {
-  const getInvalid = document.getElementById('camposInvalidos');
-  if (getName.value && getLastName.value) {
-    getInvalid.innerHTML = (`Olá ${getName.value} ${getLastName.value}`);
-  }
-});
+// const getName = document.getElementById('firstname');
+// const getLastName = document.getElementById('lastname');
+// getButton.addEventListener('click', () => {
+//   const getInvalid = document.getElementById('camposInvalidos');
+//   if (getName.value && getLastName.value) {
+//     getInvalid.innerHTML = (`Olá ${getName.value} ${getLastName.value}`);
+//   }
+// });
