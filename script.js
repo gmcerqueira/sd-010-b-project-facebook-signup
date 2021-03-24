@@ -23,11 +23,10 @@ function validaInput() {
 function validaRadioButton() {
   const gender = document.getElementsByClassName('radio-button');
 
-  if (gender[0].checked === false) {
-    if (gender[1].checked === false && gender[2].checked === false) {
-        alert('Campos inválidos');
-      }
-    }
+  if ((gender[0] && gender[1] && gender[2]).checked === false) {
+    alert('Campos inválidos');
+  }
+}
 
 function valida() {
   validaInput();
