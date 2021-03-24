@@ -74,7 +74,7 @@ registerBtn.addEventListener('click', (event) => {
 
     rightContent.innerHTML = `
       <p class="user-register">
-      Olá, ${inputsRegister[0].value} ${inputsRegister[1].value}!</p>
+      Olá, ${inputsRegister[0].value} ${inputsRegister[1].value}</p>
       <hr>
       <p class="user-register"><strong>Registro completo!</strong></p>
       <p class="user-register"><strong>Email:</strong>
