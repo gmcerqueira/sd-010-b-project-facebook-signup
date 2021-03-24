@@ -186,3 +186,11 @@ span {
   border-radius: 3px;
   background-image: linear-gradient(to bottom, rgb(159, 223, 133), rgb(87, 136, 67));
 }
+
+#gender-optional {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 5px;
+  border: 1px solid rgb(138, 165, 247);
+  border-radius: 3px;
+}
