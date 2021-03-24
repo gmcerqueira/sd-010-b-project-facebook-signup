@@ -3,20 +3,17 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   margin: auto;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 12px;
   background: linear-gradient(white, #d3d8e8);
-  height: 53vh;
+  height: 630px;
 }
-
 header {
   background-color: rgb(66, 103, 178);
   margin-bottom: 13px;
 }
-
 .top-bar {
   display: flex;
   height: 78px;
@@ -24,64 +21,46 @@ header {
   justify-content: space-between;
   align-items: center;
   color: white;
-  width: 77%;
+  width: 1100px;
   margin: auto;
 }
-
 .facebook-logo {
   display: flex;
   justify-content: left;
   align-items: flex-start;
 }
-
 .facebook-login {
   display: flex;
   justify-content: right;
   align-items: flex-end;
 }
-
 .form-group {
   display: flex;
   flex-direction: column;
   margin: 0 14px 0 0;
 }
-
 .form-control {
   display: flex;
   align-self: flex-end;
 }
-
-#button-login {
-  color: white;
-  background-color: rgb(66, 103, 178);
-  border-color: rgb(50, 83, 139);
-  cursor: pointer;
-  font-weight: 600;
-  line-height: 1.5;
-  border-radius: 4px;
-  padding: 2px 6px;
-}
-
-#button-login:active , #button-login:focus , #button-login:hover {
-  opacity: 0.7;
-}
-
-main label {
-  font-size: 14px;
-}
-
-.main-content {
-  display: flex;
-  width: 77%;
+main {
   margin: auto;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 12px;
 }
 
+/* CÓDIGO DO LP */
+main label {
+  font-size: 14px;
+}
+.main-content {
+  display: flex;
+  justify-content: center;
+  width: 1100px;
+}
 .left-content {
   width: 800px;
 }
-
 .left-content p {
   color: #0e385f;
   font-size: 20px;
@@ -91,28 +70,16 @@ main label {
   width: 450px;
   word-spacing: -1px;
 }
-
 .right-content {
   width: 300px;
   align-content: stretch;
 }
-
 .signUp {
   display: flex;
   justify-content: start;
 }
-
-.form-signUp input {
-  width: 100%;
-}
-
 .gender-radios {
   display: flex;
-}
-
-.gender-radios input {
-  margin-right: 5px;
-  margin-left: 5px;
 }
 
 h1 {
@@ -120,7 +87,6 @@ h1 {
   color: #333;
   margin: 5px 0;
 }
-
 .quick-easy {
   font-size: 19px;
   color: #1d2129;
@@ -142,7 +108,6 @@ h1 {
 .name {
   margin-right: 8px;
 }
-
 #facebook-register {
   font-size: 19px;
   padding: 7px 20px;
@@ -150,17 +115,4 @@ h1 {
   background: linear-gradient(#67ae55, #578843);
   border-radius: 5px;
   color: white;
-}
-
-#facebook-register:active , #facebook-register:focus , #facebook-register:hover {
-  opacity: 0.7;
-}
-
-footer nav ul {
-  list-style: none;
-  display: flex;
-}
-
-footer nav ul li {
-  margin-right: 8px;
 }
