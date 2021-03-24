@@ -45,6 +45,17 @@
 }
 
 .form-cadastro {
-  display: flex;
+  flex-direction: column;
   align-items: center;
+}
+
+.cadastro-nome {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.cadastro-email {
+  flex-direction: column;
+  
 }
