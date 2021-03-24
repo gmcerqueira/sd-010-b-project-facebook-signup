@@ -58,6 +58,8 @@ function generoPersonalizado() {
   const input = document.createElement('input');
 
   input.className = 'geral input-form';
+  input.setAttribute('name', 'gender-custom');
+  input.setAttribute('placeHolder', 'Gênero (opcional)');
 
   if (gender.checked && (inputs.length === 5)) {
     section.appendChild(input);
