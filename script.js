@@ -2,7 +2,7 @@ const radio = document.querySelectorAll('.radio');
 const rightContent = document.querySelector('.right-content');
 const signIn = document.querySelector('#button-login');
 const submitBtn = document.getElementById('facebook-register');
-// const initialEl = document.querySelector('.initial');
+const initialEl = document.querySelector('.initial');
 const inputList = document.querySelectorAll('#register-form input');
 const btn = document.getElementById('custom-gender');
 const btn1 = document.getElementById('male-gender');
@@ -51,12 +51,13 @@ function getAttributes(array) {
 }
 
 function showFields() {
-  const greetings = ` Olá, ${inputList[0].value} ${inputList[1].value}
-    ${inputList[2].value}
-    ${inputList[3].value}
-    ${inputList[4].value} `;
+  const dataList = getAttributes(inputList);
+  const greetings = ` Olá, ${dataList[0].value} ${dataList[1].value}
+    ${dataList[2].value}
+    ${dataList[3].value}
+    ${dataList[4].value} `;
   rightContent.innerText = greetings;
-  // initialEl.style.display = 'none';
+  initialEl.style.display = 'none';
 }
 
 function validateDate() {
