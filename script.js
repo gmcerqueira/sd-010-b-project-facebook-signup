@@ -57,6 +57,7 @@ function printText() {
 }
 
 // Referêcia utilizada para realizar o requisito 20: https://stackoverflow.com/questions/2010892/storing-objects-in-html5-localstorage //
+// Referêcia utilizada para selecionar o gênero: https://github.com/tryber/sd-010-b-project-facebook-signup/blob/alessandra-rezende-facebook-project/script.js
 
 function guardaFormulario() {
   const formPreenchido = {
@@ -65,11 +66,39 @@ function guardaFormulario() {
     password: document.querySelector('#password').value,
     mail: document.querySelector('.phone_email').value,
     birthDate: document.getElementById('birthdate').value,
-    gender: document.querySelector('.selected').value,
+    gender: document.querySelector('input[name="gender"]:checked').value,
   };
   localStorage.setItem('formPreenchido', JSON.stringify(formPreenchido));
   printText();
 }
 
+function invalidation() {
+  const getParagraph = document.querySelector('.validation');
+  getParagraph.innerText = 'Campos inválidos';
+  getParagraph.style.backgroundColor = 'yellow';
+  getParagraph.style.color = 'red';
+  getParagraph.style.fontSize = '15px';
+}
+
+function validation() {
+  let count = 0;
+  const inputs = {
+    first: document.querySelector('.firstname').value,
+    last: document.querySelector('.lastname').value,
+    password: document.querySelector('#password').value,
+    mail: document.querySelector('.phone_email').value,
+    birthDate: document.getElementById('birthdate').value,
+    gender: document.querySelector('input[name="gender"]:checked').value,
+  };
+  const arrayOfInfos = Object.values(inputs);
+  for (let index = 0; index < arrayOfInfos.length; index += 1) {
+    if (arrayOfInfos[index] === '') {
+      return invalidation();
+    }
+    count += 1;
+  }
+  if (count === arrayOfInfos.length) return guardaFormulario();
+}
+
 const btnCadastro = document.querySelector('#facebook-register');
-btnCadastro.addEventListener('click', guardaFormulario);
+btnCadastro.addEventListener('click', validation);

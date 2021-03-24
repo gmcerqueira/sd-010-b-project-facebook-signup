@@ -39,21 +39,22 @@
           <h1>Abra uma conta</h1>
           <p class="quick-easy">É rápido e fácil.</p>
           <form class="form" method="get" action="">
-            <input class="user-name firstname" type="text" name="firstname" placeholder="Nome" required minlength="2" maxlength="20" title="Campos inválidos">
-            <input class="user-name lastname" type="text" name="lastname" placeholder="Sobrenome" required minlength="2" maxlength="20" title="Campos inválidos"><br>
-            <input class="phone_email" type="text" name="phone_email" placeholder="Celular ou email" minlength="8" maxlength="100"required title="Campos inválidos"><br>
-            <input type="password" name="password" id="password" placeholder="Nova senha" minlength="6" maxlength="10" title="Campos inválidos" required><br>
+            <input type="text" class="user-name firstname" name="firstname" placeholder="Nome"  maxlength="20" t>
+            <input type="text" class="user-name lastname"  name="lastname"placeholder="Sobrenome"  maxlength="20" t><br>
+            <input type="text" class="phone_email" name="phone_email" placeholder="Celular ou email" maxlength="100" t><br>
+            <input type="password" name="password" id="password" placeholder="Nova senha" maxlength="10" t ><br>
             <label id="label-birthdate" for="birthdate">Data de nascimento</label><br>
-            <input type="text" name="birthdate" id="birthdate" placeholder="dd/mm/aaaa" required minlength="10" maxlength="10" title="Campos inválidos"><br>
+            <input type="text" name="birthdate" id="birthdate" placeholder="dd/mm/aaaa"   maxlength="10" t><br>
             <label for="gender" id="label-gender">Gênero</label><br>
             <label for="fem">
-            <input type="radio" name="gender" id="fem" required value="Feminino">Feminino</label>
+            <input type="radio" name="gender" id="fem" checked value="Feminino">Feminino</label>
             <label for="masc">
-            <input type="radio" name="gender" id="masc" required value="Masculino">Masculino</label>
+            <input type="radio" name="gender" id="masc"  value="Masculino">Masculino</label>
             <label id="teste" for="pers">
-            <input type="radio" name="gender" id="pers" required value="Personalizado">Personalizado</label><br>
+            <input type="radio" name="gender" id="pers"  value="Personalizado">Personalizado</label><br>
             <input type="text" name="gender-custom" class="oculta standby" placeholder="Gênero (opcional)"><br>
-            <button type="submit" id="facebook-register">Cadastre-se</button> 
+            <button type="submit" id="facebook-register">Cadastre-se</button>
+            <p class="validation"></p>
           </form>
         </div>
     </div>
