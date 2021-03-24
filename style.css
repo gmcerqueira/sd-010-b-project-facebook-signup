@@ -34,7 +34,13 @@
   padding: 0 5px;
 }
 
-.form-control , .formulario-column {
+.form-control {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.formulario-column {
   align-self: center;
 }
 
