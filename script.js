@@ -1,8 +1,22 @@
 const buttonLogin = document.getElementById('button-login');
 const emailValue = document.getElementById('user-email-phone');
+const fm = document.querySelector('#f');
+const mm = document.getElementById('m');
+let count = 0;
+
 buttonLogin.addEventListener('click', () => {
   alert(emailValue.value);
 });
+
+function testaRadio() {
+  if (fm.checked) {
+    localStorage.gender = 'Feminino';
+  } else if (mm.checked) {
+    localStorage.gender = 'Masculino';
+  } else {
+    localStorage.gender = 'Personalizado';
+  }
+}
 
 function secondRightContent() {
   const containerRC = document.querySelector('.right-content');
@@ -17,10 +31,11 @@ function secondRightContent() {
   const creatP = document.createElement('p');
   creatP.innerText = `Olá, ${localStorage.name} ${localStorage.lastName}
   E-mail: ${localStorage.email}
-  Data: ${localStorage.date}`;
+  Data: ${localStorage.date}
+  Genero: ${localStorage.gender}`;
   containerRC.innerHTML = '';
   containerRC.appendChild(creatP);
-  console.log('teste');
+  testaRadio();
 }
 
 function verifyInputs() {
@@ -29,13 +44,16 @@ function verifyInputs() {
   const errorMesage = document.getElementById('invalid-field');
 
   registerButton.addEventListener('click', (e) => {
-    for (let i = 0; i < inputs.length; i += 1) {
+    for (let i = 0; i < inputs.length - 1; i += 1) {
       if (inputs[i].value === '' || inputs[i].value === ' ') {
         errorMesage.innerHTML = 'Campos inválidos';
+        count += 1;
         e.preventDefault();
       }
     }
-    secondRightContent();
+    if (count === 0) {
+      secondRightContent();
+    }
   });
 }
 
