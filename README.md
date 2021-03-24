@@ -396,6 +396,7 @@ Caso você faça o download de bibliotecas externas, utilize o diretório libs (
 ### 20. Substitua o conteúdo do container com a classe right-content se o formulário estiver completamente preenchido e validado
 
   Pontos importantes:
+  * NENHUM `name` de input deve se repetir
   * Deve haver um texto no modelo "Olá, Jonh Doe" (substitua John Doe pelo nome e sobrenome preenchido no formulário)
   * Exibir o e-mail ou telefone
   * Não exibir a senha
