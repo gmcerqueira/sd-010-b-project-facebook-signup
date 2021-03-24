@@ -12,6 +12,10 @@
   align-items: center;
 }
 
+.facebook-logo {
+  align-self: flex-start;
+}
+
 .form-group {
   display: flex;
   flex-direction: column;
