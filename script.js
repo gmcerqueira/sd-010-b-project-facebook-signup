@@ -3,15 +3,35 @@ function validarCampos() {
 
   for (let index = 0; index < validateFields.length; index += 1) {
     if (validateFields[index].value === '') {
-      alert('Todos os campos são obrigatórios!');
-      break;
+      return true;
     }
   }
+  return false;
 }
 
+function validarGenero() {
+  const genders = document.getElementsByClassName('radio-gender');
+
+  for (let index = 0; index < 3; index += 1) {
+    if (genders[index].checked) {
+      return false;
+    }
+  }
+  return true;
+}
+
+//https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault
 function cadastrarButton() {
   const submitButton = document.getElementById('facebook-register');
-  submitButton.addEventListener('click', validarCampos);
+  submitButton.addEventListener('click', function (event) {
+    const div = document.getElementById('div-error')
+
+    if (validarCampos() || validarGenero()) {
+      div.innerHTML = 'Campos inválidos';
+      event.preventDefault();
+      console.log("aqui")
+    }
+  });
 }
 
 cadastrarButton();
@@ -28,7 +48,7 @@ function generoPersonalizado() {
   const section = document.getElementById('div-gender');
   const input = document.createElement('input');
 
-  input.setAttribute('class', 'geral');
+  input.className = 'geral input-form';
 
   if (gender.checked) {
     section.appendChild(input);

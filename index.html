@@ -40,24 +40,26 @@
       </p>
       <form action="" id="main-form">
         <div id="div-name">
-          <input type="text" name="firstname" id="firstname" placeholder="Nome" class="input-form" required>
-          <input type="text" name="lastname" id="lastname" placeholder="Sobrenome" class="input-form" required>
+          <input type="text" name="firstname" id="firstname" placeholder="Nome" class="input-form">
+          <input type="text" name="lastname" id="lastname" placeholder="Sobrenome" class="input-form">
         </div>
-        <input type="text" name="phone_email" id="phone_email" placeholder="Celular ou email" class="input-form" required>
-        <input type="password" name="password" id="password" placeholder="Nova senha" class="input-form" required>
+        <input type="text" name="phone_email" id="phone_email" placeholder="Celular ou email" class="input-form">
+        <input type="password" name="password" id="password" placeholder="Nova senha" class="input-form">
 
         <label for="birthdate" id="label-birthdate">Data de nascimento</label>
         <div id="div-birthdate">
-          <input type="birthdate" name="birthdate" id="birthdate" placeholder="dd/mm/aaaa" class="input-form" required>
+          <input type="birthdate" name="birthdate" id="birthdate" placeholder="dd/mm/aaaa" class="input-form">
         </div>
         
         <label for="gender" id="label-gender">Gênero</label>
         <div id="div-gender">
           <input type="radio" name="gender" class="radio-gender" id="feminino" value="Feminino">Feminino
-          <input type="radio" name="gender" class="radio-gender" id="masculino" value="Masculino" checked>Masculino
+          <input type="radio" name="gender" class="radio-gender" id="masculino" value="Masculino">Masculino
           <input type="radio" name="gender" class="radio-gender" id="personalizado" value="Personalizado">Personalizado
         </div>
 
+        <div id="div-error">
+        </div>
         <button type="submit" id="facebook-register">Cadastre-se</button>
       </form>
     </section>
