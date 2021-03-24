@@ -7,17 +7,14 @@ function alerta() {
   alert(user.value);
 }
 
-// function verificarTexto() {
-//   if (cadastro.firstname.value === '' || cadastro.lastname.value === '' || cadastro.phone_email.value === '' || cadastro.password.value === '' || cadastro.birthdate.value === '') {
-//      alert ("Campos inválidos");
-//   };
-// }
-
-// function verificarTexto(){
-//   if (cadastro.lastname.value == "")
-//   {alert ("Campos inválidos") }
-//   }
-// Peguei informações desse site: http://www.linhadecodigo.com.br/artigo/3503/configurando-funcoes-de-um-formulario-html-com-javascript.aspx#ixzz6ptmsOtje
+function verificarTexto() {
+  let campos = document.querySelectorAll('.teste')
+  campos.forEach((item, index) => {
+    if (item.value == '') {
+      campos[index].value = "Campos inválidos";
+    }
+  })
+}
 
 //  Chamadas das funções:
 submitBtn.addEventListener('click', alerta);
