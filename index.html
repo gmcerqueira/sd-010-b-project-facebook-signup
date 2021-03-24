@@ -45,9 +45,38 @@
             <h1>Abra uma conta</h1>
 
             <div class="quick-easy">É rápido e fácil.</div>
-            <form action=""></form>
+
+            <form action="" method="POST">
+
+                <div class="first-last-name">
+                    <input type="text" name="firstname" placeholder="Nome">
+                    <input type="text" name="lastname" placeholder="sobrenome">
+                </div>
+
+                <div>
+                    <input type="text" name="phone_email" placeholder="Celular ou email">
+                </div>
+
+                <div>
+                    <input type="password" name="password" placeholder="Nova senha">
+                </div>
+
+                <div>
+                   <label id="label-birthdate" for="">Data de nascimento</label>
+                   <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
+                </div>
+
+                <div>
+                    <label id="label-gender" for="">Gênero</label>
+                    <br>
+                    <input type="radio" name="gender" value="Feminino">Feminino
+                    <input type="radio" name="gender" value="Masculino">Masculino
+                    <input type="radio" name="gender" value="Personalizado">Personalizado
+                </div>
+
+            </form>
         </div>
-        
+
     </main>
 
     <script src="script.js"></script>
