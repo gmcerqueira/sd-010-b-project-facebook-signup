@@ -54,7 +54,11 @@
 }
 
 #label-gender {
-  display: block;
+  display: flex;
+  flex-direction: row;
+  margin: 16px;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .nomeSobrenome {
@@ -88,4 +92,13 @@ h4 {
 
 .esconder {
   opacity: 0;
+}
+
+.gender {
+  margin: 2px;
+}
+
+#facebook-register {
+  padding: 5px;
+  margin: 20px auto 10px;
 }
