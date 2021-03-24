@@ -12,7 +12,14 @@
   justify-content: space-between;
 }
 
+#button-login {
+  background-color: rgb(66, 103, 178);
+  flex-direction: column;
+  align-self: center;
+}
+
 .form-group {
+  padding: 5px;
   display: flex;
   flex-direction: column;
 }
@@ -46,3 +53,4 @@
 #fullname {
   display: flex;
 }
+
