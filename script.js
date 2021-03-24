@@ -13,7 +13,6 @@ enterButton.addEventListener('click', () => {
 //   txt.placeholder = 'Gênero (opcional)'
   
 // });
-
 const forms = document.querySelector('#formulario');
 forms.addEventListener('submit' , () => {
 const Cadname = document.getElementById('name');
@@ -23,35 +22,34 @@ const CadPassword = document.getElementById('foSenha');
 const CadNiver = document.getElementById('label-birthdatee');
 const CadRadios = document.querySelector('input[name="gender"]:checked');
   
-  if(Cadname.value == ""){
-    alert("Campos inválidos");
-    return;
-  }
+ if(Cadname.value == ""){
+  alert("Campos inválidos");
+  return;
+ }
   
-  if(CadLastName.value == ""){
-    alert("Campos inválidos");
-    return;
-  }
+ if(CadLastName.value == ""){
+  alert("Campos inválidos");
+  return;
+ }
 
-  if(CadPhoneEmail.value == ""){
-    alert("Campos inválidos");
-    return;
-  }
+ if(CadPhoneEmail.value == ""){
+  alert("Campos inválidos");
+  return;
+ }
 
-  if(CadPassword.value == ""){
-    alert("Campos inválidos");
-    return;
-  }
+ if(CadPassword.value == ""){
+  alert("Campos inválidos");
+  return;
+ }
 
-  if(CadNiver.value == "" ){
-    alert("Campos inválidos");
-    return;
-    
-  }
+ if(CadNiver.value == "" ){
+  alert("Campos inválidos");
+  return;
+ }
    
-  if(CadRadios == null){
-    alert("Campos inválidos");
-    return;
-  }
-
+ if(CadRadios == null){
+  alert("Campos inválidos");
+  return;
+ }
 });
+
