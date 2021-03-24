@@ -39,4 +39,4 @@ function validador() {
     alert('Campos inválidos');
   }
 }
-
+validador();
