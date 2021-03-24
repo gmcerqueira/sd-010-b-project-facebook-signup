@@ -39,7 +39,7 @@ function validaRadioButton() {
 function valida(event) {
   if (validaInput() === true || validaRadioButton() === true) {
     event.preventDefault();
-    textoCamposInvalidos.innerHTML = 'Campos invalidos';
+    textoCamposInvalidos.innerHTML = 'Campos inválidos';
   }
 }
 
