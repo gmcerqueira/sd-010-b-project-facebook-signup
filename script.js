@@ -1,8 +1,13 @@
-// Importa os input's da área gênero do form de cadastro
+// variaveis para o item 19
 const genderCustom = document.getElementById('gender-custom');
 const genderPer = document.getElementById('gender-per');
 const genderMasc = document.getElementById('gender-masc');
 const genderFem = document.getElementById('gender-fem');
+// variaveis para o item 18 e 20
+const btnCadastrase = document.querySelector('#facebook-register');
+const inputs = document.querySelectorAll('.input');
+const radios = document.querySelectorAll('.gender-radio');
+
 
 // cria um alert com o valor digitado no input email ou telefone
 function btnLogin() {
@@ -31,13 +36,8 @@ function outroGenreno() {
   });
 }
 
-btnLogin();
-outroGenreno();
-
-const btnCadastrase = document.querySelector('#facebook-register');
-
+// verifica de os input com nome, sobrenome, data, email não estão vazios
 function verificaInputs() {
-  const inputs = document.querySelectorAll('.input');
   let validacaoInput = true;
   for (let index = 0; index < inputs.length; index += 1) {
     if (inputs[index].value === '') {
@@ -47,8 +47,8 @@ function verificaInputs() {
   return validacaoInput;
 }
 
+// verifica se os radio-buttons estão marcados
 function verificaRadios() {
-  const radios = document.querySelectorAll('.gender-radio');
   let validacaoRadios = false;
   for (let index = 0; index < radios.length; index += 1) {
     if (radios[index].checked) {
@@ -58,6 +58,8 @@ function verificaRadios() {
   return validacaoRadios;
 }
 
+// analise se ambas as funçoes de validação (input e radio) estão preenchidos
+// printa na tela caso estejam vazios
 function cadastroVerificacao() {
   const validacao = document.querySelector('#validacao');
   const resultado = document.createElement('div');
@@ -71,8 +73,8 @@ function cadastroVerificacao() {
   return ativacao;
 }
 
+// retorna valor do radio-button marcado
 function opicaoRadio() {
-  const radios = document.querySelectorAll('.gender-radio');
   for (let index = 0; index < radios.length; index += 1) {
     if (radios[index].checked === true) {
       return radios[index].value;
@@ -80,9 +82,9 @@ function opicaoRadio() {
   }
 }
 
+// funão do botão Cadastra-se, se formulário preenchido printa na tela os valores
 btnCadastrase.addEventListener('click', (event) => {
   event.preventDefault();
-  const inputs = document.querySelectorAll('.input');
   const conteudo = document.querySelector('.right-content');
   if (cadastroVerificacao()) {
     conteudo.innerHTML = `Olá, ${inputs[0].value} ${inputs[1].value}, 
@@ -91,3 +93,6 @@ btnCadastrase.addEventListener('click', (event) => {
     genero: ${opicaoRadio()}`;
   }
 });
+
+btnLogin();
+outroGenreno();
