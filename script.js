@@ -31,3 +31,20 @@ function addOtherGender() {
 }
 
 addOtherGender();
+
+function formError() {
+  const getButton = document.querySelector('#facebook-register');
+
+  getButton.addEventListener('click', () => {
+    const error = document.querySelector('.error');
+    const inputName = document.querySelector('#name');
+
+    if (!inputName.value.length) {
+      error.style.display = 'inline';
+    }
+  });
+
+  return false;
+}
+
+formError();

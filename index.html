@@ -39,20 +39,16 @@
       <p class="quick-easy">É rápido e fácil.</p>
       <form action="get" >
         <div>
-        <input type="text" id="name" placeholder="Nome" name="firstname" required oninvalid="setCustomValidity('Campos inválidos')" 
-        onchange="setCustomValidity('')">
-        <input type="text" id="name" placeholder="Sobrenome" name="lastname" required oninvalid="setCustomValidity('Campos inválidos')" 
-        onchange="setCustomValidity('')">
+        <input type="text" id="name" placeholder="Nome" name="firstname">
+        <span class="error">Campos inválidos</span>
+        <input type="text" id="name" placeholder="Sobrenome" name="lastname">
       </div>
-        <input type="text" placeholder="Celular ou email" name="phone_email" required oninvalid="setCustomValidity('Campos inválidos')" 
-        onchange="setCustomValidity('')">
-        <input type="password" placeholder="Nova senha" name="password" required oninvalid="setCustomValidity('Campos inválidos')" 
-        onchange="setCustomValidity('')">
+        <input type="text" placeholder="Celular ou email" name="phone_email">
+        <input type="password" placeholder="Nova senha" name="password">
         <br>
         <label for="" id="label-birthdate">Data de nascimento</label>
         <input id="label-birthdate" type="text" name="birthdate" 
-        placeholder="dd/mm/aaaa" required oninvalid="setCustomValidity('Campos inválidos')" 
-        onchange="setCustomValidity('')">
+        placeholder="dd/mm/aaaa">
         <br>
         <label for="" class="label-content" id="label-gender">Gênero</label>
         <div class="radios">
