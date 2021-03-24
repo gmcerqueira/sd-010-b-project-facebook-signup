@@ -96,3 +96,10 @@ h1 {
   position: absolute;
   margin-top: 25px;
 }
+
+#facebook-register {
+  background-color: #42b72a;
+  color: white;
+  padding: 10px;
+  margin-top: 10px;
+}
