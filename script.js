@@ -80,5 +80,5 @@ button.addEventListener('click', alerta);
 
 const mainContent = document.createElement('div');
 mainContent.className = 'main-content';
-mainContent.style.flex = 'flex';
+mainContent.style.display = 'flex';
 spawn(mainContent);
