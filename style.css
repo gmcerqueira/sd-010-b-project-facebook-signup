@@ -36,11 +36,6 @@
   padding: 0 5px;
 }
 
-.facebook-login .form-control {
-  flex-direction: column;
-  align-self: center;
-}
-
 .form-control {
   align-self: flex-end;
 }
