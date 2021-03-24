@@ -47,10 +47,15 @@ function newP() {
   document.querySelector('.facebook-form').appendChild(newPar);
 }
 
-facebookRegister.addEventListener('click', () => {
+function checkBoth() {
   checkFirst();
   checkSecond();
   if (checkFirst() === true || checkSecond() === true) {
     newP();
   }
+}
+
+facebookRegister.addEventListener('click', (e) => {
+  e.preventDefault();
+  checkBoth();
 });
