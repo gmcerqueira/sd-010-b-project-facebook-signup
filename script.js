@@ -4,17 +4,17 @@ enterButton.addEventListener('click', () => {
   alert(document.getElementById('user-email-phone').value);
 });
 
-const form = document.getElementById('formulario');
 
+const form = document.getElementById('formulario');
+form.addEventListener('submit', validador)
 function validador() {
-  form.addEventListener('submit', validador);
   const CadName = document.getElementById('name');
   const CadLastName = document.getElementById('sName');
   const CadPhoneEmail = document.getElementById('foEmail');
   const CadPassword = document.getElementById('foSenha"');
   const CadBirthdate = document.getElementById('label-birthdate');
   const CadRadio = document.querySelector('input[name="gender"]:checked');
-  const
+  
   if (CadName.value === '') {
     alert('Campos inválidos');
   }
@@ -39,4 +39,4 @@ function validador() {
     alert('Campos inválidos');
   }
 }
-validador();
+
