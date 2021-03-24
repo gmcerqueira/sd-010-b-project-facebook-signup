@@ -42,7 +42,7 @@ function checkSecond() {
 }
 
 function newP() {
-  let newPar = document.createElement('p');
+  const newPar = document.createElement('p');
   newPar.innerText = 'Campos inválidos';
   document.querySelector('.facebook-form').appendChild(newPar);
 }
@@ -51,6 +51,6 @@ facebookRegister.addEventListener('click', () => {
   checkFirst();
   checkSecond();
   if (checkFirst() === true || checkSecond() === true) {
-    newP()    
+    newP();
   }
 });
