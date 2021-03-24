@@ -6,13 +6,13 @@ const otherGender = document.querySelector('#personalizado');
 const registerBtn = document.querySelector('#facebook-register');
 
 function validatesInputs() {
-  let inputInvalido = false;
+  let validInputs = true;
   for (let i = 0; i < inputsRegister.length; i += 1) {
     if (!inputsRegister[i].value) {
-      inputInvalido = true;
+      validInputs = false;
     }
   }
-  return inputInvalido;
+  return validInputs;
 }
 
 function validatesGender() {
@@ -40,7 +40,7 @@ function validatesRegister() {
 
   const formRegister = document.querySelector('#form-register');
 
-  if (!validatesGender() || validatesInputs()) {
+  if (!validatesGender() || !validatesInputs()) {
     error.innerHTML = '<hr>Campos inválidos!';
     valid = false;
   }
@@ -73,10 +73,10 @@ registerBtn.addEventListener('click', (event) => {
     const rightContent = document.querySelector('.right-content');
 
     rightContent.innerHTML = `
-      <p class="user-register">Olá,
-      ${inputsRegister[0].value} ${inputsRegister[1].value}!</p>
-      <hr>
       <p class="user-register"><strong>Registro completo!</strong></p>
+      <hr>
+      <p class="user-register">
+      Olá, ${inputsRegister[0].value} ${inputsRegister[1].value}!</p>
       <p class="user-register"><strong>Email:</strong>
       ${inputsRegister[2].value}</p>
       <p class="user-register"><strong>Data de nascimento:</strong>
