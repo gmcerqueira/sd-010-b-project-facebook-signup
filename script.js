@@ -6,7 +6,7 @@ btnEntrar.addEventListener('click', () => alert(campEmail.value));
 const registerBtn = document.getElementById('facebook-register');
 const campos = document.querySelectorAll('.input');
 
-registerBtn.addEventListener('click', event => {
+registerBtn.addEventListener('click', (event) => {
   const invalid = document.getElementById('invalid');
   for (let index = 0; index < campos.length; index += 1) {
     if (campos[index].value === '') {
