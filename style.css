@@ -28,3 +28,8 @@
   background-color: rgb(66, 103, 178);
   align-self: flex-end;
 }
+
+.top-bar {
+  display: flex;
+  flex-direction: row;
+}
