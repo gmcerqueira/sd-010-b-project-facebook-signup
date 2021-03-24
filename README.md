@@ -1,15 +1,15 @@
-- [ ] Requisito 1
-- [ ] Requisito 2
-- [ ] Requisito 3
-- [ ] Requisito 4
-- [ ] Requisito 5
-- [ ] Requisito 6
-- [ ] Requisito 7
-- [ ] Requisito 8
-- [ ] Requisito 9
-- [ ] Requisito 10
-- [ ] Requisito 11
-- [ ] Requisito 12
+- [x] Requisito 1
+- [x] Requisito 2
+- [x] Requisito 3
+- [x] Requisito 4
+- [x] Requisito 5
+- [x] Requisito 6
+- [x] Requisito 7
+- [x] Requisito 8
+- [x] Requisito 9
+- [x] Requisito 10
+- [x] Requisito 11
+- [x] Requisito 12
 - [ ] Requisito 13
 - [ ] Requisito 14
 - [ ] Requisito 15
