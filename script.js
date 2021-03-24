@@ -4,9 +4,8 @@ enterButton.addEventListener('click', () => {
   alert(document.getElementById('user-email-phone').value);
 });
 
-
-const form = document.getElementById('formulario');
-form.addEventListener('submit', validador)
+  form.addEventListener('submit', validador)
+  const form = document.getElementById('formulario');
 function validador() {
   const CadName = document.getElementById('name');
   const CadLastName = document.getElementById('sName');
@@ -14,7 +13,7 @@ function validador() {
   const CadPassword = document.getElementById('foSenha"');
   const CadBirthdate = document.getElementById('label-birthdate');
   const CadRadio = document.querySelector('input[name="gender"]:checked');
-  
+
   if (CadName.value === '') {
     alert('Campos inválidos');
   }
@@ -39,4 +38,3 @@ function validador() {
     alert('Campos inválidos');
   }
 }
-
